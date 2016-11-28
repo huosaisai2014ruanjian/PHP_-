@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>校园跳蚤市场-列表</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="lib/weui.min.css" type="text/css" rel="stylesheet"/>
+	<link href="css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/define.css">
+	<style>
+      .swiper-container {
+        width: 100%;
+        
+      } 
+
+      .swiper-container img {
+        display: block;
+        width: 100%;
+        
+       
+      } 
+    </style>
+
+</head>
+<body>
+<div class="weui_search_bar" id="search_bar">
+  <form class="weui_search_outer">
+    <div class="weui_search_inner">
+      <i class="weui_icon_search"></i>
+      <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
+      <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+    </div>
+    <label for="search_input" class="weui_search_text" id="search_text">
+      <i class="weui_icon_search"></i>
+      <span>搜索</span>
+    </label>
+  </form>
+  <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
+</div>
+
+
+
+	<!-- 搜索筛选器 分类 -->
+
+<div class="weui_panel weui_panel_access">
+<!--第一个分类-->
+  <div class="weui_panel_hd">手机</div>
+  <div class="weui_panel_bd">
+    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+      <div class="goodslist">
+        <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
+      </div>
+      <div class="weui_media_bd">
+      	
+      	<h4 class="weui_media_title">二手iphone</h4>
+        <h5 class="price">50￥</h5>
+        <p class="ifnew">9成新</p>
+        <p class="weui_media_desc">刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售</p>
+      </div>
+      <div>
+      		<img src="images/userhead.png" height="50" width="50">
+      		<p class="sellername">赵四</p>
+      		<p class="sellername">软件学院</p>
+      </div>
+    </a> 
+    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+      <div class="goodslist">
+        <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
+      </div>
+      <div class="weui_media_bd">
+      	
+      	<h4 class="weui_media_title">二手iphone</h4>
+        <h5 class="price">50￥</h5>
+        <p class="ifnew">9成新</p>
+        <p class="weui_media_desc">刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售</p>
+      </div>
+      <div>
+      		<img src="images/userhead.png" height="50" width="50">
+      		<p class="sellername">赵四</p>
+      		<p class="sellername">软件学院</p>
+      </div>
+    </a> 
+<!--第二个分类-->
+      <div class="weui_panel_hd">照相机</div>
+  <div class="weui_panel_bd">
+    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+      <div class="goodslist">
+        <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
+      </div>
+      <div class="weui_media_bd">
+      	
+      	<h4 class="weui_media_title">二手iphone</h4>
+        <h5 class="price">50￥</h5>
+        <p class="ifnew">9成新</p>
+        <p class="weui_media_desc">刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售</p>
+      </div>
+      <div>
+      		<img src="images/userhead.png" height="50" width="50">
+      		<p class="sellername">赵四</p>
+      		<p class="sellername">软件学院</p>
+      </div>
+    </a> 
+    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+      <div class="goodslist">
+        <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
+      </div>
+      <div class="weui_media_bd">
+      	
+      	<h4 class="weui_media_title">二手iphone</h4>
+        <h5 class="price">50￥</h5>
+        <p class="ifnew">9成新</p>
+        <p class="weui_media_desc">刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售</p>
+      </div>
+      <div>
+      		<img src="images/userhead.png" height="50" width="50">
+      		<p class="sellername">赵四</p>
+      		<p class="sellername">软件学院</p>
+      </div>
+    </a> 
+<!--  <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>-->
+</div>
+
+<script type="text/javascript" src="lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script>
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 2000
+      });
+
+   
+    </script>
+</body>
+</html>

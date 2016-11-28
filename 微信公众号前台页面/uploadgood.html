@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>发布二手宝贝</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
+	<link rel="stylesheet" type="text/css" href="lib/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/define.css">
+	<style type="text/css">
+	html,body{
+		height: 100%;
+	}
+     
+	</style>
+<body>
+
+
+<!--上传图片-->
+
+<div class="weui_cell weui_cell_warn">
+  <div class="weui_cell">
+    <div class="weui_cell_bd weui_cell_primary">
+      <div class="weui_uploader">
+        <div class="weui_uploader_hd weui_cell">
+          <div class="weui_cell_bd weui_cell_primary">图片上传</div>
+          <div class="weui_cell_ft">3/5</div>
+        </div>
+        <div class="weui_uploader_bd">
+          <ul class="weui_uploader_files">
+            <li class="weui_uploader_file" style=""></li>
+            <li class="weui_uploader_file" style=""></li>
+            <li class="weui_uploader_file" style=""></li>
+            <li class="weui_uploader_file weui_uploader_status" style="">
+              <div class="weui_uploader_status_content">
+                <i class="weui_icon_warn"></i>
+              </div>
+            </li>
+            <li class="weui_uploader_file weui_uploader_status" style="">
+              <div class="weui_uploader_status_content">50%</div>
+            </li>
+          </ul>
+          <div class="weui_uploader_input_wrp">
+            <input class="weui_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="weui_cells weui_cells_form">
+ <!--名称-->
+ 	<div class="weui_cell">
+    <div class="weui_cell_bd weui_cell_primary">
+      <input class="weui_input" type="tel" placeholder="请输入宝贝名称">
+    </div>
+  </div>
+ <!--介绍-->
+  <div class="weui_cells weui_cells_form">
+  <div class="weui_cell">
+    <div class="weui_cell_bd weui_cell_primary">
+      <textarea class="weui_textarea" placeholder="请输入宝贝描述，越详细越容易卖出噢" rows="3"></textarea>
+      <div class="weui_textarea_counter"><span>0</span>/200</div>
+    </div>
+  </div>
+   <!--价格-->
+ <div class="weui_cells weui_cells_form">
+  <div class="weui_cell">
+    <div class="weui_cell_hd"><label class="weui_label">价格</label></div>
+    <div class="weui_cell_bd weui_cell_primary">
+      <input class="weui_input" type="tel" placeholder="￥">
+    </div>
+  </div>
+ <!--分类-->
+  <div class="weui_cell weui_cell_select">
+    <div class="weui_cell_bd weui_cell_primary">
+      <select class="weui_select" name="select1">
+        <option selected="" value="0">分类</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+ </div>
+ </div>
+
+ <!--学校选择-->
+   <div class="weui_cell weui_cell_select">
+    <div class="weui_cell_bd weui_cell_primary">
+      <select class="weui_select" name="select1">
+        <option selected="" value="0">学校</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+  </div>
+ <!--是否全新-->
+  <div class="weui_cell weui_cell_select">
+    <div class="weui_cell_bd weui_cell_primary">
+      <select class="weui_select" name="select2">
+        <option selected="" value="0">新旧程度</option>
+        <option value="1">7</option>
+        <option value="2">8</option>
+        <option value="3">9</option>
+        <option value="3">10</option>
+      </select>
+    </div>
+  </div>
+
+
+<div class="buttonc">
+<br>
+<input class="button orange" type="submit" value="发布"> 
+</div>
+</body>
+
+<script type="text/javascript" src="lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='js/swiper.js' charset='utf-8'>
+</script>
+ <script>
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+    </script>
+</html>
