@@ -8,6 +8,7 @@
 	<link href="lib/weui.min.css" type="text/css" rel="stylesheet"/>
 	<link href="css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="css/define.css">
+  <link href="css/base.css" rel="stylesheet" /> 
 	<style>
       .swiper-container {
         width: 100%;
@@ -45,9 +46,41 @@
 
 <div class="weui_panel weui_panel_access">
 <!--第一个分类-->
-  <div class="weui_panel_hd">手机</div>
+  <section class="job-module"> 
+  <dl class="retrie"> 
+    <dt>
+      <a id="area" href="javascript:;">分类 </a>
+      <a id="wage" href="javascript:;">学校</a>
+      <a id="wage1" href="javascript:;">价格</a>
+    </dt> 
+    <dd class="area"> 
+      <ul class="slide downlist"> 
+        <li><a href="#">不限</a></li> 
+        <li><a href="#">电子</a></li> 
+        <li><a href="#">交通</a></li> 
+        <li><a href="#">虚拟</a></li> 
+        <li><a href="#">学习</a></li> 
+        <li><a href="#">兼职</a></li> 
+      </ul> 
+    </dd> 
+    <dd class="wage"> 
+      <ul class="slide downlist"> 
+        <li><a href="#">不限</a></li> 
+        <li><a href="#">河北师大</a></li> 
+        
+      </ul> 
+    </dd>
+    <dd class="wage1"> 
+      <ul class="slide downlist"> 
+        <li><a href="#">不限</a></li> 
+        <li><a href="#">10元一下</a></li> 
+        <li><a href="#">100以上</a></li> 
+      </ul> 
+    </dd>  
+  </dl> 
+</section> 
   <div class="weui_panel_bd">
-    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+    <a href="gooddetail.html" class="weui_media_box weui_media_appmsg">
       <div class="goodslist">
         <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
       </div>
@@ -64,7 +97,7 @@
       		<p class="sellername">软件学院</p>
       </div>
     </a> 
-    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+    <a href="gooddetail.html" class="weui_media_box weui_media_appmsg">
       <div class="goodslist">
         <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
       </div>
@@ -84,7 +117,7 @@
 <!--第二个分类-->
       <div class="weui_panel_hd">照相机</div>
   <div class="weui_panel_bd">
-    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+    <a href="gooddetail.html" class="weui_media_box weui_media_appmsg">
       <div class="goodslist">
         <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
       </div>
@@ -101,7 +134,7 @@
       		<p class="sellername">软件学院</p>
       </div>
     </a> 
-    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+    <a href="gooddetail.html" class="weui_media_box weui_media_appmsg">
       <div class="goodslist">
         <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
       </div>
@@ -132,5 +165,25 @@
 
    
     </script>
+<script type="text/javascript">
+$(function(){ 
+  $('.retrie dt a').click(function(){
+    var $t=$(this);
+    if($t.hasClass('up')){
+      $(".retrie dt a").removeClass('up');
+      $('.downlist').hide();
+      $('.mask').hide();
+    }else{
+      $(".retrie dt a").removeClass('up');
+      $('.downlist').hide();
+      $t.addClass('up');
+      $('.downlist').eq($(".retrie dt a").index($(this)[0])).show();
+      $('.mask').show();
+    }
+  });
+  $(".area ul li a:contains('"+$('#area').text()+"')").addClass('selected');
+  $(".wage ul li a:contains('"+$('#wage').text()+"')").addClass('selected');
+});
+</script>
 </body>
 </html>
