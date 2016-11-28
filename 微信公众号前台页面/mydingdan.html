@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我的订单</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
+	<link rel="stylesheet" type="text/css" href="lib/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.css">
+  <link rel="stylesheet" type="text/css" href="css/button.css">
+	<style type="text/css">
+	html,body{
+		height: 100%;
+	}
+  .chenggong h2{
+    color: #FF9224;
+   }  
+  .chenggong{
+    margin-left: 20px;
+   }
+  .anniu{
+    
+    display: block;
+    margin-right: 0px;
+  }
+  .sc{
+    margin-right: 20px;
+    float: right;
+  }
+  
+	</style>
+<body>
+<div class="weui_tab">
+  <div class="weui_tab_bd">
+   <!--其中放我们的代码内容-->
+  
+  <!--图文标题开始部分-->
+  <div class="weui_panel weui_panel_access">
+  <div class="chenggong"><h2>交易成功订单</h2></div>
+  <div class="weui_panel_bd">
+   <div> 
+    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+      <div class="weui_media_hd">
+        <img class="weui_media_appmsg_thumb" src="images/liuji.jpg" alt="商品图片">
+      </div>
+      <div class="weui_media_bd">
+        <h4 class="weui_media_title">六级真题</h4>
+        <p class="weui_media_desc">最新的六级试题，六级改革后的最新题型全在这里面，全新的，买了还没做</p>
+      </div>
+    </a>
+    <div class="anniu"><a href="#" class="button orange medium sc">删除订单记录</a> </div><br/>
+   </div>
+
+   <div>
+    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+      <div class="weui_media_hd">
+        <img class="weui_media_appmsg_thumb" src="images/kaoyanshu.jpg" alt="商品图片">
+      </div>
+      <div class="weui_media_bd">
+        <h4 class="weui_media_title">考研词汇</h4>
+        <p class="weui_media_desc">考研英语必背词汇书，包含最全的高频词汇，9成新，已经考完研</p>
+      </div>
+    </a>
+    <a href="#" class="button orange medium sc">删除订单记录</a><br/>
+   </div>
+
+   <div>
+    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+      <div class="weui_media_hd">
+        <img class="weui_media_appmsg_thumb" src="images/xinling.jpg" alt="商品图片">
+      </div>
+      <div class="weui_media_bd">
+        <h4 class="weui_media_title">心灵的声音</h4>
+        <p class="weui_media_desc">超级值得看的漫画书！因回家不方便带，8成新。特别搞笑，你看了就知道！</p>
+      </div>
+    </a> 
+    <a href="#" class="button orange medium sc">删除订单记录</a><br/>
+   </div>
+
+  </div>
+</div>
+  <!--图文标题结束部分-->
+
+  </div>
+</div>
+</body>
+
+<script type="text/javascript" src="lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='js/swiper.js' charset='utf-8'>
+</script>
+ <script>
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+    </script>
+</html>
