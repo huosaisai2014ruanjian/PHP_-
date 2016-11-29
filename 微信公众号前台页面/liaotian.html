@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>软件学院</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
+	<link rel="stylesheet" type="text/css" href="lib/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.css">
+	<style type="text/css">
+  
+	html,body{
+		height: 100%;
+	}
+  table .in input{
+    width: 250px;
+    height: 50px;
+  }
+
+	</style>
+<body>
+    <div class="weui_tab">
+  <div class="weui_tab_bd">
+    <div class="message" style="display:none;">
+      <table>
+        <tr>
+          <td><img src="images/userhead.png" width="50px" height="60px"></td>
+          <td><textarea width="80px" height="20px">累了困了</textarea></td>
+        </tr>
+      </table>
+    </div> 
+   
+  </div>
+   <div class="weui_tabbar">
+  <!--开始发送内容-->
+  <div class="send">
+    <table width="100%">
+    <tr>
+       <td><img src="images/photo193.png" width="50px" height="50px"></td>
+    <td class="in">
+      <!--当前登录的用户信息-->
+      <input type="text" value=""  placeholder="输入聊天内容" name="content">
+    </td>
+    <td class="im"><a href=""><img src="images/right-arrow17.png" width="50px" height="50px"></a></td>
+    </tr> 
+    </table>
+  </div>
+<!--结束发送内容-->
+</div>
+</div>
+</body>
+
+<script type="text/javascript" src="lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='js/swiper.js' charset='utf-8'>
+</script>
+ <script>
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+    </script>
+<script type="text/javascript">
+    
+   $(".send input").blur(function(){
+     var data=$(".in input");
+         data=data.val();
+         console.log(data);
+       var mess = $(".message");
+      var message = $(".message td textarea");
+          mess.css('display','block');
+        message.html(data);
+         $.ajax({
+            type:'POST',
+            url:"../liaotian.php",
+            data:data,
+            /*success: function(msg){
+              alert( "success: " + msg );
+             }*/
+          });
+         });
+   
+  $(".send input").focus(function(){
+     var data=$(".in input");
+         data=data.val();
+         //console.log(data);
+       var mess = $(".message");
+      var message = $(".message td textarea");
+          mess.css('display','none');
+        message.html(data);
+        })
+</script>
+</html>
