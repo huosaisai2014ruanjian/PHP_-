@@ -1,0 +1,20 @@
+[ 2016-10-15T08:35:20+08:00 ] ::1 /dcxt/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `fenlei` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `fenlei` WHERE ( idt=1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fenlei` WHERE ( idt=2 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0054s ]
+ERR: 1054:Unknown column 'idf' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `question` WHERE ( idf=1 ) 
+ERR: 1054:Unknown column 'idf' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `question` WHERE ( idf=1 ) 
+
