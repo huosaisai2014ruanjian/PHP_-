@@ -1,0 +1,6 @@
+[ 2016-08-24T21:31:38+08:00 ] ::1 /index.php/demo_page1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003860s ]
+ERR: 无法加载模块:Demo_page1
+

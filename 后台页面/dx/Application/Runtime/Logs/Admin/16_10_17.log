@@ -1,0 +1,2647 @@
+[ 2016-10-17T09:37:10+08:00 ] ::1 /dcxt/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002054s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0111s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002783s ]
+
+[ 2016-10-17T09:39:02+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476668341521
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002608s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cd` LIMIT 0,20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003048s ]
+
+[ 2016-10-17T09:49:07+08:00 ] ::1 /dcxt/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002214s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0103s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002334s ]
+
+[ 2016-10-17T09:49:08+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476668948422
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001975s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+
+[ 2016-10-17T09:49:22+08:00 ] ::1 /dcxt/index.php/admin/Cd/cd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+
+[ 2016-10-17T09:49:32+08:00 ] ::1 /dcxt/index.php/admin/Cd/cd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001734s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cd` LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001697s ]
+
+[ 2016-10-17T09:49:40+08:00 ] ::1 /dcxt/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0087s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002311s ]
+
+[ 2016-10-17T09:49:42+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476668981440
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002210s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cd` LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001319s ]
+
+[ 2016-10-17T09:49:51+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476668990392
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cd`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\0f3a7637ed9c16648b17c51c81ab6752.php 第 21 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\0f3a7637ed9c16648b17c51c81ab6752.php 第 21 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\0f3a7637ed9c16648b17c51c81ab6752.php 第 21 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\0f3a7637ed9c16648b17c51c81ab6752.php 第 21 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\0f3a7637ed9c16648b17c51c81ab6752.php 第 21 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002196s ]
+
+[ 2016-10-17T09:50:24+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476669023204
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cd` LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001412s ]
+
+[ 2016-10-17T09:50:26+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476669025224
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+
+[ 2016-10-17T09:50:40+08:00 ] ::1 /dcxt/index.php/Admin/Cd/addt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002985s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\WWW\dcxt\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0091s ]
+NOTIC: [8] Undefined index: validate D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cd` (`cd`,`photo`,`pprice`,`price`,`typeid`,`jryh`,`jrzt`,`xctj`) VALUES ('111','58042e6fb8d9a.png','1','1','0','0','0','0') [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002470s ]
+
+[ 2016-10-17T09:50:43+08:00 ] ::1 /dcxt/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0065s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2016-10-17T09:50:45+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476669044703
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003802s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cd` LIMIT 0,20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002082s ]
+
+[ 2016-10-17T09:51:36+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476669095142
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001814s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0493s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002200s ]
+
+[ 2016-10-17T09:51:47+08:00 ] ::1 /dcxt/index.php/Admin/Cd/addt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\WWW\dcxt\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0096s ]
+NOTIC: [8] Undefined index: validate D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cd` (`cd`,`photo`,`pprice`,`price`,`typeid`,`jryh`,`jrzt`,`xctj`) VALUES ('2','58042eb2143fe.png','2','2','2','0','0','0') [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002356s ]
+
+[ 2016-10-17T09:51:49+08:00 ] ::1 /dcxt/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002379s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0109s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002356s ]
+
+[ 2016-10-17T09:51:51+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476669110463
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cd` LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2016-10-17T09:52:46+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476669165532
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cd` LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2016-10-17T09:52:47+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476669166661
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001940s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002293s ]
+
+[ 2016-10-17T09:52:59+08:00 ] ::1 /dcxt/index.php/Admin/Cd/addt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\WWW\dcxt\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-10-17T09:53:05+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476669184288
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cd` LIMIT 0,20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003194s ]
+
+[ 2016-10-17T09:53:08+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476669187498
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002598s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002196s ]
+
+[ 2016-10-17T09:53:22+08:00 ] ::1 /dcxt/index.php/Admin/Cd/addt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\WWW\dcxt\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-10-17T09:59:43+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476669582401
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002487s ]
+
+[ 2016-10-17T10:00:12+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476669611663
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002137s ]
+
+[ 2016-10-17T10:00:49+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476669648430
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002058s ]
+
+[ 2016-10-17T10:01:00+08:00 ] ::1 /dcxt/index.php/Admin/Cd/addt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\WWW\dcxt\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-10-17T10:01:20+08:00 ] ::1 /dcxt/index.php/Admin/Cd/addt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\WWW\dcxt\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0088s ]
+NOTIC: [8] Undefined index: validate D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cd` (`cd`,`photo`,`pprice`,`price`,`typeid`,`jryh`,`jrzt`,`xctj`) VALUES ('2','580430ef6ceba.jpg','2','2','1','0','0','0') [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002597s ]
+
+[ 2016-10-17T10:01:22+08:00 ] ::1 /dcxt/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002430s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0094s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002168s ]
+
+[ 2016-10-17T10:01:24+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476669683536
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001764s ]
+
+[ 2016-10-17T10:01:38+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476669697740
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003674s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002112s ]
+
+[ 2016-10-17T10:04:03+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476669842101
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-17T10:04:08+08:00 ] ::1 /dcxt/index.php/Admin/Cd/addt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-10-17T10:04:10+08:00 ] ::1 /dcxt/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002015s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0099s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000433s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002123s ]
+
+[ 2016-10-17T10:04:13+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476669852311
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2016-10-17T10:04:15+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476669854874
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001867s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001508s ]
+
+[ 2016-10-17T10:04:23+08:00 ] ::1 /dcxt/index.php/Admin/Cd/addt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001807s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\WWW\dcxt\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001400s ]
+
+[ 2016-10-17T10:04:28+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476669867372
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002655s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002960s ]
+
+[ 2016-10-17T10:04:30+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476669869684
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002141s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0375s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001762s ]
+
+[ 2016-10-17T10:19:11+08:00 ] ::1 /dcxt/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001921s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0098s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002762s ]
+
+[ 2016-10-17T10:19:13+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476670752384
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001572s ]
+
+[ 2016-10-17T10:19:17+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476670756124
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001958s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0056s ]
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  WHERE `id` = '1' LIMIT 1  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  WHERE `id` = '1' LIMIT 1  
+
+[ 2016-10-17T10:20:05+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002029s ]
+NOTIC: [8] Undefined index: id D:\WWW\dcxt\Application\Admin\Controller\CdController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: province D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002973s ]
+
+[ 2016-10-17T10:20:39+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002720s ]
+NOTIC: [8] Undefined index: id D:\WWW\dcxt\Application\Admin\Controller\CdController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001281s ]
+
+[ 2016-10-17T10:20:44+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+NOTIC: [8] Undefined index: id D:\WWW\dcxt\Application\Admin\Controller\CdController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002019s ]
+
+[ 2016-10-17T10:20:47+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+NOTIC: [8] Undefined index: id D:\WWW\dcxt\Application\Admin\Controller\CdController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: selectpid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001999s ]
+
+[ 2016-10-17T10:26:46+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+NOTIC: [8] Undefined index: id D:\WWW\dcxt\Application\Admin\Controller\CdController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002400s ]
+
+[ 2016-10-17T10:27:16+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003046s ]
+NOTIC: [8] Undefined index: id D:\WWW\dcxt\Application\Admin\Controller\CdController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-10-17T10:27:24+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+NOTIC: [8] Undefined index: id D:\WWW\dcxt\Application\Admin\Controller\CdController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2016-10-17T10:27:31+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+NOTIC: [8] Undefined index: id D:\WWW\dcxt\Application\Admin\Controller\CdController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-10-17T10:27:38+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0086s ]
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  WHERE `id` = '3' LIMIT 1  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  WHERE `id` = '3' LIMIT 1  
+
+[ 2016-10-17T10:28:49+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002470s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-10-17T10:29:10+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003163s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-10-17T10:29:40+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002475s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-10-17T10:29:54+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002880s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-10-17T10:30:08+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 26 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-10-17T10:30:17+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002628s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 26 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-10-17T10:30:30+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002837s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 26 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-10-17T10:30:39+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-10-17T10:30:50+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002708s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0092s ]
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  WHERE `id` = '28' LIMIT 1  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  WHERE `id` = '28' LIMIT 1  
+
+[ 2016-10-17T10:31:04+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002254s ]
+
+[ 2016-10-17T10:31:14+08:00 ] ::1 /dcxt/index.php/Admin/Cd/edit/id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002159s ]
+
+[ 2016-10-17T10:31:36+08:00 ] ::1 /dcxt/index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0095s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002119s ]
+
+[ 2016-10-17T10:31:39+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476671497913
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002621s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2016-10-17T10:31:44+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476671503460
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002429s ]
+
+[ 2016-10-17T10:31:45+08:00 ] ::1 /dcxt/index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002624s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0095s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000567s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003100s ]
+
+[ 2016-10-17T10:31:48+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476671507284
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2016-10-17T10:31:50+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671509514
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2016-10-17T10:31:55+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=2&_=1476671514690
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002177s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002635s ]
+
+[ 2016-10-17T10:32:05+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=2&_=1476671524741
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002411s ]
+
+[ 2016-10-17T10:32:10+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=2&_=1476671529178
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002277s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002517s ]
+
+[ 2016-10-17T10:33:02+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671581280
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002364s ]
+
+[ 2016-10-17T10:33:27+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671606106
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001984s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Undefined variable: thistypeid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: thistypeid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+NOTIC: [8] Undefined variable: thistypeid D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002485s ]
+
+[ 2016-10-17T10:33:34+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671613704
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Undefined variable: type D:\WWW\dcxt\Application\Runtime\Cache\Admin\7468f9c0684c6697b996572b768d50e4.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002406s ]
+
+[ 2016-10-17T10:33:39+08:00 ] ::1 /dcxt/index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002817s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001990s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003419s ]
+
+[ 2016-10-17T10:34:39+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476671678870
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002246s ]
+
+[ 2016-10-17T10:34:42+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671681245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2016-10-17T10:35:08+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671707433
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001932s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002088s ]
+
+[ 2016-10-17T10:35:16+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671715330
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002151s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2016-10-17T10:35:54+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671753344
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-10-17T10:36:04+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671763620
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-10-17T10:36:41+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671800223
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001647s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-10-17T10:36:47+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=1&_=1476671806838
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-10-17T10:36:52+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=2&_=1476671811246
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-10-17T10:38:58+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476671937674
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002109s ]
+
+[ 2016-10-17T10:39:12+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476671951848
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cd` LIMIT 0,20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\ae23e513f9e3999ac9423d7dd172dfd7.php 第 34 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\ae23e513f9e3999ac9423d7dd172dfd7.php 第 34 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\ae23e513f9e3999ac9423d7dd172dfd7.php 第 34 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\ae23e513f9e3999ac9423d7dd172dfd7.php 第 34 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\ae23e513f9e3999ac9423d7dd172dfd7.php 第 34 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\ae23e513f9e3999ac9423d7dd172dfd7.php 第 34 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\ae23e513f9e3999ac9423d7dd172dfd7.php 第 34 行.
+NOTIC: [8] Undefined index: name D:\WWW\dcxt\Application\Runtime\Cache\Admin\ae23e513f9e3999ac9423d7dd172dfd7.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002259s ]
+
+[ 2016-10-17T10:42:43+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672161960
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002229s ]
+
+[ 2016-10-17T10:42:44+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672162363
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002080s ]
+
+[ 2016-10-17T10:42:48+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672167490
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002168s ]
+
+[ 2016-10-17T10:42:55+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=29&_=1476672174455
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002162s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-10-17T10:43:13+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=29&_=1476672192478
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2016-10-17T10:43:19+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=31&_=1476672198551
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002823s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002059s ]
+
+[ 2016-10-17T10:43:48+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=29&_=1476672226888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001843s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002152s ]
+
+[ 2016-10-17T10:43:54+08:00 ] ::1 /dcxt/index.php/Admin/Cd/editt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0092s ]
+NOTIC: [8] Undefined index: validate D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cd` SET `cd`='2',`typeid`='2',`pprice`='2.00',`price`='2.00' WHERE `id` = 29 [ RunTime:0.0006s ]
+
+[ 2016-10-17T10:43:55+08:00 ] ::1 /dcxt/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002089s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0093s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2016-10-17T10:43:58+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672237242
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001628s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002601s ]
+
+[ 2016-10-17T10:44:06+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=30&_=1476672245461
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002296s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0296s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002272s ]
+
+[ 2016-10-17T10:44:08+08:00 ] ::1 /dcxt/index.php/Admin/Cd/editt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0061s ]
+NOTIC: [8] Undefined index: validate D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cd` SET `cd`='1',`typeid`='1',`pprice`='1.00',`price`='1.00' WHERE `id` = 30 [ RunTime:0.0004s ]
+
+[ 2016-10-17T10:44:09+08:00 ] ::1 /dcxt/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0091s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002304s ]
+
+[ 2016-10-17T10:44:12+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672251022
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001622s ]
+
+[ 2016-10-17T10:44:14+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=30&_=1476672253839
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002027s ]
+
+[ 2016-10-17T10:44:20+08:00 ] ::1 /dcxt/index.php/Admin/Cd/editt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\WWW\dcxt\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0084s ]
+NOTIC: [8] Undefined index: validate D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cd` SET `cd`='1',`typeid`='1',`pprice`='1.00',`price`='1.00',`photo`='58043b0358f3f.jpg' WHERE `id` = 30 [ RunTime:0.0009s ]
+
+[ 2016-10-17T10:44:21+08:00 ] ::1 /dcxt/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002335s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0086s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002240s ]
+
+[ 2016-10-17T10:44:23+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672262845
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002123s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001454s ]
+
+[ 2016-10-17T10:44:26+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=30&_=1476672265845
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000371s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001438s ]
+
+[ 2016-10-17T10:44:31+08:00 ] ::1 /dcxt/index.php/Admin/Cd/editt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002716s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\WWW\dcxt\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0459s ]
+NOTIC: [8] Undefined index: validate D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cd` SET `cd`='1',`typeid`='1',`pprice`='1.00',`price`='1.00',`photo`='58043b0ea2b4a.png' WHERE `id` = 30 [ RunTime:0.0007s ]
+
+[ 2016-10-17T10:44:32+08:00 ] ::1 /dcxt/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002511s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0095s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000421s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002010s ]
+
+[ 2016-10-17T10:44:34+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672273506
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002282s ]
+
+[ 2016-10-17T10:44:37+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=30&_=1476672276037
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001356s ]
+
+[ 2016-10-17T10:44:41+08:00 ] ::1 /dcxt/index.php/Admin/Cd/editt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cd` SET `cd`='1',`typeid`='2',`pprice`='1.00',`price`='1.00' WHERE `id` = 30 [ RunTime:0.0007s ]
+
+[ 2016-10-17T10:44:42+08:00 ] ::1 /dcxt/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002680s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0089s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002209s ]
+
+[ 2016-10-17T10:44:44+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672283051
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2016-10-17T10:44:46+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=30&_=1476672285687
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002083s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2016-10-17T10:44:52+08:00 ] ::1 /dcxt/index.php/Admin/Cd/editt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0057s ]
+NOTIC: [8] Undefined index: validate D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\dcxt\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cd` SET `cd`='2',`typeid`='3',`pprice`='1.00',`price`='1.00' WHERE `id` = 30 [ RunTime:0.0006s ]
+
+[ 2016-10-17T10:44:54+08:00 ] ::1 /dcxt/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0087s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000417s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001916s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002621s ]
+
+[ 2016-10-17T10:44:55+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672294527
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002541s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001398s ]
+
+[ 2016-10-17T10:45:04+08:00 ] ::1 /dcxt/index.php/Admin/cd/cd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,100   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001672s ]
+
+[ 2016-10-17T10:45:23+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476672322226
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001871s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002207s ]
+
+[ 2016-10-17T10:45:25+08:00 ] ::1 /dcxt/index.php/Admin/Cd/addt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000916s ]
+
+[ 2016-10-17T10:45:28+08:00 ] ::1 /dcxt/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002225s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0059s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php 第 50 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\dcxt\Application\Admin\Controller\IndexController.class.php on line 186 and defined D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\dcxt\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\WWW\dcxt\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001470s ]
+
+[ 2016-10-17T10:45:30+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672329212
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2016-10-17T10:45:32+08:00 ] ::1 /dcxt/index.php/Admin/cd/add?_=1476672331335
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001756s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001380s ]
+
+[ 2016-10-17T10:46:11+08:00 ] ::1 /dcxt/index.php/Admin/cd/edit?id=26&_=1476672370290
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002324s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cd` WHERE `id` = 26 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001968s ]
+
+[ 2016-10-17T10:46:23+08:00 ] ::1 /dcxt/index.php/Admin/Cd/cd/index/?_=1476672381923
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `cd` [ RunTime:0.0452s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cd` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT cd.id AS `id`,`cd`,`photo`,`pprice`,`price`,`jryh`,`jrzt`,`xctj`,`typeid`,`name` FROM `cd` INNER JOIN type on cd.typeid = type.id  LIMIT 0,20   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001458s ]
+
