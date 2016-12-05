@@ -1,0 +1,12 @@
+[ 2016-08-27T20:46:00+08:00 ] ::1 /index.php/gonglue/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002211s ]
+ERR: 无法加载模块:Gonglue
+
+[ 2016-08-27T20:47:54+08:00 ] ::1 /index.php/Gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001547s ]
+ERR: 无法加载模块:Gonglue
+

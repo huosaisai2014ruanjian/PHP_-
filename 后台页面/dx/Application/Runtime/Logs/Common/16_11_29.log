@@ -1,0 +1,30 @@
+[ 2016-11-29T10:23:37+08:00 ] ::1 /dcxt/index.php/Public/password/?_=1480386217497
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-29T10:23:46+08:00 ] ::1 /dcxt/index.php/Public/password/?_=1480386226929
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-29T10:24:30+08:00 ] ::1 /dcxt/index.php/Public/password/?_=1480386270885
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-29T10:24:38+08:00 ] ::1 /dcxt/index.php/Public/profile/?_=1480386278953
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-29T10:27:53+08:00 ] ::1 /dcxt/index.php/Public/password/?_=1480386473548
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+ERR: 无法加载模块:Public
+
