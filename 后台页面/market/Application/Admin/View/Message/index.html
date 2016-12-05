@@ -1,0 +1,60 @@
+
+<form id="pagerForm" method="post" action="__MODULE__/Message/index">
+	<input type="hidden" name="status" value="${param.status}">
+	<input type="hidden" name="keywords" value="${param.keywords}">
+	<input type="hidden" name="pageNum" value="1">
+	<input type="hidden" name="numPerPage" value="{$numPerPage}">
+	<input type="hidden" name="orderField" value="${param.orderField}">
+</form>
+
+
+<div class="pageContent j-resizeGrid">
+	<div class="panelBar">
+		<ul class="toolBar">
+			<li class=""><a class="add" href="{:U('admin/message/create')}" target="navTab"><span>添加</span></a></li>
+			<li class=""><a class="delete" href="__MODULE__/Message/destroy?id={sid_user}"target="ajaxTodo" title="确定要删除吗?"><span>删除</span></a></li>
+			<li class=""><a class="edit" href="__MODULE__/Message/show?id={sid_user}" target="navTab"><span>修改</span></a></li>
+			<li class="line">line</li>
+			<li class=""><a class="icon" href="__MODULE__/Message/content?id={sid_user}" target="dialog" ><span>留言内容</span></a></li>
+		</ul>
+	</div>
+		<table class="list" width="98%" targetType="navTab" asc="asc" desc="desc" layoutH="70" >
+		<thead>
+			<tr>
+			    <th>留言ID</th>
+				<th>商品ID</th>
+				<th>发送用户ID</th>
+				<th>接收用户ID</th>
+				<th>留言内容</th>
+				<th>所属ID</th>
+				<th>留言时间</th>
+			</tr>	
+		</thead>
+		<tbody>
+			   <volist name="results" id="vo">
+				<tr target="sid_user" rel="{$vo['id']}">
+				    <td>{$vo['id']}</td>
+					<td>{$vo['goods_id']}</td>
+					<td>{$vo['fromuser_id']}</td>
+					<td>{$vo['touser_id']}</td>
+					<td>{$vo['content']}</td>
+					<td>{$vo['belong_id']}</td>
+					<td>{$vo['time']}</td>
+				</tr>
+			</volist>
+		</tbody>
+	</table>
+	<div class="panelBar">
+		<div class="pages">
+			<span>显示</span>
+			<select class="combox" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+				<option value="20">20</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+				<option value="200">200</option>
+			</select>
+			<span>条，共{$totalCount}条</span>
+		</div>
+		<div class="pagination" targetType="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="20" currentPage="{$currentPage}"></div>
+	</div>  
+</div>

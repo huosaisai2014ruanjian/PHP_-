@@ -1,0 +1,64 @@
+<style>
+    .pageFormContent dd{
+        width:135px;
+    }
+
+</style>
+<form action="__MODULE__/Cd/addt" method="post" enctype="multipart/form-data" class="pageForm required-validate">
+    <div class="pageFormContent nowrap" layoutH="34">
+        <input type="hidden" name="id" />
+         <dl>
+            <dt>名称：</dt>
+            <dd>
+            <input type="text" name="cd" class="required" maxlength="15"  alt="添加的菜品名称"/>
+            </dd>
+        </dl>
+         <dl>
+            <dt>分类：</dt>
+            <dd>
+                <select name="typeid" id="typeid">
+                    <option value="0" selected="selected">请选择</option>
+                    <volist name="type" id="type">
+                        <option value="{$type.id}">{$type.name}</option>
+                    </volist>
+                </select>
+            </dd>
+        </dl>        
+        <dl>
+            <dt>图片：</dt>
+            <dd>
+            <input type="file" name="photo" />
+            </dd>
+        </dl>
+        <dl>
+            <dt>原价：</dt>
+            <dd>
+            <input type="text" name="pprice" class="required" maxlength="8" />
+            </dd>
+        </dl>
+        <dl>
+            <dt>现价：</dt>
+            <dd>
+            <input type="text" name="price" class="required" maxlength="8" />
+            </dd>
+        </dl>   
+    </div>
+    <div class="formBar" style="position:absolute;bottom:0;right:0;width:100%;">
+        <ul>
+            <li>
+                <div class="buttonActive">
+                    <div class="buttonContent">
+                        <button type="submit">保存</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="button">
+                    <div class="buttonContent">
+                        <button type="button" class="close">取消</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</form>
