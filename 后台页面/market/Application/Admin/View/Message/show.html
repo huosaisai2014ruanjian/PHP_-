@@ -1,0 +1,85 @@
+<style type="text/css">
+	#il{
+       height:400px;
+	}
+	#il .t{
+		width:200px;
+		text-align: center;
+	}
+	.right{
+        position: absolute;
+        right:150px;
+        top:430px;
+	}
+</style>
+<div class="pageContent j-resizeGrid">
+	<div class="panelBar">
+		<ul class="toolBar">
+			<li class=""><a class="add" href="{:U('admin/messageManage/index')}" target="navTab"><span>留言管理</span></a></li>
+		</ul>
+	</div>
+<form action="__MODULE__/Message/update" method="post" width="100%"  onsubmit="return validateCallback(this, navTabAjaxDone);" novalidate="novalidate">
+	 <input type="hidden" type="text" value="{$row['id']}" name="id">
+	<table  id="il" class="list" width="98%" targetType="navTab" asc="asc" desc="desc" layoutH="42">
+		<tbody>
+
+			<tr >
+			<td class="t">商品ID</td>
+				<td>
+					<select name="goods_id">
+						<option selected >{$row['goods_id']}</option>
+						<volist name="goods" id="vo">
+							<option value="{$vo['id']}" >{$vo['id']}</option>
+						</volist>
+					</select>
+				</td>
+		</tr>
+		<tr>
+			<td class="t">发送用户ID</td>
+			<td>
+				<select name="fromuser_id">
+					<option selected >{$row['fromuser_id']}</option>
+					<volist name="users" id="vo">
+						<option value="{$vo['id']}" >{$vo['id']}</option>
+					</volist>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="t">接收用户ID</td>
+			<td>
+				<select name="touser_id">
+					<option selected >{$row['touser_id']}</option>
+					<volist name="users" id="vo">
+						<option value="{$vo['id']}" >{$vo['id']}</option>
+					</volist>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="t">留言内容</td>
+			<td><input type="text" name="content" value="{$row['content']}"></td>
+		</tr>
+		<tr>
+			<td class="t">所属ID</td>
+			<td>
+				<select name="belong_id">
+					<option selected >{$row['belong_id']}</option>
+					<volist name="message" id="vo">
+						<option value="{$vo['id']}" >{$vo['id']}</option>
+					</volist>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="t"></td>
+			<td></td>
+			<td class="t"></td>
+			<td><input type="submit" value="修改"></td>
+		</tr>
+		</tbody>
+	</table>
+</form>
+<!--表单提交开始-->
+

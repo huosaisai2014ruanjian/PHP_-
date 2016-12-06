@@ -1,0 +1,66 @@
+<style>
+    .pageFormContent dd{
+        width:135px;
+    }
+</style>
+<form action="__MODULE__/Cd/editt" method="post" enctype="multipart/form-data" class="pageForm required-validate">
+    <div class="pageFormContent nowrap" layoutH="34">
+        <input type="hidden" name="id" value="{$cd.id}" />
+         <dl>
+            <dt>名称：</dt>
+            <dd>
+            <input type="text" name="cd" class="required" maxlength="20" value="{$cd.cd}"/>
+            </dd>
+        </dl>
+        <dl>
+            <dt>分类：</dt>
+            <dd>
+                <select name="typeid" id="typeid">
+                    <volist name="type" id="type">
+                        <eq name="thistypeid" value="$type.id">
+                        <option selected="selected"  value="{$type.id}">{$type.name}</option>
+                        <else/>                        
+                        <option value="{$type.id}">{$type.name}</option>
+                        </eq>
+                    </volist>
+                </select>
+            </dd>
+        </dl>         
+        <dl>
+            <dt>图片：</dt>
+            <dd>
+            <input type="file" name="photo" />
+            </dd>
+        </dl>
+        <dl>
+            <dt>原价：</dt>
+            <dd>
+            <input type="text" name="pprice" class="required" maxlength="8" value="{$cd.pprice}"/>
+            </dd>
+        </dl>
+        <dl>
+            <dt>现价：</dt>
+            <dd>
+            <input type="text" name="price" class="required" maxlength="8" value="{$cd.price}"/>
+            </dd>
+        </dl>   
+    </div>
+    <div class="formBar" style="position:absolute;bottom:0;right:0;width:100%;">
+        <ul>
+            <li>
+                <div class="buttonActive">
+                    <div class="buttonContent">
+                        <button type="submit">保存</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="button">
+                    <div class="buttonContent">
+                        <button type="button" class="close">取消</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</form>

@@ -1,0 +1,54 @@
+<form id="pagerForm" method="post" action="__MODULE__/cd/cd/">
+  <input type="hidden" name="status" value="${param.status}">
+  <input type="hidden" name="keywords" value="${param.keywords}">
+  <input type="hidden" name="pageNum" value="1">
+  <input type="hidden" name="numPerPage" value="{$numPerPage}">
+  <input type="hidden" name="orderField" value="${param.orderField}">
+</form>
+
+<div class="pageContent">
+  <div class="panelBar">
+    <ul class="toolBar">
+        <li><a class="add" href="__MODULE__/cd/add" target="dialog"><span>添加菜品</span></a></li>   
+        <li><a class="delete" href="__MODULE__/cd/delete?id={sid_user}" target="ajaxTodo"  title="确定要删除吗？" warn="请选择一个菜品"><span>删除</span></a></li>
+      <li><a class="edit" href="__MODULE__/cd/edit?id={sid_user}" target="dialog" warn="请选择一个菜品"><span>修改</span></a></li>       
+    </ul>
+  </div>
+
+  <table class="list" width="98%" targetType="navTab" asc="asc" desc="desc" layoutH="63">
+    <thead>
+      <tr>
+        <th>菜名</th>
+        <th>图片</th>
+        <th>原价</th>
+        <th>现价</th>
+        <th>分类</th>
+      </tr> 
+    </thead>
+    <tbody> 
+          <volist name="cd" id="vo">
+              <tr target="sid_user" rel="{$vo.id}">
+                <td>{$vo.cd}</td>
+                <td><img src="__ROOT__/Uploads/Uploads/cdphoto/{$vo.photo}" style="height: 100px;width: 100px;"/></td>
+                <td>{$vo.pprice}</td>
+                <td>{$vo.price}</td>
+                <td>{$vo.name}</td>
+              </tr>
+          </volist>
+    </tbody>
+  </table>
+  <div class="panelBar">
+    <div class="pages">
+      <span>显示</span>
+      <select class="combox" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+        <option value="20">20</option>
+        <option value="2">2</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+      </select>
+      <span>条，共{$totalCount}条</span>
+    </div>
+    <div class="pagination" targetType="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="20" currentPage="{$currentPage}"></div>
+  </div>
+    </div>
