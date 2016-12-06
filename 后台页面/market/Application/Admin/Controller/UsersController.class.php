@@ -24,7 +24,7 @@ class UsersController extends RestfulController
         }else{
             $currentPage=1;
         }
-        $url = 'http://' . $_SERVER['SERVER_NAME'] . '/company/Public';
+        $url = 'http://' . $_SERVER['SERVER_NAME'] . '/market/Public';
         $count= $this->_db->count();
         $Page = new \Think\Page($count,$numPerPage);
         $show = $Page->show();// 分页显示输出
@@ -87,7 +87,11 @@ class UsersController extends RestfulController
             $upload = new \Think\Upload(); //  实例化上传类
             $upload->maxSize = 3145728; //  设置附件上传大小
             $upload->exts = array('jpg', 'gif', 'png', 'jpeg'); //  设置附件上传类
-            $upload->savePath = './Public/Uploads/';
+            $upload->rootPath = './Public';//上传根目录
+            $upload->savePath = '/uploads/'; // 设置附件上传（子）目录
+            // 开启子目录保存 并调用自定义函数get_user_id生成子目录
+            $upload->autoSub = true;
+            $upload->subName = 'usersphoto';
             $info = $upload->upload();
             if ($info) {
                 $map['head'] = $info['head']['savepath'] . $info['head']['savename'];
