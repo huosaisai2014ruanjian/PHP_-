@@ -5,6 +5,7 @@
             <li class=""><a class="add" href="__MODULE__/users/create" target="navTab"><span>添加</span></a></li>
             <li class=""><a class="delete" href="__MODULE__/users/destroy?id={sid_user}" target="ajaxTodo" title="确定要删除吗?"><span>删除</span></a></li>
             <li class=""><a class="edit" href="__MODULE__/users/edit?id={sid_user}" target="navTab"><span>修改</span></a></li>
+            <li class=""><a href="Admin/Users/qualify?id={sid_user}" target="dialog" rel="dlg_page8"><span>认证</span></a></li>
             <li class="line">line</li>
             <li class=""><a class="icon" href="demo/common/dwz-team.xls" target="dwzExport" targettype="navTab" title="实要导出这些记录吗?"><span>导出EXCEL</span></a></li>
         </ul>
@@ -21,6 +22,7 @@
             <th><div>年级</div></th>
             <th><div>头像</div></th>
             <th><div>验证图片</div></th>
+            <th><div>认证</div></th>
         </tr>
         </thead>
         <tbody>
@@ -34,8 +36,11 @@
                 <td><div>{$vo['num']}</div></td>
                 <td><div>{$vo['sex']}</div></td>
                 <td><div>{$vo['grade']}</div></td>
-                <td><div><img src="__ROOT__/Public/{$vo['head']}" width="40px" height="40px"/></div></td>
-                <td><div><img src="__ROOT__/Public/{$vo['card']}" width="40px" height="40px" /></div></td>
+                <td><div>{$vo['head']}</div></td>
+                <td><div>{$vo['card']}</div></td>
+                <td><div>{$vo['quality']}</div></td>
+
+
             </tr>
         </volist>
         </tbody>
