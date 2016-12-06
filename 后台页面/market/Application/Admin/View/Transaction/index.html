@@ -1,0 +1,61 @@
+<form id="pagerForm" method="post" action="__MODULE__/Transaction/index/"></form>
+<div class="pageContent">
+	<div class="panelBar">
+		<ul class="toolBar">
+			<li><a class="add" href="__MODULE__/Transaction/add" target="navTab"><span>添加</span></a></li>
+			<li><a class="delete" href="__MODULE__/Transaction/destroy/id/{sid_user}" target="ajaxTodo" title="确定要删除吗？" warn="请选择一个用户"><span>删除</span></a></li>
+			<li><a class="edit" href="__MODULE__/Transaction/edit/id/{sid_user}" target="navTab" warn="请选择一个用户"><span>修改</span></a></li>				
+		</ul>
+	</div>
+	<table class="list" width="98%" targetType="navTab" asc="asc" desc="desc" layoutH="70" >
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>卖家id</th>
+				<th>买家id</th>
+				<th>商品id</th>
+				<th>商品状态</th>
+			</tr>	
+		</thead>
+		<tbody>
+
+			<volist name="results" id="d">
+				<tr target="sid_user" rel="{$d.id}">
+					<td>{$d.id}</td>
+					<td>{$d.seller_id}</td>
+					<td>{$d.buyer_id}</td>
+					<td>{$d.goods_id}</td>
+					<td>{$d.condition}</td>				
+				</tr>
+			</volist>
+		</tbody>
+	</table>
+	<div class="panelBar">
+		<div class="pages">
+			<span>显示</span>
+			<select class="combox" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+				<option value="20">20</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+				<option value="200">200</option>
+			</select>
+			<span>条，共{$totalCount}条</span>
+		</div>
+		<div class="pagination" targetType="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="20" currentPage="{$currentPage}"></div>
+
+	</div>
+</div>
+<script>
+	var up=document.getElementsByName('up')[0];
+	var down=document.getElementsByName('down')[0];
+	var submit=document.getElementsByName('submit')[0];
+	var sousuo=document.getElementsByName('sousuo')[0];
+	var data="__MODULE__/Transaction/index";
+	sousuo.onclick=function(){
+		this.value='';
+	}
+	submit.onmouseover=function(){	
+	data="__MODULE__/Transaction/search?condition="+sousuo.value;
+	this.href=data;
+	}
+</script>
