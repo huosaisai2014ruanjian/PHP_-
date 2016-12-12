@@ -1,8 +1,15 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: 王振儒
+ * Date: 2016/12/8
+ * Time: 15:07
+ */
 namespace Admin\Controller;
 use Think\Controller;
-class IndexController extends Controller {
-   
+use Common\Controller\RestfulController;
+class IndexController extends RestfulController {
+
     public function index(){
 		 $menu  = array();
 		 $menu_10  = array();
@@ -17,69 +24,67 @@ class IndexController extends Controller {
 		 // $menu_19  = array();
 		 // $menu_20  = array();
           /*   if(isset($_SESSION['menu'.$_SESSION[C('USER_AUTH_KEY')]])) {
-
                 //如果已经缓存，直接读取缓存
                 $menu   =   $_SESSION['menu'.$_SESSION[C('USER_AUTH_KEY')]];
             }else { */
                 //读取数据库模块列表生成菜单项
-                $node    =   M("think_node");
-				$id	=	$node->getField("id");
+                $node = M("think_node");
+				$id = $node->getField("id");
 				$where['level']=2;
 				$where['status']=1;
 				$where['pid']=$id;
-                $list	=	$node->where($where)->where('group_id < 10')->field('id,name,group_id,title')->order('sort asc')->select();
+                $list = $node->where($where)->where('group_id < 10')->field('id,name,group_id,title')->order('sort asc')->select();
                 $accessList = $_SESSION['_ACCESS_LIST'];
                 foreach($list as $key=>$module) {
-                    // if(isset($accessList[strtoupper(APP_NAME)][strtoupper($module['name'])]) || $_SESSION['administrator']) {
+                    //if(isset($accessList[strtoupper(APP_NAME)][strtoupper($module['name'])]) || $_SESSION['administrator']) {
                         //设置模块访问权限
                         $module['access'] =   1;
                         $menu[$key]  = $module;
                    // }
                 }
                 //缓存菜单访问
-                $_SESSION['menu'.$_SESSION[C('USER_AUTH_KEY')]]	=	$menu;
+                $_SESSION['menu'.$_SESSION[C('USER_AUTH_KEY')]] = $menu;
            //}
             if(!empty($_GET['tag'])){
                 $this->assign('menuTag',$_GET['tag']);
             }
 			//dump($menu);
-            $this->assign('menu',$menu);
+            //$this->assign('menu',$menu);
 			
 			$where['group_id']=10;
-			 $list	=	$node->where($where)->field('id,name,group_id,title')->order('sort asc')->select();
-                $accessList = $_SESSION['_ACCESS_LIST'];
-                foreach($list as $key=>$module) {
-                    // if(isset($accessList[strtoupper(APP_NAME)][strtoupper($module['name'])]) || $_SESSION['administrator']) {
-                        //设置模块访问权限
-                        $module['access'] =   1;
-                        $menu_10[$key]  = $module;
-                   // }
-                }
-			  $this->assign('menu_10',$menu_10);	
-			  
-			  $where['group_id']=11;
-			  $list	=	$node->where($where)->field('id,name,group_id,title')->order('sort asc')->select();
-              $accessList = $_SESSION['_ACCESS_LIST'];
-			  foreach($list as $key=>$module) {
-				// if(isset($accessList[strtoupper(APP_NAME)][strtoupper($module['name'])]) || $_SESSION['administrator']) {
-					//设置模块访问权限
-					$module['access'] =   1;
-					$menu_11[$key]  = $module;
-			   // }
-			 }
-		     $this->assign('menu_11',$menu_11);
+			$list = $node->where($where)->field('id,name,group_id,title')->order('sort asc')->select();
+            $accessList = $_SESSION['_ACCESS_LIST'];
+            foreach($list as $key=>$module) {
+                // if(isset($accessList[strtoupper(APP_NAME)][strtoupper($module['name'])]) || $_SESSION['administrator']) {
+                    //设置模块访问权限
+                    $module['access'] =   1;
+                    $menu_10[$key]  = $module;
+                // }
+            }
+			$this->assign('menu_10',$menu_10); 
+			$where['group_id']=11;
+			$list = $node->where($where)->field('id,name,group_id,title')->order('sort asc')->select();
+            $accessList = $_SESSION['_ACCESS_LIST'];
+			foreach($list as $key=>$module) {
+			// if(isset($accessList[strtoupper(APP_NAME)][strtoupper($module['name'])]) || $_SESSION['administrator']) {
+				//设置模块访问权限
+				$module['access'] =   1;
+				$menu_11[$key]  = $module;
+			// }
+			}
+		    $this->assign('menu_11',$menu_11);
 			 
-			 $where['group_id']=12;
-			  $list	=	$node->where($where)->field('id,name,group_id,title')->order('sort asc')->select();
-              $accessList = $_SESSION['_ACCESS_LIST'];
-			  foreach($list as $key=>$module) {
+			$where['group_id']=12;
+			$list	=	$node->where($where)->field('id,name,group_id,title')->order('sort asc')->select();
+            $accessList = $_SESSION['_ACCESS_LIST'];
+			foreach($list as $key=>$module) {
 				// if(isset($accessList[strtoupper(APP_NAME)][strtoupper($module['name'])]) || $_SESSION['administrator']) {
 					//设置模块访问权限
 					$module['access'] =   1;
 					$menu_12[$key]  = $module;
 			   // }
-			 }
-		     $this->assign('menu_12',$menu_12);
+			}
+		    $this->assign('menu_12',$menu_12);
 			 
 			//   $where['group_id']=13;
 			//   $list	=	$node->where($where)->field('id,name,group_id,title')->order('sort asc')->select();
@@ -403,8 +408,8 @@ class IndexController extends Controller {
                 $menu   =   $_SESSION['menu'.$_SESSION[C('USER_AUTH_KEY')]];
             }else { */
                 //读取数据库模块列表生成菜单项
-                $node    =   M("think_node");
-				$id	=	$node->getField("id");
+                $node = M("think_node");
+				$id = $node->getField("id");
 				$where['level']=2;
 				$where['status']=1;
 				$where['pid']=$id;
@@ -485,21 +490,24 @@ class IndexController extends Controller {
 
 	// 登录检测
 	public function checkLogin() {
-		if(empty($_POST['account'])) {
+		if(empty($_POST['usersname'])) {
 			$this->error('帐号错误！');
 		}elseif (empty($_POST['password'])){
 			$this->error('密码必须！');
-		}elseif (empty($_POST['verify'])){
-			$this->error('验证码必须！');
 		}
+		// elseif (empty($_POST['verify'])){
+		// 	$this->error('验证码必须！');
+		// }
         //生成认证条件
-        $map            =   array();
+        $map = array();
 		// 支持使用绑定帐号登录
-		$map['account']	= $_POST['account'];
-        $map["status"]	=	array('gt',0);
-		if($_SESSION['verify'] != md5($_POST['verify'])) {
-			$this->error('验证码错误！');
-		}
+		$map['username'] = $_POST['username'];
+        $map["status"] = array('gt',0);
+        var_dump($map);
+        exit;
+		// if($_SESSION['verify'] != md5($_POST['verify'])) {
+		// 	$this->error('验证码错误！');
+		// }
 		import ( '@.ORG.Util.RBAC' );
         $authInfo = RBAC::authenticate($map);
         //使用用户名、密码和状态的方式进行认证
