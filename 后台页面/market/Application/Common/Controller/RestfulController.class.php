@@ -9,59 +9,32 @@ abstract class RestfulController extends Controller {
     protected $_tableName = '';
     // 数据表操作对象
     protected $_db;
-    protected function _initialize() {
 
-        // session(null);
-        // dump(session());exit;
-   
-        // 首先判断用户是否已经登录
-        Rbac::checkLogin();
-
-        // 再次判断用户是否具有当前访问权限
-        if (!Rbac::AccessDecision()) {
-            $this->error('您不具有当前访问权限，请换个账户登录!', '../.././home/user/login');
+    function _initialize() {
+        //判断是否开启rbac权限验证
+        if(C('USER_AUTH_ON')){
+            //获取需要验证模块列表
+            $requireModules = explode(',', C('REQUIRE_AUTH_MODULE'));
+            if(in_array(MODULE_NAME, $requireModules)){
+                //当前模块需要校验
+                //开始执行rbac验证
+                //判断用户是否登录
+                if (session('?' . C('USER_AUTH_KEY'))) {
+                    //用户已登录
+                }else{
+                    //用户尚未登录
+                    $this->error('您还没有登录，请先登录再访问!', C('USER_AUTH_GATEWAY'));
+                }
+            }
         }
-
-        // 0. 判断是否开启权限认证功能
-//        if (C('USER_AUTH_ON')) {    // 当前应用程序已经开启权限认证功能
-//            // 1. 判断当前模块是否有必要权限校验
-//            $requireModules = explode(',', C('REQUIRE_AUTH_MODULE'));
-//            if (in_array(MODULE_NAME, $requireModules)) {
-//                // 当前模块需要校验
-//                // 2. 执行RBAC权限校验
-//                // 2.1 先判断用户是否登录
-//                if (session('?' . C('USER_AUTH_KEY'))) {
-//                    // 用户已经登录
-//                    // 2.1.1 权限校验
-//                    if (!Rbac::AccessDecision()) {
-//                        // 当前用户不具有权限
-//                        $this->error('您不具有当前访问权限，请换个账户登录!', C('USER_AUTH_GATEWAY'));
-//                    }
-//                    exit;
-//                } else {
-//                    // 用户尚未登录
-//                    if (!C('GUEST_AUTH_ON')) {
-//                        // 不允许游客访问
-//                        $this->error('您还没有登录，请先登录再访问!', C('USER_AUTH_GATEWAY'));
-//                    } else {
-//                        // 允许游客访问
-//                        // 允许游客访问所有操作
-//                        // 允许游客访问指定操作（？）
-//                    }
-//                }
-//            }
-//            // 当前模块不需要校验，校验过程结束，将执行后续操作
-//        }        
-            //获取表名 （通过控制器名）
-       if(!$this->_tableName){
+        if(!$this->_tableName){
         $this->_tableName=lcfirst(CONTROLLER_NAME);
        }        
         // 创建自定义模型类
         $this->_db = D($this->_tableName);
         // 权限校验
-
     }
-
+    
     public function index() {
         if(isset($_POST['numPerPage'])){
                 $numPerPage=$_POST['numPerPage'];
