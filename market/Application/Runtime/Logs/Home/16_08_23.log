@@ -1,0 +1,14 @@
+[ 2016-08-23T16:59:44+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.099720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022289s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.1523s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0012s ]
+ERR: 1146:Table 'item.type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `type`
+ERR: 1146:Table 'item.type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `type`
+

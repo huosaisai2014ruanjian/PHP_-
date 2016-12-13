@@ -1,0 +1,1504 @@
+[ 2016-12-13T07:26:12+08:00 ] ::1 /marketsai/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0170s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_think_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_think_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_think_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_think_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 74 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_think_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 86 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php on line 186 and defined F:\CMS1\wamp\www\marketsai\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content F:\CMS1\wamp\www\marketsai\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory F:\CMS1\wamp\www\marketsai\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-13T07:26:17+08:00 ] ::1 /marketsai/index.php/Admin/Menu/manage/index/?_=1481585176861
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\MenuController.class.php 第 16 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\MenuController.class.php 第 19 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 351 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: numPerPage F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 7 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$type F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 29 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$url F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T07:46:06+08:00 ] ::1 /marketsai/index.php/Admin/Menu/manage/index/?_=1481586366078
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\MenuController.class.php 第 16 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\MenuController.class.php 第 19 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 351 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: numPerPage F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 7 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$type F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 29 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$url F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T07:46:26+08:00 ] ::1 /marketsai/index.php/Admin/Menu/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\MenuController.class.php 第 25 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::createMenu() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\MenuController.class.php 第 31 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 232 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-12-13T07:46:30+08:00 ] ::1 /marketsai/index.php/Admin/Menu/view
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\MenuController.class.php 第 38 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\MenuController.class.php 第 41 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 351 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: numPerPage F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\48ff513b4195e010e657991e6d45f00c.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T07:57:42+08:00 ] ::1 /marketsai/index.php/Admin/Menu/manage/index/?_=1481587061774
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\MenuController.class.php 第 16 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\MenuController.class.php 第 19 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 351 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: numPerPage F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 7 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$type F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 29 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$url F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+NOTIC: [8] Undefined property: stdClass::$key F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-13T16:09:33+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\softwares\wamp\www\demo\Application\Admin\Controller\IndexController.class.php on line 53 and defined D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.190011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.190011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-12-13T16:11:03+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022001s ]
+
+[ 2016-12-13T16:11:47+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.261015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.262015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:12:15+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:18:08+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0010s ]
+
+[ 2016-12-13T16:18:19+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:19:36+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0100s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:19:38+08:00 ] ::1 /demo/index.php/Admin/ThinkUser/index/index/?_=1481617178176
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_think_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_think_user` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `market_think_user` LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T16:19:38+08:00 ] ::1 /demo/index.php/Admin/Users/index/index/?_=1481617178751
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_users` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_users` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_users` LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:19:42+08:00 ] ::1 /demo/index.php/Admin/Goods/index/index/?_=1481617181956
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_goods` LIMIT 0,2   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:19:42+08:00 ] ::1 /demo/index.php/Admin/Tranaction/index/index/?_=1481617182388
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Tranaction
+
+[ 2016-12-13T16:19:45+08:00 ] ::1 /demo/index.php/Admin/Categroy/index/index/?_=1481617185758
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载控制器:Categroy
+
+[ 2016-12-13T16:19:50+08:00 ] ::1 /demo/index.php/Admin/Chat/index/index/?_=1481617190517
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_chat` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_chat` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_chat` LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\e42e874ed460f2c6e54e3ad411359b91.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\e42e874ed460f2c6e54e3ad411359b91.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:19:51+08:00 ] ::1 /demo/index.php/Admin/System/index/index/?_=1481617191218
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_system` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_system` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `market_system` LIMIT 0,5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:19:52+08:00 ] ::1 /demo/index.php/Admin/Message/index/index/?_=1481617191908
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_message` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_message` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_message` LIMIT 0,5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:19:52+08:00 ] ::1 /demo/index.php/Admin/Chat/index/index/?_=1481617192244
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_chat` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_chat` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `market_chat` LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\e42e874ed460f2c6e54e3ad411359b91.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\e42e874ed460f2c6e54e3ad411359b91.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:19:52+08:00 ] ::1 /demo/index.php/Admin/System/index/index/?_=1481617192539
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_system` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_system` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_system` LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:21:15+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:21:17+08:00 ] ::1 /demo/index.php/Admin/Users/index/index/?_=1481617277229
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_users` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_users` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `market_users` LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-13T16:21:19+08:00 ] ::1 /demo/index.php/Admin/Transaction/index/index/?_=1481617278988
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_transaction` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_transaction` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_transaction` LIMIT 0,5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:21:19+08:00 ] ::1 /demo/index.php/Admin/Category/index/index/?_=1481617279652
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_category` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_category` WHERE ( cat_id='' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 4 行.
+NOTIC: [8] Undefined variable: numPerPage D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T16:47:55+08:00 ] ::1 /demo/index.php/Admin/Goods/index/index/?_=1481618874940
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_goods` LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:47:55+08:00 ] ::1 /demo/index.php/Admin/Category/index/index/?_=1481618875231
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_category` WHERE ( cat_id='' )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 4 行.
+NOTIC: [8] Undefined variable: numPerPage D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:47:55+08:00 ] ::1 /demo/index.php/Admin/Goods/index/index/?_=1481618875530
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `market_goods` LIMIT 0,2   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-13T16:48:00+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:48:00+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:48:01+08:00 ] ::1 /demo/index.php/Admin/Users/index/index/?_=1481618881717
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_users` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_users` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `market_users` LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:48:24+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-13T16:50:41+08:00 ] ::1 /demo/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-12-13T16:51:51+08:00 ] ::1 /demo/index.php/Admin/Message/index/index/?_=1481619111230
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_message` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_message` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_message` LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _order D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T17:03:45+08:00 ] ::1 /demo/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'group_id' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`group_id`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc 
+ERR: 1054:Unknown column 'group_id' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`group_id`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc 
+
+[ 2016-12-13T17:04:10+08:00 ] ::1 /demo/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\softwares\wamp\www\demo\Application\Admin\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T17:04:12+08:00 ] ::1 /demo/index.php/Admin/ThinkUser/index/index/?_=1481619851811
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\softwares\wamp\www\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_think_user` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_think_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_think_user` LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-13T17:04:14+08:00 ] ::1 /demo/index.php/Admin/Menu/manage/index/?_=1481619853668
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context D:\softwares\wamp\www\demo\Application\Admin\Controller\MenuController.class.php 第 16 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context D:\softwares\wamp\www\demo\Application\Admin\Controller\MenuController.class.php 第 19 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given D:\softwares\wamp\www\demo\Application\Common\Library\Wechat.class.php 第 351 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: numPerPage D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 7 行.
+NOTIC: [8] Undefined property: stdClass::$key D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$type D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 29 行.
+NOTIC: [8] Undefined property: stdClass::$key D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$url D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 36 行.
+NOTIC: [8] Undefined property: stdClass::$key D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+NOTIC: [8] Undefined property: stdClass::$key D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+NOTIC: [8] Undefined property: stdClass::$key D:\softwares\wamp\www\demo\Application\Runtime\Cache\Admin\8c6a3d435bcc84947fac656784ddb5b5.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2016-12-13T17:09:30+08:00 ] ::1 /demo/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\demo\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-12-13T17:10:54+08:00 ] ::1 /market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-12-13T17:15:24+08:00 ] ::1 /market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+
+[ 2016-12-13T17:16:18+08:00 ] ::1 /market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+
+[ 2016-12-13T17:18:24+08:00 ] ::1 /market/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0099s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: menu_13 D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\WWW\market\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2016-12-13T17:18:26+08:00 ] ::1 /market/index.php/Admin/Users/index/index/?_=1481620705548
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_users` [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `market_users` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `market_users` LIMIT 0,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: _order D:\WWW\market\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\WWW\market\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2016-12-13T17:19:18+08:00 ] ::1 /market/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0061s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: menu_13 D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\WWW\market\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2016-12-13T17:19:55+08:00 ] ::1 /market/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0109s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: menu_13 D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\WWW\market\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2016-12-13T17:20:24+08:00 ] ::1 /market/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0181s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: menu_13 D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\WWW\market\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2016-12-13T17:20:25+08:00 ] ::1 /market/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0067s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: menu_13 D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\WWW\market\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2016-12-13T17:20:27+08:00 ] ::1 /market/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+
+[ 2016-12-13T17:20:46+08:00 ] ::1 /market/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0581s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0135s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: menu_13 D:\WWW\market\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\WWW\market\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2016-12-13T17:20:51+08:00 ] ::1 /market/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+
+[ 2016-12-13T17:27:56+08:00 ] ::1 /github/PHP_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\github\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-12-13T17:30:10+08:00 ] ::1 /github/PHP_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\github\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0138s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\github\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: menu_13 D:\WWW\github\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\WWW\github\PHP_-\market\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001958s ]
+
+[ 2016-12-13T17:30:57+08:00 ] ::1 /github/PHP_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\github\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_index` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0075s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\github\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: menu_13 D:\WWW\github\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SELECT * FROM `market_index` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\WWW\github\PHP_-\market\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-12-13T17:31:00+08:00 ] ::1 /github/PHP_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\github\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+
+[ 2016-12-13T17:32:01+08:00 ] ::1 /github/PHP_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\github\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-12-13T17:32:12+08:00 ] ::1 /github/PHP_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\github\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+
+[ 2016-12-13T17:34:41+08:00 ] ::1 /github/PHP_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\github\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+
+[ 2016-12-13T17:34:53+08:00 ] ::1 /github/PHP_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\github\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+

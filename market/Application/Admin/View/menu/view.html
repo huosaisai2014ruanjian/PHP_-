@@ -1,0 +1,32 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/menu/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/menu/css/main.css"/>
+<form id="pagerForm" method="post" action="__MODULE__/Menu/view">
+    <input type="hidden" name="status" value="${param.status}">
+    <input type="hidden" name="keywords" value="${param.keywords}">
+    <input type="hidden" name="pageNum" value="1">
+    <input type="hidden" name="numPerPage" value="{$numPerPage}">
+    <input type="hidden" name="orderField" value="${param.orderField}">
+</form>
+<div class="pageContent j-resizeGrid">
+    <div class="panelBar">
+        <ul class="toolBar">
+            <li class=""><a class="add" href="{:U('admin/menu/manage')}" target="navTab"><span>创建菜单</span></a></li>
+        </ul>
+    </div>
+            <div class="result-content">
+                <ul class="sys-info-list">
+                    <volist name="menu" id="vo">
+                    <li>
+                        <span class="res-info">{$vo->name}</span>
+                        <ul style="margin-left:2em;">
+                            <?php $sub_button = $vo->sub_button;?>
+                            <volist name="sub_button" id="sub_vo">
+                            <li>{$sub_vo->name}</li>
+                            </volist>
+                        </ul>
+                    </li>
+                    </volist>
+                </ul>
+            </div>
+        
+     </div>

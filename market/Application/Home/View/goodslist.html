@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>校园跳蚤市场-列表</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!--   <link href="__PUBLIC__/dwz/themes/css/core.css" rel="stylesheet" type="text/css" /> -->
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.css">
+
+
+  <link href="__PUBLIC__/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/define.css">
+  <link href="__PUBLIC__/css/base.css" rel="stylesheet" /> 
+
+<!-- 	<link href="__PUBLIC__/lib/weui.min.css" type="text/css" rel="stylesheet"/>
+	<link href="__PUBLIC__/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/define.css">
+  <link href="__PUBLIC__/css/base.css" rel="stylesheet" />  -->
+	<style>
+      .swiper-container {
+        width: 100%;
+        
+      } 
+
+      .swiper-container img {
+        display: block;
+        width: 100%;
+        
+       
+      } 
+    </style>
+
+</head>
+<body>
+<div class="weui_search_bar" id="search_bar">
+  <form class="weui_search_outer">
+    <div class="weui_search_inner">
+      <i class="weui_icon_search"></i>
+      <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
+      <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+    </div>
+    <label for="search_input" class="weui_search_text" id="search_text">
+      <i class="weui_icon_search"></i>
+      <span>搜索</span>
+    </label>
+  </form>
+  <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
+</div>
+
+
+
+	<!-- 搜索筛选器 分类 -->
+
+<div class="weui_panel weui_panel_access">
+<!--第一个分类-->
+  <section class="job-module"> 
+  <dl class="retrie"> 
+    <dt>
+      <a id="type" href="javascript:;">分类</a>
+      <a id="goods" href="javascript:;">商品</a>
+      <a id="school" href="javascript:;">学校</a>
+      <a id="price" href="javascript:;">价格</a>
+    </dt> 
+    <dd class="type"> 
+      <ul class="slide downlist"> 
+       <volist name="cat" id="vo">
+        <li><a href="__MODULE__/Goodslist/getCatgory?id={$vo['id']}" class="lick">{$vo['name']}</a></li> 
+        </volist>
+      </ul> 
+    </dd> 
+    <dd class="goods"> 
+      <ul class="slide downlist" id="category">
+      </ul>
+    </dd> 
+    <dd class="school"> 
+      <ul class="slide downlist"> 
+        <li><a href="#">不限</a></li> 
+        <li><a href="#">河北师大</a></li> 
+        
+      </ul> 
+    </dd>
+    <dd class="price"> 
+      <ul class="slide downlist"> 
+        <li><a href="#">不限</a></li> 
+        <li><a href="#">10元一下</a></li> 
+        <li><a href="#">100以上</a></li> 
+      </ul> 
+    </dd>  
+  </dl> 
+</section> 
+
+<!--   <div class="weui_panel_bd">
+  <volist name="goodlist" id="vo">
+    <a href="gooddetail.html" class="weui_media_box weui_media_appmsg">
+      <div class="goodslist">
+        <img class="weui_media_appmsg_thumb" src="__PUBLIC__/images/{$vo.photo}" height="100" width="100" alt="">
+      </div>
+      <div class="weui_media_bd">
+      	<h4 class="weui_media_title">{$vo.name}</h4>
+        <h5 class="price">{$vo.price}</h5>
+        <p class="ifnew">{$vo.degree}成新</p>
+        <p class="weui_media_desc">{$vo.description}</p>
+      </div>
+      <div>
+      		<img src="images/userhead.png" height="50" width="50">
+      		<p class="sellername">{$vo.nickname}</p>
+      		<p class="sellername">{$vo.college}</p>
+      </div>
+    </a> 
+    </volist> -->
+    
+<!--第二个分类-->
+      <div class="weui_panel_hd">{$name}</div>
+  <div class="weui_panel_bd">
+  <volist name="study" id="vo">
+    <a href="gooddetail.html" class="weui_media_box weui_media_appmsg">
+      <div class="goodslist">
+        <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
+      </div>
+      <div class="weui_media_bd">
+      	
+      	<h4 class="weui_media_title">{$vo['goods_name']}</h4>
+        <h5 class="price">{$vo['price']}</h5>
+        <p class="ifnew">{$vo['degree']}</p>
+        <p class="weui_media_desc">{$vo['description']}</p>
+      </div>
+      <div>
+      		<img src="images/userhead.png" height="50" width="50">
+      		<p class="sellername">{$vo['nickname']}</p>
+      		<p class="sellername">软件学院</p>
+      </div>
+    </a> 
+    </volist>
+<!--  <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>-->
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/swiper.js"></script>
+<script>
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 2000
+      });
+
+   
+    </script>
+<script type="text/javascript">
+$(function(){ 
+  $('.retrie dt a').click(function(){
+    var $t=$(this);
+    if($t.hasClass('up')){
+      $(".retrie dt a").removeClass('up');
+      $('.downlist').hide();
+      $('.mask').hide();
+    }else{
+      $(".retrie dt a").removeClass('up');
+      $('.downlist').hide();
+      $t.addClass('up');
+      $('.downlist').eq($(".retrie dt a").index($(this)[0])).show();
+      $('.mask').show();
+    }
+  });
+  $(".type ul li a:contains('"+$('#type').text()+"')").addClass('selected');
+  $(".goods ul li a:contains('"+$('#goods').text()+"')").addClass('selected');
+  $(".school ul li a:contains('"+$('#school').text()+"')").addClass('selected');
+  $(".price ul li a:contains('"+$('#price').text()+"')").addClass('selected');
+});
+  /**
+   获取一级分类的id发给二级分类
+  */
+
+  $(".lick").each(function(){
+    $(this).click(function(){
+       $url = $(this).attr('href');
+       $.get($url,function(data){
+        //将json转成对象
+         var ulinner = $('#category');
+          ulinner.html('');
+        var data = JSON.parse(data);
+         for(var i in data){
+          $("<li name="+"__MODULE__/Goodslist/getGoods?id"+"="+data[i]['id']+"><a href='#'>"+data[i]['category_name']+"</a></li>").appendTo(ulinner);
+         }
+          //根据选择的分类获取内容
+          $('#category a').each(function(){
+              $(this).click(function(){
+            $url = $(this).parent().attr('name');
+             $.get($url,function(data){
+              //将json转为对象
+              var divinner = $('.weui_panel_bd');
+              divinner.html('');
+              var data = JSON.parse(data);
+              //console.log(divinner.html());
+                 for(var i in data){
+                   $('<a href="gooddetail.html" class="weui_media_box weui_media_appmsg"></a>').appendTo(divinner);
+                  $( '<div class="goodslist"></div>').appendTo($(".weui_media_box weui_media_appmsg"));
+                  $('<img class="weui_media_appmsg_thumb" src='+data[i]['photo']+' height="100" width="100" alt="">').appendTo($(".goodslist"));
+                  $('<div class="weui_media_bd"></div>').insertAfter($('.goodslist'));
+                  $('<h4 class="weui_media_title"'+data[i]['goods_name']+'</h4>').appendTo($('.weui_media_bd'));
+                  $('<h5 class="price">'+data[i]['price']+'</h5>').appendTo($('.weui_media_bd'));
+                  $('<p class="ifnew">'+data[i]['degree']+'</p>').appendTo($('.weui_media_bd'));
+                  $('<p class="weui_media_desc">'+data[i]['description']+'</p>').appendTo($('.weui_media_bd'));
+                  $('<div class="users"></div>').insertAfter($('.weui_media_bd'));
+                  $('<img src='+data[i]['photo']+' height="50" width="50">').appendTo($('.users'));
+                  $('<p class="sellername">'+data[i]['nickname']+'</p>').appendTo($('.users'));
+                  $('<p class="sellername">软件学院</p>').appendTo($('.users'));  
+                }
+             });
+          });
+          });
+       });
+       
+       return false;
+    });
+  });
+  
+   
+</script>
+</body>
+</html>

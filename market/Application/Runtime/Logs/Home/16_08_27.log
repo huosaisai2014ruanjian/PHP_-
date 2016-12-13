@@ -1,0 +1,839 @@
+[ 2016-08-27T08:24:48+08:00 ] ::1 /index.php/home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002924s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 185 行.
+
+[ 2016-08-27T08:25:28+08:00 ] ::1 /index.php/home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005111s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000515s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.196463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.196725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029027s ]
+
+[ 2016-08-27T19:52:54+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000635s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000853s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001924s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003270s ]
+
+[ 2016-08-27T20:01:26+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002516s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000525s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000683s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010545s ]
+
+[ 2016-08-27T20:01:41+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006746s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000534s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000713s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009473s ]
+
+[ 2016-08-27T20:02:49+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004142s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000515s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000736s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012161s ]
+
+[ 2016-08-27T20:03:09+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003029s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000597s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000802s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003562s ]
+
+[ 2016-08-27T20:03:19+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002350s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000494s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004762s ]
+
+[ 2016-08-27T20:10:47+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002744s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000708s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000985s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008481s ]
+
+[ 2016-08-27T20:20:23+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003855s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000687s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000922s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.169561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.169790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028036s ]
+
+[ 2016-08-27T20:25:58+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003446s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000487s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000689s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006084s ]
+
+[ 2016-08-27T20:26:21+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004026s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000419s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003538s ]
+
+[ 2016-08-27T20:26:54+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004799s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004496s ]
+
+[ 2016-08-27T20:27:29+08:00 ] ::1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002774s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Home\Controller\IndexController.class.php 第 181 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000732s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025685s ]
+
+[ 2016-08-27T20:48:02+08:00 ] ::1 /index.php/home/Gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002627s ]
+ERR: 1146:Table 'item.gonglueinfo' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `gonglueinfo`
+ERR: 1146:Table 'item.gonglueinfo' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `gonglueinfo`
+
+[ 2016-08-27T20:48:46+08:00 ] ::1 /index.php/home/Gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004135s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'zxxg'
+
+[ 2016-08-27T20:48:59+08:00 ] ::1 /index.php/home/Gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005961s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0607s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0339s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004880s ]
+
+[ 2016-08-27T20:49:49+08:00 ] ::1 /index.php/home/Gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006597s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0362s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0417s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000616s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001872s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007337s ]
+
+[ 2016-08-27T20:50:16+08:00 ] ::1 /index.php/home/Gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002125s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0581s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001672s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002507s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005790s ]
+
+[ 2016-08-27T20:50:52+08:00 ] ::1 /index.php/home/Gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007268s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0446s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0357s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006781s ]
+
+[ 2016-08-27T20:51:12+08:00 ] ::1 /index.php/home/gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003357s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0366s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0337s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000461s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000758s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027020s ]
+
+[ 2016-08-27T20:52:13+08:00 ] ::1 /index.php/home/gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004285s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0384s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0405s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006305s ]
+
+[ 2016-08-27T20:52:24+08:00 ] ::1 /index.php/home/gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005744s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0305s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003574s ]
+
+[ 2016-08-27T20:57:02+08:00 ] ::1 /index.php/home/gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011560s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0442s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0346s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000477s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000843s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008076s ]
+
+[ 2016-08-27T20:59:03+08:00 ] ::1 /index.php/home/gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002484s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000491s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006019s ]
+
+[ 2016-08-27T20:59:06+08:00 ] ::1 /index.php/home/gonglue/gonglue/strategydetails/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003837s ]
+ERR: 非法操作:gonglue
+
+[ 2016-08-27T20:59:16+08:00 ] ::1 /index.php/home/gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009324s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0357s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005333s ]
+
+[ 2016-08-27T20:59:17+08:00 ] ::1 /index.php/home/gonglue/strategydetails/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005931s ]
+ERR: 参数错误或者未定义:id
+
+[ 2016-08-27T20:59:32+08:00 ] ::1 /index.php/home/gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002421s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0493s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000358s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000545s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006956s ]
+
+[ 2016-08-27T20:59:37+08:00 ] ::1 /index.php/home/gonglue/strategydetails/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004819s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0352s ]
+SQL: SELECT * FROM `gonglueinfo` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `gongluetypeid` FROM `gonglueinfo` WHERE ( id=2 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0250s ]
+SQL: SELECT `parentid` FROM `gongluetype` WHERE ( id=21 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `gonglue` [ RunTime:0.0285s ]
+SQL: SELECT `id` FROM `gonglue` WHERE ( id=2 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `gonglue` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000297s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000489s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003844s ]
+
+[ 2016-08-27T20:59:48+08:00 ] ::1 /index.php/home/gonglue/strategydetails/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007008s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0816s ]
+SQL: SELECT * FROM `gonglueinfo` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `gongluetypeid` FROM `gonglueinfo` WHERE ( id=2 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0285s ]
+SQL: SELECT `parentid` FROM `gongluetype` WHERE ( id=21 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `gonglue` [ RunTime:0.0305s ]
+SQL: SELECT `id` FROM `gonglue` WHERE ( id=2 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `gonglue` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000588s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013935s ]
+
+[ 2016-08-27T20:59:59+08:00 ] ::1 /index.php/home/gonglue/strategydetails/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002621s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0377s ]
+SQL: SELECT * FROM `gonglueinfo` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `gongluetypeid` FROM `gonglueinfo` WHERE ( id=5 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0386s ]
+SQL: SELECT `parentid` FROM `gongluetype` WHERE ( id=18 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `gonglue` [ RunTime:0.0246s ]
+SQL: SELECT `id` FROM `gonglue` WHERE ( id=1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `gonglue` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002693s ]
+
+[ 2016-08-27T21:01:23+08:00 ] ::1 /index.php/home/gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003280s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0326s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000520s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001666s ]
+
+[ 2016-08-27T21:02:03+08:00 ] ::1 /index.php/home/gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007006s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002296s ]
+
+[ 2016-08-27T21:02:12+08:00 ] ::1 /index.php/home/gonglue/strategydetails/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006964s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0352s ]
+SQL: SELECT * FROM `gonglueinfo` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `gongluetypeid` FROM `gonglueinfo` WHERE ( id=2 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0293s ]
+SQL: SELECT `parentid` FROM `gongluetype` WHERE ( id=21 )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `gonglue` [ RunTime:0.0308s ]
+SQL: SELECT `id` FROM `gonglue` WHERE ( id=2 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `gonglue` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015425s ]
+
+[ 2016-08-27T21:03:07+08:00 ] ::1 /index.php/home/gonglue/strategydetails/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007924s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0303s ]
+SQL: SELECT * FROM `gonglueinfo` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `gongluetypeid` FROM `gonglueinfo` WHERE ( id=2 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0279s ]
+SQL: SELECT `parentid` FROM `gongluetype` WHERE ( id=21 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `gonglue` [ RunTime:0.0250s ]
+SQL: SELECT `id` FROM `gonglue` WHERE ( id=2 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `gonglue` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003185s ]
+
+[ 2016-08-27T21:03:40+08:00 ] ::1 /index.php/home/gonglue/strategydetails/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002476s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0349s ]
+SQL: SELECT * FROM `gonglueinfo` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `gongluetypeid` FROM `gonglueinfo` WHERE ( id=2 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0250s ]
+SQL: SELECT `parentid` FROM `gongluetype` WHERE ( id=21 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `gonglue` [ RunTime:0.0253s ]
+SQL: SELECT `id` FROM `gonglue` WHERE ( id=2 )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `gonglue` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001606s ]
+
+[ 2016-08-27T21:04:13+08:00 ] ::1 /index.php/home/gonglue/strategylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003751s ]
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `gonglueinfo`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0309s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000536s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003408s ]
+

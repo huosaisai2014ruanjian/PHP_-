@@ -1,0 +1,28 @@
+[ 2016-08-14T14:53:39+08:00 ] ::1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0002s ]
+ERR: 1146:Table 'item.type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `type`
+ERR: 1146:Table 'item.type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `type`
+
+[ 2016-08-14T18:52:47+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001802s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0004s ]
+ERR: 1146:Table 'item.type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `type`
+ERR: 1146:Table 'item.type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `type`
+

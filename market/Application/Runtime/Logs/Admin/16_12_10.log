@@ -1,0 +1,268 @@
+[ 2016-12-10T15:17:01+08:00 ] ::1 /marketsai/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.063003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.101006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.101006s ]
+SQL: SHOW COLUMNS FROM `market_node` [ RunTime:0.1440s ]
+SQL: SELECT `id` FROM `market_node` LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0810s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 74 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 86 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php on line 186 and defined F:\CMS1\wamp\www\marketsai\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content F:\CMS1\wamp\www\marketsai\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory F:\CMS1\wamp\www\marketsai\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.052003s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.053003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.329019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.329019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.034002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-10T15:17:23+08:00 ] ::1 /marketsai/index.php/Admin/Service/getAccount/index/?_=1481354243458
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+
+[ 2016-12-10T15:17:50+08:00 ] ::1 /marketsai/index.php/Admin/Service/getAccount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-10T15:25:45+08:00 ] ::1 /marketsai/index.php/Admin/Service/getAccount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getserAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 58 行.
+NOTIC: [2] file_get_contents(serviceAccess_token.php): failed to open stream: No such file or directory F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 261 行.
+NOTIC: [8] Trying to get property of non-object F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 263 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=wx70d0f4e9a9dba3ea
+&amp;secret=a2a2489a996c00465d69c0623ec7a5a3 
+): failed to open stream: HTTP request failed! _ 200 OK
+ F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 265 行.
+NOTIC: [2] Creating default object from empty value F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 267 行.
+NOTIC: [8] Undefined property: stdClass::$access_token F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 270 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccount() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 60 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 482 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-10T15:26:03+08:00 ] ::1 /marketsai/index.php/Admin/Service/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getserAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 10 行.
+NOTIC: [8] Undefined property: stdClass::$access_token F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 270 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::account() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 16 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-12-10T15:27:03+08:00 ] ::1 /marketsai/index.php/Admin/Service/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getserAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 10 行.
+NOTIC: [8] Undefined property: stdClass::$access_token F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 270 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::account() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 17 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-10T15:30:47+08:00 ] ::1 /marketsai/index.php/Admin/Service/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getserAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 10 行.
+NOTIC: [2] file_get_contents(serviceAccess_token.php): failed to open stream: No such file or directory F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 261 行.
+NOTIC: [8] Trying to get property of non-object F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 263 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=wx70d0f4e9a9dba3ea
+&amp;secret=a2a2489a996c00465d69c0623ec7a5a3 
+): failed to open stream: HTTP request failed! _ 200 OK
+ F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 265 行.
+NOTIC: [2] Creating default object from empty value F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 267 行.
+NOTIC: [8] Undefined property: stdClass::$access_token F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 270 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::account() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 17 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 447 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-10T15:35:58+08:00 ] ::1 /marketsai/index.php/Admin/Service/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getserAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 10 行.
+NOTIC: [2] file_get_contents(serviceAccess_token.php): failed to open stream: No such file or directory F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 259 行.
+NOTIC: [8] Trying to get property of non-object F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 261 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::account() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 17 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 445 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-10T15:36:27+08:00 ] ::1 /marketsai/index.php/Admin/Service/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getserAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 10 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::account() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 17 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 445 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-10T15:39:28+08:00 ] ::1 /marketsai/index.php/Admin/Service/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getserAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 10 行.
+NOTIC: [2] file_get_contents(serviceAccess_token.php): failed to open stream: No such file or directory F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 259 行.
+NOTIC: [8] Trying to get property of non-object F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 261 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::account() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 17 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 445 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-10T15:40:27+08:00 ] ::1 /marketsai/index.php/Admin/Service/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: access_token F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 11 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::account() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 17 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 445 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-10T15:59:17+08:00 ] ::1 /marketsai/index.php/Admin/Service/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: access_token F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 11 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::account() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 17 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 445 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-10T16:15:16+08:00 ] ::1 /marketsai/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `market_node` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `market_node` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 31 行.
+NOTIC: [8] Undefined index:  F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 74 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `market_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php 第 86 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\IndexController.class.php on line 186 and defined F:\CMS1\wamp\www\marketsai\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content F:\CMS1\wamp\www\marketsai\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory F:\CMS1\wamp\www\marketsai\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-10T16:15:19+08:00 ] ::1 /marketsai/index.php/Admin/Service/getAccount/index/?_=1481357719557
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getserAccessToken() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 59 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccount() should not be called statically, assuming $this from incompatible context F:\CMS1\wamp\www\marketsai\Application\Admin\Controller\ServiceController.class.php 第 61 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given F:\CMS1\wamp\www\marketsai\Application\Common\Library\Wechat.class.php 第 480 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+

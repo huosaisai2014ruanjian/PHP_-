@@ -1,0 +1,1511 @@
+[ 2016-09-03T00:38:37+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002551s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0267s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 61 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 73 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 85 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 97 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 109 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 121 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 133 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 145 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 159 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000598s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000925s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.232392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.232555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009094s ]
+
+[ 2016-09-03T00:40:23+08:00 ] ::1 /index.php/Admin/Fytag/index/index/?_=1472834423349
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003982s ]
+SQL: SHOW COLUMNS FROM `fytagparent` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `fytagparent`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `fytagsonnode` [ RunTime:0.0349s ]
+SQL: SELECT * FROM `fytagsonnode` WHERE ( tabid='' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000373s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000585s ]
+NOTIC: [8] Undefined index: _order D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\0617718e1282d5a6b88d26262b976722.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\0617718e1282d5a6b88d26262b976722.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006978s ]
+
+[ 2016-09-03T00:42:49+08:00 ] ::1 /index.php/Admin/Rstag/index/index/?_=1472834568772
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003857s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0587s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tag` WHERE ( sort='热门搜索标签' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tag` WHERE ( sort='热门搜索标签' ) LIMIT 0,20   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002740s ]
+
+[ 2016-09-03T00:48:38+08:00 ] ::1 /index.php/Admin/Gltag/index/index/?_=1472834917740
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003829s ]
+SQL: SHOW COLUMNS FROM `tag1` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `tag1`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tag2` [ RunTime:0.0727s ]
+SQL: SELECT * FROM `tag2` WHERE ( tabid='' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Undefined index: _order D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\3b0416e5892ce0615b19c9f831d39a4d.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\3b0416e5892ce0615b19c9f831d39a4d.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004196s ]
+
+[ 2016-09-03T00:48:47+08:00 ] ::1 /index.php/Admin/Rstag/index/index/?_=1472834927632
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004361s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0316s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tag` WHERE ( sort='热门搜索标签' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tag` WHERE ( sort='热门搜索标签' ) LIMIT 0,20   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002362s ]
+
+[ 2016-09-03T00:49:07+08:00 ] ::1 /index.php/Admin/Gltag/index/index/?_=1472834947053
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+SQL: SHOW COLUMNS FROM `tag1` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `tag1`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tag2` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `tag2` WHERE ( tabid='' )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined index: _order D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\3b0416e5892ce0615b19c9f831d39a4d.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\3b0416e5892ce0615b19c9f831d39a4d.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002316s ]
+
+[ 2016-09-03T00:49:09+08:00 ] ::1 /index.php/Admin/Fytag/index/index/?_=1472834949740
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002179s ]
+SQL: SHOW COLUMNS FROM `fytagparent` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `fytagparent`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `fytagsonnode` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `fytagsonnode` WHERE ( tabid='' )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Undefined index: _order D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\0617718e1282d5a6b88d26262b976722.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\0617718e1282d5a6b88d26262b976722.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001635s ]
+
+[ 2016-09-03T00:49:10+08:00 ] ::1 /index.php/Admin/Rstag/index/index/?_=1472834950116
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tag` WHERE ( sort='热门搜索标签' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tag` WHERE ( sort='热门搜索标签' ) LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001803s ]
+
+[ 2016-09-03T00:49:23+08:00 ] ::1 /index.php/Admin/Gltag/index/index/?_=1472834963722
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+SQL: SHOW COLUMNS FROM `tag1` [ RunTime:0.0739s ]
+SQL: SELECT * FROM `tag1`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tag2` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `tag2` WHERE ( tabid='' )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined index: _order D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\3b0416e5892ce0615b19c9f831d39a4d.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\3b0416e5892ce0615b19c9f831d39a4d.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001852s ]
+
+[ 2016-09-03T11:10:11+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004987s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0324s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 61 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 73 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 85 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 97 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 109 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 121 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 133 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 145 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 159 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000589s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.222013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.222242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011083s ]
+
+[ 2016-09-03T11:13:09+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003085s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0304s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 61 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 73 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 85 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 97 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 109 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 121 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 133 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 145 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 159 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000612s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000943s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.266566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.266774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003844s ]
+
+[ 2016-09-03T11:22:23+08:00 ] ::1 /index.php/Admin/Yhgl/index/index/?_=1472872942566
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004115s ]
+SQL: SHOW COLUMNS FROM `yhuser` [ RunTime:0.0569s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yhuser` WHERE ( fenghao=0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yhuser` WHERE ( fenghao=0 ) LIMIT 0,20   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000477s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005896s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003876s ]
+
+[ 2016-09-03T11:22:25+08:00 ] ::1 /index.php/Admin/Gonglue/index/?_=1472872945309
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002565s ]
+SQL: SHOW COLUMNS FROM `gongluetype` [ RunTime:0.0367s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gongluetype` WHERE ( parentid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gongluetype` WHERE ( parentid=2 ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: count D:\install\Apache\htdocs\Application\Admin\Controller\GonglueController.class.php 第 22 行.
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=2 ) LIMIT 0,20   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `gongluetype` WHERE ( parentid=1 ) LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000480s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003851s ]
+
+[ 2016-09-03T11:22:26+08:00 ] ::1 /index.php/Admin/GonglueInfo/index/?_=1472872946392
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002614s ]
+NOTIC: [2048] Declaration of Admin\Controller\GonglueInfoController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Admin\Controller\GonglueInfoController.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `gonglueinfo` [ RunTime:0.0326s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gonglueinfo` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `gonglueinfo` LIMIT 0,5   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002432s ]
+
+[ 2016-09-03T11:22:31+08:00 ] ::1 /index.php/Admin/Information/zxindex/index/?_=1472872951202
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002926s ]
+NOTIC: [2048] Declaration of Admin\Controller\InformationController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\install\Apache\htdocs\Application\Admin\Controller\InformationController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `information` [ RunTime:0.0299s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `information` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `information` LIMIT 0,1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002421s ]
+
+[ 2016-09-03T11:22:35+08:00 ] ::1 /index.php/Admin/Wdfl/index/index/?_=1472872955043
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003703s ]
+SQL: SHOW COLUMNS FROM `tab1` [ RunTime:0.0289s ]
+SQL: SELECT * FROM `tab1`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tab2` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `tab2` WHERE ( tab1id='' )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: _order D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\e69b9893843d099f7dd8ab98cb822284.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\e69b9893843d099f7dd8ab98cb822284.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2016-09-03T11:22:36+08:00 ] ::1 /index.php/Admin/Wdxt/wdxt/index/?_=1472872956202
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002680s ]
+SQL: SHOW COLUMNS FROM `tab1` [ RunTime:0.0346s ]
+SQL: SELECT * FROM `tab1`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `question` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `question` LIMIT 0,2   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001877s ]
+
+[ 2016-09-03T11:22:37+08:00 ] ::1 /index.php/Admin/Wdxt/addquestion?_=1472872957483
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009573s ]
+SQL: SHOW COLUMNS FROM `tab1` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `tab1`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004171s ]
+
+[ 2016-09-03T11:22:48+08:00 ] ::1 /index.php/Admin/Wdxt/addquestion2?pid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+SQL: SHOW COLUMNS FROM `tab2` [ RunTime:0.0271s ]
+SQL: SELECT * FROM `tab2` WHERE ( tab1id='1' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001755s ]
+
+[ 2016-09-03T11:23:02+08:00 ] ::1 /index.php/Admin/Wdxt/addquestion?_=1472872981724
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002905s ]
+SQL: SHOW COLUMNS FROM `tab1` [ RunTime:0.0533s ]
+SQL: SELECT * FROM `tab1`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003157s ]
+
+[ 2016-09-03T11:23:08+08:00 ] ::1 /index.php/Admin/Wdxt/answerquestion?id=2&_=1472872988582
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011271s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0406s ]
+SQL: SELECT * FROM `question` WHERE ( id=2 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002537s ]
+
+[ 2016-09-03T11:23:43+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013853s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0453s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0352s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 61 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 73 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 85 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 97 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 109 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 121 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 133 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 145 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 159 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.222828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.223027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009015s ]
+
+[ 2016-09-03T11:23:51+08:00 ] ::1 /index.php/Admin/LpType/index?type=xzl&action=sylp&_=1472873031229
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002873s ]
+
+[ 2016-09-03T11:23:51+08:00 ] ::1 /index.php/Admin/LpType/sylp/type/xzl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000684s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000849s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002633s ]
+
+[ 2016-09-03T11:23:53+08:00 ] ::1 /index.php/Admin/LpType/index?type=xzl&action=wfylp&_=1472873033093
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002391s ]
+
+[ 2016-09-03T11:23:53+08:00 ] ::1 /index.php/Admin/LpType/wfylp/type/xzl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002317s ]
+
+[ 2016-09-03T11:23:56+08:00 ] ::1 /index.php/Admin/LpType/index?type=xzl&action=ssbqgl&_=1472873035999
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001682s ]
+
+[ 2016-09-03T11:23:56+08:00 ] ::1 /index.php/Admin/LpType/ssbqgl/type/xzl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001656s ]
+SQL: SHOW COLUMNS FROM `fytag` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `fytag` WHERE ( type='xzl' )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002183s ]
+
+[ 2016-09-03T11:23:58+08:00 ] ::1 /index.php/Admin/LpType/addTag?type=xzl&_=1472873037827
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004285s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001511s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006101s ]
+
+[ 2016-09-03T11:25:04+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003895s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0359s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0307s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 61 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 73 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 85 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 97 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 109 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 121 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 133 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 145 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 159 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000498s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.218476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.218702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005149s ]
+
+[ 2016-09-03T11:25:08+08:00 ] ::1 /index.php/Admin/Lpgl/index/index/?_=1472873108369
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003184s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined variable: numPerPage D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 5 行.
+NOTIC: [8] Undefined variable: zinf D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 39 行.
+NOTIC: [8] Undefined variable: totalCount D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 64 行.
+NOTIC: [8] Undefined variable: totalCount D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 66 行.
+NOTIC: [8] Undefined variable: numPerPage D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 66 行.
+NOTIC: [8] Undefined variable: currentPage D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002031s ]
+
+[ 2016-09-03T11:25:10+08:00 ] ::1 /index.php/Admin/Lpgl/addLp?_=1472873109951
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008146s ]
+SQL: SHOW COLUMNS FROM `area` [ RunTime:0.0311s ]
+SQL: SELECT * FROM `area` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0246s ]
+SQL: SELECT * FROM `city` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.0297s ]
+SQL: SELECT * FROM `province`  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `city` WHERE ( provinceid='1' )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `area` WHERE ( cityid='' )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000645s ]
+NOTIC: [8] Undefined variable: s D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\087de8d436bafe0e19c958947e6dc9f8.php 第 503 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004784s ]
+
+[ 2016-09-03T11:25:34+08:00 ] ::1 /index.php/Admin/Lpgl/index/index/?_=1472873133994
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002789s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: numPerPage D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 5 行.
+NOTIC: [8] Undefined variable: zinf D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 39 行.
+NOTIC: [8] Undefined variable: totalCount D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 64 行.
+NOTIC: [8] Undefined variable: totalCount D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 66 行.
+NOTIC: [8] Undefined variable: numPerPage D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 66 行.
+NOTIC: [8] Undefined variable: currentPage D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\11da7bedbf7733bf0cfaa3191420ea66.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002976s ]
+
+[ 2016-09-03T11:25:36+08:00 ] ::1 /index.php/Admin/Fytag/index/index/?_=1472873136261
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002932s ]
+SQL: SHOW COLUMNS FROM `fytagparent` [ RunTime:0.0842s ]
+SQL: SELECT * FROM `fytagparent`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `fytagsonnode` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `fytagsonnode` WHERE ( tabid='' )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined index: _order D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\0617718e1282d5a6b88d26262b976722.php 第 3 行.
+NOTIC: [8] Undefined index: _sort D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\0617718e1282d5a6b88d26262b976722.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2016-09-03T11:25:46+08:00 ] ::1 /index.php/Admin/Tel/index/?_=1472873146750
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001870s ]
+SQL: SHOW COLUMNS FROM `yhuser` [ RunTime:0.0286s ]
+SQL: SELECT * FROM `yhuser` inner join tel1 on yhuser.id = tel1.userid   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined variable: page D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\7eb4915afe3c989654986668aa4fc023.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002335s ]
+
+[ 2016-09-03T11:28:28+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003864s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0557s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0335s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 43 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 52 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 74 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 98 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 110 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 134 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 146 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 18 ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 158 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 174 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000408s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.229403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.229640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007234s ]
+
+[ 2016-09-03T11:28:47+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003224s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0233s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 43 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 52 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 74 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 98 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 110 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 134 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 146 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 18 ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 158 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 174 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000388s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000543s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.183314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.183470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004498s ]
+
+[ 2016-09-03T11:28:53+08:00 ] ::1 /index.php/Admin/Tel/index/?_=1472873333181
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000162s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002796s ]
+SQL: SHOW COLUMNS FROM `yhuser` [ RunTime:0.0349s ]
+SQL: SELECT * FROM `yhuser` inner join tel1 on yhuser.id = tel1.userid   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Undefined variable: page D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\7eb4915afe3c989654986668aa4fc023.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001716s ]
+
+[ 2016-09-03T11:28:57+08:00 ] ::1 /index.php/Admin/Tel/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+SQL: SHOW COLUMNS FROM `yhuser` [ RunTime:0.0311s ]
+SQL: SELECT * FROM `yhuser` inner join tel1 on yhuser.id = tel1.userid   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Undefined variable: page D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\7eb4915afe3c989654986668aa4fc023.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002384s ]
+
+[ 2016-09-03T11:29:03+08:00 ] ::1 /index.php/Admin/Tel/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
+SQL: SHOW COLUMNS FROM `yhuser` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `yhuser` inner join tel1 on yhuser.id = tel1.userid   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined variable: page D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\7eb4915afe3c989654986668aa4fc023.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002814s ]
+
+[ 2016-09-03T11:29:07+08:00 ] ::1 /index.php/Admin/Tel/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001849s ]
+SQL: SHOW COLUMNS FROM `yhuser` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `yhuser` inner join tel1 on yhuser.id = tel1.userid   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: page D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\7eb4915afe3c989654986668aa4fc023.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001730s ]
+
+[ 2016-09-03T11:29:13+08:00 ] ::1 /index.php/Admin/Tel/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001529s ]
+SQL: SHOW COLUMNS FROM `yhuser` [ RunTime:0.0276s ]
+SQL: SELECT * FROM `yhuser` inner join tel1 on yhuser.id = tel1.userid   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: page D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\7eb4915afe3c989654986668aa4fc023.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001613s ]
+
+[ 2016-09-03T11:29:58+08:00 ] ::1 /index.php/Admin/Tel/index/?_=1472873398110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002653s ]
+SQL: SHOW COLUMNS FROM `yhuser` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `yhuser` inner join tel1 on yhuser.id = tel1.userid   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Undefined variable: page D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\7eb4915afe3c989654986668aa4fc023.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002557s ]
+
+[ 2016-09-03T11:30:02+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0268s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0252s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 43 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 52 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 74 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 98 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 110 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 134 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 146 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 18 ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 158 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 174 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000403s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000549s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.179799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.180129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003144s ]
+
+[ 2016-09-03T11:30:07+08:00 ] ::1 /index.php/Admin/Bid/bid/index/?_=1472873407381
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003150s ]
+SQL: SHOW COLUMNS FROM `toubiao` [ RunTime:0.0359s ]
+SQL: SELECT * FROM `toubiao`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002439s ]
+
+[ 2016-09-03T11:30:18+08:00 ] ::1 /index.php/Admin/Bid/add?_=1472873418091
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001901s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002440s ]
+
+[ 2016-09-03T11:30:21+08:00 ] ::1 /index.php/Admin/Bid/xg/id/43?_=1472873421674
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `toubiao` [ RunTime:0.0357s ]
+SQL: SELECT * FROM `toubiao` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000276s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000481s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003403s ]
+
+[ 2016-09-03T11:30:34+08:00 ] ::1 /index.php/Admin/Commission/commission/index/?_=1472873433676
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005132s ]
+SQL: SHOW COLUMNS FROM `commission` [ RunTime:0.0351s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='写字楼' )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='独栋' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='众创空间' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='厂房' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='商铺' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='土地' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `commission_reason` [ RunTime:0.0337s ]
+SQL: SELECT DISTINCT  `commission_id` FROM `commission_reason`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000915s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001236s ]
+NOTIC: [8] Undefined index: reject D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\8158f05bcaaafb786b2e2a502ce56691.php 第 68 行.
+NOTIC: [8] Undefined index: reject D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\8158f05bcaaafb786b2e2a502ce56691.php 第 95 行.
+NOTIC: [8] Undefined index: reject D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\8158f05bcaaafb786b2e2a502ce56691.php 第 122 行.
+NOTIC: [8] Undefined index: reject D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\8158f05bcaaafb786b2e2a502ce56691.php 第 149 行.
+NOTIC: [8] Undefined index: reject D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\8158f05bcaaafb786b2e2a502ce56691.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002423s ]
+
+[ 2016-09-03T11:32:48+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003689s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0357s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0309s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 45 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 54 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 76 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 88 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 100 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 112 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 124 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 136 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 148 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 18 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 160 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 19 ORDER BY sort asc  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 172 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 20 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 184 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 200 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000516s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000681s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.265490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.265855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007154s ]
+
+[ 2016-09-03T11:34:16+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005295s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0347s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0303s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 45 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 54 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 76 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 88 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 100 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 112 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 124 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 136 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 148 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 18 ORDER BY sort asc  [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 160 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 19 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 172 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 20 ORDER BY sort asc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 184 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 200 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000418s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000621s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.263388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.263544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001933s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003768s ]
+
+[ 2016-09-03T11:35:07+08:00 ] ::1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005601s ]
+SQL: SHOW COLUMNS FROM `associated_label2` [ RunTime:0.0567s ]
+SQL: SELECT * FROM `associated_label2` ORDER BY first_label  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0368s ]
+SQL: SELECT `id` FROM `node` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND ( group_id < 10 ) ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 45 行.
+NOTIC: [8] Undefined index:  D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 54 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 10 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 11 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 76 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 12 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 88 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 13 ORDER BY sort asc  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 100 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 14 ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 112 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 15 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 124 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 16 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 136 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 17 ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 148 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 18 ORDER BY sort asc  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 160 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 19 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 172 行.
+SQL: SELECT `id`,`name`,`group_id`,`title` FROM `node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 AND `group_id` = 20 ORDER BY sort asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php 第 184 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\install\Apache\htdocs\Application\Admin\Controller\IndexController.class.php on line 200 and defined D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\install\Apache\htdocs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002399s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002808s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.372915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.373132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003731s ]
+
+[ 2016-09-03T11:35:12+08:00 ] ::1 /index.php/Admin/Commission/commission/index/?_=1472873712131
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+SQL: SHOW COLUMNS FROM `commission` [ RunTime:0.0344s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='写字楼' )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='独栋' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='众创空间' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='厂房' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='商铺' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `commission` WHERE ( demand='土地' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `commission_reason` [ RunTime:0.0247s ]
+SQL: SELECT DISTINCT  `commission_id` FROM `commission_reason`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000401s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000531s ]
+NOTIC: [8] Undefined index: reject D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\8158f05bcaaafb786b2e2a502ce56691.php 第 68 行.
+NOTIC: [8] Undefined index: reject D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\8158f05bcaaafb786b2e2a502ce56691.php 第 95 行.
+NOTIC: [8] Undefined index: reject D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\8158f05bcaaafb786b2e2a502ce56691.php 第 122 行.
+NOTIC: [8] Undefined index: reject D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\8158f05bcaaafb786b2e2a502ce56691.php 第 149 行.
+NOTIC: [8] Undefined index: reject D:\install\Apache\htdocs\Application\Runtime\Cache\Admin\8158f05bcaaafb786b2e2a502ce56691.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002153s ]
+
+[ 2016-09-03T11:35:19+08:00 ] ::1 /index.php/Admin/LpType/index?type=xzl&action=wfylp&_=1472873719259
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006177s ]
+
+[ 2016-09-03T11:35:19+08:00 ] ::1 /index.php/Admin/LpType/wfylp/type/xzl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001926s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001778s ]
+
+[ 2016-09-03T11:35:20+08:00 ] ::1 /index.php/Admin/LpType/index?type=xzl&action=ssbqgl&_=1472873720596
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+
+[ 2016-09-03T11:35:20+08:00 ] ::1 /index.php/Admin/LpType/ssbqgl/type/xzl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001631s ]
+SQL: SHOW COLUMNS FROM `fytag` [ RunTime:0.0315s ]
+SQL: SELECT * FROM `fytag` WHERE ( type='xzl' )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002012s ]
+

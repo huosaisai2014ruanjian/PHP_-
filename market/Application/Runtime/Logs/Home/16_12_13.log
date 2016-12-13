@@ -1,0 +1,1125 @@
+[ 2016-12-13T14:12:36+08:00 ] ::1 /marketsai/index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-12-13T14:17:34+08:00 ] ::1 /marketsai/index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-12-13T14:19:10+08:00 ] ::1 /marketsai/index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'market_goods.name' in 'field list'
+ [ SQL语句 ] : SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4  
+ERR: 1054:Unknown column 'market_goods.name' in 'field list'
+ [ SQL语句 ] : SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4  
+
+[ 2016-12-13T14:20:14+08:00 ] ::1 /marketsai/index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0510s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: Carousel F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T14:21:04+08:00 ] ::1 /marketsai/index.php/Home/Goodslist/goodslist?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `market_goods` INNER JOIN market_category on market_goods.category_id = market_category.id INNER JOIN market_cat on market_category.cat_id = market_cat.id INNER JOIN market_users on market_goods.seller_id=market_users.id  WHERE ( market_cat.id=1 )  [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 F:\CMS1\wamp\www\marketsai\Application\Home\Controller\GoodslistController.class.php 第 30 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: goodlist F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\961bc35e09ef43b26948d521b77c2431.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T14:21:58+08:00 ] ::1 /marketsai/index.php/Home/Goodslist/goodslist?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `market_goods` INNER JOIN market_category on market_goods.category_id = market_category.id INNER JOIN market_cat on market_category.cat_id = market_cat.id INNER JOIN market_users on market_goods.seller_id=market_users.id  WHERE ( market_cat.id=1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 F:\CMS1\wamp\www\marketsai\Application\Home\Controller\GoodslistController.class.php 第 30 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: goodlist F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\961bc35e09ef43b26948d521b77c2431.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T14:33:52+08:00 ] ::1 /marketsai/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0030s ]
+ERR: 1146:Table 'market.market_active' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_active`
+ERR: 1146:Table 'market.market_active' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_active`
+
+[ 2016-12-13T14:40:20+08:00 ] ::1 /marketsai/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0080s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T14:46:03+08:00 ] ::1 /marketsai/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0040s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-13T14:47:49+08:00 ] ::1 /marketsai/index.php/Home/Goodslist/goodslist?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=1 ) ORDER BY time desc  [ RunTime:0.0300s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: result1 F:\CMS1\wamp\www\marketsai\Application\Home\Controller\GoodslistController.class.php 第 44 行.
+NOTIC: [8] Undefined variable: result1 F:\CMS1\wamp\www\marketsai\Application\Home\Controller\GoodslistController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: vo F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\961bc35e09ef43b26948d521b77c2431.php 第 68 行.
+NOTIC: [8] Undefined variable: vo F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\961bc35e09ef43b26948d521b77c2431.php 第 69 行.
+NOTIC: [8] Undefined variable: vo F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\961bc35e09ef43b26948d521b77c2431.php 第 70 行.
+NOTIC: [8] Undefined variable: vo F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\961bc35e09ef43b26948d521b77c2431.php 第 71 行.
+NOTIC: [8] Undefined variable: vo F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\961bc35e09ef43b26948d521b77c2431.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T14:49:34+08:00 ] ::1 /marketsai/index.php/home/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `market_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `market_users`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `market_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_category`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 94 行.
+NOTIC: [8] Undefined index: name F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 94 行.
+NOTIC: [8] Undefined index: name F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 94 行.
+NOTIC: [8] Undefined index: name F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 94 行.
+NOTIC: [8] Undefined index: name F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 94 行.
+NOTIC: [8] Undefined index: name F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 94 行.
+NOTIC: [8] Undefined index: name F:\CMS1\wamp\www\marketsai\Application\Runtime\Cache\Home\63839bc489ada1b251c78e0251f28b7d.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T15:46:22+08:00 ] ::1 /demo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0010s ]
+ERR: 1146:Table 'market.market_active' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_active`
+ERR: 1146:Table 'market.market_active' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_active`
+
+[ 2016-12-13T15:55:38+08:00 ] ::1 /demo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0010s ]
+ERR: 1146:Table 'market.market_active' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_active`
+ERR: 1146:Table 'market.market_active' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_active`
+
+[ 2016-12-13T15:55:40+08:00 ] ::1 /demo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0010s ]
+ERR: 1146:Table 'market.market_active' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_active`
+ERR: 1146:Table 'market.market_active' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_active`
+
+[ 2016-12-13T16:09:23+08:00 ] ::1 /demo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0580s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:11:32+08:00 ] ::1 /demo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:12:10+08:00 ] ::1 /demo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:18:00+08:00 ] ::1 /demo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\softwares\wamp\www\demo\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:48:13+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER D:\softwares\wamp\www\demo\ThinkPHP\Library\Think\Controller.class.php 第 283 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:48:14+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:48:15+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:48:16+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:48:18+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T16:48:19+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:48:20+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:48:21+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T16:48:22+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-13T16:48:23+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-13T16:48:24+08:00 ] ::1 /demo/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-13T17:10:57+08:00 ] ::1 /market/index.php//Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2016-12-13T17:11:07+08:00 ] ::1 /market/index.php//Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-12-13T17:11:07+08:00 ] ::1 /market/index.php//Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-12-13T17:11:07+08:00 ] ::1 /market/index.php//Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2016-12-13T17:11:15+08:00 ] ::1 /market/index.php//Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2016-12-13T17:11:18+08:00 ] ::1 /market/index.php//Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-12-13T17:11:27+08:00 ] ::1 /market/index.php//Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-12-13T17:11:30+08:00 ] ::1 /market/index.php/Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2016-12-13T17:13:49+08:00 ] ::1 /market/index.php/Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2016-12-13T17:14:59+08:00 ] ::1 /market/index.php/Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-12-13T17:14:59+08:00 ] ::1 /market/index.php/Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2016-12-13T17:14:59+08:00 ] ::1 /market/index.php/Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-12-13T17:16:21+08:00 ] ::1 /market/index.php//Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-12-13T17:16:29+08:00 ] ::1 /market/index.php/home/login/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+ERR: 1146:Table 'market.market_market_think_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_market_think_user`
+ERR: 1146:Table 'market.market_market_think_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_market_think_user`
+
+[ 2016-12-13T17:18:21+08:00 ] ::1 /market/index.php/home/login/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `market_think_user` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `market_think_user` WHERE `name` = 'admin' AND `passwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001439s ]
+
+[ 2016-12-13T17:20:26+08:00 ] ::1 /market/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2016-12-13T17:20:31+08:00 ] ::1 /market/index.php//Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2016-12-13T17:20:44+08:00 ] ::1 /market/index.php/home/login/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `market_think_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `market_think_user` WHERE `name` = 'admin' AND `passwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2016-12-13T17:20:50+08:00 ] ::1 /market/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2016-12-13T17:20:54+08:00 ] ::1 /market/index.php//Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-12-13T17:23:55+08:00 ] ::1 /market/index.php//Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0015s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0006s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0006s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0006s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0006s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: imgurl D:\WWW\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\WWW\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\WWW\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\WWW\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\WWW\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined index: imgurl D:\WWW\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2016-12-13T17:30:59+08:00 ] ::1 /github/PHP_-/market/index.php/home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
