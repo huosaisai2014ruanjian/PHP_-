@@ -25,7 +25,7 @@ class LoginController extends Controller {
             // 在session中写入当前角色的权限列表
             //Rbac::saveAccessList($authInfo['id']);
             // 登录成功后的跳转
-            $this->success('登录成功！', '/market/index.php/admin/');
+            $this->success('登录成功！', '../../admin/');
         } else {
             $this->error('用户名或密码错误，请重新登录！');
         }
@@ -34,7 +34,7 @@ class LoginController extends Controller {
     public function logout() {
         $result = session(C('USER_AUTH_KEY'),null);
         if(!$result) {
-            $this->success('注销成功！');
+            $this->success('注销成功！','./');
         }
     }
 

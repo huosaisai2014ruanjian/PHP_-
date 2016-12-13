@@ -9,16 +9,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 		<!-- bootstrap & fontawesome -->
-		<link rel="stylesheet" href="/market/Public/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/PHP_-/market/Public/css/bootstrap.min.css" />
 		
 
 		<!-- ace styles -->
-		<link rel="stylesheet" href="/market/Public/css/ace.min.css" />
+		<link rel="stylesheet" href="/PHP_-/market/Public/css/ace.min.css" />
 
 		<!--[if lte IE 9]>
 			<link rel="stylesheet" href="assets/css/ace-part2.min.css" />
 		<![endif]-->
-		<link rel="stylesheet" href="/market/Public/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="/PHP_-/market/Public/css/ace-rtl.min.css" />
 
 		<!--[if lte IE 9]>
 		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
@@ -60,7 +60,7 @@
 
 											<div class="space-6"></div>
 
-											<form id="form1" action="/market/index.php/home/login/doLogin" method="post">
+											<form id="form1" action="/PHP_-/market/index.php/home/login/doLogin" method="post">
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
@@ -126,7 +126,7 @@
 		<!-- basic scripts -->
 
 		<!--[if !IE]> -->
-		<script src="/market/Public/js/jquery.2.1.1.min.js"></script>
+		<script src="/PHP_-/market/Public/js/jquery.2.1.1.min.js"></script>
         <script type="text/javascript">
         $('.bigger-110').click(function() {
             $('#form1').submit();
@@ -140,7 +140,7 @@
 
 		<!--[if !IE]> -->
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='/market/Public/js/jquery.min.js'>"+"<"+"/script>");
+			window.jQuery || document.write("<script src='/PHP_-/market/Public/js/jquery.min.js'>"+"<"+"/script>");
 		</script> 
 		<!-- <![endif]-->
 
@@ -150,7 +150,7 @@
 </script>
 <![endif]-->
 		<script type="text/javascript">
-			if('ontouchstart' in document.documentElement) document.write("<script src='/market/Public/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+			if('ontouchstart' in document.documentElement) document.write("<script src='/PHP_-/market/Public/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 		</script>
 
 		<!-- inline scripts related to this page -->

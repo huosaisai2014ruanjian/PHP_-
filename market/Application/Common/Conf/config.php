@@ -14,7 +14,7 @@ return array(
    'USER_AUTH_KEY'     =>  'authid',   // $_SESSION['authid'] = ***;
    'REQUIRE_AUTH_MODULE'   =>  'Admin',
    'NOT_AUTH_MODULE'   =>  'Home',
-   'USER_AUTH_GATEWAY' =>  '/'.MAR_KET.'/Home/login',  // 用户后台登录页面
+   'USER_AUTH_GATEWAY' =>  './Home/login',  // 用户后台登录页面
    'USER_AUTH_MODEL'   =>  'think_user',   // 用户表的数据表名或模型类名
    'RBAC_ROLE_TABLE'   =>  'market_think_role',
    'RBAC_USER_TABLE'   =>  'market_think_role_user',  // 角色用户关联表的名称

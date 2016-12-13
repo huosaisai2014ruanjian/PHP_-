@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><form id="pagerForm" action="/market/index.php/Admin/Users" method="post">
+<?php if (!defined('THINK_PATH')) exit();?><form id="pagerForm" action="/PHP_-/market/index.php/Admin/Users" method="post">
 	<input type="hidden" name="pageNum" value="1"/>
 	<input type="hidden" name="_order" value="<?php echo ($_REQUEST["_order"]); ?>"/>
 	<input type="hidden" name="_sort" value="<?php echo ($_REQUEST["_sort"]); ?>"/>
@@ -9,9 +9,9 @@
 <div class="pageContent">
     <div class="panelBar">
         <ul class="toolBar">
-            <li class=""><a class="add" href="/market/index.php/Admin/users/create" target="navTab"><span>添加</span></a></li>
-            <li class=""><a class="delete" href="/market/index.php/Admin/users/destroy?id={sid_user}" target="ajaxTodo" title="确定要删除吗?"><span>删除</span></a></li>
-            <li class=""><a class="edit" href="/market/index.php/Admin/users/edit?id={sid_user}" target="navTab"><span>修改</span></a></li>
+            <li class=""><a class="add" href="/PHP_-/market/index.php/Admin/users/create" target="navTab"><span>添加</span></a></li>
+            <li class=""><a class="delete" href="/PHP_-/market/index.php/Admin/users/destroy?id={sid_user}" target="ajaxTodo" title="确定要删除吗?"><span>删除</span></a></li>
+            <li class=""><a class="edit" href="/PHP_-/market/index.php/Admin/users/edit?id={sid_user}" target="navTab"><span>修改</span></a></li>
             <li class="line">line</li>
         </ul>
     </div>
@@ -39,8 +39,8 @@
                 <td><div><?php echo ($vo['num']); ?></div></td>
                 <td><div><?php echo ($vo['sex']); ?></div></td>
                 <td><div><?php echo ($vo['grade']); ?></div></td>
-                <td><div><img src="/market/Public/<?php echo ($vo['head']); ?>" width="40px" height="40px"/></div></td>
-                <td><div><img src="/market/Public/<?php echo ($vo['card']); ?>" width="40px" height="40px" /></div></td>
+                <td><div><img src="/PHP_-/market/Public/<?php echo ($vo['head']); ?>" width="40px" height="40px"/></div></td>
+                <td><div><img src="/PHP_-/market/Public/<?php echo ($vo['card']); ?>" width="40px" height="40px" /></div></td>
             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
         </tbody>
     </table>
