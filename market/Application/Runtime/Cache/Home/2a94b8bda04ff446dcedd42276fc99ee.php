@@ -10,10 +10,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" type="text/css" href="/market/Public/lib/weui.min.css">
-	<link rel="stylesheet" type="text/css" href="/market/Public/css/jquery-weui.css">
-  <link rel="stylesheet" type="text/css" href="/market/Public/css/index1.css">
-  <link rel="stylesheet" href="/market/Public/css/swiper-3.3.1.min.css" />
+	<link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/lib/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/css/jquery-weui.css">
+  <link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/css/index1.css">
+  <link rel="stylesheet" href="/PHP_-/market/Public/css/swiper-3.3.1.min.css" />
 	<style type="text/css">
 	html,body{
 		height: 100%;
@@ -37,7 +37,7 @@
   </form>
   <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
   <div class="me">
-    <div><img id="messa" src="/market/Public/images/message5.png" width="30px" height="30px"><span><img src="/market/Public/images/bullet-red.png"></span></div>
+    <div><img id="messa" src="/PHP_-/market/Public/images/message5.png" width="30px" height="30px"><span><img src="/PHP_-/market/Public/images/bullet-red.png"></span></div>
   </div>
 </div>
    <!--接束-->
@@ -46,7 +46,7 @@
     <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
    
   <div class="swiper-wrapper">
-  <?php if(is_array($Carousel)): $i = 0; $__LIST__ = $Carousel;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="swiper-slide"><a href="action.html"><img src="/market/Public/<?php echo ($vo["active_img"]); ?>" width="100%" height="100%" alt=""></a></div><?php endforeach; endif; else: echo "" ;endif; ?>
+  <?php if(is_array($Carousel)): $i = 0; $__LIST__ = $Carousel;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="swiper-slide"><a href="action.html"><img src="/PHP_-/market/Public/<?php echo ($vo["active_img"]); ?>" width="100%" height="100%" alt=""></a></div><?php endforeach; endif; else: echo "" ;endif; ?>
   </div>
 
   <div class="swiper-pagination"></div>
@@ -59,8 +59,8 @@
       
  
 <div class="weui-row weui-no-gutter" >
-  <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-33" style="border:1px solid #B5B5B5"align="center"><a href="/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo["id"]); ?>"><img src="/market/Public/<?php echo ($vo["imgurl"]); ?>" ></a>
-     <a href="/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo["id"]); ?>"><p style="text-align:center;color:black" ><?php echo ($vo["name"]); ?></p></a></div><?php endforeach; endif; else: echo "" ;endif; ?>
+  <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-33" style="border:1px solid #B5B5B5"align="center"><a href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo["id"]); ?>"><img src="/PHP_-/market/Public/<?php echo ($vo["imgurl"]); ?>" ></a>
+     <a href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo["id"]); ?>"><p style="text-align:center;color:black" ><?php echo ($vo["name"]); ?></p></a></div><?php endforeach; endif; else: echo "" ;endif; ?>
   
         </div>
     </div>
@@ -75,16 +75,16 @@
       <div class="swiper-wrapper" height="100px">
         <div class="swiper-slide">
             <div class="baodaninfo" >
-              <img src="/market/Public/images/comm2.jpg" width="30%" height="100px">
-              <img src="/market/Public/images/apple4.jpg" width="30%" height="100px">
-              <img src="/market/Public/images/shoes.png" width="30%" height="100px">
+              <img src="/PHP_-/market/Public/images/comm2.jpg" width="30%" height="100px">
+              <img src="/PHP_-/market/Public/images/apple4.jpg" width="30%" height="100px">
+              <img src="/PHP_-/market/Public/images/shoes.png" width="30%" height="100px">
             </div>
         </div>
         <div class="swiper-slide">
             <div class="baodaninfo">
-              <img src="/market/Public/images/apple4.jpg" width="30%" height="100px">
-              <img src="/market/Public/images/books.png" width="30%" height="100px">
-              <img src="/market/Public/images/ball1.png" width="30%" height="100px">
+              <img src="/PHP_-/market/Public/images/apple4.jpg" width="30%" height="100px">
+              <img src="/PHP_-/market/Public/images/books.png" width="30%" height="100px">
+              <img src="/PHP_-/market/Public/images/ball1.png" width="30%" height="100px">
             </div>
         </div>
       </div>
@@ -100,21 +100,21 @@
 <div>
   </a>
   <hr/>
-  <a style="background-color:#FFFFFF" class="weui_cell" href="/market/index.php/Home/Goodslist/goodslist?id=8">
+  <a style="background-color:#FFFFFF" class="weui_cell" href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=8">
    
     <div class="weui_cell_bd weui_cell_primary">
       <p style="color:#000000">学习用品</p>
     </div>
    <div class="weui_cell_hd">
-      <img src="/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
+      <img src="/PHP_-/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
     </div>
   </a>
 </div>
 <!--标题栏结束-->
 <!--内容栏-->
 <div class="weui-row weui-no-gutter">
-<?php if(is_array($study)): $i = 0; $__LIST__ = $study;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
-   <img src="/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
+<?php if(is_array($study)): $i = 0; $__LIST__ = $study;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+   <img src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
      <p class="goodname" style="text-align:center"><?php echo ($vo["name"]); ?>
      <p class="nickname" style="text-align:center"><?php echo ($vo["nickname"]); ?>
       <p class="price" style="text-align:center; color:red" >价格:<?php echo ($vo["price"]); ?></p>
@@ -132,21 +132,21 @@
 <div>
   </a>
   <hr/>
-  <a style="background-color:#FFFFFF" class="weui_cell" href="/market/index.php/Home/Goodslist/goodslist?id=10">
+  <a style="background-color:#FFFFFF" class="weui_cell" href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=10">
    
     <div class="weui_cell_bd weui_cell_primary">
       <p style="color:#000000">电子数码</p>
     </div>
    <div class="weui_cell_hd">
-      <img src="/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
+      <img src="/PHP_-/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
     </div>
   </a>
 </div>
 <!--标题栏结束-->
 <!--内容栏-->
 <div class="weui-row weui-no-gutter">
-<?php if(is_array($electronics)): $i = 0; $__LIST__ = $electronics;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
-   <img src="/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
+<?php if(is_array($electronics)): $i = 0; $__LIST__ = $electronics;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+   <img src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
      <p class="goodname" style="text-align:center"><?php echo ($vo["name"]); ?>
      <p class="nickname" style="text-align:center"><?php echo ($vo["nickname"]); ?>
       <p class="price" style="text-align:center; color:red" >价格:<?php echo ($vo["price"]); ?></p>
@@ -163,21 +163,21 @@
 <div>
   </a>
   <hr/>
-  <a style="background-color:#FFFFFF" class="weui_cell" href="/market/index.php/Home/Goodslist/goodslist?id=11">
+  <a style="background-color:#FFFFFF" class="weui_cell" href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=11">
    
     <div class="weui_cell_bd weui_cell_primary">
       <p style="color:#000000">服装饰品</p>
     </div>
    <div class="weui_cell_hd">
-      <img src="/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
+      <img src="/PHP_-/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
     </div>
   </a>
 </div>
 <!--标题栏结束-->
 <!--内容栏-->
 <div class="weui-row weui-no-gutter">
-<?php if(is_array($cloths)): $i = 0; $__LIST__ = $cloths;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
-   <img src="/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
+<?php if(is_array($cloths)): $i = 0; $__LIST__ = $cloths;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+   <img src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
      <p class="goodname" style="text-align:center"><?php echo ($vo["name"]); ?>
      <p class="nickname" style="text-align:center"><?php echo ($vo["nickname"]); ?>
       <p class="price" style="text-align:center; color:red" >价格:<?php echo ($vo["price"]); ?></p>
@@ -194,21 +194,21 @@
 <div>
   </a>
   <hr/>
-  <a style="background-color:#FFFFFF" class="weui_cell" href="/market/index.php/Home/Goodslist/goodslist?id=12">
+  <a style="background-color:#FFFFFF" class="weui_cell" href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=12">
    
     <div class="weui_cell_bd weui_cell_primary">
       <p style="color:#000000">出行工具</p>
     </div>
    <div class="weui_cell_hd">
-      <img src="/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
+      <img src="/PHP_-/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
     </div>
   </a>
 </div>
 <!--标题栏结束-->
 <!--内容栏-->
 <div class="weui-row weui-no-gutter">
-<?php if(is_array($bike)): $i = 0; $__LIST__ = $bike;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
-   <img src="/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
+<?php if(is_array($bike)): $i = 0; $__LIST__ = $bike;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+   <img src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
      <p class="goodname" style="text-align:center"><?php echo ($vo["name"]); ?>
      <p class="nickname" style="text-align:center"><?php echo ($vo["nickname"]); ?>
       <p class="price" style="text-align:center; color:red" >价格:<?php echo ($vo["price"]); ?></p>
@@ -225,21 +225,21 @@
 <div>
   </a>
   <hr/>
-  <a style="background-color:#FFFFFF" class="weui_cell" href="/market/index.php/Home/Goodslist/goodslist?id=13">
+  <a style="background-color:#FFFFFF" class="weui_cell" href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=13">
    
     <div class="weui_cell_bd weui_cell_primary">
       <p style="color:#000000">运动器材</p>
     </div>
    <div class="weui_cell_hd">
-      <img src="/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
+      <img src="/PHP_-/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
     </div>
   </a>
 </div>
 <!--标题栏结束-->
 <!--内容栏-->
 <div class="weui-row weui-no-gutter">
-<?php if(is_array($sports)): $i = 0; $__LIST__ = $sports;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
-   <img src="/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
+<?php if(is_array($sports)): $i = 0; $__LIST__ = $sports;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+   <img src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
      <p class="goodname" style="text-align:center"><?php echo ($vo["name"]); ?>
      <p class="nickname" style="text-align:center"><?php echo ($vo["nickname"]); ?>
       <p class="price" style="text-align:center; color:red" >价格:<?php echo ($vo["price"]); ?></p>
@@ -256,21 +256,21 @@
 <div>
   </a>
   <hr/>
-  <a style="background-color:#FFFFFF" class="weui_cell" href="/market/index.php/Home/Goodslist/goodslist?id=14">
+  <a style="background-color:#FFFFFF" class="weui_cell" href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=14">
    
     <div class="weui_cell_bd weui_cell_primary">
       <p style="color:#000000">虚拟物品</p>
     </div>
    <div class="weui_cell_hd">
-      <img src="/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
+      <img src="/PHP_-/market/Public/images/more.png" alt="icon" style="width:25px;margin-right:6px;display:block">
     </div>
   </a>
 </div>
 <!--标题栏结束-->
 <!--内容栏-->
 <div class="weui-row weui-no-gutter">
-<?php if(is_array($games)): $i = 0; $__LIST__ = $games;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
-   <img src="/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
+<?php if(is_array($games)): $i = 0; $__LIST__ = $games;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" style="border:1px solid #B5B5B5"align="center"><a href="/PHP_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+   <img src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
      <p class="goodname" style="text-align:center"><?php echo ($vo["name"]); ?>
      <p class="nickname" style="text-align:center"><?php echo ($vo["nickname"]); ?>
       <p class="price" style="text-align:center; color:red" >价格:<?php echo ($vo["price"]); ?></p>
@@ -293,19 +293,19 @@
   <div class="weui_tabbar">
     <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
       <div class="weui_tabbar_icon">
-        <img src="/market/Public/images/shop.png" alt="">
+        <img src="/PHP_-/market/Public/images/shop.png" alt="">
       </div>
       <p class="weui_tabbar_label">首页</p>
     </a>
     <a href="/market/index.php/home/goods/index" class="weui_tabbar_item" >
       <div class="weui_tabbar_icon">
-        <img src="/market/Public/images/fabu.png" alt="">
+        <img src="/PHP_-/market/Public/images/fabu.png" alt="">
       </div>
       <p class="weui_tabbar_label">发布</p>
     </a>
     <a href="javascript:;" class="weui_tabbar_item">
       <div class="weui_tabbar_icon">
-        <img src="/market/Public/images/my.png" alt="">
+        <img src="/PHP_-/market/Public/images/my.png" alt="">
       </div>
       <p class="weui_tabbar_label">我的</p>
     </a>
@@ -313,13 +313,13 @@
 </div>
 </div>
 </body>
-<script type="text/javascript" src="/market/Public/js/Libs/jquery.min.js" ></script>
-<script type="text/javascript" src="/market/Public/js/Libs/jquery.json.js" ></script>
-<script type="text/javascript" src="/market/Public/js/Libs/swiper-3.3.1.jquery.min.js" ></script>
-<script type="text/javascript" src="/market/Public/js/Addpolicy.js"></script>
-<script type="text/javascript" src="/market/Public/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/market/Public/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='/market/Public/js/swiper.js' charset='utf-8'>
+<script type="text/javascript" src="/PHP_-/market/Public/js/Libs/jquery.min.js" ></script>
+<script type="text/javascript" src="/PHP_-/market/Public/js/Libs/jquery.json.js" ></script>
+<script type="text/javascript" src="/PHP_-/market/Public/js/Libs/swiper-3.3.1.jquery.min.js" ></script>
+<script type="text/javascript" src="/PHP_-/market/Public/js/Addpolicy.js"></script>
+<script type="text/javascript" src="/PHP_-/market/Public/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/PHP_-/market/Public/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/PHP_-/market/Public/js/swiper.js' charset='utf-8'>
 </script>
  <script>
       $(".swiper-container").swiper({

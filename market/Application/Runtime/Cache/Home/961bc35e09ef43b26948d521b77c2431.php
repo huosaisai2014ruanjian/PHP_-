@@ -5,18 +5,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<!--   <link href="/marketsai/Public/dwz/themes/css/core.css" rel="stylesheet" type="text/css" /> -->
-  <link rel="stylesheet" type="text/css" href="/marketsai/Public/lib/weui.css">
+<!--   <link href="/PHP_-/market/Public/dwz/themes/css/core.css" rel="stylesheet" type="text/css" /> -->
+  <link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/lib/weui.css">
 
 
-  <link href="/marketsai/Public/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
-  <link rel="stylesheet" type="text/css" href="/marketsai/Public/css/define.css">
-  <link href="/marketsai/Public/css/base.css" rel="stylesheet" /> 
+  <link href="/PHP_-/market/Public/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/css/define.css">
+  <link href="/PHP_-/market/Public/css/base.css" rel="stylesheet" /> 
 
-<!-- 	<link href="/marketsai/Public/lib/weui.min.css" type="text/css" rel="stylesheet"/>
-	<link href="/marketsai/Public/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
-	<link rel="stylesheet" type="text/css" href="/marketsai/Public/css/define.css">
-  <link href="/marketsai/Public/css/base.css" rel="stylesheet" />  -->
+<!-- 	<link href="/PHP_-/market/Public/lib/weui.min.css" type="text/css" rel="stylesheet"/>
+	<link href="/PHP_-/market/Public/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/css/define.css">
+  <link href="/PHP_-/market/Public/css/base.css" rel="stylesheet" />  -->
 	<style>
       .swiper-container {
         width: 100%;
@@ -65,11 +65,11 @@
     <dd class="type"> 
       <ul class="slide downlist"> 
         <li><a href="#">不限</a></li> 
-        <li><a href="/marketsai/index.php/Home/Home/goodslist?cat_id=<?php echo ($vo['cat_id']); ?>">电子</a></li> 
-        <li><a href="/marketsai/index.php/Home/Home/goodslist?cat_id=<?php echo ($vo['cat_id']); ?>">交通</a></li> 
-        <li><a href="/marketsai/index.php/Home/Home/goodslist?cat_id=<?php echo ($vo['cat_id']); ?>">虚拟</a></li> 
-        <li><a href="/marketsai/index.php/Home/Home/goodslist?cat_id=<?php echo ($vo['cat_id']); ?>">学习</a></li> 
-        <li><a href="/marketsai/index.php/Home/Home/goodslist?cat_id=<?php echo ($vo['cat_id']); ?>">兼职</a></li> 
+        <li><a href="/PHP_-/market/index.php/Home/Home/goodslist?cat_id=<?php echo ($vo['cat_id']); ?>">电子</a></li> 
+        <li><a href="/PHP_-/market/index.php/Home/Home/goodslist?cat_id=<?php echo ($vo['cat_id']); ?>">交通</a></li> 
+        <li><a href="/PHP_-/market/index.php/Home/Home/goodslist?cat_id=<?php echo ($vo['cat_id']); ?>">虚拟</a></li> 
+        <li><a href="/PHP_-/market/index.php/Home/Home/goodslist?cat_id=<?php echo ($vo['cat_id']); ?>">学习</a></li> 
+        <li><a href="/PHP_-/market/index.php/Home/Home/goodslist?cat_id=<?php echo ($vo['cat_id']); ?>">兼职</a></li> 
       </ul> 
     </dd> 
     <dd class="goods"> 
@@ -98,9 +98,9 @@
 
   <div class="weui_panel_bd">
    
-  <?php if(is_array($study)): $i = 0; $__LIST__ = $study;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/marketsai/index.php/Home/home/GoodDetail/index?id=<?php echo ($vo['id']); ?>" class="weui_media_box weui_media_appmsg">
+  <?php if(is_array($study)): $i = 0; $__LIST__ = $study;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PHP_-/market/index.php/Home/home/GoodDetail/index?id=<?php echo ($vo['id']); ?>" class="weui_media_box weui_media_appmsg">
       <div class="goodslist">
-        <img class="weui_media_appmsg_thumb" src="/marketsai/Public/<?php echo ($vo["photo"]); ?>" height="100" width="100" alt="">
+        <img class="weui_media_appmsg_thumb" src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" height="100" width="100" alt="">
       </div>
       <div class="weui_media_bd">
         <h4 class="weui_media_title"><?php echo ($vo["name"]); ?></h4>
@@ -114,9 +114,9 @@
           <p class="sellername"><?php echo ($vo["college"]); ?></p>
       </div>
     </a><?php endforeach; endif; else: echo "" ;endif; ?>
-  <?php if(is_array($type)): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/marketsai/index.php/Home/GoodDetail/index?id=6" class="weui_media_box weui_media_appmsg">
+  <?php if(is_array($type)): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PHP_-/market/index.php/Home/GoodDetail/index?id=6" class="weui_media_box weui_media_appmsg">
       <div class="goodslist">
-        <img class="weui_media_appmsg_thumb" src="/marketsai/Public/<?php echo ($vo["photo"]); ?>" height="100" width="100" alt="">
+        <img class="weui_media_appmsg_thumb" src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" height="100" width="100" alt="">
       </div>
       <div class="weui_media_bd">
       	<h4 class="weui_media_title"><?php echo ($vo["name"]); ?></h4>
@@ -125,7 +125,7 @@
         <p class="weui_media_desc"><?php echo ($vo["description"]); ?></p>
       </div>
       <div>
-      		<img src="/marketsai/Public/<?php echo ($vo["head"]); ?>" height="50" width="50">
+      		<img src="/PHP_-/market/Public/<?php echo ($vo["head"]); ?>" height="50" width="50">
       		<p class="sellername"><?php echo ($vo["nickname"]); ?></p>
       		<p class="sellername"><?php echo ($vo["college"]); ?></p>
       </div>
@@ -171,9 +171,9 @@
 <!--  <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
 </div>  -->
 
-<script type="text/javascript" src="/marketsai/Public/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/marketsai/Public/js/jquery-weui.min.js"></script>
-<script type="text/javascript" src="/marketsai/Public/js/swiper.js"></script>
+<script type="text/javascript" src="/PHP_-/market/Public/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/PHP_-/market/Public/js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="/PHP_-/market/Public/js/swiper.js"></script>
 <script>
       $(".swiper-container").swiper({
         loop: true,
