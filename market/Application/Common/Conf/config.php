@@ -5,7 +5,7 @@ return array(
    'DB_HOST'               =>  'localhost', // 服务器地址
    'DB_NAME'               =>  'market',          // 数据库名
    'DB_USER'               =>  'root',      // 用户名
-   'DB_PWD'                =>  '' , //
+   'DB_PWD'                =>  'root' , //
    'DB_PREFIX'              => 'market_', // 数据库表前缀
 
    //RBAC验证
