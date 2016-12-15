@@ -22,7 +22,8 @@ class PersonalController extends Controller {
             $vercode=$vercode . $chars[mt_rand(0, $charsLen)]; 
         }        
         $content='【大学生跳蚤市场】您好，您的验证码是'.$vercode; 
-        session('verify',$vercode); 
+        // session('verify',$vercode); 
+        echo $vercode;
           // $url="http://service.winic.org:8009/sys_port/gateway/?";
           // $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
           // $id = iconv('UTF-8','GB2312','kdvnszrqu');
@@ -40,14 +41,14 @@ class PersonalController extends Controller {
           // $result = curl_exec($ch);
           // curl_close($ch);
           // $result = substr($result,0,3);
-          if($result=="000")
-          {
-              echo '发送成功';
-           }
-          else
-          {
-              return 'false';
-           }
+          // if($result=="000")
+          // {
+          //     echo '发送成功';
+          //  }
+          // else
+          // {
+          //     return 'false';
+          //  }
     }    
 	//我的消息
     public function mynews(){
