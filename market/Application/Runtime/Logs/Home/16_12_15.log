@@ -901,3 +901,435 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
 ERR: 非法操作:js
 
+[ 2016-12-15T15:43:52+08:00 ] ::1 /PHP_-/market/index.php/home/index/lib/weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+ERR: 非法操作:lib
+
+[ 2016-12-15T15:43:52+08:00 ] ::1 /PHP_-/market/index.php/home/index/css/jquery-weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:43:52+08:00 ] ::1 /PHP_-/market/index.php/home/index/css/swiper-3.3.1.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:43:52+08:00 ] ::1 /PHP_-/market/index.php/home/index/css/index1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:43:52+08:00 ] ::1 /PHP_-/market/index.php/home/index/js/jquery-weui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+ERR: 非法操作:js
+
+[ 2016-12-15T15:43:52+08:00 ] ::1 /PHP_-/market/index.php/home/index/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+ERR: 非法操作:js
+
+[ 2016-12-15T15:43:52+08:00 ] ::1 /PHP_-/market/index.php/home/index/lib/jquery-2.1.4.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+ERR: 非法操作:lib
+
+[ 2016-12-15T15:43:52+08:00 ] ::1 /PHP_-/market/index.php/home/index/js/jquery-weui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+ERR: 非法操作:js
+
+[ 2016-12-15T15:43:52+08:00 ] ::1 /PHP_-/market/index.php/home/index/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+ERR: 非法操作:js
+
+[ 2016-12-15T15:43:55+08:00 ] ::1 /PHP_-/market/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=1 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0014s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=2 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=4 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0004s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=5 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0004s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=6 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0004s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=7 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2016-12-15T15:44:00+08:00 ] ::1 /PHP_-/market/index.php/Home/Goodslist/goodslist?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0062s ]
+SQL: SELECT market_goods.name AS `name`,market_goods.degree AS `degree`,market_goods.description AS `description`,market_goods.price AS `price`,market_users.nickname AS `nickname`,market_users.college AS `college`,market_goods.photo AS `photo`,market_users.head AS `head`,market_goods.id AS `id` FROM `market_goods` INNER JOIN market_category on market_goods.category_id = market_category.id INNER JOIN market_cat on market_category.cat_id = market_cat.id INNER JOIN market_users on market_goods.seller_id=market_users.id  WHERE ( market_cat.id=8 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2016-12-15T15:44:01+08:00 ] ::1 /PHP_-/market/index.php/Home/Goodslist/goodslist?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0032s ]
+SQL: SELECT market_goods.name AS `name`,market_goods.degree AS `degree`,market_goods.description AS `description`,market_goods.price AS `price`,market_users.nickname AS `nickname`,market_users.college AS `college`,market_goods.photo AS `photo`,market_users.head AS `head`,market_goods.id AS `id` FROM `market_goods` INNER JOIN market_category on market_goods.category_id = market_category.id INNER JOIN market_cat on market_category.cat_id = market_cat.id INNER JOIN market_users on market_goods.seller_id=market_users.id  WHERE ( market_cat.id=8 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-12-15T15:44:12+08:00 ] ::1 /PHP_-/market/index.php/Home/Goodslist/goodslist?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0113s ]
+SQL: SELECT market_goods.name AS `name`,market_goods.degree AS `degree`,market_goods.description AS `description`,market_goods.price AS `price`,market_users.nickname AS `nickname`,market_users.college AS `college`,market_goods.photo AS `photo`,market_users.head AS `head`,market_goods.id AS `id` FROM `market_goods` INNER JOIN market_category on market_goods.category_id = market_category.id INNER JOIN market_cat on market_category.cat_id = market_cat.id INNER JOIN market_users on market_goods.seller_id=market_users.id  WHERE ( market_cat.id=11 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000927s ]
+
+[ 2016-12-15T15:44:20+08:00 ] ::1 /PHP_-/market/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0004s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=1 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0004s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=2 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=4 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=5 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=6 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=7 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2016-12-15T15:44:33+08:00 ] ::1 /PHP_-/market/index.php/Home/Goodslist/goodslist?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0054s ]
+SQL: SELECT market_goods.name AS `name`,market_goods.degree AS `degree`,market_goods.description AS `description`,market_goods.price AS `price`,market_users.nickname AS `nickname`,market_users.college AS `college`,market_goods.photo AS `photo`,market_users.head AS `head`,market_goods.id AS `id` FROM `market_goods` INNER JOIN market_category on market_goods.category_id = market_category.id INNER JOIN market_cat on market_category.cat_id = market_cat.id INNER JOIN market_users on market_goods.seller_id=market_users.id  WHERE ( market_cat.id=8 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2016-12-15T15:44:43+08:00 ] ::1 /PHP_-/market/index.php/Home/Goodslist/goodslist?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0122s ]
+SQL: SELECT market_goods.name AS `name`,market_goods.degree AS `degree`,market_goods.description AS `description`,market_goods.price AS `price`,market_users.nickname AS `nickname`,market_users.college AS `college`,market_goods.photo AS `photo`,market_users.head AS `head`,market_goods.id AS `id` FROM `market_goods` INNER JOIN market_category on market_goods.category_id = market_category.id INNER JOIN market_cat on market_category.cat_id = market_cat.id INNER JOIN market_users on market_goods.seller_id=market_users.id  WHERE ( market_cat.id=14 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2016-12-15T15:44:48+08:00 ] ::1 /PHP_-/market/index.php/Home/Goodslist/goodslist?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0064s ]
+SQL: SELECT market_goods.name AS `name`,market_goods.degree AS `degree`,market_goods.description AS `description`,market_goods.price AS `price`,market_users.nickname AS `nickname`,market_users.college AS `college`,market_goods.photo AS `photo`,market_users.head AS `head`,market_goods.id AS `id` FROM `market_goods` INNER JOIN market_category on market_goods.category_id = market_category.id INNER JOIN market_cat on market_category.cat_id = market_cat.id INNER JOIN market_users on market_goods.seller_id=market_users.id  WHERE ( market_cat.id=11 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001530s ]
+
+[ 2016-12-15T15:44:50+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/index?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Illegal string offset '' D:\WWW\PHP_-\market\Application\Home\Controller\GoodDetailController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `market_users` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `market_users` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `market_message` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `market_message` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-12-15T15:44:51+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/lib/weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+ERR: 非法操作:lib
+
+[ 2016-12-15T15:44:51+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/css/jquery-weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:45:11+08:00 ] ::1 /PHP_-/market/index.php/Home/Goodslist/goodslist?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0123s ]
+SQL: SELECT market_goods.name AS `name`,market_goods.degree AS `degree`,market_goods.description AS `description`,market_goods.price AS `price`,market_users.nickname AS `nickname`,market_users.college AS `college`,market_goods.photo AS `photo`,market_users.head AS `head`,market_goods.id AS `id` FROM `market_goods` INNER JOIN market_category on market_goods.category_id = market_category.id INNER JOIN market_cat on market_category.cat_id = market_cat.id INNER JOIN market_users on market_goods.seller_id=market_users.id  WHERE ( market_cat.id=8 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001195s ]
+
+[ 2016-12-15T15:45:13+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/index?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Illegal string offset '' D:\WWW\PHP_-\market\Application\Home\Controller\GoodDetailController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `market_users` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `market_users` WHERE ( 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `market_message` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `market_message` WHERE ( 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\WWW\PHP_-\market\Application\Home\Controller\GoodDetailController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2016-12-15T15:45:14+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/css/jquery-weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:45:14+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/lib/weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+ERR: 非法操作:lib
+
+[ 2016-12-15T15:45:24+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/index?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Illegal string offset '' D:\WWW\PHP_-\market\Application\Home\Controller\GoodDetailController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `market_users` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `market_users` WHERE ( 4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `market_message` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `market_message` WHERE ( 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\WWW\PHP_-\market\Application\Home\Controller\GoodDetailController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-12-15T15:45:25+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/lib/weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+ERR: 非法操作:lib
+
+[ 2016-12-15T15:45:25+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/css/jquery-weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+ERR: 非法操作:css
+
