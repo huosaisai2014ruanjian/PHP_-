@@ -8,13 +8,25 @@
 namespace Home\Controller;
 use Think\Controller;
 
-class ChuanglanSmsApi {
-    public function sendSMS($tos,$content){
+
+class PersonalController extends Controller {
+    public function SendSMS($cellphone){
+        $cellphone= I("get.cellphone");
+        $chars = array(  "0", "1", "2",  "3", "4", "5", "6", "7", "8", "9" ); 
+        $charsLen = count($chars) - 1; 
+        shuffle($chars);   
+        $vercode = ""; 
+        $len=6;
+        for ($i=0; $i<$len; $i++) 
+        { 
+            $vercode . $chars[mt_rand(0, $charsLen)]; 
+        }        
+        $content='【大学生跳蚤市场】您好，您的验证码是'.$vercode;  
           $url="http://service.winic.org:8009/sys_port/gateway/?";
           $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
           $id = iconv('UTF-8','GB2312','kdvnszrqu');
           $pwd = '384913ldh';
-          $to = $tos; 
+          $to = $cellphone; 
           $content = urlencode(iconv("UTF-8","GB2312",$content)); 
           $rdata = sprintf($data, $id, $pwd, $to, $content);
           
@@ -29,26 +41,13 @@ class ChuanglanSmsApi {
           $result = substr($result,0,3);
           if($result=="000")
           {
-              return 'true';
+              echo '发送成功';
            }
           else
           {
               return 'false';
            }
-    }
-    //魔术获取
-    public function __get($name){
-        return $this->$name;
-    }
-    
-    //魔术设置
-    public function __set($name,$value){
-        $this->$name=$value;
     }    
-}
-
-
-class PersonalController extends Controller {
 	//我的消息
     public function mynews(){
       //获取数据库聊天信息
