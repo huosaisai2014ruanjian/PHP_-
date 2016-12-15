@@ -17,34 +17,40 @@ class GoodslistController extends BaseController
    /***
     获取商品
     */
-    $num =1;
-    if($num==1){
-      $id = I('get.id');
-      $s = M('cat')->join('market_category on market_cat.id = market_category.cat_id')
-->join('market_goods on market_category.id = market_goods.category_id')->
-join('market_users on market_users.id = market_goods.seller_id')
-->where("market_cat.id=$id")->order('time desc')->select();  
-$num = 0;
-
-    }else{
     $id=I('get.id');
-     
 
-$goods = M('goods'); 
-    $result1 = $goods->join('market_category on market_goods.category_id = market_category.id')
-   ->join('market_cat on market_category.cat_id = market_cat.id')->join('market_users on market_goods.seller_id=market_users.id')->where("market_cat.id=$id")->select();
-   $num=1;
-   }
-   // dump($result1);
+
+$goods = M('goods');
+    $result = $goods->join('market_category on market_goods.category_id = market_category.id')
+   ->join('market_cat on market_category.cat_id = market_cat.id')
+        ->join('market_users on market_goods.seller_id=market_users.id')
+        ->where("market_cat.id=$id")
+        ->field(array('market_goods.name'=>'name',
+            'market_goods.degree'=>'degree',
+            'market_goods.description'=>'description',
+            'market_goods.price'=>'price',
+            'market_users.nickname'=>'nickname',
+            'market_users.college'=>'college',
+            'market_goods.photo'=>'photo',
+            'market_users.head'=>'head',
+            'market_goods.id'=>'id',
+           // 'market_goods.cat_id'=>'cat_id',
+            )
+        )
+        ->select();
+        for ($i=0;$i<count($result);$i++)
+        {
+            $result[$i]['photo']=explode(';',$result[$i]['photo'])[0];
+        }
+  //dump($result);exit;
    /***
    获取商品的一级分类
    */
-     $cat = M('cat');
-   	 $result = $cat->select();
-   	 $this->assign('name',$result1[0]['name']);
-      $this->assign('type',$s);
-   	 $this->assign('study',$result1);
-   	 $this->assign('cat',$result);
+
+  	// $result1 = $cat->select();
+       // dump($result);exit;
+   	 $this->assign('name',$result[0]['name']);
+   	 $this->assign('type',$result);
      $this->display();
      }
    /***
@@ -54,6 +60,7 @@ $goods = M('goods');
     	$id= I('get.id');
     	$catgory = M('category');
     	$result = $catgory->where("cat_id=$id")->select();
+
     	echo json_encode( $result);
     }
     /***
