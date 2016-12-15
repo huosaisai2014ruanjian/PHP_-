@@ -35,92 +35,83 @@
     </style>
 </head>
 <body>
-<div class="weui_tab">
-    <div class="weui_tab_bd">
-        <div class="weui_tab">
-            <div class="weui_navbar" style="background-color:#ffffff;padding-top:10px;padding-bottom:10px;font-family:'微软雅黑'">
-                <a class="weui_navbar_item weui_bar_item_on button orange medium" style="height:20px;font-size:16px;font-family:'宋体'">
-                    商品详情
-                </a>
-                <a class="weui_navbar_item button orange medium" style="height:20px;font-size:16px;font-family:'宋体';margin-left:5px;margin-right:5px">
-                    卖家信息
-                </a>
-                <a class="weui_navbar_item button orange medium" style="height:20px;font-size:16px;font-family:'宋体'">
-                    留言
-                </a>
-            </div>
-            <div class="weui_tab_bd">
-                <div class="content">
-                    <!--顶部幻灯片开始-->
-                    <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
-                        <div class="swiper-wrapper">
-                            <volist name="good['image']" id="img1">
-                                <div class="swiper-slide"><img src="__ROOT__/Public/{$img1}" height="300px" width="100%" alt=""></div>
-
-                            </volist>
+<div class="weui_tab" style="background-color:#EBEBEB;maigin:10px">
+    <div class="weui_tab_bd ">
+        <div >
+            
+                    <!--商品封面图片-->
+                    <div>
+                            
+                                <div class="swiper-slide"><img src="__ROOT__/Public/{$good1}" height="300px" width="100%" alt=""></div>
+                            
                         </div>
-                        <div class="swiper-pagination"></div>
+                  
+                    <!--结束商品封面图片-->
+                   <!--商品价格等信息  -->
+                    <div class="content" style="background-color:#FFFFFF;margin:1px;font-size: 17px;">
+                        <p style="color:red;text-align: left;margin:1px;font-family:YouYuan;">&nbsp;&nbsp;<span style="font-size:10px">￥</span>{$good.price}
+                        <span style="font-size:10px">浏览次数</span>
+                        </p>
+                    
+                    <div class="goodname" >
+                        <p style="font-size: 20px;"><strong>&nbsp;&nbsp;&nbsp;{$good.name}</strong>
+                         <span style="color:#9C9C9C;font-size: 16px;float:right">{$good.degree}成新&nbsp;&nbsp;&nbsp;</span></p>
                     </div>
-                    <!--顶部幻灯片结束-->
-                    <div class="weui-row" style="text-align: center;">
-                        <div class="weui-col-50 price1" name="goods">{$good.name}</div>
+                                       <div class="description" style="font-family:YouYuan;margin:2px;font-size: 17px;center;margin:2px">
+                        &nbsp;&nbsp;{$good.description}
                     </div>
-                    <div class="weui-row">
-                        <div class="weui-col-50 price1" name="price" style="color:red;font-size: 20px;">价格：{$good.price}</div>
-                        <div class="weui-col-50 ifnew1" style="font-size: 20px;">{$good.degree}成新</div>
                     </div>
-                    <div class="weui-row">
-                        <div  style="width: 100%; height: 100px;background-color: #fbd972; ">简介:<br><p>{$good.description}</p></div>
-
-                        <br>
+                <!--卖家信息  -->
+                <div class="user" style="background-color:#FFFFFF;margin-top:9px;">
+                    <div  >
+                        <div  style="width: 100%">
+                          <p>&nbsp;&nbsp;<img src="__PUBLIC__/{$user.head}"style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px;">
+                              <span style="color:#FF8C00"><strong>{$user.nickname}</strong></span>
+                              <span style="color:#FF8C00">|</span>
+                              <span style="color:#FF8C00">{$user.college}</span>
+                          </p>
+                        </div>
+                        <div >
+                         <span style="float:left;font-size:8px;color:#000000">&nbsp;&nbsp;年级:{$user.grade}</span>
+                       <span style="float:right;font-size:8px;color:#000000">性别:{$user.sex}&nbsp;&nbsp;</span>
+                       
+                      <br/>
+                        </div>
                     </div>
-
-                    <div class="weui-row width">
+                </div>
+                  <div class="weui-row width" style="background-color:#FFFFFF;margin-top:9px">
+                  <p><strong>更多细节</strong></p>
                         <volist name="good['image']" id="img">
 
                             <img src="__ROOT__/Public/{$img}" style="width: 100% ;height: auto"/>
                         </volist>
 
-
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                <div class="content" style="display:none;">
-                    <div class="weui-row" style="margin-top:30px">
-                        <div class="weui-col-40" style="width: 100px">
-                            <img src="__PUBLIC__/{$user.head}" width="100px" height="100px">
-                        </div>
-                        <div class="weui-col-60" style="background-color: #fbd972;width: 350px;">卖家昵称：<p style="width: 250Px;text-align: center;float: right">{$user.nickname}</p><br />性别：<p style="width: 250Px;text-align: center;float: right">{$user.sex}</p><br />学院：<p style="width: 250Px;text-align: center;float: right">{$user.college}</p><br />学号：<p style="width: 250Px;text-align: center;float: right">{$user.num}</p><br />
-                            年级：<p style="width: 250Px;text-align: center;float: right">{$user.grade}</p><br/>
-                        </div>
-                    </div>
-                </div>
-                <div class="content" style="display:none;">
+                     </div>
+                     <!--留言-->
+                    
                     <div class="weui-row">
-
+                                
                             <div class="weui_cells weui_cells_access" style="width: 100%">
+                            <p><strong>留言</strong></p>
                                 <a class="weui_cell" href="javascript:;">
-                                    <div class="weui_cell_hd">
-                                        <img src="__PUBLIC__/{$user.head}" alt="icon" style="height:60px;width:60px;margin-right:5px;display:block">
+                                    <div class="weui_cell_hd" >
+                                        <img src="__PUBLIC__/{$user.head}" alt="icon" style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px;">
                                     </div>
                                     <div class="weui_cell_bd weui_cell_primary" style="font-size: 9px">
-                                        <p>{$user.name}<br>
-                                            {$user.college}</p>
+                                        <p style="margin:4px" ><B>{$user.nickname}</B>
+                                            <span>{$user.college}</span></p>
+                                            <p style="margin:4px;;font-family:YouYuan"> {$message.content}</p>
+                                            <p>{$message.time}</p>
                                     </div>
-                                    <div class="weui_cell_ft" style="font-size: 20px">
-                                        {$message.content}
-                                        <br>
-                                        {$message.time}
-                                    </div>
+                                   
                                 </a>
-
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+               
+                </br>
+                </br>
+                </br>
 
             <!--商品详情结束-->
             <!--底部导航开始-->

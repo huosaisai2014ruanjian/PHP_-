@@ -25,12 +25,14 @@ class GoodDetailController extends Controller
             $sellid = $good['seller_id'][''];//卖家ID
             $user = M('users')->where($sellid)->find();//dump($user);exit; //以卖家ID得到该卖家信息
             $message= M('message')->where($sellid)->find();
-
+                    //dump($good['image']['1']);exit;
+            $good1= $good['image']['1'];
 
             //dump($message);exit;
             $this->assign('user',$user);
             $this->assign('good',$good);//分好的数组 单个图片URL传到VIEW
             $this->assign('message',$message);
+            $this->assign('good1',$good1);
 
 
 
