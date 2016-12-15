@@ -1,0 +1,31 @@
+[ 2016-12-15T10:32:53+08:00 ] ::1 /php_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002448s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005047s ]
+
+[ 2016-12-15T10:33:39+08:00 ] ::1 /php_-/market/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001938s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+ERR: 1146:Table 'market.market_index' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_index`
+ERR: 1146:Table 'market.market_index' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `market_index`
+
