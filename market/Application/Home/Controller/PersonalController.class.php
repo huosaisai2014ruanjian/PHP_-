@@ -19,26 +19,27 @@ class PersonalController extends Controller {
         $len=6;
         for ($i=0; $i<$len; $i++) 
         { 
-            $vercode . $chars[mt_rand(0, $charsLen)]; 
+            $vercode=$vercode . $chars[mt_rand(0, $charsLen)]; 
         }        
-        $content='【大学生跳蚤市场】您好，您的验证码是'.$vercode;  
-          $url="http://service.winic.org:8009/sys_port/gateway/?";
-          $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
-          $id = iconv('UTF-8','GB2312','kdvnszrqu');
-          $pwd = '384913ldh';
-          $to = $cellphone; 
-          $content = urlencode(iconv("UTF-8","GB2312",$content)); 
-          $rdata = sprintf($data, $id, $pwd, $to, $content);
+        $content='【大学生跳蚤市场】您好，您的验证码是'.$vercode; 
+        session('verify',$vercode); 
+          // $url="http://service.winic.org:8009/sys_port/gateway/?";
+          // $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
+          // $id = iconv('UTF-8','GB2312','kdvnszrqu');
+          // $pwd = '384913ldh';
+          // $to = $cellphone; 
+          // $content = urlencode(iconv("UTF-8","GB2312",$content)); 
+          // $rdata = sprintf($data, $id, $pwd, $to, $content);
           
-          $ch = curl_init();
-          curl_setopt($ch, CURLOPT_POST,1);
-          curl_setopt($ch, CURLOPT_POSTFIELDS,$rdata);
-          curl_setopt($ch, CURLOPT_URL,$url);
-          curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
-          //´òÓ¡Ò»ÏÂ²ÎÊý ¿ÉÒÔ¿´µ½ ÔÚGB2312±àÂëÄ£Ê½µÄä¯ÀÀÆ÷ÏÂ ÏÔÊ¾×Ö·ûÊÇÕý³£µÄ
-          $result = curl_exec($ch);
-          curl_close($ch);
-          $result = substr($result,0,3);
+          // $ch = curl_init();
+          // curl_setopt($ch, CURLOPT_POST,1);
+          // curl_setopt($ch, CURLOPT_POSTFIELDS,$rdata);
+          // curl_setopt($ch, CURLOPT_URL,$url);
+          // curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
+          // //´òÓ¡Ò»ÏÂ²ÎÊý ¿ÉÒÔ¿´µ½ ÔÚGB2312±àÂëÄ£Ê½µÄä¯ÀÀÆ÷ÏÂ ÏÔÊ¾×Ö·ûÊÇÕý³£µÄ
+          // $result = curl_exec($ch);
+          // curl_close($ch);
+          // $result = substr($result,0,3);
           if($result=="000")
           {
               echo '发送成功';
@@ -199,6 +200,8 @@ class PersonalController extends Controller {
     public function CertificateAuthority(){
         $id=1;
         if (IS_POST) {
+            dump(session());
+            exit;
             // 获取POST数据
             $data = I('post.');
             //dump($data);exit;
