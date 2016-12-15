@@ -8,7 +8,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 use Common\Controller\RestfulController;
-class IndexController extends RestfulController {
+class IndexController extends Controller {
 
     public function index(){
 		$menu  = array();
