@@ -630,3 +630,464 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001341s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001418s ]
 
+[ 2016-12-15T15:04:48+08:00 ] ::1 /PHP_-/market/index.php/Home/View/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+ERR: 无法加载控制器:View
+
+[ 2016-12-15T15:04:57+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0009s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0013s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0008s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0007s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0007s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0007s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006189s ]
+
+[ 2016-12-15T15:04:57+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/lib/weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+ERR: 非法操作:lib
+
+[ 2016-12-15T15:04:58+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/css/jquery-weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/css/index1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/css/swiper-3.3.1.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/message5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/lib/jquery-2.1.4.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+ERR: 非法操作:lib
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/js/jquery-weui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+ERR: 非法操作:js
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+ERR: 非法操作:js
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/paimail.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/xuexitu.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/dianzi.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/lunbo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/fushi.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/che.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/yundong.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/xuni.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/shuijing.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/bangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/shoes.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/ball1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/taiyang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/1/teacher.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/1/xinling.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/1/dian.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/shop.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/jiahao.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/my.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-12-15T15:04:59+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/1/six.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-12-15T15:05:00+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/bullet-red.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+
+[ 2016-12-15T15:05:08+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/lib/weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+ERR: 非法操作:lib
+
+[ 2016-12-15T15:05:08+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/css/jquery-weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:05:08+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/css/index1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:05:08+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/css/swiper-3.3.1.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0005s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0005s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/lib/weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+ERR: 非法操作:lib
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/css/jquery-weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/css/index1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/lib/jquery-2.1.4.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: 非法操作:lib
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/css/swiper-3.3.1.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+ERR: 非法操作:css
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/js/jquery-weui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+ERR: 非法操作:js
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/bullet-red.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+ERR: 非法操作:js
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/message5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008554s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/paimail.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/xuexitu.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/che.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/yundong.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/lunbo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/fushi.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/shuijing.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/shoes.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/bangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/taiyang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/1/teacher.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/1/six.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/ball1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/1/dian.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/1/xinling.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/shop.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/jiahao.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2016-12-15T15:05:47+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/my.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-12-15T15:05:48+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/dianzi.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+
+[ 2016-12-15T15:05:48+08:00 ] ::1 /PHP_-/market/index.php/Home/Index/images/hua.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+
