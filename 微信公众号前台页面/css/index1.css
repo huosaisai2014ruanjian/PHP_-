@@ -1,7 +1,7 @@
 #search_bar{
 
 }
-* { margin:0; padding:0;} 
+* { margin:0; padding:0; } 
 
 .box {height:150px; float:left; width:330px; overflow: hidden; position:relative; } 
 .box li { display:block; float:left; margin-left:5px; margin-right:5px; width:100px; height:70px;background:#BBB;font-size:50px;color:#ccc;text-decoration:none;text-align:center; cursor:pointer;} 
@@ -12,19 +12,32 @@ a.prev, a.next {background:url(../images/houtui.png) no-repeat 0 0; display:bloc
 a.next { background-image:url(../images/qianjin.png)} 
 .scroll_list{ width:10000em; position:absolute; height:150px;} 
 .rec p{
-	    margin-top: 5px;
+	    margin-top: 2px;
         height: 20px;
         width: 100%;
         color: black;
         text-align: center;
-       
+        
 }
-
+#fenlei{
+	padding-top: 8px;
+}
+.weui-col-33 p{
+    color:#000000;
+}
+#tuijian{
+	padding-top: 8px;
+}
+.taiyang{
+	float: left;
+	margin-top: -5px;
+}
 .re{
 	 margin-top: 15px;
 	 border-top:2px solid #FF9224;
 	 border-bottom:2px solid #FF9224;
   }
+
   #nav{
 		height:110px;
 		width:100%;
@@ -70,11 +83,12 @@ a.next { background-image:url(../images/qianjin.png)}
        width: 100%;
 	}
  .footer{
- 	height:150px;
+ 	height:115px;
  	width:100%;
- 	font-size: 24px;
+ 	font-family: KaiTi;
+ 	font-size: 10px;
  	text-align: center;
- 	background-color:#ccc;
+ 	background-color:rgb(247,247,250);
  }
  .float{
     margin:7px;
@@ -85,6 +99,16 @@ a.next { background-image:url(../images/qianjin.png)}
  .float img{margin: 1px;
             
  }
- .weui-col-50 img{width:200px;
-                  height: 200px;
-                  }
+ .weui-col-50 img
+ {
+ 	width:80%;
+    height: 65%;
+    padding-top: 10px;
+    padding-bottom: 9px;
+}
+.weui-col-50{
+	float: left;
+	width: 50%;
+	height: 270px;
+}
+
