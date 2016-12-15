@@ -97,79 +97,27 @@
 </section> 
 
   <div class="weui_panel_bd">
-   
-  <?php if(is_array($study)): $i = 0; $__LIST__ = $study;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PHP_-/market/index.php/Home/home/GoodDetail/index?id=<?php echo ($vo['id']); ?>" class="weui_media_box weui_media_appmsg">
-      <div class="goodslist">
-        <img class="weui_media_appmsg_thumb" src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" height="100" width="100" alt="">
-      </div>
-      <div class="weui_media_bd">
-        <h4 class="weui_media_title"><?php echo ($vo["name"]); ?></h4>
-        <h5 class="price"><?php echo ($vo["price"]); ?></h5>
-        <p class="ifnew"><?php echo ($vo["degree"]); ?>成新</p>
-        <p class="weui_media_desc"><?php echo ($vo["description"]); ?></p>
-      </div>
-      <div>
-          <img src="images/userhead.png" height="50" width="50">
-          <p class="sellername"><?php echo ($vo["nickname"]); ?></p>
-          <p class="sellername"><?php echo ($vo["college"]); ?></p>
-      </div>
-    </a><?php endforeach; endif; else: echo "" ;endif; ?>
+
   <?php if(is_array($type)): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PHP_-/market/index.php/Home/GoodDetail/index?id=6" class="weui_media_box weui_media_appmsg">
       <div class="goodslist">
         <img class="weui_media_appmsg_thumb" src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" height="100" width="100" alt="">
       </div>
       <div class="weui_media_bd">
       	<h4 class="weui_media_title"><?php echo ($vo["name"]); ?></h4>
+        <br>
+        <p class="weui_media_desc"><?php echo ($vo["description"]); ?></p>
         <h5 class="price"><?php echo ($vo["price"]); ?></h5>
         <p class="ifnew"><?php echo ($vo["degree"]); ?>成新</p>
-        <p class="weui_media_desc"><?php echo ($vo["description"]); ?></p>
+
       </div>
-      <div>
-      		<img src="/PHP_-/market/Public/<?php echo ($vo["head"]); ?>" height="50" width="50">
-      		<p class="sellername"><?php echo ($vo["nickname"]); ?></p>
-      		<p class="sellername"><?php echo ($vo["college"]); ?></p>
+      <div style="text-align: right">
+      		<img src="/PHP_-/market/Public/<?php echo ($vo["head"]); ?>" style=" height:40px;width:40px;">
+      		<p class="weui_media_desc"><?php echo ($vo["nickname"]); ?></p>
+      		<p class="weui_media_desc"><?php echo ($vo["college"]); ?></p>
       </div>
     </a><?php endforeach; endif; else: echo "" ;endif; ?>
     
-<!--第二个分类-->
-     <!--  <div class="weui_panel_hd">照相机</div>
-  <div class="weui_panel_bd">
-    <a href="gooddetail.html" class="weui_media_box weui_media_appmsg">
-      <div class="goodslist">
-        <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
-      </div>
-      <div class="weui_media_bd">
-      	
-      	<h4 class="weui_media_title">二手iphone</h4>
-        <h5 class="price">50￥</h5>
-        <p class="ifnew">9成新</p>
-        <p class="weui_media_desc">刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售</p>
-      </div>
-      <div>
-      		<img src="images/userhead.png" height="50" width="50">
-      		<p class="sellername">赵四</p>
-      		<p class="sellername">软件学院</p>
-      </div>
-    </a> 
-    <a href="gooddetail.html" class="weui_media_box weui_media_appmsg">
-      <div class="goodslist">
-        <img class="weui_media_appmsg_thumb" src="images/goods.png" height="100" width="100" alt="">
-      </div>
-      <div class="weui_media_bd">
-      	
-      	<h4 class="weui_media_title">二手iphone</h4>
-        <h5 class="price">50￥</h5>
-        <p class="ifnew">9成新</p>
-        <p class="weui_media_desc">刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售刚用了一个月急需用钱，着急出售</p>
-      </div>
-      <div>
-      		<img src="images/userhead.png" height="50" width="50">
-      		<p class="sellername">赵四</p>
-      		<p class="sellername">软件学院</p>
-      </div>
-    </a> 
-<!--  <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
-</div>  -->
+
 
 <script type="text/javascript" src="/PHP_-/market/Public/lib/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="/PHP_-/market/Public/js/jquery-weui.min.js"></script>
