@@ -86,6 +86,7 @@ class GoodDetailController extends Controller
             $this->assign('img_url',$imgarray);
             $this->assign('user',$users);
             $this->assign('result',$result);
+            $viewadd = $goodsModel->where($where)->setInc('times',1);//页面每刷新一次，浏览次数加1 
             $this->display();
 
         }

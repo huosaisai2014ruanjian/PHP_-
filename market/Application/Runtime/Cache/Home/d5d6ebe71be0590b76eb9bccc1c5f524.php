@@ -1,0 +1,436 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+  <title>校园跳蚤市场-学生认证</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
+  <link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.min.css">
+  <link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/jquery-weui.css">
+  <link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/button.css">
+
+  <style type="text/css">
+  html,body{
+    height: 100%;
+  }
+     
+  </style>
+  <!--输入信息-->
+<body >
+<form action="/php_-/market/index.php/Home/Personal/CertificateAuthority" method="post" id="register_from" enctype="multipart/form-data">
+  <div style="text-align:center;color:#FCFCFC;background-color:#FF8C00; width="100%"">
+<div></br></div>
+  学生认证中心
+<div></br></div>
+  </div>
+<div style="background-color:#F7F7F7">
+  <div  class="weui_cells weui_cells_form">
+  <div class="weui_cell">
+    <div class="weui_cell_hd"><label class="weui_label">学号</label></div>
+    <div class="weui_cell_bd weui_cell_primary">
+      <input class="weui_input" type="number" name="num" placeholder="请输入学号">
+    </div>
+  </div>
+
+  <div class="weui_cell">
+    <div class="weui_cell_hd"><label class="weui_label">姓名</label></div>
+    <div class="weui_cell_bd weui_cell_primary">
+      <input class="weui_input" type="name" name="name" placeholder="请输入姓名">
+    </div>
+  </div>
+  <!--选择学院-->
+  <div class="weui_cell weui_cell_select">
+    <div class="weui_cell_bd weui_cell_primary">
+      <select class="weui_select" name="college">
+        <option selected="" value="0">请选择学院</option>
+        <option value="软件学院">软件学院</option>
+        <option value="法政学院">法政学院</option>
+        <option value="教育学院">教育学院</option>
+        <option value="文学学院">文学学院</option>
+        <option value="历史文化学院">历史文化学院</option>
+        <option value="外国语学院">外国语学院</option>
+      </select>
+    </div>
+  </div>
+   <!--选择年级-->
+  <div class="weui_cell weui_cell_select">
+    <div class="weui_cell_bd weui_cell_primary">
+      <select class="weui_select" name="grade">
+        <option selected="" value="0">请选择年级</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+      </select>
+    </div>
+  </div>
+  <!--输入手机号-->
+  <div class="weui_cell">
+    <div class="weui_cell_hd"><label class="weui_label">手机号</label></div>
+    <div class="weui_cell_bd weui_cell_primary">
+    <input class="weui_input tel phone_register phone_loginByPhone" id="cellphone" type="name" name="username" placeholder="请输入手机号">
+    </div>
+  </div>  
+  <!--输入验证码-->
+  <div class="weui_cell">
+    <div class="weui_cell_hd"><label class="weui_label">验证码</label></div>
+    <div class="weui_cell_bd weui_cell_primary">
+      <input style="width:180px;" class="check weui_input" name="vcode" id="vcodeForRegister" type="name" placeholder="请输入验证码">
+      <input style="border:0px;background-color:white;float:right;" type="button" value="获取验证码" class="addcheck" onclick="sendMessage('.phone_register')" id="btnSendCodeForRegister"/>
+    </div>
+  </div>    
+  <!--上传照片-->
+<div >
+<p style="font-size:100%;color:#FF8C00;text-align:center;"><strong>请上传一卡通照片</strong></p>
+</br>
+<p style="font-size:85%">&nbsp;&nbsp;&nbsp;(要求：图片要清晰，支持jpg,png格式，大小不超过2M)
+
+
+
+
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <div class="weui_uploader">
+                        <div class="weui_uploader_hd weui_cell">
+                            <div class="weui_cell_bd weui_cell_primary">图片上传</div>
+                <!--             <div class="weui_cell_ft js_counter">0</div> -->
+                        </div>
+                        <div class="weui_uploader_bd" style="margin:0 39%;">
+                            <ul class="weui_uploader_files">
+                                <!-- 预览图插入到这 --> </ul>
+                            <div class="weui_uploader_input_wrp">
+                                <input class="weui_uploader_input js_file" type="file" name="card" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="" id="upload1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- 
+
+    <script src="/php_-/market/Public/js/zepto.min.js"></script> -->
+<!-- 
+<div id="preview" style="text-align:center">
+    <img id="imghead" width=100 height=100 border=0 src='<%=request.getContextPath()%>/images/defaul.jpg'>
+</div>
+ -->
+
+
+
+<div style="text-align:center">
+<!-- <input style="font-size:100%" type="file" name="card" onchange="previewImage(this)" />  -->
+<!-- <button style="font-size:100%">&nbsp;&nbsp;拍照&nbsp;&nbsp;</button> -->
+</div>
+  
+  <div style="text-align:center">
+  </br>
+  <input type="hidden" value="hidden" name="hidden" id="hidden">
+ <input style="font-size:93%" class="button orange" onclick="return checkForRegister();" type="submit" value="提交"> 
+   </div>
+   </div>
+</form>   
+</body>
+
+<script type="text/javascript" src="/php_-/market/Public/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/php_-/market/Public/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/php_-/market/Public/js/swiper.js' charset='utf-8'>
+</script>
+ <script>
+// var session_value = "<%=session.getAttribute('verify')%>";
+// alert(session_value);
+//发送手机验证码
+    var InterValObj; //timer变量，控制时间
+    var count = 60; //间隔函数，1秒执行
+    var curCount;//当前剩余秒数
+    function sendMessage(ele) {
+        var phone = $(ele).val();
+
+        if (!(/^1[3|4|5|6|7|8|9]\d{9}$/.test(phone))) {
+            alert("手机号码有误，请重填");
+            return;
+        }
+        curCount = count;            //设置button效果，开始计时
+        $("#btnSendCode").attr("disabled", "true");
+        $("#btnSendCodeForRegister").attr("disabled", "true");
+        $("#btnSendCode").val(curCount + "秒内输入验证码");
+        $("#btnSendCodeForRegister").val(curCount + "秒内输入验证码");
+        InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+        // 向后台发送处理数据
+        $.ajax({
+            type: "POST", //用POST方式传输
+            url: '/php_-/market/index.php/Home/Personal/SendSMS/cellphone/'+document.getElementById("cellphone").value, //目标地址
+            data: {'tel': phone},
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+            },
+            success: function (data) {
+                //  alert(data);
+               $('#hidden').val(data);
+            }
+        });
+    }
+    //timer处理函数
+    function SetRemainTime() {
+        if (curCount == 0) {
+            window.clearInterval(InterValObj);
+            //停止计时器
+            $("#btnSendCode").removeAttr("disabled");
+            $("#btnSendCodeForRegister").removeAttr("disabled");
+            //启用按钮
+
+            $("#btnSendCode").val("重新发送验证码");
+            $("#btnSendCodeForRegister").val("重新发送验证码");
+        }
+        else {
+            curCount--;
+            $("#btnSendCode").val(curCount + "秒内输入验证码");
+            $("#btnSendCodeForRegister").val(curCount + "秒内输入验证码");
+        }
+    }
+    function checkPwd() {
+        var phone = $('.form_phone2').val().trim();
+        var password = $('#password').val().trim();
+
+        if (!(/^1[3|4|5|6|7|8|9]\d{9}$/.test(phone))) {
+            alert("手机号码有误，请重填");
+            return;
+        }
+        if(password.length <6 || password.length > 32){
+            alert('密码长度有误');
+            return;
+        }
+        $('.loginFormpPtong').submit();
+    }
+    function checkVcode() {
+      //alert(1);
+      //   var phone = $('.phone_loginByPhone').val().trim();
+      //   var vcode = $('#vcode').val().trim();
+
+        // if (!(/^1[3|4|5|6|7|8|9]\d{9}$/.test(phone))) {
+        //     alert("手机号码有误，请重填");
+        //     return false;
+        // }
+        // if(vcode.length!=6){
+        //     alert('验证码格式不正确');
+        //     return false;
+        // }
+        // alert($_SESSION);
+        // $.toptip('操作失败', 'error');
+        return false;
+        // $('.loginFormYanzhengma').submit();
+    }
+
+
+    //注册
+    function checkForRegister() {
+        var phone = $('#cellphone').val().trim();
+        if (!(/^1[3|4|5|6|7|8|9]\d{9}$/.test(phone))) {
+            alert("手机号码有误，请重填");
+            return false;
+        }
+        // var vcode = $('#vcodeForRegister').val().trim();
+        // if(vcode.length != 6) {
+        //     alert('验证码不正确');
+        //     return false;
+        // }
+        // alert(session());
+        if ($('#hidden').val()==$('#vcodeForRegister').val()) {
+      //    alert(1);
+          $('#register_from').submit();
+           // alert($('#hidden').val());
+             //  $.toptip('提交成功，请等待验证通过', 'success');
+            // window.location.href="/php_-/market/index.php/Home/Personal/rzsuccess";  
+        }else{
+
+             //  alert($('#hidden').val());
+             //  alert($('#vcodeForRegister').val());
+        $.toptip('验证码错误', 'error');
+        }
+      
+return false;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+                //图片上传预览    IE是用了滤镜。
+        function previewImage(file)
+        {
+          var MAXWIDTH  = 260; 
+          var MAXHEIGHT = 180;
+          var div = document.getElementById('preview');
+          if (file.files && file.files[0])
+          {
+              div.innerHTML ='<img id=imghead>';
+              var img = document.getElementById('imghead');
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight )
+            {
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                 
+                if( rateWidth > rateHeight )
+                {
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else
+                {
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+             
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+    </script>
+    <script>
+
+
+
+    $.weui = {};
+    $.weui.alert = function(options){
+        options = $.extend({title: '警告', text: '警告内容'}, options);
+        var $alert = $('.weui_dialog_alert');
+        $alert.find('.weui_dialog_title').text(options.title);
+        $alert.find('.weui_dialog_bd').text(options.text);
+        $alert.on('touchend click', '.weui_btn_dialog', function(){
+            $alert.hide();
+        });
+        $alert.show();
+    };
+
+    $(function () {
+        // 允许上传的图片类型
+        var allowTypes = ['image/jpg', 'image/jpeg', 'image/png', 'image/gif'];
+        // 1024KB，也就是 1MB
+        var maxSize = 1024 * 1024;
+        // 图片最大宽度
+        var maxWidth = 300;
+        // 最大上传图片数量
+        var maxCount = 1;
+        $('.js_file').on('change', function (event) {
+          if ($('.weui_uploader_file').length==0) {
+           /// alert(1);
+            $('.weui_uploader_input_wrp').hide();
+           // alert(2);
+          }
+          // alert($('.weui_uploader_file').length);
+            var files = event.target.files;
+
+            // 如果没有选中文件，直接返回
+            if (files.length === 0) {
+                return;
+            }
+
+            for (var i = 0, len = files.length; i < len; i++) {
+                var file = files[i];
+                var reader = new FileReader();
+
+                // 如果类型不在允许的类型范围内
+                if (allowTypes.indexOf(file.type) === -1) {
+                    $.weui.alert({text: '该类型不允许上传'});
+                    continue;
+                }
+
+                if (file.size > maxSize) {
+                    $.weui.alert({text: '图片太大，不允许上传'});
+                    continue;
+                }
+
+                if ($('.weui_uploader_file').length >= maxCount) {
+                    $.weui.alert({text: '最多只能上传' + maxCount + '张图片'});
+                    return;
+                }
+
+                reader.onload = function (e) {
+                    var img = new Image();
+                    img.onload = function () {
+                        // 不要超出最大宽度
+                        var w = Math.min(maxWidth, img.width);
+                        // 高度按比例计算
+                        var h = img.height * (w / img.width);
+                        var canvas = document.createElement('canvas');
+                        var ctx = canvas.getContext('2d');
+                        // 设置 canvas 的宽度和高度
+                        canvas.width = w;
+                        canvas.height = h;
+                        ctx.drawImage(img, 0, 0, w, h);
+                        var base64 = canvas.toDataURL('image/png');
+
+                        // 插入到预览区
+                        var $preview = $('<li class="weui_uploader_file weui_uploader_status" style="background-image:url(' + base64 + ')"><div class="weui_uploader_status_content">0%</div></li>');
+                        $('.weui_uploader_files').append($preview);
+                        var num = $('.weui_uploader_file').length;
+                        $('.js_counter').text(num + '/' + maxCount);
+
+                        // 然后假装在上传，可以post base64格式，也可以构造blob对象上传，也可以用微信JSSDK上传
+
+                        var progress = 0;
+                        function uploading() {
+                            $preview.find('.weui_uploader_status_content').text(++progress + '%');
+                            if (progress < 100) {
+                                setTimeout(uploading, 30);
+                            }
+                            else {
+                                // 如果是失败，塞一个失败图标
+                                //$preview.find('.weui_uploader_status_content').html('<i class="weui_icon_warn"></i>');
+                                $preview.removeClass('weui_uploader_status').find('.weui_uploader_status_content').remove();
+                            }
+                        }
+                        setTimeout(uploading, 30);
+                    };
+
+                    img.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+    //# sourceURL=pen.js
+</script>
+
+</html>
