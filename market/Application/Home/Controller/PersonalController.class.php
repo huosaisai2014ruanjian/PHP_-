@@ -23,7 +23,6 @@ class PersonalController extends Controller {
         }        
         $content='【大学生跳蚤市场】您好，您的验证码是'.$vercode; 
         // session('verify',$vercode); 
-        echo $vercode;
           // $url="http://service.winic.org:8009/sys_port/gateway/?";
           // $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
           // $id = iconv('UTF-8','GB2312','kdvnszrqu');
@@ -41,6 +40,8 @@ class PersonalController extends Controller {
           // $result = curl_exec($ch);
           // curl_close($ch);
           // $result = substr($result,0,3);
+          echo $vercode;
+
           // if($result=="000")
           // {
           //     echo '发送成功';
@@ -88,8 +89,8 @@ class PersonalController extends Controller {
     //我的收藏
     public function mycollection(){
         $id=4;
-        $up = M('market_collection')->join('market_goods on market_collection.goods_id = market_goods.id')->where("market_collection.user_id = $id&&sp_status=1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_collection.id'=>'id'))->select();
-        $down = M('market_collection')->join('market_goods on market_collection.goods_id = market_goods.id')->where("market_collection.user_id = $id&&sp_status<>1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_collection.id'=>'id'))->select();
+        $up = M('collection')->join('market_goods on market_collection.goods_id = market_goods.id')->where("market_collection.user_id = $id&&sp_status=1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_collection.id'=>'id'))->select();
+        $down = M('collection')->join('market_goods on market_collection.goods_id = market_goods.id')->where("market_collection.user_id = $id&&sp_status<>1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_collection.id'=>'id'))->select();
 //dump($up);exit;
         for ($i=0;$i<count($up);$i++)
         {
@@ -201,8 +202,9 @@ class PersonalController extends Controller {
     public function CertificateAuthority(){
         $id=1;
         if (IS_POST) {
-            dump(session());
-            exit;
+            // dump(session());
+
+            // exit;
             // 获取POST数据
             $data = I('post.');
             //dump($data);exit;
@@ -234,10 +236,11 @@ class PersonalController extends Controller {
                         exit(); 
                     }
             // 插入到数据表中
-            $result =M('users')->add($data);
+                 //   dump($data);exit;
+            $result =M('users')->where("id=$id")->save($data);
             // 善后处理
             if ($result) {
-                $this->success($this->_tableName . '表数据插入成功！');
+                $this->redirect('Personal/rzsuccess');
             } else {
                 $this->error($this->_tableName . '表数据插入失败！');
             }  
@@ -246,5 +249,8 @@ class PersonalController extends Controller {
             $this->display();
         }              
     }     
+    public function rzsuccess(){
+        $this->display();
+    }
 }
 
