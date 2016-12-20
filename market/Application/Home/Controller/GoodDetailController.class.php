@@ -105,7 +105,8 @@ class GoodDetailController extends Controller
             if (1) {//条件
                 $add = $comment->add($data);
                 if ($add) {
-                    $this->success('留言成功',0);
+                    $id= I("post.goods_id");
+                    $this->redirect("home/goodDetail/index/id/$id");
                 } else {
                     $this->error('评论失败');
                 }

@@ -64,7 +64,8 @@ class GoodsController extends RestfulController
         $result = $this->_db->add($data);
         // 善后处理
         if ($result) {
-            $this->success('发布成功！');
+           // $this->success('发布成功！');
+        	$this->redirect("home/goodDetail/index/id/$result");
         } else {
             $this->error('发布失败');
         }

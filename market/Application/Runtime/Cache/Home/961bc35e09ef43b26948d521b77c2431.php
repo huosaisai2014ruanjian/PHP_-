@@ -5,18 +5,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<!--   <link href="/PHP_-/market/Public/dwz/themes/css/core.css" rel="stylesheet" type="text/css" /> -->
-  <link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/lib/weui.css">
+<!--   <link href="/php_-/market/Public/dwz/themes/css/core.css" rel="stylesheet" type="text/css" /> -->
+  <link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.css">
 
 
-  <link href="/PHP_-/market/Public/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
-  <link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/css/define.css">
-  <link href="/PHP_-/market/Public/css/base.css" rel="stylesheet" /> 
+  <link href="/php_-/market/Public/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/define.css">
+  <link href="/php_-/market/Public/css/base.css" rel="stylesheet" /> 
 
-<!-- 	<link href="/PHP_-/market/Public/lib/weui.min.css" type="text/css" rel="stylesheet"/>
-	<link href="/PHP_-/market/Public/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
-	<link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/css/define.css">
-  <link href="/PHP_-/market/Public/css/base.css" rel="stylesheet" />  -->
+<!-- 	<link href="/php_-/market/Public/lib/weui.min.css" type="text/css" rel="stylesheet"/>
+	<link href="/php_-/market/Public/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/define.css">
+  <link href="/php_-/market/Public/css/base.css" rel="stylesheet" />  -->
 	<style>
       .html,body{
         height: 100%;
@@ -68,12 +68,12 @@
     <dd>
       <ul class="slide downlist">
         <li><a href="#">不限</a></li>
-        <li><a href="/PHP_-/market/index.php/Home/goodslist/goodslist?id=1">学习物品</a></li>
-        <li><a href="/PHP_-/market/index.php/Home/goodslist/goodslist?id=2">电子数码</a></li>
-        <li><a href="/PHP_-/market/index.php/Home/goodslist/goodslist?id=4">服装服饰</a></li>
-        <li><a href="/PHP_-/market/index.php/Home/goodslist/goodslist?id=5">出行工具</a></li>
-        <li><a href="/PHP_-/market/index.php/Home/goodslist/goodslist?id=6">运动器材</a></li>
-        <li><a href="/PHP_-/market/index.php/Home/goodslist/goodslist?id=7">虚拟物品</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?id=1">学习物品</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?id=2">电子数码</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?id=4">服装服饰</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?id=5">出行工具</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?id=6">运动器材</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?id=7">虚拟物品</a></li>
       </ul>
     </dd>
 
@@ -104,9 +104,9 @@
   <div class="weui_panel_bd">
    
 
-  <?php if(is_array($type)): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/PHP_-/market/index.php/Home/GoodDetail/index?id=<?php echo ($vo['id']); ?>" class="weui_media_box weui_media_appmsg">
+  <?php if(is_array($type)): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/php_-/market/index.php/Home/GoodDetail/index?id=<?php echo ($vo['id']); ?>" class="weui_media_box weui_media_appmsg">
       <div class="goodslist">
-        <img class="weui_media_appmsg_thumb" src="/PHP_-/market/Public/<?php echo ($vo["photo"]); ?>" height="100" width="100" alt="">
+        <img class="weui_media_appmsg_thumb" src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" height="100" width="100" alt="">
       </div>
       <div class="weui_media_bd">
       	<h4 class="weui_media_title"><?php echo ($vo["name"]); ?></h4>
@@ -117,7 +117,7 @@
 
       </div>
       <div style="text-align:right">
-      		<img src="/PHP_-/market/Public/<?php echo ($vo["head"]); ?>" style="height:40px;width=40px;" >
+      		<img src="/php_-/market/Public/<?php echo ($vo["head"]); ?>" style="height:40px;width=40px;" >
 
       		<p class="weui_media_desc"><?php echo ($vo["nickname"]); ?></p>
       		<p class="weui_media_desc"><?php echo ($vo["college"]); ?></p>
@@ -126,9 +126,9 @@
    
 </div>
 
-<script type="text/javascript" src="/PHP_-/market/Public/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/PHP_-/market/Public/js/jquery-weui.min.js"></script>
-<script type="text/javascript" src="/PHP_-/market/Public/js/swiper.js"></script>
+<script type="text/javascript" src="/php_-/market/Public/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/php_-/market/Public/js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="/php_-/market/Public/js/swiper.js"></script>
 <script>
       $(".swiper-container").swiper({
         loop: true,
