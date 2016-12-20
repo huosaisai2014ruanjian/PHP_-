@@ -24,7 +24,7 @@
 <div class="weui_tab">
   <div class="weui_tab_bd">
      <!--其中放我们的代码内容-->
-<form id="form1" method="post" action="percenter.html">
+<form id="form1" method="post" action="/php_-/market/index.php/Home/Personal/sex">
 	<input type="hidden" name="sex" class="sex" value="">
 </form>
     <div class="weui_panel">
@@ -51,8 +51,6 @@
 	    </div>
 	  </div>
 	</div>
-
-
   </div>
 </div>
 </body>

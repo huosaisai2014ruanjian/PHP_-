@@ -82,7 +82,7 @@
 <div class="weui_tab">
   <div class="weui_tab_bd">
    <!--其中放我们的代码内容-->
-  <form method="post" action="percenter.html">
+  <form method="post" action="/php_-/market/index.php/Home/Personal/editname">
      <div class="nickdiv"><input type="text" placeholder="新昵称" name="nickname" class="nickname"><br/>
      <input class="button orange tj"  type="submit" value="提交" style="font-size: 20px;"> </div>
   </form>  
