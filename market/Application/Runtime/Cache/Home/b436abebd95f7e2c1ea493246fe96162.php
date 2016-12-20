@@ -138,7 +138,35 @@
             <!--商品详情结束-->
             <!--底部导航开始-->
             <div class="weui_tabbar">
-                <a href="javascript:;" id='hide' class="weui_navbar_item weui_bar_item_on button orange medium" style="display:block;font-size:16px;font-family:'宋体';color:#fff;margin-top:5px;margin-bottom:8px;padding-top:8px">我喜欢</a>
+                <a href="javascript:;" id='hide' class="weui_navbar_item weui_bar_item_on button orange medium" style="display:block;font-size:16px;font-family:'宋体';color:#fff;margin-top:5px;margin-bottom:8px;padding-top:8px" onclick="">我喜欢<p style="color:white;font-size:40px;">♡</p><p style="color:white;font:40px;"> ♥</p></a>
+<script type="text/javascript">
+        function xihuan(ele) {
+        var phone = $(ele).val();
+
+        if (!(/^1[3|4|5|6|7|8|9]\d{9}$/.test(phone))) {
+            alert("手机号码有误，请重填");
+            return;
+        }
+        curCount = count;            //设置button效果，开始计时
+        $("#btnSendCode").attr("disabled", "true");
+        $("#btnSendCodeForRegister").attr("disabled", "true");
+        $("#btnSendCode").val(curCount + "秒内输入验证码");
+        $("#btnSendCodeForRegister").val(curCount + "秒内输入验证码");
+        InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+        // 向后台发送处理数据
+        $.ajax({
+            type: "POST", //用POST方式传输
+            url: '/php_-/market/index.php/Home/Personal/SendSMS/cellphone/'+document.getElementById("cellphone").value, //目标地址
+            data: {'tel': phone},
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+            },
+            success: function (data) {
+                //  alert(data);
+               $('#hidden').val(data);
+            }
+        });
+    }
+</script>
                 <a href="javascript:;" id='hide1' class="weui_navbar_item weui_bar_item_on button orange medium" style="display:none; font-size:16px;font-family:'宋体';color:#fff;margin-top:5px;margin-bottom:8px;padding-top:8px">我喜欢♥</a>
                 <a class="weui_navbar_item weui_bar_item_on button orange medium" style="font-size:16px;font-family:'宋体';color:#fff;margin:5px 3px 8px 3px;padding-top:8px">联系卖家</a>
                 <a href="javascript:;" id='show-actions' class="weui_navbar_item weui_bar_item_on button orange medium" style="font-size:16px;font-family:'宋体';color:#fff;margin-top:5px;margin-bottom:8px;padding-top:8px">购买</a>
