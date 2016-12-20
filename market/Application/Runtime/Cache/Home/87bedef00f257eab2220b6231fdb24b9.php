@@ -1,4 +1,4 @@
-<!--
+<?php if (!defined('THINK_PATH')) exit();?><!--
  * document：个人中心
  * User: 马豪珍
  * Date: 2016-12-08
@@ -11,8 +11,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/jquery-weui.css">
 	<style type="text/css">
 	html,body{
 		height: 100%;
@@ -47,7 +47,7 @@
             <p>我的头像</p>
           </div>
           <span class="weui_cell_ft"><div style="right:20px; border-radius:50%; overflow:hidden;">
-<img src="__PUBLIC__/{$personals.head}" style="position: absolute;top:12px;right: 35px; height:50px; width:50px;border-radius:50%;"/>
+<img src="/php_-/market/Public/<?php echo ($personals["head"]); ?>" style="position: absolute;top:12px;right: 35px; height:50px; width:50px;border-radius:50%;"/>
 </div>
 </span>
         </a>
@@ -58,7 +58,7 @@
           <div class="weui_cell_bd weui_cell_primary">
             <p>绑定的手机号</p>
           </div>
-          <span>{$personals.username}</span>
+          <span><?php echo ($personals["username"]); ?></span>
         </a>
       </div>
       <div class="weui_cells weui_cells_access">
@@ -67,16 +67,16 @@
           <div class="weui_cell_bd weui_cell_primary">
             <p>昵称</p>
           </div>
-          <span class="weui_cell_ft">{$personals.nickname}</span>
+          <span class="weui_cell_ft"><?php echo ($personals["nickname"]); ?></span>
         </a>
       </div>
       <div class="weui_cells weui_cells_access"> 
-        <a class="weui_cell" href="__MODULE__/Personal/sex">
+        <a class="weui_cell" href="/php_-/market/index.php/Home/Personal/sex">
           <div class="weui_cell_hd"><img src=""></div>
           <div class="weui_cell_bd weui_cell_primary">
             <p>性别</p>
           </div>
-           <span class="weui_cell_ft">{$personals.sex}</span>
+           <span class="weui_cell_ft"><?php echo ($personals["sex"]); ?></span>
         </a>
       </div>
       <div class="weui_cells weui_cells_access shengri">
@@ -85,20 +85,18 @@
           <div class="weui_cell_bd weui_cell_primary">
             <p>生日</p>
           </div>
-          <span class="weui_cell_ft">{$personals.birth}</span>
+          <span class="weui_cell_ft"><?php echo ($personals["birth"]); ?></span>
         </a>
       </div>
       <div class="weui_cells weui_cells_access">
-        <a class="weui_cell" href="__MODULE__/Personal/CertificateAuthority">
+        <a class="weui_cell" href="/php_-/market/index.php/Home/Personal/CertificateAuthority">
           <div class="weui_cell_hd"><img src=""></div>
           <div class="weui_cell_bd weui_cell_primary">
             <p>认证</p>
           </div>
-            <eq name="personals.rz_status" value="1">
-                <span class="weui_cell_ft">已认证</span>
-                <else/>
-                <span class="weui_cell_ft">请先认证</span>
-            </eq>
+            <?php if(($personals["rz_status"]) == "1"): ?><span class="weui_cell_ft">已认证</span>
+                <?php else: ?>
+                <span class="weui_cell_ft">请先认证</span><?php endif; ?>
         </a>
       </div>
       <div class="weui_cells weui_cells_access">
@@ -107,11 +105,9 @@
           <div class="weui_cell_bd weui_cell_primary">
             <p>学校</p>
           </div>
-            <eq name="personals.rz_status" value="1">
-          <span class="weui_cell_ft">{$personals.university}</span>
-           <else/>
-                <span class="weui_cell_ft">请先认证</span>
-            </eq>
+            <?php if(($personals["rz_status"]) == "1"): ?><span class="weui_cell_ft"><?php echo ($personals["university"]); ?></span>
+           <?php else: ?>
+                <span class="weui_cell_ft">请先认证</span><?php endif; ?>
         </a>
       </div>
       <div class="weui_cells weui_cells_access">
@@ -120,11 +116,9 @@
           <div class="weui_cell_bd weui_cell_primary">
             <p>学院</p>
           </div>
-            <eq name="personals.rz_status" value="1">
-                <span class="weui_cell_ft">{$personals.college}</span>
-                <else/>
-                <span class="weui_cell_ft">请先认证</span>
-            </eq>
+            <?php if(($personals["rz_status"]) == "1"): ?><span class="weui_cell_ft"><?php echo ($personals["college"]); ?></span>
+                <?php else: ?>
+                <span class="weui_cell_ft">请先认证</span><?php endif; ?>
         </a>
       </div>
       <div class="weui_cells weui_cells_access">
@@ -133,11 +127,9 @@
           <div class="weui_cell_bd weui_cell_primary">
             <p>年级</p>
           </div>
-            <eq name="personals.rz_status" value="1">
-                <span class="weui_cell_ft">{$personals.grade}</span>
-                <else/>
-                <span class="weui_cell_ft">请先认证</span>
-            </eq>
+            <?php if(($personals["rz_status"]) == "1"): ?><span class="weui_cell_ft"><?php echo ($personals["grade"]); ?></span>
+                <?php else: ?>
+                <span class="weui_cell_ft">请先认证</span><?php endif; ?>
         </a>
       </div>
 
@@ -148,7 +140,7 @@
 </div>
 </body>
 
-<script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='__PUBLIC__/js/swiper.js' charset='utf-8'></script>
+<script type="text/javascript" src="/php_-/market/Public/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/php_-/market/Public/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/php_-/market/Public/js/swiper.js' charset='utf-8'></script>
 </html>

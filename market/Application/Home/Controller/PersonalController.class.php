@@ -8,7 +8,6 @@
 namespace Home\Controller;
 use Think\Controller;
 
-
 class PersonalController extends Controller {
     public function SendSMS($cellphone){
         $cellphone= I("get.cellphone");
@@ -54,11 +53,11 @@ class PersonalController extends Controller {
 	//我的消息
     public function mynews(){
       //获取数据库聊天信息
-		$chats =  M('market_chat')->join('market_users on market_chat.fromuser_id = market_users.id')->order('time desc')->select();
+		$chats =  M('chat')->join('market_users on market_chat.fromuser_id = market_users.id')->order('time desc')->select();
 		$this->assign('chats',$chats);
-        $tongzhi = M('market_system')->order('time desc')->limit(1)->select();
+        $tongzhi = M('system')->order('time desc')->limit(1)->select();
         $this->assign('tongzhi',$tongzhi);
-        $messages = M('market_message')->join('market_users on market_message.fromuser_id = market_users.id')->order('time desc')->select();
+        $messages = M('message')->join('market_users on market_message.fromuser_id = market_users.id')->order('time desc')->select();
 		$this->assign('messages',$messages);
         $this->display();
 	}
@@ -66,7 +65,7 @@ class PersonalController extends Controller {
     public function mydingdan(){
       //获取数据库交易记录信息
          // dump($_POST);
-        $transaction = M('market_transaction')->join('market_goods on market_transaction.goods_id = market_goods.id')->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_transaction.id'=>'id'))->order('time desc')->where('status=1')->select();
+        $transaction = M('transaction')->join('market_goods on market_transaction.goods_id = market_goods.id')->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_transaction.id'=>'id'))->order('time desc')->where('status=1')->select();
         for ($i=0;$i<count($transaction);$i++)
         {
             $transaction[$i]['photo']=explode(';',$transaction[$i]['photo'])[2];
@@ -135,8 +134,8 @@ class PersonalController extends Controller {
     //商品管理
     public function spguanli(){
         $seller_id = 6;
-        $manage = M('market_goods')->join('market_users on market_goods.seller_id = market_users.id')->where("market_goods.seller_id=$seller_id&&sp_status=1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_goods.id'=>'id'))->select();
-        $down= M('market_goods')->join('market_users on market_goods.seller_id = market_users.id')->where("market_goods.seller_id=$seller_id&&sp_status<>1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_goods.id'=>'id','market_goods.sp_status'=>'status'))->select();
+        $manage = M('goods')->join('market_users on market_goods.seller_id = market_users.id')->where("market_goods.seller_id=$seller_id&&sp_status=1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_goods.id'=>'id'))->select();
+        $down= M('goods')->join('market_users on market_goods.seller_id = market_users.id')->where("market_goods.seller_id=$seller_id&&sp_status<>1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_goods.id'=>'id','market_goods.sp_status'=>'status'))->select();
         for ($i=0;$i<count($manage);$i++)
         {
             $manage[$i]['photo']=explode(';',$manage[$i]['photo'])[1];
@@ -194,13 +193,61 @@ class PersonalController extends Controller {
     }
     //个人中心
     public function percenter(){
-        $id = 7;
+        $id = 1;
         $personals = M('users')->where("market_users.id = $id")->find(); 
         $this->assign('personals', $personals);
         $this->display();
     }
     public function sex(){
-        $this->redirect("");
+        if(IS_POST){
+            $data=I('post.');
+//           dump($data);
+//            $id = $_SESSION['id'];
+//            dump($id);
+            $a=M('users')->where("id=1")->find();
+//            dump($a);
+//            dump($a['sex']);
+           if($a['sex']==$data['sex']){
+               $this->redirect('percenter');
+           } else{
+               $result =  M('users')->where("id=1")->save($data);
+               if ($result) {
+                $this->redirect('percenter');
+            }
+           }
+           // dump($result);
+            // 善后处理
+        }else{
+            $this->display();
+        }
+    }
+    public function editname(){
+        if(IS_POST){
+            $data = I('post.');
+            //dump($data);exit;
+//            $id = $_SESSION['id'];
+//            dump($id);
+            $result = M('users')->where("id=1")->save($data);
+            if($result){
+                $this->redirect('percenter');
+            }
+        }else{
+            $this->display();
+        }
+    }
+    public function birth(){
+        if(IS_POST){
+            $data = I('post.');
+            //dump($data);exit;
+//            $id = $_SESSION['id'];
+//            dump($id);
+            $result = M('users')->where("id=1")->save($data);
+            if($result){
+                $this->redirect('percenter');
+            }
+        }else{
+            $this->display();
+        }
     }
     public function CertificateAuthority(){
         $id=1;
