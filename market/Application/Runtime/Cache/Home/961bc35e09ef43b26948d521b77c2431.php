@@ -18,6 +18,9 @@
 	<link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/css/define.css">
   <link href="/PHP_-/market/Public/css/base.css" rel="stylesheet" />  -->
 	<style>
+      .html,body{
+        height: 100%;
+      }
       .swiper-container {
         width: 100%;
         
@@ -52,7 +55,7 @@
 
 	<!-- 搜索筛选器 分类 -->
 
-<div class="weui_panel weui_panel_access">
+<div class="weui_panel weui_panel_access" style=" height: 100%;">
 <!--第一个分类-->
   <section class="job-module"> 
   <dl class="retrie"> 
