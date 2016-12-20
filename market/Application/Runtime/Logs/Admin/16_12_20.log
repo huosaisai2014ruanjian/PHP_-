@@ -1,0 +1,9 @@
+[ 2016-12-20T08:02:02+08:00 ] ::1 /php_-/market/index.php/admin/goodsdetail/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011615s ]
+ERR: 无法加载控制器:Goodsdetail
+
