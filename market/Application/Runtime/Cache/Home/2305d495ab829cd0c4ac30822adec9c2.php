@@ -1,32 +1,34 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-	<title>修改生日</title>
+	<title>修改昵称</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/jquery-weui.css">
 	<style type="text/css">
 	html,body{
 		height: 100%;
 		background-color: rgb(238,238,238);
+		margin: auto 0;
 	}
-	.birthdiv{
-		text-align:center;
-	}
-	#my-input{
-		padding-left: 3%;
-		font-size: 18px;
-		border: 0px;
-		height: 40px;
-		margin: 20px auto;
-		width: 90%;
-	}
-	.tj{
-		width: 93%;
-		height: 40px;
-	}
+.nickdiv{
+	text-align:center;
+}
+.nickname{
+	padding-left: 3%;
+	font-size: 18px;
+	border: 0px;
+	height: 40px;
+	margin: 20px auto;
+	width: 90%;
+}
+.tj{
+	width: 93%;
+	height: 40px;
+
+}
 .button {
 	display: inline-block;
 	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
@@ -79,21 +81,17 @@
 <body>
 <div class="weui_tab">
   <div class="weui_tab_bd">
-     <!--其中放我们的代码内容-->
-<form method="post" action="percenter.html">
-	<div class="birthdiv">
-		<input type="text" data-toggle='date' id="my-input" />
-		<input class="button orange tj"  type="submit" value="提交" style="font-size:20px;"> 
-	</div>
-</form>
+   <!--其中放我们的代码内容-->
+  <form method="post" action="percenter.html">
+     <div class="nickdiv"><input type="text" placeholder="新昵称" name="nickname" class="nickname"><br/>
+     <input class="button orange tj"  type="submit" value="提交" style="font-size: 20px;"> </div>
+  </form>  
+   
   </div>
 </div>
 </body>
 
-<script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='__PUBLIC__/js/swiper.js' charset='utf-8'></script>
-<script>
-$("#my-input").calendar();
-</script>
+<script type="text/javascript" src="/php_-/market/Public/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/php_-/market/Public/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/php_-/market/Public/js/swiper.js' charset='utf-8'></script>
 </html>

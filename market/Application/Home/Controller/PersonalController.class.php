@@ -199,6 +199,9 @@ class PersonalController extends Controller {
         $this->assign('personals', $personals);
         $this->display();
     }
+    public function sex(){
+        $this->redirect("");
+    }
     public function CertificateAuthority(){
         $id=1;
         if (IS_POST) {

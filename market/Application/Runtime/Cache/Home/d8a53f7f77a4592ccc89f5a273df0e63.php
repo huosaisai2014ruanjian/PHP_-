@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 	<title>修改性别</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/jquery-weui.css">
 	<style type="text/css">
 	html,body{
 		height: 100%;
@@ -24,7 +24,7 @@
 <div class="weui_tab">
   <div class="weui_tab_bd">
      <!--其中放我们的代码内容-->
-<form id="form1" method="post" action="__MODULE__/Personal/sex">
+<form id="form1" method="post" action="percenter.html">
 	<input type="hidden" name="sex" class="sex" value="">
 </form>
     <div class="weui_panel">
@@ -56,9 +56,9 @@
   </div>
 </div>
 </body>
-<script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='__PUBLIC__/js/swiper.js' charset='utf-8'></script>
+<script type="text/javascript" src="/php_-/market/Public/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/php_-/market/Public/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/php_-/market/Public/js/swiper.js' charset='utf-8'></script>
 <script type="text/javascript">
   $("#nan").click(function(){
   	$(".sex").val('男');
