@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>校园跳蚤市场-学生认证</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/button.css">
+  <title>校园跳蚤市场-学生认证</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/button.css">
 
-	<style type="text/css">
-	html,body{
-		height: 100%;
-	}
+  <style type="text/css">
+  html,body{
+    height: 100%;
+  }
      
-	</style>
-	<!--输入信息-->
+  </style>
+  <!--输入信息-->
 <body >
 <form action="__MODULE__/Personal/CertificateAuthority" method="post" id="register_from" enctype="multipart/form-data">
   <div style="text-align:center;color:#FCFCFC;background-color:#FF8C00; width="100%"">
@@ -164,7 +164,7 @@
             error: function (XMLHttpRequest, textStatus, errorThrown) {
             },
             success: function (data) {
-                  alert(data);
+                //  alert(data);
                $('#hidden').val(data);
             }
         });

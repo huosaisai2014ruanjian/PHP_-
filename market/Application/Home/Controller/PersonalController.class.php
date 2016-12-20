@@ -10,7 +10,11 @@ use Think\Controller;
 
 
 class PersonalController extends Controller {
-    public function SendSMS($cellphone){
+    //账户管理页
+   public function zhanghuguanli(){
+       $this->display();
+   }
+ public function SendSMS($cellphone){
         $cellphone= I("get.cellphone");
         $chars = array(  "0", "1", "2",  "3", "4", "5", "6", "7", "8", "9" ); 
         $charsLen = count($chars) - 1; 
@@ -22,24 +26,24 @@ class PersonalController extends Controller {
             $vercode=$vercode . $chars[mt_rand(0, $charsLen)]; 
         }        
         $content='【大学生跳蚤市场】您好，您的验证码是'.$vercode; 
-        // session('verify',$vercode); 
-          // $url="http://service.winic.org:8009/sys_port/gateway/?";
-          // $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
-          // $id = iconv('UTF-8','GB2312','kdvnszrqu');
-          // $pwd = '384913ldh';
-          // $to = $cellphone; 
-          // $content = urlencode(iconv("UTF-8","GB2312",$content)); 
-          // $rdata = sprintf($data, $id, $pwd, $to, $content);
+        session('verify',$vercode); 
+          $url="http://service.winic.org:8009/sys_port/gateway/?";
+          $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
+          $id = iconv('UTF-8','GB2312','kdvnszrqu');
+          $pwd = '384913ldh';
+          $to = $cellphone; 
+          $content = urlencode(iconv("UTF-8","GB2312",$content)); 
+          $rdata = sprintf($data, $id, $pwd, $to, $content);
           
-          // $ch = curl_init();
-          // curl_setopt($ch, CURLOPT_POST,1);
-          // curl_setopt($ch, CURLOPT_POSTFIELDS,$rdata);
-          // curl_setopt($ch, CURLOPT_URL,$url);
-          // curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
-          // //´òÓ¡Ò»ÏÂ²ÎÊý ¿ÉÒÔ¿´µ½ ÔÚGB2312±àÂëÄ£Ê½µÄä¯ÀÀÆ÷ÏÂ ÏÔÊ¾×Ö·ûÊÇÕý³£µÄ
-          // $result = curl_exec($ch);
-          // curl_close($ch);
-          // $result = substr($result,0,3);
+          $ch = curl_init();
+          curl_setopt($ch, CURLOPT_POST,1);
+          curl_setopt($ch, CURLOPT_POSTFIELDS,$rdata);
+          curl_setopt($ch, CURLOPT_URL,$url);
+          curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
+          //´òÓ¡Ò»ÏÂ²ÎÊý ¿ÉÒÔ¿´µ½ ÔÚGB2312±àÂëÄ£Ê½µÄä¯ÀÀÆ÷ÏÂ ÏÔÊ¾×Ö·ûÊÇÕý³£µÄ
+          $result = curl_exec($ch);
+          curl_close($ch);
+          $result = substr($result,0,3);
           echo $vercode;
 
           // if($result=="000")
@@ -50,15 +54,15 @@ class PersonalController extends Controller {
           // {
           //     return 'false';
           //  }
-    }    
+    }   
 	//我的消息
     public function mynews(){
       //获取数据库聊天信息
-		$chats =  M('market_chat')->join('market_users on market_chat.fromuser_id = market_users.id')->order('time desc')->select();
+		$chats =  M('chat')->join('market_users on market_chat.fromuser_id = market_users.id')->order('time desc')->select();
 		$this->assign('chats',$chats);
-        $tongzhi = M('market_system')->order('time desc')->limit(1)->select();
+        $tongzhi = M('system')->order('time desc')->limit(1)->select();
         $this->assign('tongzhi',$tongzhi);
-        $messages = M('market_message')->join('market_users on market_message.fromuser_id = market_users.id')->order('time desc')->select();
+        $messages = M('message')->join('market_users on market_message.fromuser_id = market_users.id')->order('time desc')->select();
 		$this->assign('messages',$messages);
         $this->display();
 	}
@@ -66,10 +70,11 @@ class PersonalController extends Controller {
     public function mydingdan(){
       //获取数据库交易记录信息
          // dump($_POST);
-        $transaction = M('market_transaction')->join('market_goods on market_transaction.goods_id = market_goods.id')->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_transaction.id'=>'id'))->order('time desc')->where('status=1')->select();
+        $transaction = M('transaction')->join('market_goods on market_transaction.goods_id = market_goods.id')->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_transaction.id'=>'id'))->order('time desc')->where('status=1')->select();
         for ($i=0;$i<count($transaction);$i++)
         {
-            $transaction[$i]['photo']=explode(';',$transaction[$i]['photo'])[2];
+            $transaction[$i]['photo']=explode(';',$transaction[$i]['photo']);
+            $transaction[$i]['photo']=$transaction[$i]['photo'][2];
         }
         $this->assign('transaction',$transaction);
         $this->display();
@@ -80,7 +85,7 @@ class PersonalController extends Controller {
         $transaction['status'] = 0;
         $a=array('status'=>0);
 //        dump($a);exit;
-        $b = M('market_transaction')->where("id = $id")->save($a);
+        $b = M('transaction')->where("id = $id")->save($a);
         if($b){
             $this->redirect('mydingdan');
         }
@@ -94,11 +99,13 @@ class PersonalController extends Controller {
 //dump($up);exit;
         for ($i=0;$i<count($up);$i++)
         {
-            $up[$i]['photo']=explode(';',$up[$i]['photo'])[1];
+            $up[$i]['photo']=explode(';',$up[$i]['photo']);
+             $up[$i]['photo']= $up[$i]['photo'][0];
         }
         for ($i=0;$i<count($down);$i++)
         {
-            $down[$i]['photo']=explode(';',$down[$i]['photo'])[1];
+            $down[$i]['photo']=explode(';',$down[$i]['photo']);
+             $down[$i]['photo']= $down[$i]['photo'][0];
         }
         $this->assign('up',$up);
         $this->assign('down',$down);
@@ -108,7 +115,7 @@ class PersonalController extends Controller {
 
     public function deletesc(){
         // $name = getActionName();   //作为公共的函数使用时添加
-        $adminUsersModel = D("market_collection"); //获取当期模块的操作对象
+        $adminUsersModel = D("collection"); //获取当期模块的操作对象
         $id = $_POST['sp'];  //判断id是数组还是一个数值
         //dump($id);
         if(is_array($id)){
@@ -135,18 +142,20 @@ class PersonalController extends Controller {
     //商品管理
     public function spguanli(){
         $seller_id = 6;
-        $manage = M('market_goods')->join('market_users on market_goods.seller_id = market_users.id')->where("market_goods.seller_id=$seller_id&&sp_status=1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_goods.id'=>'id'))->select();
-        $down= M('market_goods')->join('market_users on market_goods.seller_id = market_users.id')->where("market_goods.seller_id=$seller_id&&sp_status<>1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_goods.id'=>'id','market_goods.sp_status'=>'status'))->select();
+        $manage = M('goods')->join('market_users on market_goods.seller_id = market_users.id')->where("market_goods.seller_id=$seller_id&&sp_status=1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_goods.id'=>'id'))->select();
+        $down= M('goods')->join('market_users on market_goods.seller_id = market_users.id')->where("market_goods.seller_id=$seller_id&&sp_status<>1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_goods.id'=>'id','market_goods.sp_status'=>'status'))->select();
         for ($i=0;$i<count($manage);$i++)
         {
-            $manage[$i]['photo']=explode(';',$manage[$i]['photo'])[1];
+            $manage[$i]['photo']=explode(';',$manage[$i]['photo']);
+            $manage[$i]['photo']=$manage[$i]['photo'][0];
         }
         for ($i=0;$i<count($down);$i++)
         {
-            $down[$i]['photo']=explode(';',$down[$i]['photo'])[1];
+            $down[$i]['photo']=explode(';',$down[$i]['photo']);
+            $down[$i]['photo']=$down[$i]['photo'][0];
         }
 //        dump($manage);
-//       dump($down);
+      //dump($down);
         $this->assign('manage',$manage);
         $this->assign('down',$down);
         $this->display();
@@ -157,7 +166,7 @@ class PersonalController extends Controller {
         $a=array('sp_status'=>'已售出');
 //        dump($id);
 //        dump($a);exit;
-        $b = M('market_goods')->where("id = $id")->save($a);
+        $b = M('goods')->where("id = $id")->save($a);
         if($b){
             $this->redirect('spguanli');
         }
@@ -168,7 +177,7 @@ class PersonalController extends Controller {
         $a=array('sp_status'=>'已下架');
 //        dump($id);
 //        dump($a);exit;
-        $b = M('market_goods')->where("id = $id")->save($a);
+        $b = M('goods')->where("id = $id")->save($a);
         if($b){
             $this->redirect('spguanli');
         }
@@ -179,7 +188,7 @@ class PersonalController extends Controller {
         $a=array('sp_status'=>1);
 //        dump($id);
 //        dump($a);exit;
-        $b = M('market_goods')->where("id = $id")->save($a);
+        $b = M('goods')->where("id = $id")->save($a);
         if($b){
             $this->redirect('spguanli');
         }
@@ -187,7 +196,7 @@ class PersonalController extends Controller {
     //删除商品
     public function deletesp(){
         $id=I('get.id');
-        $b = M('market_goods')->delete($id);
+        $b = M('goods')->delete($id);
         if($b){
             $this->redirect('spguanli');
         }
@@ -199,7 +208,7 @@ class PersonalController extends Controller {
         $this->assign('personals', $personals);
         $this->display();
     }
-    public function CertificateAuthority(){
+   public function CertificateAuthority(){
         $id=1;
         if (IS_POST) {
             // dump(session());
@@ -248,9 +257,9 @@ class PersonalController extends Controller {
         else{
             $this->display();
         }              
-    }     
+    }  
     public function rzsuccess(){
         $this->display();
-    }
+    }        
 }
 
