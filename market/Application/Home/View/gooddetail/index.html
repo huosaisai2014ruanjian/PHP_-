@@ -20,17 +20,12 @@
         .swiper-container {
             width: 100%;
         }
-
         .swiper-container img {
             display: block;
             width: 100%;
-
-
         }
         html,body{
             height: 100%;
-
-
         }
     </style>
 </head>
@@ -38,26 +33,21 @@
 <div class="weui_tab" style="background-color:#EBEBEB;maigin:10px;height: 100%">
     <div class="weui_tab_bd ">
         <div >
-            
-                    <!--商品封面图片-->
-                    <div>
-                            
-                                <div class="swiper-slide"><img src="__ROOT__/Public{$img_url[0]}" height="300px" width="100%" alt=""></div>
-                            
-                        </div>
-                  
-                    <!--结束商品封面图片-->
-                   <!--商品价格等信息  -->
+               <!--商品封面图片-->
+                <div>
+                    <div class="swiper-slide"><img src="__ROOT__/Public{$img_url[0]}" height="300px" width="100%" alt=""></div>
+                </div>
+                <!--商品封面图片结束-->
+                <!--商品价格等信息  -->
                     <div class="content" style="background-color:#FFFFFF;margin:1px;font-size: 17px;">
                         <p style="color:red;text-align: left;margin:1px;font-family:YouYuan;">&nbsp;&nbsp;<span style="font-size:10px">￥</span>{$good.price}
                         <span style="font-size:10px">浏览次数：{$good.times}</span>
                         </p>
-                    
                     <div class="goodname" >
                         <p style="font-size: 20px;"><strong>&nbsp;&nbsp;&nbsp;{$good.name}</strong>
                          <span style="color:#9C9C9C;font-size: 16px;float:right">{$good.degree}成新&nbsp;&nbsp;&nbsp;</span></p>
                     </div>
-                                       <div class="description" style="font-family:YouYuan;margin:2px;font-size: 17px;margin:2px">
+                    <div class="description" style="font-family:YouYuan;margin:2px;font-size: 17px;margin:2px">
                         &nbsp;&nbsp;{$good.description}
                     </div>
                     </div>
@@ -74,7 +64,6 @@
                         <div >
                          <span style="float:left;font-size:8px;color:#000000">&nbsp;&nbsp;年级:{$user.grade}</span>
                        <span style="float:right;font-size:8px;color:#000000">性别:{$user.sex}&nbsp;&nbsp;</span>
-                       
                       <br/>
                         </div>
                     </div>
@@ -82,13 +71,10 @@
                   <div class="weui-row width" style="background-color:#FFFFFF;margin-top:9px">
                   <p><strong>更多细节</strong></p>
                         <volist name="good['image']" id="img">
-
                             <img src="__ROOT__/Public/{$img}" style="width: 100% ;height: auto"/>
                         </volist>
-
                      </div>
                      <!--留言-->
-                    
                     <div class="weui-row">
                             <p><strong>留言</strong></p>
                                 <volist name="result" id="mesg">
@@ -131,17 +117,14 @@
                                     <span style="float: right">
                                         <button class="weui_btn weui_btn_mini weui_btn_default"  type="submit" >发布留言</button>
                                     </span>
-
                                 </div>
                         </div>
                         </form>
                         </div>
                     </div>
-               
                 </br>
                 </br>
                 </br>
-
             <!--商品详情结束-->
             <!--底部导航开始-->
             <div class="weui_tabbar">

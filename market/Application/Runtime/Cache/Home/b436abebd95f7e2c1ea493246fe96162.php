@@ -20,17 +20,12 @@
         .swiper-container {
             width: 100%;
         }
-
         .swiper-container img {
             display: block;
             width: 100%;
-
-
         }
         html,body{
             height: 100%;
-
-
         }
     </style>
 </head>
@@ -38,26 +33,21 @@
 <div class="weui_tab" style="background-color:#EBEBEB;maigin:10px;height: 100%">
     <div class="weui_tab_bd ">
         <div >
-            
-                    <!--商品封面图片-->
-                    <div>
-                            
-                                <div class="swiper-slide"><img src="/php_-/market/Public<?php echo ($img_url[0]); ?>" height="300px" width="100%" alt=""></div>
-                            
-                        </div>
-                  
-                    <!--结束商品封面图片-->
-                   <!--商品价格等信息  -->
+               <!--商品封面图片-->
+                <div>
+                    <div class="swiper-slide"><img src="/php_-/market/Public<?php echo ($img_url[0]); ?>" height="300px" width="100%" alt=""></div>
+                </div>
+                <!--商品封面图片结束-->
+                <!--商品价格等信息  -->
                     <div class="content" style="background-color:#FFFFFF;margin:1px;font-size: 17px;">
                         <p style="color:red;text-align: left;margin:1px;font-family:YouYuan;">&nbsp;&nbsp;<span style="font-size:10px">￥</span><?php echo ($good["price"]); ?>
                         <span style="font-size:10px">浏览次数：<?php echo ($good["times"]); ?></span>
                         </p>
-                    
                     <div class="goodname" >
                         <p style="font-size: 20px;"><strong>&nbsp;&nbsp;&nbsp;<?php echo ($good["name"]); ?></strong>
                          <span style="color:#9C9C9C;font-size: 16px;float:right"><?php echo ($good["degree"]); ?>成新&nbsp;&nbsp;&nbsp;</span></p>
                     </div>
-                                       <div class="description" style="font-family:YouYuan;margin:2px;font-size: 17px;margin:2px">
+                    <div class="description" style="font-family:YouYuan;margin:2px;font-size: 17px;margin:2px">
                         &nbsp;&nbsp;<?php echo ($good["description"]); ?>
                     </div>
                     </div>
@@ -74,7 +64,6 @@
                         <div >
                          <span style="float:left;font-size:8px;color:#000000">&nbsp;&nbsp;年级:<?php echo ($user["grade"]); ?></span>
                        <span style="float:right;font-size:8px;color:#000000">性别:<?php echo ($user["sex"]); ?>&nbsp;&nbsp;</span>
-                       
                       <br/>
                         </div>
                     </div>
@@ -82,10 +71,8 @@
                   <div class="weui-row width" style="background-color:#FFFFFF;margin-top:9px">
                   <p><strong>更多细节</strong></p>
                         <?php if(is_array($good['image'])): $i = 0; $__LIST__ = $good['image'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$img): $mod = ($i % 2 );++$i;?><img src="/php_-/market/Public/<?php echo ($img); ?>" style="width: 100% ;height: auto"/><?php endforeach; endif; else: echo "" ;endif; ?>
-
                      </div>
                      <!--留言-->
-                    
                     <div class="weui-row">
                             <p><strong>留言</strong></p>
                                 <?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mesg): $mod = ($i % 2 );++$i;?><div class="weui_cells weui_cells_access" style="width: 100%">
@@ -124,17 +111,14 @@
                                     <span style="float: right">
                                         <button class="weui_btn weui_btn_mini weui_btn_default"  type="submit" >发布留言</button>
                                     </span>
-
                                 </div>
                         </div>
                         </form>
                         </div>
                     </div>
-               
                 </br>
                 </br>
                 </br>
-
             <!--商品详情结束-->
             <!--底部导航开始-->
             <div class="weui_tabbar">
