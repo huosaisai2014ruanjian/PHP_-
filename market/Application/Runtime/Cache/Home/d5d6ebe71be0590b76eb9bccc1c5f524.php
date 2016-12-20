@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
   <title>校园跳蚤市场-学生认证</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
-  <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
-  <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
-  <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/button.css">
+  <link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.min.css">
+  <link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/jquery-weui.css">
+  <link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/button.css">
 
   <style type="text/css">
   html,body{
@@ -17,7 +17,7 @@
   </style>
   <!--输入信息-->
 <body >
-<form action="__MODULE__/Personal/CertificateAuthority" method="post" id="register_from" enctype="multipart/form-data">
+<form action="/php_-/market/index.php/Home/Personal/CertificateAuthority" method="post" id="register_from" enctype="multipart/form-data">
   <div style="text-align:center;color:#FCFCFC;background-color:#FF8C00; width="100%"">
 <div></br></div>
   学生认证中心
@@ -109,7 +109,7 @@
             </div>
 <!-- 
 
-    <script src="__PUBLIC__/js/zepto.min.js"></script> -->
+    <script src="/php_-/market/Public/js/zepto.min.js"></script> -->
 <!-- 
 <div id="preview" style="text-align:center">
     <img id="imghead" width=100 height=100 border=0 src='<%=request.getContextPath()%>/images/defaul.jpg'>
@@ -132,9 +132,9 @@
 </form>   
 </body>
 
-<script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='__PUBLIC__/js/swiper.js' charset='utf-8'>
+<script type="text/javascript" src="/php_-/market/Public/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/php_-/market/Public/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/php_-/market/Public/js/swiper.js' charset='utf-8'>
 </script>
  <script>
 // var session_value = "<%=session.getAttribute('verify')%>";
@@ -159,7 +159,7 @@
         // 向后台发送处理数据
         $.ajax({
             type: "POST", //用POST方式传输
-            url: '__MODULE__/Personal/SendSMS/cellphone/'+document.getElementById("cellphone").value, //目标地址
+            url: '/php_-/market/index.php/Home/Personal/SendSMS/cellphone/'+document.getElementById("cellphone").value, //目标地址
             data: {'tel': phone},
             error: function (XMLHttpRequest, textStatus, errorThrown) {
             },
@@ -239,7 +239,7 @@
           $('#register_from').submit();
            // alert($('#hidden').val());
              //  $.toptip('提交成功，请等待验证通过', 'success');
-            // window.location.href="__MODULE__/Personal/rzsuccess";  
+            // window.location.href="/php_-/market/index.php/Home/Personal/rzsuccess";  
         }else{
 
              //  alert($('#hidden').val());
