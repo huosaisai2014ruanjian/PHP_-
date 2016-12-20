@@ -9,11 +9,7 @@
     <title>新增地址</title>
 </head>
 <body>
-<div style="border-style:inset">
-    <p class="shou" style="font-size: 25px; margin-top: 15px; margin-left: 30px;">收货人:PHP项目小组</p>
-    <p style="font-size: 25px; margin-top: -5px; margin-left: 30px;">电话:15231531523</p>
-    <p style="font-size: 25px; margin-top: -5px; margin-left: 30px;">收货地址：河北师范大学新校区软件学院</p>
-</div>
+
 <div class=""></div>
 </body>
 </html>-->
@@ -33,7 +29,6 @@
         .swiper-container {
             width: 100%;
         }
-
         .swiper-container img {
             display: block;
             width: 100%;
@@ -43,33 +38,16 @@
 <div class="weui_tab">
     <div class="weui_tab_bd">
         <!--顶部幻灯片开始-->
-
+        <div style="border-style:ridge;margin-top: 15px;">
+            <p class="shou" style="font-size: 15px; margin-top: 10px; margin-left: 30px;">收货人:PHP项目小组</p>
+            <p style="font-size: 15px; margin-top: -5px; margin-left: 30px;">电话:15231531523</p>
+            <p style="font-size: 15px; margin-top: -5px; margin-left: 30px;margin-bottom: 10px;">收货地址：河北师范大学新校区软件学院</p>
+        </div>
 
     </div>
-    <div class="weui_tabbar">
-        <a href="index.html" class="weui_tabbar_item weui_bar_item_on">
-            <div class="weui_tabbar_icon">
-                <img src="images/home.jpg" alt="">
-            </div>
-            <p class="weui_tabbar_label">主页</p>
-        </a>
-        <a href="list.html" class="weui_tabbar_item">
-            <div class="weui_tabbar_icon">
-                <img src="images/news.jpg" alt="">
-            </div>
-            <p class="weui_tabbar_label">新闻</p>
-        </a>
-        <a href="list.html" class="weui_tabbar_item">
-            <div class="weui_tabbar_icon">
-                <img src="images/broadcast.jpg" alt="">
-            </div>
-            <p class="weui_tabbar_label">通知</p>
-        </a>
-        <a href="list_fengcai.html" class="weui_tabbar_item">
-            <div class="weui_tabbar_icon">
-                <img src="images/mien.png" alt="">
-            </div>
-            <p class="weui_tabbar_label">风采</p>
+    <div class="weui_tabbar" style="height: 65px;">
+        <a href="" class="weui_tabbar_item">
+            <p class="weui_tabbar_label" style="font-size: 20px; margin-top: 5px;color:red;">新增地址</p>
         </a>
     </div>
 </div>

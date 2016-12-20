@@ -38,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PayController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PayController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PayController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
@@ -48,22 +48,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newaddress.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/Pay/newaddress.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
               <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/gooddetail/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
+              <folding>
+                <marker date="1482221124751" expanded="true" signature="11878:11889" ph="..." />
+                <marker date="1482221124751" expanded="true" signature="11941:11952" ph="..." />
+                <marker date="1482221124751" expanded="true" signature="12033:12047" ph="..." />
+                <marker date="1482221124751" expanded="true" signature="12399:12411" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -524,15 +529,15 @@
       <workItem from="1481893448886" duration="1511000" />
       <workItem from="1482129015821" duration="7474000" />
       <workItem from="1482149974666" duration="5252000" />
-      <workItem from="1482193334882" duration="15268000" />
+      <workItem from="1482193334882" duration="16351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43368000" />
+    <option name="totallyTimeSpent" value="44451000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <frame x="1" y="1" width="1364" height="726" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26917177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -897,19 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/gooddetail/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="130" column="228" selection-start-line="130" selection-start-column="228" selection-end-line="130" selection-end-column="228" />
-          <folding>
-            <marker date="1482221124751" expanded="true" signature="11878:11889" ph="..." />
-            <marker date="1482221124751" expanded="true" signature="11941:11952" ph="..." />
-            <marker date="1482221124751" expanded="true" signature="12033:12047" ph="..." />
-            <marker date="1482221124751" expanded="true" signature="12399:12411" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/Pay/Pay.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -925,26 +917,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PayController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="161">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/gooddetail/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
+          <folding>
+            <marker date="1482221124751" expanded="true" signature="11878:11889" ph="..." />
+            <marker date="1482221124751" expanded="true" signature="11941:11952" ph="..." />
+            <marker date="1482221124751" expanded="true" signature="12033:12047" ph="..." />
+            <marker date="1482221124751" expanded="true" signature="12399:12411" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/Pay/newaddress.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="966">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#a#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/index.html">
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PayController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="440">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
