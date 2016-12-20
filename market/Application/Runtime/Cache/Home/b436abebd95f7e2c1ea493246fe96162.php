@@ -35,7 +35,7 @@
     </style>
 </head>
 <body>
-<div class="weui_tab" style="background-color:#EBEBEB;maigin:10px">
+<div class="weui_tab" style="background-color:#EBEBEB;maigin:10px;height: 100%">
     <div class="weui_tab_bd ">
         <div >
             
@@ -87,22 +87,38 @@
                      <!--留言-->
                     
                     <div class="weui-row">
-                                
-                            <div class="weui_cells weui_cells_access" style="width: 100%">
                             <p><strong>留言</strong></p>
+                                <?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mesg): $mod = ($i % 2 );++$i;?><div class="weui_cells weui_cells_access" style="width: 100%">
+
                                 <a class="weui_cell" href="javascript:;">
                                     <div class="weui_cell_hd" >
-                                        <img src="/PHP_-/market/Public/<?php echo ($user["head"]); ?>" alt="icon" style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px;">
+                                        <img src="/PHP_-/market/Public/<?php echo ($mesg["head"]); ?>" alt="icon" style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px;">
                                     </div>
                                     <div class="weui_cell_bd weui_cell_primary" style="font-size: 9px">
-                                        <p style="margin:4px" ><B><?php echo ($user["nickname"]); ?></B>
-                                            <span><?php echo ($user["college"]); ?></span></p>
-                                            <p style="margin:4px;;font-family:YouYuan"> <?php echo ($message["content"]); ?></p>
-                                            <p><?php echo ($message["time"]); ?></p>
+                                        <p style="margin:4px" ><B><?php echo ($mesg["nickname"]); ?></B>
+                                            <span><?php echo ($mesg["college"]); ?></span></p>
+                                            <p style="margin:4px;;font-family:YouYuan"> <?php echo ($mesg["content"]); ?></p>
+                                            <p><?php echo ($mesg["time"]); ?></p>
                                     </div>
                                    
                                 </a>
-                            </div>
+                            </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                        <form action="<?php echo U('GoodDetail/addMessage');?>" method="post" style="width: 100%">
+                        <div class="weui_cells weui_cells_access" style="width: 100%">
+                            <p><strong>我要留言</strong></p>
+                                <div class="weui_cell_bd weui_cell_primary" style="font-size: 9px">
+                                    <input type="hidden" name="goods_id" value="<?php echo ($good["id"]); ?>">
+                                    <input type="hidden" name="fromuser_id" value="1">
+                                    <input type="hidden" name="touser_id" value="1">
+                                    <input type="hidden" name="belong_id" value="1">
+                                    <textarea class="weui_textarea" id="content-text" name="comment" rows="3" placeholder="请输入留言内容"></textarea>
+                                    <span style="float: right">
+                                        <button class="weui_btn weui_btn_mini weui_btn_default"  type="submit" >发布留言</button>
+                                    </span>
+
+                                </div>
+                        </div>
+                        </form>
                         </div>
                     </div>
                
@@ -189,6 +205,23 @@
                     $("#hide").css('display','block');
 
                 });
+
+            </script>
+            <script type="text/javascript">
+                $(function () {
+                    $(".weui_cell").click(
+                            function (e) {
+                                var $this =$(this);
+                                //alert($this.next().attr("class"));
+                                if($this.next().hasClass('2')){
+                                    //alert($this.next());
+                                    $this.next().remove();
+                                }else {
+                                $this.after('<form class="2" action="/PHP_-/market/index.php/Home/GoodDetail/remessage" method="post" style="width: 100%"> <div class="weui_cells weui_cells_access" style="width: 100%"> <p><strong>回复</strong></p> <div class="weui_cell_bd weui_cell_primary" style="font-size: 9px"> <input type="hidden" name="goods_id" value="<?php echo ($mesg["goods_id"]); ?>"> <input type="hidden" name="fromuser_id" value="1"> <input type="hidden" name="touser_id" value="1"> <input type="hidden" name="belong_id" value="2"><textarea class="weui_textarea" id="recomment" name="comment" rows="3" placeholder="请输入回复内容"></textarea> <span style="float: right"> <button class="weui_btn weui_btn_mini weui_btn_default"  type="submit" >回复</button> </span> </div> </div></form>')
+                            }
+                            }
+                    )
+                })
 
             </script>
 </body>
