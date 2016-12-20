@@ -10,12 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link href="/php_-/market/Public/lib/weui.min.css" type="text/css" rel="stylesheet"/>
-    <link href="/php_-/market/Public/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/define.css">
-    <link rel="stylesheet" href="/php_-/market/Public/lib/weui.min.css">
-    <link rel="stylesheet" href="/php_-/market/Public/css/jquery-weui.css">
-    <link rel="stylesheet" href="/php_-/market/Public/css/demo.css">
+    <link href="/PHP_-/market/Public/lib/weui.min.css" type="text/css" rel="stylesheet"/>
+    <link href="/PHP_-/market/Public/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/css/define.css">
+    <link rel="stylesheet" href="/PHP_-/market/Public/lib/weui.min.css">
+    <link rel="stylesheet" href="/PHP_-/market/Public/css/jquery-weui.css">
+    <link rel="stylesheet" href="/PHP_-/market/Public/css/demo.css">
     <style>
         .swiper-container {
             width: 100%;
@@ -42,7 +42,7 @@
                     <!--商品封面图片-->
                     <div>
                             
-                                <div class="swiper-slide"><img src="/php_-/market/Public<?php echo ($img_url[0]); ?>" height="300px" width="100%" alt=""></div>
+                                <div class="swiper-slide"><img src="/PHP_-/market/Public<?php echo ($img_url[0]); ?>" height="300px" width="100%" alt=""></div>
                             
                         </div>
                   
@@ -65,7 +65,7 @@
                 <div class="user" style="background-color:#FFFFFF;margin-top:9px;">
                     <div  >
                         <div  style="width: 100%">
-                          <p>&nbsp;&nbsp;<img src="/php_-/market/Public<?php echo ($user["head"]); ?>"style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px;">
+                          <p>&nbsp;&nbsp;<img src="/PHP_-/market/Public<?php echo ($user["head"]); ?>"style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px;">
                               <span style="color:#FF8C00"><strong><?php echo ($user["nickname"]); ?></strong></span>
                               <span style="color:#FF8C00">|</span>
                               <span style="color:#FF8C00"><?php echo ($user["college"]); ?></span>
@@ -81,7 +81,7 @@
                 </div>
                   <div class="weui-row width" style="background-color:#FFFFFF;margin-top:9px">
                   <p><strong>更多细节</strong></p>
-                        <?php if(is_array($good['image'])): $i = 0; $__LIST__ = $good['image'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$img): $mod = ($i % 2 );++$i;?><img src="/php_-/market/Public/<?php echo ($img); ?>" style="width: 100% ;height: auto"/><?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php if(is_array($good['image'])): $i = 0; $__LIST__ = $good['image'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$img): $mod = ($i % 2 );++$i;?><img src="/PHP_-/market/Public/<?php echo ($img); ?>" style="width: 100% ;height: auto"/><?php endforeach; endif; else: echo "" ;endif; ?>
 
                      </div>
                      <!--留言-->
@@ -91,7 +91,7 @@
                                 <?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mesg): $mod = ($i % 2 );++$i;?><div class="weui_cells weui_cells_access" style="width: 100%">
                                         <a class="weui_cell" href="javascript:;">
                                             <div class="weui_cell_hd" >
-                                                <img src="/php_-/market/Public/<?php echo ($mesg["head"]); ?>" alt="icon" style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px;">
+                                                <img src="/PHP_-/market/Public/<?php echo ($mesg["head"]); ?>" alt="icon" style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px;">
                                             </div>
                                             <div class="weui_cell_bd weui_cell_primary" style="font-size: 9px">
                                                 <p style="margin:4px" >
@@ -145,9 +145,9 @@
                 <br />
             </div>
             <!--底部导航结束-->
-            <script type="text/javascript" src="/php_-/market/Public/lib/jquery-2.1.4.js"></script>
-            <script type="text/javascript" src="/php_-/market/Public/js/jquery-weui.min.js"></script>
-            <script type="text/javascript" src="/php_-/market/Public/js/swiper.js"></script>
+            <script type="text/javascript" src="/PHP_-/market/Public/lib/jquery-2.1.4.js"></script>
+            <script type="text/javascript" src="/PHP_-/market/Public/js/jquery-weui.min.js"></script>
+            <script type="text/javascript" src="/PHP_-/market/Public/js/swiper.js"></script>
             <script>
                 $(".swiper-container").swiper({
                     loop: true,
@@ -226,7 +226,7 @@
                                     //alert($this.next());
                                     $this.next().remove();
                                 }else {
-                                $this.after('<form class="2" action="/php_-/market/index.php/Home/GoodDetail/remessage" method="post" style="width: 100%"> <div class="weui_cells weui_cells_access" style="width: 100%"> <p><strong>回复</strong></p> <div class="weui_cell_bd weui_cell_primary" style="font-size: 9px"> <input type="hidden" name="goods_id" value="<?php echo ($good["id"]); ?>"> <input type="hidden" name="fromuser_id" value=""> <input type="hidden" name="touser_id" value="<?php echo ($mesg["fromuser_id"]); ?>"> <input type="hidden" name="belong_id" value="<?php echo ($mesg["id"]); ?>"><textarea class="weui_textarea" id="recomment" name="comment" rows="3" placeholder="请输入回复内容"></textarea> <span style="float: right"> <button class="weui_btn weui_btn_mini weui_btn_default"  type="submit" >回复</button> </span> </div> </div></form>')
+                                $this.after('<form class="2" action="/PHP_-/market/index.php/Home/GoodDetail/remessage" method="post" style="width: 100%"> <div class="weui_cells weui_cells_access" style="width: 100%"> <p><strong>回复</strong></p> <div class="weui_cell_bd weui_cell_primary" style="font-size: 9px"> <input type="hidden" name="goods_id" value="<?php echo ($good["id"]); ?>"> <input type="hidden" name="fromuser_id" value=""> <input type="hidden" name="touser_id" value="<?php echo ($mesg["fromuser_id"]); ?>"> <input type="hidden" name="belong_id" value="<?php echo ($mesg["id"]); ?>"><textarea class="weui_textarea" id="recomment" name="comment" rows="3" placeholder="请输入回复内容"></textarea> <span style="float: right"> <button class="weui_btn weui_btn_mini weui_btn_default"  type="submit" >回复</button> </span> </div> </div></form>')
                             }
                             }
                     )

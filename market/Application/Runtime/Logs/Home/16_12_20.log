@@ -175,3 +175,176 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
 
+[ 2016-12-20T15:37:53+08:00 ] ::1 /PHP_-/market/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `market_cat` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `market_cat`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `market_active` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `market_active` ORDER BY time desc LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=8 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0014s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=10 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=11 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0009s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=12 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=13 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT market_goods.name AS `name`,market_users.nickname AS `nickname`,market_goods.price AS `price`,market_goods.photo AS `photo` FROM `market_cat` INNER JOIN market_category on market_cat.id = market_category.cat_id INNER JOIN market_goods on market_category.id = market_goods.category_id INNER JOIN market_users on market_users.id = market_goods.seller_id  WHERE ( market_cat.id=14 ) ORDER BY time desc LIMIT 2   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 160 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 160 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 194 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 194 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 221 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 221 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 228 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 228 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 255 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 255 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 289 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 289 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined index: id D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-12-20T15:38:00+08:00 ] ::1 /PHP_-/market/index.php/Home/Goodslist/goodslist?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0087s ]
+SQL: SELECT market_goods.name AS `name`,market_goods.degree AS `degree`,market_goods.description AS `description`,market_goods.price AS `price`,market_users.nickname AS `nickname`,market_users.college AS `college`,market_goods.photo AS `photo`,market_users.head AS `head`,market_goods.id AS `id` FROM `market_goods` INNER JOIN market_category on market_goods.category_id = market_category.id INNER JOIN market_cat on market_category.cat_id = market_cat.id INNER JOIN market_users on market_goods.seller_id=market_users.id  WHERE ( market_cat.id=11 )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2016-12-20T15:38:02+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/index?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0179s ]
+SQL: SHOW COLUMNS FROM `market_users` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `market_message` [ RunTime:0.0351s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `market_users` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `market_message` WHERE `goods_id` = 6 AND `belong_id` = 0  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: result D:\WWW\PHP_-\market\Application\Home\Controller\GoodDetailController.class.php 第 88 行.
+SQL: UPDATE `market_goods` SET `times`=times+1 [ RunTime:0.0373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: image D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\b436abebd95f7e2c1ea493246fe96162.php 第 84 行.
+NOTIC: [8] Undefined variable: goods D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\b436abebd95f7e2c1ea493246fe96162.php 第 121 行.
+NOTIC: [8] Undefined variable: mesg D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\b436abebd95f7e2c1ea493246fe96162.php 第 229 行.
+NOTIC: [8] Undefined variable: mesg D:\WWW\PHP_-\market\Application\Runtime\Cache\Home\b436abebd95f7e2c1ea493246fe96162.php 第 229 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-12-20T15:38:17+08:00 ] ::1 /PHP_-/market/index.php/Home/GoodDetail/addMessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `market_message` [ RunTime:0.0028s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`market`.`market_message`, CONSTRAINT `message_ibfk_2` FOREIGN KEY (`fromuser_id`) REFERENCES `market_users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+ [ SQL语句 ] : INSERT INTO `market_message` (`content`,`time`,`goods_id`,`fromuser_id`,`touser_id`,`belong_id`) VALUES ('123','2016-12-20 03:38:16','6','1','1','0')
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`market`.`market_message`, CONSTRAINT `message_ibfk_2` FOREIGN KEY (`fromuser_id`) REFERENCES `market_users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+ [ SQL语句 ] : INSERT INTO `market_message` (`content`,`time`,`goods_id`,`fromuser_id`,`touser_id`,`belong_id`) VALUES ('123','2016-12-20 03:38:16','6','1','1','0')
+
+[ 2016-12-20T16:04:29+08:00 ] ::1 /PHP_-/market/index.php/Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+ERR: 无法加载控制器:Address
+
+[ 2016-12-20T16:04:51+08:00 ] ::1 /PHP_-/market/index.php/Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+ERR: 无法加载控制器:Address
+
+[ 2016-12-20T16:13:12+08:00 ] ::1 /PHP_-/market/index.php/Home/Doods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+ERR: 无法加载控制器:Doods
+
+[ 2016-12-20T16:13:20+08:00 ] ::1 /PHP_-/market/index.php/Home/Goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+NOTIC: [2048] Declaration of Common\Controller\RestfulController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\PHP_-\market\Application\Common\Controller\RestfulController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `market_users` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `market_users`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `market_category` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `market_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+

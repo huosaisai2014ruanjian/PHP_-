@@ -1,0 +1,6 @@
+[ 2016-12-20T15:37:38+08:00 ] ::1 /PHP_-/market/index.php/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+ERR: 无法加载模块:Index
+
