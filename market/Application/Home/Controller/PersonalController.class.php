@@ -49,7 +49,16 @@ class PersonalController extends Controller {
           // {
           //     return 'false';
           //  }
-    }    
+    }
+    //个人中心
+    public function zhanghuguanli(){
+        $id = 1;
+        //$id = $_SESSION['id'];
+        //dump($id);
+        $center = M('users')->where("market_users.id = $id")->find();
+        $this->assign('center', $center);
+        $this->display();
+    }
 	//我的消息
     public function mynews(){
       //获取数据库聊天信息
@@ -194,6 +203,8 @@ class PersonalController extends Controller {
     //个人中心
     public function percenter(){
         $id = 1;
+        //$id = $_SESSION['id'];
+        //dump($id);
         $personals = M('users')->where("market_users.id = $id")->find(); 
         $this->assign('personals', $personals);
         $this->display();

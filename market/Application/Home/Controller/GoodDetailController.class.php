@@ -82,6 +82,17 @@ class GoodDetailController extends Controller
                     $result[$i]['temp'] = $Messages;
                     $i = $i+1;
             }
+            $userid=1;
+            $goodid=I('get.id');
+            $result1=M('collection')->where("user_id=$userid and goods_id=$goodid")->find();
+            if ($result1) {
+                $a=1;
+            }else{
+                $a=0;
+            }
+            // dump($result);
+            // dump($goodid);exit;
+            $this->assign('xihuan',$a);
             $this->assign('good',$goods);
             $this->assign('img_url',$imgarray);
             $this->assign('user',$users);
@@ -137,6 +148,19 @@ class GoodDetailController extends Controller
 
             }
 
+        }
+        public function xihuan(){
+            $data=I('post.');
+            $data['user_id']=1;
+            //echo $data;exit;
+            $result=M('collection')->add($data);
+        }
+        public function quxiaoxihuan(){
+            $data=I('post.');
+            $userid=1;
+            $goodid=$data['goods_id'];
+            //echo $data;exit;
+            $result=M('collection')->where("user_id=$userid and goods_id=$goodid")->delete();
         }
 
 }
