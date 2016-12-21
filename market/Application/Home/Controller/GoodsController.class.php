@@ -9,9 +9,9 @@
 namespace Home\Controller;
 
 
-use Common\Controller\RestfulController;
+use Think\Controller;
 
-class GoodsController extends RestfulController
+class GoodsController extends Controller
 {
     public function index(){
 
@@ -32,7 +32,7 @@ class GoodsController extends RestfulController
         //1.创建对象
         $upload = new \Think\Upload();// 实例化上传类
         //2.设置参数
-        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->maxSize   =     31457280000000000 ;// 设置附件上传大小
         $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
         $upload->rootPath  =     './Public';//上传根目录
         $upload->savePath  =     '/uploads/'; // 设置附件上传（子）目录
@@ -64,8 +64,13 @@ class GoodsController extends RestfulController
         $result = $this->_db->add($data);
         // 善后处理
         if ($result) {
-           // $this->success('发布成功！');
-        	$this->redirect("home/goodDetail/index/id/$result");
+            $name = $data['name'];
+            $price = $data['description'];
+            $goodsid=M('goods')->where("name = $name AND description = $price ")->getfield('id');
+            header("Location:http://localhost/market/index.php/home/Gooddetail/index/id/$goodsid");
+           //  $this->success('发布成功','/market/index.php/home/index/index');
+           // //  $id=$this->_db->where("name = $data['name']")->field("id");
+           // // header("__MODULE__/Gooddetail/index?id/$id");
         } else {
             $this->error('发布失败');
         }

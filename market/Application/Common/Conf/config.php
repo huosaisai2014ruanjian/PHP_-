@@ -13,9 +13,10 @@ return array(
    'USER_AUTH_TYPE'    =>  1,  // 登录后，把用户的权限信息写入到session中
    'USER_AUTH_KEY'     =>  'authid',   // $_SESSION['authid'] = ***;
    'REQUIRE_AUTH_MODULE'   =>  'Admin',
-   'NOT_AUTH_MODULE'   =>  'Home',
-   'USER_AUTH_GATEWAY' =>  './Home/login',  // 用户后台登录页面
-   'USER_AUTH_MODEL'   =>  'think_user',   // 用户表的数据表名或模型类名
+   'REQUIRE_AUTH_MODULE'   =>  'Home',
+   'REQUIRE_AUTH_ACION'=>  'Home/Login',
+   'USER_AUTH_GATEWAY' =>  'index.php/Home/login',// 用户后台登录页面
+   'USER_AUTH_MODEL'   =>  'think_user',// 用户表的数据表名或模型类名
    'RBAC_ROLE_TABLE'   =>  'market_think_role',
    'RBAC_USER_TABLE'   =>  'market_think_role_user',  // 角色用户关联表的名称
    'RBAC_ACCESS_TABLE' =>  'market_think_access',     // 角色权限关联表

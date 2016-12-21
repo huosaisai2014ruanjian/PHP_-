@@ -3,9 +3,9 @@
 //编写者：兰天旭 
 namespace Home\Controller;
 
-use Common\Controller\BaseController;
+use Think\Controller;
 
-class IndexController extends BaseController
+class IndexController extends Controller
 {
     public function index() {
         $User = M('cat');
@@ -29,5 +29,5 @@ class IndexController extends BaseController
         $this->assign('list',$list);
         $this->assign('Carousel',$Carousel);
         $this->display();
-    }
+    } 
 }

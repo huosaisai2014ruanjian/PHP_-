@@ -77,7 +77,8 @@ class PersonalController extends Controller {
         $transaction = M('transaction')->join('market_goods on market_transaction.goods_id = market_goods.id')->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_transaction.id'=>'id'))->order('time desc')->where('status=1')->select();
         for ($i=0;$i<count($transaction);$i++)
         {
-            $transaction[$i]['photo']=explode(';',$transaction[$i]['photo'])[2];
+            $transaction[$i]['photo']=explode(';',$transaction[$i]['photo']);
+            $transaction[$i]['photo']= $transaction[$i]['photo'][2];
         }
         $this->assign('transaction',$transaction);
         $this->display();
@@ -102,11 +103,13 @@ class PersonalController extends Controller {
 //dump($up);exit;
         for ($i=0;$i<count($up);$i++)
         {
-            $up[$i]['photo']=explode(';',$up[$i]['photo'])[1];
+            $up[$i]['photo']=explode(';',$up[$i]['photo']);
+            $up[$i]['photo']=$up[$i]['photo'][1];
         }
         for ($i=0;$i<count($down);$i++)
         {
-            $down[$i]['photo']=explode(';',$down[$i]['photo'])[1];
+            $down[$i]['photo']=explode(';',$down[$i]['photo']);
+             $down[$i]['photo']=$down[$i]['photo'][1];
         }
         $this->assign('up',$up);
         $this->assign('down',$down);
@@ -147,11 +150,13 @@ class PersonalController extends Controller {
         $down= M('goods')->join('market_users on market_goods.seller_id = market_users.id')->where("market_goods.seller_id=$seller_id&&sp_status<>1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_goods.id'=>'id','market_goods.sp_status'=>'status'))->select();
         for ($i=0;$i<count($manage);$i++)
         {
-            $manage[$i]['photo']=explode(';',$manage[$i]['photo'])[1];
+            $manage[$i]['photo']=explode(';',$manage[$i]['photo']);
+            $manage[$i]['photo']=$manage[$i]['photo'][1];
         }
         for ($i=0;$i<count($down);$i++)
         {
-            $down[$i]['photo']=explode(';',$down[$i]['photo'])[1];
+            $down[$i]['photo']=explode(';',$down[$i]['photo']);
+            $down[$i]['photo']=$down[$i]['photo'][1];
         }
 //        dump($manage);
 //       dump($down);
@@ -165,7 +170,7 @@ class PersonalController extends Controller {
         $a=array('sp_status'=>'已售出');
 //        dump($id);
 //        dump($a);exit;
-        $b = M('market_goods')->where("id = $id")->save($a);
+        $b = M('goods')->where("id = $id")->save($a);
         if($b){
             $this->redirect('spguanli');
         }

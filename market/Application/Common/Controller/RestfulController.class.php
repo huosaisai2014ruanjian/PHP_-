@@ -29,9 +29,10 @@ abstract class RestfulController extends Controller {
         }
         if(!$this->_tableName){
         $this->_tableName=lcfirst(CONTROLLER_NAME);
+
        }        
         // 创建自定义模型类
-        // $this->_db = D($this->_tableName);
+         $this->_db = D($this->_tableName);
         // 权限校验
     }
     
