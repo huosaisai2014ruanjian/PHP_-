@@ -7,3 +7,36 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011506s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.011615s ]
 ERR: 无法加载控制器:Goodsdetail
 
+[ 2016-12-20T15:37:33+08:00 ] ::1 /PHP_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0113s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: menu_11 D:\WWW\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 39 行.
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: menu_12 D:\WWW\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\WWW\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: menu_13 D:\WWW\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 56 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\WWW\PHP_-\market\Application\Admin\Controller\IndexController.class.php on line 63 and defined D:\WWW\PHP_-\market\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\WWW\PHP_-\market\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory D:\WWW\PHP_-\market\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000469s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000684s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001558s ]
+

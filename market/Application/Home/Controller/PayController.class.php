@@ -33,11 +33,10 @@ class PayController extends Controller
             $this->assign('good',$good);//分好的数组 单个图片URL传到VIEW
             $this->assign('message',$message);
             $this->assign('good1',$good1);
-
-
-
+            $this->display();
+        }
+        public function newaddress(){
 
             $this->display();
-
         }
 }
