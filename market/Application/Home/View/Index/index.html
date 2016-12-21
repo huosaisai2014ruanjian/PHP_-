@@ -5,21 +5,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>校园跳蚤市场</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
+  <title>校园跳蚤市场</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
   <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index1.css">
   <link rel="stylesheet" href="__PUBLIC__/css/swiper-3.3.1.min.css" />
-	<style type="text/css">
-	html,body{
-		height: 100%;
-	}
+  <style type="text/css">
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
   #messa{
     margin-right: -10px;
     padding-left: 3px;
@@ -30,7 +31,7 @@
   .swiper-wrapper{
     height: 190px;
   }
-	</style>
+  </style>
 <body >
     <div class="weui_tab">
   <div class="weui_tab_bd">
@@ -39,7 +40,8 @@
   <form action="__MODULE__/Serach/index" method="post" class="weui_search_outer">
     <div class="weui_search_inner">
       <i class="weui_icon_search"></i>
-      <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
+
+      <input name="search"type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
       <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
     </div>
     <label for="search_input" class="weui_search_text" id="search_text">
@@ -48,9 +50,9 @@
     </label>
   </form>
   <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
-  <div class="me">
+  <!-- <div class="me">
     <div><img id="messa" src="__PUBLIC__/images/message5.png" width="30px" height="30px"><span><img src="__PUBLIC__/images/bullet-red.png" class="dian"></span></div>
-  </div>
+  </div> -->
 </div>
    <!--接束-->
 <!--幻灯片开始-->
@@ -119,22 +121,22 @@
 <!--内容栏开始-->
 <div class="weui-row weui-no-gutter" >
     <volist name="study" id="vo">
-  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
    <img src="__PUBLIC__/{$vo.photo}" ></a>
      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
      </p>
   </div>
     </volist>
-  <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+  <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
     <volist name="study" id="vo">
-        <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+        <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
             <img src="__PUBLIC__/{$vo.photo}" ></a>
             <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
             <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
             </p>
         </div>
-    </volist>
+    </volist> -->
 </div>
 <!--内容栏结束-->
 </div>
@@ -146,7 +148,7 @@
           <div>
               </a>
               <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Goodslist/goodslist?id=10">
+              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Gooddetail/index?id=10">
                   <div class="weui_cell_bd weui_cell_primary">
                       <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
                       <p style="color:#000000;">电子数码</p>
@@ -157,22 +159,22 @@
           <!--内容栏开始-->
           <div class="weui-row weui-no-gutter" >
               <volist name="electronics" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
                       <img src="__PUBLIC__/{$vo.photo}" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
                       </p>
                   </div>
               </volist>
-              <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+              <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
               <volist name="electronics" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
                       <img src="__PUBLIC__/{$vo.photo}" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
                       </p>
                   </div>
-              </volist>
+              </volist> -->
           </div>
           <!--内容栏结束-->
       </div>
@@ -184,7 +186,7 @@
           <div>
               </a>
               <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Goodslist/goodslist?id=11">
+              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Gooddetail/index?id=11">
                   <div class="weui_cell_bd weui_cell_primary">
                       <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
                       <p style="color:#000000;">服装服饰</p>
@@ -195,22 +197,22 @@
           <!--内容栏开始-->
           <div class="weui-row weui-no-gutter" >
               <volist name="cloths" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
                       <img src="__PUBLIC__/{$vo.photo}" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
                       </p>
                   </div>
               </volist>
-              <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+             <!--  <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
               <volist name="cloths" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
                       <img src="__PUBLIC__/{$vo.photo}" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
                       </p>
                   </div>
-              </volist>
+              </volist> -->
           </div>
           <!--内容栏结束-->
       </div>
@@ -222,7 +224,7 @@
           <div>
               </a>
               <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Goodslist/goodslist?id=12">
+              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Gooddetail/index?id=12">
                   <div class="weui_cell_bd weui_cell_primary">
                       <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
                       <p style="color:#000000;">出行工具</p>
@@ -233,22 +235,22 @@
           <!--内容栏开始-->
           <div class="weui-row weui-no-gutter" >
               <volist name="bike" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
                       <img src="__PUBLIC__/{$vo.photo}" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
                       </p>
                   </div>
               </volist>
-              <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+              <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
               <volist name="bike" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
                       <img src="__PUBLIC__/{$vo.photo}" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
                       </p>
                   </div>
-              </volist>
+              </volist> -->
           </div>
           <!--内容栏结束-->
       </div>
@@ -260,7 +262,7 @@
           <div>
               </a>
               <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Goodslist/goodslist?id=13">
+              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Gooddetail/index?id=13">
                   <div class="weui_cell_bd weui_cell_primary">
                       <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
                       <p style="color:#000000;">运动器材</p>
@@ -271,22 +273,22 @@
           <!--内容栏开始-->
           <div class="weui-row weui-no-gutter" >
               <volist name="sports" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
                       <img src="__PUBLIC__/{$vo.photo}" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
                       </p>
                   </div>
               </volist>
-              <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+              <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
               <volist name="sports" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
                       <img src="__PUBLIC__/{$vo.photo}" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
                       </p>
                   </div>
-              </volist>
+              </volist> -->
           </div>
           <!--内容栏结束-->
       </div>
@@ -298,7 +300,7 @@
           <div>
               </a>
               <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Goodslist/goodslist?id=14">
+              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Gooddetail/index?id=14">
                   <div class="weui_cell_bd weui_cell_primary">
                       <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
                       <p style="color:#000000;">虚拟物品</p>
@@ -309,22 +311,22 @@
           <!--内容栏开始-->
           <div class="weui-row weui-no-gutter" >
               <volist name="games" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
                       <img src="__PUBLIC__/{$vo.photo}" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
                       </p>
                   </div>
               </volist>
-              <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+             <!--  <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
               <volist name="games" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}">
+                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
                       <img src="__PUBLIC__/{$vo.photo}" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
                       </p>
                   </div>
-              </volist>
+              </volist> -->
           </div>
           <!--内容栏结束-->
       </div>

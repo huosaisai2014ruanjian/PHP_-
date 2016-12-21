@@ -5,21 +5,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>校园跳蚤市场</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
+  <title>校园跳蚤市场</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.min.css">
-	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/jquery-weui.css">
+  <link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.min.css">
+  <link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/jquery-weui.css">
   <link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/index1.css">
   <link rel="stylesheet" href="/php_-/market/Public/css/swiper-3.3.1.min.css" />
-	<style type="text/css">
-	html,body{
-		height: 100%;
-	}
+  <style type="text/css">
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
   #messa{
     margin-right: -10px;
     padding-left: 3px;
@@ -30,7 +31,7 @@
   .swiper-wrapper{
     height: 190px;
   }
-	</style>
+  </style>
 <body >
     <div class="weui_tab">
   <div class="weui_tab_bd">
@@ -39,7 +40,8 @@
   <form action="/php_-/market/index.php/Home/Serach/index" method="post" class="weui_search_outer">
     <div class="weui_search_inner">
       <i class="weui_icon_search"></i>
-      <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
+
+      <input name="search"type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
       <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
     </div>
     <label for="search_input" class="weui_search_text" id="search_text">
@@ -48,9 +50,9 @@
     </label>
   </form>
   <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
-  <div class="me">
+  <!-- <div class="me">
     <div><img id="messa" src="/php_-/market/Public/images/message5.png" width="30px" height="30px"><span><img src="/php_-/market/Public/images/bullet-red.png" class="dian"></span></div>
-  </div>
+  </div> -->
 </div>
    <!--接束-->
 <!--幻灯片开始-->
@@ -116,19 +118,19 @@
 <!--标题栏结束-->
 <!--内容栏开始-->
 <div class="weui-row weui-no-gutter" >
-    <?php if(is_array($study)): $i = 0; $__LIST__ = $study;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+    <?php if(is_array($study)): $i = 0; $__LIST__ = $study;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
    <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
      <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
      </p>
   </div><?php endforeach; endif; else: echo "" ;endif; ?>
-  <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-    <?php if(is_array($study)): $i = 0; $__LIST__ = $study;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+  <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+    <?php if(is_array($study)): $i = 0; $__LIST__ = $study;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
             <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
             <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
             <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
             </p>
-        </div><?php endforeach; endif; else: echo "" ;endif; ?>
+        </div><?php endforeach; endif; else: echo "" ;endif; ?> -->
 </div>
 <!--内容栏结束-->
 </div>
@@ -140,7 +142,7 @@
           <div>
               </a>
               <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="/php_-/market/index.php/Home/Goodslist/goodslist?id=10">
+              <a style="background-color:#FFFFFF" class="weui_cell" href="/php_-/market/index.php/Home/Gooddetail/index?id=10">
                   <div class="weui_cell_bd weui_cell_primary">
                       <img src="/php_-/market/Public/images/taiyang.png" width="10%" height="10%" class="taiyang">
                       <p style="color:#000000;">电子数码</p>
@@ -150,19 +152,19 @@
           <!--标题栏结束-->
           <!--内容栏开始-->
           <div class="weui-row weui-no-gutter" >
-              <?php if(is_array($electronics)): $i = 0; $__LIST__ = $electronics;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+              <?php if(is_array($electronics)): $i = 0; $__LIST__ = $electronics;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
                       <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
                       </p>
                   </div><?php endforeach; endif; else: echo "" ;endif; ?>
-              <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-              <?php if(is_array($electronics)): $i = 0; $__LIST__ = $electronics;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+              <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+              <?php if(is_array($electronics)): $i = 0; $__LIST__ = $electronics;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
                       <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
                       </p>
-                  </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                  </div><?php endforeach; endif; else: echo "" ;endif; ?> -->
           </div>
           <!--内容栏结束-->
       </div>
@@ -174,7 +176,7 @@
           <div>
               </a>
               <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="/php_-/market/index.php/Home/Goodslist/goodslist?id=11">
+              <a style="background-color:#FFFFFF" class="weui_cell" href="/php_-/market/index.php/Home/Gooddetail/index?id=11">
                   <div class="weui_cell_bd weui_cell_primary">
                       <img src="/php_-/market/Public/images/taiyang.png" width="10%" height="10%" class="taiyang">
                       <p style="color:#000000;">服装服饰</p>
@@ -184,19 +186,19 @@
           <!--标题栏结束-->
           <!--内容栏开始-->
           <div class="weui-row weui-no-gutter" >
-              <?php if(is_array($cloths)): $i = 0; $__LIST__ = $cloths;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+              <?php if(is_array($cloths)): $i = 0; $__LIST__ = $cloths;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
                       <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
                       </p>
                   </div><?php endforeach; endif; else: echo "" ;endif; ?>
-              <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-              <?php if(is_array($cloths)): $i = 0; $__LIST__ = $cloths;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+             <!--  <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+              <?php if(is_array($cloths)): $i = 0; $__LIST__ = $cloths;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
                       <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
                       </p>
-                  </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                  </div><?php endforeach; endif; else: echo "" ;endif; ?> -->
           </div>
           <!--内容栏结束-->
       </div>
@@ -208,7 +210,7 @@
           <div>
               </a>
               <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="/php_-/market/index.php/Home/Goodslist/goodslist?id=12">
+              <a style="background-color:#FFFFFF" class="weui_cell" href="/php_-/market/index.php/Home/Gooddetail/index?id=12">
                   <div class="weui_cell_bd weui_cell_primary">
                       <img src="/php_-/market/Public/images/taiyang.png" width="10%" height="10%" class="taiyang">
                       <p style="color:#000000;">出行工具</p>
@@ -218,19 +220,19 @@
           <!--标题栏结束-->
           <!--内容栏开始-->
           <div class="weui-row weui-no-gutter" >
-              <?php if(is_array($bike)): $i = 0; $__LIST__ = $bike;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+              <?php if(is_array($bike)): $i = 0; $__LIST__ = $bike;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
                       <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
                       </p>
                   </div><?php endforeach; endif; else: echo "" ;endif; ?>
-              <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-              <?php if(is_array($bike)): $i = 0; $__LIST__ = $bike;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+              <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+              <?php if(is_array($bike)): $i = 0; $__LIST__ = $bike;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
                       <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
                       </p>
-                  </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                  </div><?php endforeach; endif; else: echo "" ;endif; ?> -->
           </div>
           <!--内容栏结束-->
       </div>
@@ -242,7 +244,7 @@
           <div>
               </a>
               <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="/php_-/market/index.php/Home/Goodslist/goodslist?id=13">
+              <a style="background-color:#FFFFFF" class="weui_cell" href="/php_-/market/index.php/Home/Gooddetail/index?id=13">
                   <div class="weui_cell_bd weui_cell_primary">
                       <img src="/php_-/market/Public/images/taiyang.png" width="10%" height="10%" class="taiyang">
                       <p style="color:#000000;">运动器材</p>
@@ -252,19 +254,19 @@
           <!--标题栏结束-->
           <!--内容栏开始-->
           <div class="weui-row weui-no-gutter" >
-              <?php if(is_array($sports)): $i = 0; $__LIST__ = $sports;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+              <?php if(is_array($sports)): $i = 0; $__LIST__ = $sports;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
                       <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
                       </p>
                   </div><?php endforeach; endif; else: echo "" ;endif; ?>
-              <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-              <?php if(is_array($sports)): $i = 0; $__LIST__ = $sports;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+              <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+              <?php if(is_array($sports)): $i = 0; $__LIST__ = $sports;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
                       <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
                       </p>
-                  </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                  </div><?php endforeach; endif; else: echo "" ;endif; ?> -->
           </div>
           <!--内容栏结束-->
       </div>
@@ -276,7 +278,7 @@
           <div>
               </a>
               <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="/php_-/market/index.php/Home/Goodslist/goodslist?id=14">
+              <a style="background-color:#FFFFFF" class="weui_cell" href="/php_-/market/index.php/Home/Gooddetail/index?id=14">
                   <div class="weui_cell_bd weui_cell_primary">
                       <img src="/php_-/market/Public/images/taiyang.png" width="10%" height="10%" class="taiyang">
                       <p style="color:#000000;">虚拟物品</p>
@@ -286,19 +288,19 @@
           <!--标题栏结束-->
           <!--内容栏开始-->
           <div class="weui-row weui-no-gutter" >
-              <?php if(is_array($games)): $i = 0; $__LIST__ = $games;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+              <?php if(is_array($games)): $i = 0; $__LIST__ = $games;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
                       <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
                       </p>
                   </div><?php endforeach; endif; else: echo "" ;endif; ?>
-              <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-              <?php if(is_array($games)): $i = 0; $__LIST__ = $games;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Goodslist/goodslist?id=<?php echo ($vo['id']); ?>">
+             <!--  <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
+              <?php if(is_array($games)): $i = 0; $__LIST__ = $games;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="weui-col-50" align="center"><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($vo['id']); ?>">
                       <img src="/php_-/market/Public/<?php echo ($vo["photo"]); ?>" ></a>
                       <p class="goodname" style="text-align:center;font-size:6px;"><?php echo ($vo["name"]); ?>
                       <p class="price" style="text-align:center;color: #FF0000;">&yen;<?php echo ($vo["price"]); ?></p>
                       </p>
-                  </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                  </div><?php endforeach; endif; else: echo "" ;endif; ?> -->
           </div>
           <!--内容栏结束-->
       </div>
