@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>个人中心</title>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  ">
+
+  <link rel="stylesheet" href="__PUBLIC__/lib/weui.min.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/jquery-weui.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/demos.css">
+  <style type="text/css">
+.imgtest{margin:10px 5px;
+overflow:hidden;}
+.list_ul figcaption p{
+font-size:12px;
+color:#aaa;
+}
+.imgtest figure div{
+display:inline-block;
+margin:5px auto;
+width:100px;
+height:100px;
+border-radius:100px;
+border:2px solid #fff;
+overflow:hidden;
+-webkit-box-shadow:0 0 3px #ccc;
+box-shadow:0 0 3px #ccc;
+}
+.imgtest img{width:100%;
+min-height:100%; text-align:center;}
+.cente {
+  text-align:center;
+}
+</style>
+  </head>
+  <body ontouchstart>
+    <form action="{:U('home/users/register')}" method="post">
+    <div class="imgtest" >
+        <figure class="cente">
+          <div>
+            <img src="{$user.headimgurl}" />
+          </div>  
+        </figure>
+    </div>
+      <h1 class="page_title cente">{$user.nickname}</h1>
+    <input type="hidden" value="{$user.openid}" name="openid">
+    <input type="hidden" value="{$user.headimgurl}" name="headimgurl">
+    <input type="hidden" value="{$user.nickname}" name="nickname">
+    <div class="weui_cells weui_cells_form">
+      <div class="weui_btn_area">
+        <input  type="submit" class="weui_btn weui_btn_primary" id="show-alert" value="注册">
+      </div>
+    </div>
+    </form>
+  </body>
+<script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='__PUBLIC__/js/swiper.js' charset='utf-8'>
+<script src="__PUBLIC__/js/jquery.2.1.1.min.js"></script>
+<script type="text/javascript">
+  $('#show-alert').click(function() {
+    $.alert("在个人中心中完成认证享受更多权利");
+  });
+</script>
+</html>
