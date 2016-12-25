@@ -13,10 +13,10 @@
 <div style="background-color:#FF8C00" width="100% " >
 </br>
 <a class="yhtx" name="center">
-<div style="margin-left:50px"><img style="float:left" src="/php_-/market/Public/<?php echo ($center["head"]); ?>"  height="70px" width="70px"></div></a>
+<div style="margin-left:50px"><img style="float:left;border-radius:50%;height:70px;width:70px;" src="<?php echo ($center["head"]); ?>"  height="70px" width="70px"></div></a>
 <div style="margin-left:150px"  >
  <p style="color:#FCFCFC"><?php echo ($center["nickname"]); ?></p>
- <p style="border:1px solid  #FCFCFC; width:100px;"><a href="/php_-/market/index.php/Home/Personal/percenter"  style="color:#FCFCFC;">&nbsp;&nbsp;&nbsp;&nbsp;账号管理</a></p>
+ <p style="border:1px solid  #FCFCFC; width:100px;"><a href="/php_-/market/index.php/Home/Personal/percenter/id/<?php echo ($center["id"]); ?>"  style="color:#FCFCFC;">&nbsp;&nbsp;&nbsp;&nbsp;账号管理</a></p>
 </br>
 </div> 
 </div>

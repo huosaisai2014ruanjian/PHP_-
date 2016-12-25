@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo (C("sitename")); ?></title>
 
-<link href="/PHP_-/market/Public/dwz/themes/default/style.css" rel="stylesheet" type="text/css" />
-<link href="/PHP_-/market/Public/dwz/themes/css/core.css" rel="stylesheet" type="text/css" />
-<link href="/PHP_-/market/Public/dwz/themes/css/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="/php_-/market/Public/dwz/themes/default/style.css" rel="stylesheet" type="text/css" />
+<link href="/php_-/market/Public/dwz/themes/css/core.css" rel="stylesheet" type="text/css" />
+<link href="/php_-/market/Public/dwz/themes/css/print.css" rel="stylesheet" type="text/css" media="print">
 <!--[if IE]>
-<link href="/PHP_-/market/Public/dwz/themes/css/ieHack.css" rel="stylesheet" type="text/css" />
+<link href="/php_-/market/Public/dwz/themes/css/ieHack.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 <script type="text/javascript">  
-var UEDITOR_HOME_URL='/PHP_-/market/Public/Ueditor/',ueditor_loader={};  
+var UEDITOR_HOME_URL='/php_-/market/Public/Ueditor/',ueditor_loader={};  
 //编辑器同步  
 function editorSyn(ename){  
 $.each(ueditor_loader[ename],function(i){  
@@ -19,48 +19,48 @@ this.sync();
 });  
 }  
 </script>  
-<link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/Ueditor/themes/default/css/ueditor.min.css"/>   
-<script type="text/javascript" charset="utf-8" src="/PHP_-/market/Public/Ueditor/ueditor.config.js"></script>   
-<script type="text/javascript" charset="utf-8" src="/PHP_-/market/Public/Ueditor/ueditor.all.min.js"></script>  
-<script src="/PHP_-/market/Public/dwz/js/speedup.js" type="text/javascript"></script>
-<script src="/PHP_-/market/Public/dwz/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script src="/PHP_-/market/Public/dwz/js/jquery.cookie.js" type="text/javascript"></script>
-<script src="/PHP_-/market/Public/dwz/js/jquery.validate.js" type="text/javascript"></script>
-<script src="/PHP_-/market/Public/dwz/js/jquery.bgiframe.js" type="text/javascript"></script>
-<script src="/PHP_-/market/Public/xheditor/xheditor-1.2.1.min.js" type="text/javascript"></script>
-<script src="/PHP_-/market/Public/xheditor/xheditor_lang/zh-cn.js" type="text/javascript"></script>
-<script src="/PHP_-/market/Public/dwz/js/dwz.min.js" type="text/javascript"></script>
-<script src="/PHP_-/market/Public/dwz/js/dwz.regional.zh.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/php_-/market/Public/Ueditor/themes/default/css/ueditor.min.css"/>   
+<script type="text/javascript" charset="utf-8" src="/php_-/market/Public/Ueditor/ueditor.config.js"></script>   
+<script type="text/javascript" charset="utf-8" src="/php_-/market/Public/Ueditor/ueditor.all.min.js"></script>  
+<script src="/php_-/market/Public/dwz/js/speedup.js" type="text/javascript"></script>
+<script src="/php_-/market/Public/dwz/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="/php_-/market/Public/dwz/js/jquery.cookie.js" type="text/javascript"></script>
+<script src="/php_-/market/Public/dwz/js/jquery.validate.js" type="text/javascript"></script>
+<script src="/php_-/market/Public/dwz/js/jquery.bgiframe.js" type="text/javascript"></script>
+<script src="/php_-/market/Public/xheditor/xheditor-1.2.1.min.js" type="text/javascript"></script>
+<script src="/php_-/market/Public/xheditor/xheditor_lang/zh-cn.js" type="text/javascript"></script>
+<script src="/php_-/market/Public/dwz/js/dwz.min.js" type="text/javascript"></script>
+<script src="/php_-/market/Public/dwz/js/dwz.regional.zh.js" type="text/javascript"></script>
 
 <script type="text/javascript">
  $.ajaxSettings.global=false;
 function fleshVerify(){
 	//重载验证码
-	$('#verifyImg').attr("src", '/PHP_-/market/index.php/Public/verify/'+new Date().getTime());
+	$('#verifyImg').attr("src", '/php_-/market/index.php/Public/verify/'+new Date().getTime());
 }
 function dialogAjaxMenu(json){
 	dialogAjaxDone(json);
 	if (json.statusCode == DWZ.statusCode.ok){
-		$("#sidebar").loadUrl("/PHP_-/market/index.php/Admin/Public/menu");
+		$("#sidebar").loadUrl("/php_-/market/index.php/Admin/Public/menu");
 	}
 }
 function navTabAjaxMenu(json){
 	navTabAjaxDone(json);
 	if (json.statusCode == DWZ.statusCode.ok){
-		$("#sidebar").loadUrl("/PHP_-/market/index.php/Admin/Public/menu");
+		$("#sidebar").loadUrl("/php_-/market/index.php/Admin/Public/menu");
 	}
 }
 $(function(){
-	DWZ.init("/PHP_-/market/Public/dwz/dwz.frag.xml", {
-		loginUrl:"/PHP_-/market/index.php/Public/login_dialog", loginTitle:"登录",	// 弹出登录对话框
-//		loginUrl:"/PHP_-/market/index.php/Public/login",	//跳到登录页面
+	DWZ.init("/php_-/market/Public/dwz/dwz.frag.xml", {
+		loginUrl:"/php_-/market/index.php/Public/login_dialog", loginTitle:"登录",	// 弹出登录对话框
+//		loginUrl:"/php_-/market/index.php/Public/login",	//跳到登录页面
 		statusCode:{ok:1,error:0},
 		keys:{statusCode:"status", message:"info"},
 		pageInfo:{pageNum:"pageNum", numPerPage:"numPerPage", orderField:"_order", orderDirection:"_sort"}, //【可选】
 		debug:false,	// 调试模式 【true|false】
 		callback:function(){
 			initEnv();
-			$("#themeList").theme({themeBase:"/PHP_-/market/Public/dwz/themes"});
+			$("#themeList").theme({themeBase:"/php_-/market/Public/dwz/themes"});
 		}
 	});
 });
@@ -71,11 +71,11 @@ $(function(){
 	<div id="layout">
 		<div id="header">
 			<div class="headerNav">
-				<a class="logo" href="/PHP_-/market/index.php" style="color:white;font-size:30px;margin-top:8px;margin-left:13px;">校园跳蚤市场</a>
+				<a class="logo" href="/php_-/market/index.php" style="color:white;font-size:30px;margin-top:8px;margin-left:13px;">校园跳蚤市场</a>
 				<ul class="nav">
-					<!-- <li><a href="/PHP_-/market/index.php/Public/password/" target="dialog" mask="true">修改密码</a></li>
-					<li><a href="/PHP_-/market/index.php/Public/profile/" target="dialog" mask="true">修改资料</a></li> -->
-					<li><a href="/PHP_-/market/index.php/home/login/logout">退出</a></li>
+					<!-- <li><a href="/php_-/market/index.php/Public/password/" target="dialog" mask="true">修改密码</a></li>
+					<li><a href="/php_-/market/index.php/Public/profile/" target="dialog" mask="true">修改资料</a></li> -->
+					<li><a href="/php_-/market/index.php/home/login/logout">退出</a></li>
 				</ul>
 				<ul class="themeList" id="themeList">
 					<li theme="default"><div class="selected">蓝色</div></li>
@@ -99,7 +99,7 @@ $(function(){
 					</div>
 					<div class="accordionContent">
 						<ul class="tree treeFolder">
-							<?php if(is_array($menu_10)): $i = 0; $__LIST__ = $menu_10;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i; if((strtolower($item['name'])) != "public"): if((strtolower($item['name'])) != "index"): if(($item['access']) == "1"): ?><li><a href="/PHP_-/market/index.php/<?php echo ($item['name']); ?>/index/" target="navTab" rel="<?php echo ($item['name']); ?>"><?php echo ($item['title']); ?></a></li><?php endif; endif; endif; endforeach; endif; else: echo "" ;endif; ?>
+							<?php if(is_array($menu_10)): $i = 0; $__LIST__ = $menu_10;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i; if((strtolower($item['name'])) != "public"): if((strtolower($item['name'])) != "index"): if(($item['access']) == "1"): ?><li><a href="/php_-/market/index.php/<?php echo ($item['name']); ?>/index/" target="navTab" rel="<?php echo ($item['name']); ?>"><?php echo ($item['title']); ?></a></li><?php endif; endif; endif; endforeach; endif; else: echo "" ;endif; ?>
 						</ul>
 					</div>
 					<div class="accordionHeader">
@@ -107,7 +107,7 @@ $(function(){
 					</div>
 					<div class="accordionContent">
 						<ul class="tree treeFolder">
-							<?php if(is_array($menu_11)): $i = 0; $__LIST__ = $menu_11;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i; if((strtolower($item['name'])) != "public"): if((strtolower($item['name'])) != "index"): if(($item['access']) == "1"): ?><li><a href="/PHP_-/market/index.php/<?php echo ($item['name']); ?>/index/" target="navTab" rel="<?php echo ($item['name']); ?>"><?php echo ($item['title']); ?></a></li><?php endif; endif; endif; endforeach; endif; else: echo "" ;endif; ?>
+							<?php if(is_array($menu_11)): $i = 0; $__LIST__ = $menu_11;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i; if((strtolower($item['name'])) != "public"): if((strtolower($item['name'])) != "index"): if(($item['access']) == "1"): ?><li><a href="/php_-/market/index.php/<?php echo ($item['name']); ?>/index/" target="navTab" rel="<?php echo ($item['name']); ?>"><?php echo ($item['title']); ?></a></li><?php endif; endif; endif; endforeach; endif; else: echo "" ;endif; ?>
 						</ul>
 					</div>					
 					<div class="accordionHeader">
@@ -115,7 +115,7 @@ $(function(){
 					</div>
 					<div class="accordionContent">
 						<ul class="tree treeFolder">
-							<?php if(is_array($menu_12)): $i = 0; $__LIST__ = $menu_12;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i; if((strtolower($item['name'])) != "public"): if((strtolower($item['name'])) != "index"): if(($item['access']) == "1"): ?><li><a href="/PHP_-/market/index.php/<?php echo ($item['name']); ?>/index/" target="navTab" rel="<?php echo ($item['name']); ?>"><?php echo ($item['title']); ?></a></li><?php endif; endif; endif; endforeach; endif; else: echo "" ;endif; ?>
+							<?php if(is_array($menu_12)): $i = 0; $__LIST__ = $menu_12;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i; if((strtolower($item['name'])) != "public"): if((strtolower($item['name'])) != "index"): if(($item['access']) == "1"): ?><li><a href="/php_-/market/index.php/<?php echo ($item['name']); ?>/index/" target="navTab" rel="<?php echo ($item['name']); ?>"><?php echo ($item['title']); ?></a></li><?php endif; endif; endif; endforeach; endif; else: echo "" ;endif; ?>
 						</ul>
 					</div>
 					<div class="accordionHeader">
@@ -123,7 +123,7 @@ $(function(){
 					</div>
 					<div class="accordionContent">
 						<ul class="tree treeFolder">
-							<?php if(is_array($menu_13)): $i = 0; $__LIST__ = $menu_13;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i; if((strtolower($item['name'])) != "public"): if((strtolower($item['name'])) != "index"): if(($item['access']) == "1"): ?><li><a href="/PHP_-/market/index.php/<?php echo ($item['name']); ?>/index/" target="navTab" rel="<?php echo ($item['name']); ?>"><?php echo ($item['title']); ?></a></li><?php endif; endif; endif; endforeach; endif; else: echo "" ;endif; ?>
+							<?php if(is_array($menu_13)): $i = 0; $__LIST__ = $menu_13;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i; if((strtolower($item['name'])) != "public"): if((strtolower($item['name'])) != "index"): if(($item['access']) == "1"): ?><li><a href="/php_-/market/index.php/<?php echo ($item['name']); ?>/index/" target="navTab" rel="<?php echo ($item['name']); ?>"><?php echo ($item['title']); ?></a></li><?php endif; endif; endif; endforeach; endif; else: echo "" ;endif; ?>
 						</ul>
 					</div>
 

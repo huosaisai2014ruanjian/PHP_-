@@ -114,19 +114,18 @@
           $(".weui_tab_bd .content:eq("+which+")").show();
           //console.log(which);
       });
-      $(".saled").click(function(){
-          //组织要传输的数据
-          var url = $(this).attr('herf');
-          alert(1);
-          var data = array();
-          data['image']= $('.weui_media_appmsg_thumb').attr('src');
-          data['name'] = $('.weui_media_title').html();
-          data['description'] = $('.weui_media_desc').html();
-          //console.log(data);
-//        $.post(url,data,function(da){
-//             alert(da);
-//        });
-          return false;
-      });
+//       $(".saled").click(function(){
+//           //组织要传输的数据
+//           var url = $(this).attr('herf');
+//           var data = new Array();
+//           data['image']= $('.weui_media_appmsg_thumb').attr('src');
+//           data['name'] = $('.weui_media_title').html();
+//           data['description'] = $('.weui_media_desc').html();
+//           //console.log(data);
+// //        $.post(url,data,function(da){
+// //             alert(da);
+// //        });
+//           return false;
+//       });
     </script>
 </html>

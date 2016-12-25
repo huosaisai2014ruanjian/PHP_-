@@ -61,16 +61,12 @@ class GoodsController extends Controller
         }
         // 插入到数据表中
         // $result['time']=date('y-m-d h:i:s',time());
-        $result = $this->_db->add($data);
+        $data['seller_id']=session('id');
+        //dump($data);EXIT;
+        $result = M("goods")->add($data);
         // 善后处理
         if ($result) {
-            $name = $data['name'];
-            $price = $data['description'];
-            $goodsid=M('goods')->where("name = $name AND description = $price ")->getfield('id');
-            header("Location:http://localhost/market/index.php/home/Gooddetail/index/id/$goodsid");
-           //  $this->success('发布成功','/market/index.php/home/index/index');
-           // //  $id=$this->_db->where("name = $data['name']")->field("id");
-           // // header("__MODULE__/Gooddetail/index?id/$id");
+            $this->redirect('Gooddetail/index', array('id' => $result));
         } else {
             $this->error('发布失败');
         }

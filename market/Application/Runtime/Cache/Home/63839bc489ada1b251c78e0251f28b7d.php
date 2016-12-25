@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
-    <link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/lib/weui.min.css">
-    <link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/lib/weui.min.css">
-    <link rel="stylesheet" type="text/css" href="/PHP_-/market/Public/css/define.css">
+    <link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/define.css">
     <style type="text/css">
         html,body{
 
@@ -34,7 +34,7 @@
 
 <!--上传图片-->
 
-<form action="/PHP_-/market/index.php/Home/Goods/doupload" method="post" enctype="multipart/form-data" >
+<form action="/php_-/market/index.php/Home/Goods/doupload" method="post" enctype="multipart/form-data" >
 
             <div class="weui_cell">
                 <div class="weui_cell_bd weui_cell_primary">
@@ -61,13 +61,13 @@
 
 
 
-    <script src="/PHP_-/market/Public/js/zepto.min.js"></script>
+    <script src="/php_-/market/Public/js/zepto_min.js"></script>
 
 
     <!--名称-->
     <div class="weui_cell weui_cells_form">
         <div class="weui_cell_bd weui_cell_primary">
-            <input class="weui_input" type="tel" name="name" placeholder="请输入宝贝名称">
+            <input class="weui_input" type="text" name="name" placeholder="请输入宝贝名称">
         </div>
     </div>
     <!--介绍-->
@@ -75,7 +75,8 @@
         <div class="weui_cell">
             <div class="weui_cell_bd weui_cell_primary">
                 <textarea class="weui_textarea" name="description" placeholder="请输入宝贝描述，越详细越容易卖出噢" rows="3"></textarea>
-                <div class="weui_textarea_counter"><span>0</span>/200</div>
+                <!-- <div class="weui_textarea_counter"><span>0</span>/200</div> -->
+                <div class="textareaTip weui_textarea_counter"><span id="textareaCount">0</span>/200</div> 
             </div>
         </div>
         <!--价格-->
@@ -95,28 +96,21 @@
                     </select>
                 </div>
             </div>
-
-            <!--学校选择
-            <div class="weui_cell weui_cell_select">
-                <div class="weui_cell_bd weui_cell_primary">
-                    <select class="weui_select" name="select1">
-                        <option selected="" value="0">学校</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-            </div>-->
             <!--是否全新-->
             <div class="weui_cell weui_cell_select">
                 <div class="weui_cell_bd weui_cell_primary">
                     <select class="weui_select" name="degree">
                         <option selected="" value="0" name="degree">新旧程度</option>
-                        <option value="是">全新</option>
-                        <option value="否">非全新</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
                     </select>
                 </div>
             </div>
+             <!--卖家id-->
+
 </div>
 
             <div class="buttonc">
@@ -129,9 +123,9 @@
 
 </body>
 
-<script type="text/javascript" src="/PHP_-/market/Public/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/PHP_-/market/Public/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='/PHP_-/market/Public/js/swiper.js' charset='utf-8'>
+<script type="text/javascript" src="/php_-/market/Public/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/php_-/market/Public/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/php_-/market/Public/js/swiper.js' charset='utf-8'>
 </script>
 <script>
     $(".swiper-container").swiper({
@@ -257,4 +251,19 @@
     });
     //# sourceURL=pen.js
 </script>
+<script>  
+    $(function(){  
+        $('textarea').keyup(function(event) {  
+            /* Act on the event */  
+            var maxLength = 200;  
+            var len = $('textarea').val().length;  
+            $('#textareaCount').html(len);  
+            if(parseInt($('#textareaCount').text()) > 200){  
+                $('#textareaCount').html('200');  
+                var res = $(this).val().substring(0,200);                 
+                $(this).val(res);  
+            }  
+        });  
+    });  
+</script> 
 </html>

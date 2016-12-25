@@ -15,7 +15,7 @@ class IndexController extends Controller
         $Carousel= $User1->limit(2)->order('time desc')->select();
         //显示商品信息
         for ($i=1; $i < 7; $i++) { 
-            $goods[$i]  =   D('GoodsView')->where("cat.id=$i")->select();
+            $goods[$i]  =   D('GoodsView')->where("cat.id=$i")->limit(4)->order('time desc')->select();
         }
         foreach ($goods as $key => $value) {
             foreach ($value as $keys => $v) {
@@ -23,7 +23,7 @@ class IndexController extends Controller
                 $goods[$key][$keys]['photo']=$goods[$key][$keys]['photo'][0];
             }
         }
-        for ($i=0; $i < count($goods); $i++) { 
+        for ($i=1; $i < count($goods)+1; $i++) { 
             $this->assign("goods$i",$goods[$i]);
         }
         $this->assign('list',$list);

@@ -6,149 +6,212 @@
 -->
 <!DOCTYPE html>
 <html>
-<head>
-	<title>我</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
-	<style type="text/css">
-	html,body{
-		height: 100%;
-	}
-	.weui_cell_primary p,.weui_cell_ft{
-		font-size: 18px;
-	}
-	.weui_cell{
-		padding-top: 18px;
-		padding-bottom: 18px;
-	}
-	.touxiang{
-		padding-top: 24px;
-		padding-bottom: 24px;		
-	}
-	.shengri{
-		border-bottom: 25px solid #f0f0f0;
-	}
-	</style>
-<body>
-<div class="weui_tab">
-  <div class="weui_tab_bd">
-     <!--其中放我们的代码内容-->
-<div class="weui_panel">
-
-  <div class="weui_panel_bd">
-    <div class="weui_media_box weui_media_small_appmsg">
-      <div class="weui_cells weui_cells_access" >
-        <a class="touxiang weui_cell" href="javascript:;">
-          <!--<div class="weui_cell_hd"><img src="{}"></div>-->
-          <div class="weui_cell_bd weui_cell_primary">
-            <p>我的头像</p>
-          </div>
-          <span class="weui_cell_ft"><div style="right:20px; border-radius:50%; overflow:hidden;">
-<img src="__PUBLIC__/{$personals.head}" style="position: absolute;top:12px;right: 35px; height:50px; width:50px;border-radius:50%;"/>
-</div>
-</span>
-        </a>
-      </div>
-      <div class="weui_cells weui_cells_access">
-        <a class="weui_cell" href="javascript:;">
-          <div class="weui_cell_hd"><img src=""></div>
-          <div class="weui_cell_bd weui_cell_primary">
-            <p>绑定的手机号</p>
-          </div>
-          <span>{$personals.username}</span>
-        </a>
-      </div>
-      <div class="weui_cells weui_cells_access">
-        <a class="weui_cell" href="editname.html">
-          <div class="weui_cell_hd"><img src=""></div>
-          <div class="weui_cell_bd weui_cell_primary">
-            <p>昵称</p>
-          </div>
-          <span class="weui_cell_ft">{$personals.nickname}</span>
-        </a>
-      </div>
-      <div class="weui_cells weui_cells_access"> 
-        <a class="weui_cell" href="__MODULE__/Personal/sex">
-          <div class="weui_cell_hd"><img src=""></div>
-          <div class="weui_cell_bd weui_cell_primary">
-            <p>性别</p>
-          </div>
-           <span class="weui_cell_ft">{$personals.sex}</span>
-        </a>
-      </div>
-      <div class="weui_cells weui_cells_access shengri">
-        <a class="weui_cell" href="birth.html">
-          <div class="weui_cell_hd"><img src=""></div>
-          <div class="weui_cell_bd weui_cell_primary">
-            <p>生日</p>
-          </div>
-          <span class="weui_cell_ft">{$personals.birth}</span>
-        </a>
-      </div>
-      <div class="weui_cells weui_cells_access">
-        <a class="weui_cell" href="__MODULE__/Personal/CertificateAuthority">
-          <div class="weui_cell_hd"><img src=""></div>
-          <div class="weui_cell_bd weui_cell_primary">
-            <p>认证</p>
-          </div>
-            <eq name="personals.rz_status" value="1">
-                <span class="weui_cell_ft">已认证</span>
-                <else/>
-                <span class="weui_cell_ft">请先认证</span>
-            </eq>
-        </a>
-      </div>
-      <div class="weui_cells weui_cells_access">
-        <a class="weui_cell" href="javascript:;">
-          <div class="weui_cell_hd"><img src=""></div>
-          <div class="weui_cell_bd weui_cell_primary">
-            <p>学校</p>
-          </div>
-            <eq name="personals.rz_status" value="1">
-          <span class="weui_cell_ft">{$personals.university}</span>
-           <else/>
-                <span class="weui_cell_ft">请先认证</span>
-            </eq>
-        </a>
-      </div>
-      <div class="weui_cells weui_cells_access">
-        <a class="weui_cell" href="javascript:;">
-          <div class="weui_cell_hd"><img src=""></div>
-          <div class="weui_cell_bd weui_cell_primary">
-            <p>学院</p>
-          </div>
-            <eq name="personals.rz_status" value="1">
-                <span class="weui_cell_ft">{$personals.college}</span>
-                <else/>
-                <span class="weui_cell_ft">请先认证</span>
-            </eq>
-        </a>
-      </div>
-      <div class="weui_cells weui_cells_access">
-        <a class="weui_cell" href="javascript:;">
-          <div class="weui_cell_hd"><img src=""></div>
-          <div class="weui_cell_bd weui_cell_primary">
-            <p>年级</p>
-          </div>
-            <eq name="personals.rz_status" value="1">
-                <span class="weui_cell_ft">{$personals.grade}</span>
-                <else/>
-                <span class="weui_cell_ft">请先认证</span>
-            </eq>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-</body>
-
-<script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='__PUBLIC__/js/swiper.js' charset='utf-8'></script>
+    <head>
+        <title>
+            我
+        </title>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <!--IE8-->
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+        <!--屏幕自适应-->
+        <link href="__PUBLIC__/lib/weui.min.css" rel="stylesheet" type="text/css"/>
+        <link href="__PUBLIC__/css/jquery-weui.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            html,body {
+            height: 100%;
+        }
+        
+        .weui_cell_primary p,
+        .weui_cell_ft {
+            font-size: 18px;
+        }
+        
+        .weui_cell {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+        
+        .touxiang {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        
+        .shengri {
+            border-bottom: 25px solid #f0f0f0;
+        }
+        </style>
+    </head>
 </html>
+<body>
+    <div class="weui_tab">
+        <div class="weui_tab_bd">
+            <!--其中放我们的代码内容-->
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a class="touxiang weui_cell" href="javascript:;">
+                                <!--<div class="weui_cell_hd"><img src="{}"></div>-->
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>
+                                        我的头像
+                                    </p>
+                                </div>
+                                <span class="weui_cell_ft">
+                                    <div style="right:20px; border-radius:50%; overflow:hidden;">
+                                        <img src="{$personals.head}" style="position: absolute;top:12px;right: 35px; height:50px; width:50px;border-radius:50%;"/>
+                                    </div>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="weui_cells weui_cells_access">
+                            <a class="weui_cell" href="__MODULE__/Personal/editname">
+                                <div class="weui_cell_hd">
+                                    <img src=""/>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>
+                                        昵称
+                                    </p>
+                                </div>
+                                <span class="weui_cell_ft">
+                                    {$personals.nickname}
+                                </span>
+                            </a>
+                        </div>
+                        <div class="weui_cells weui_cells_access">
+                            <a class="weui_cell" href="__MODULE__/Personal/sex">
+                                <div class="weui_cell_hd">
+                                    <img src=""/>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>
+                                        性别
+                                    </p>
+                                </div>
+                                <span class="weui_cell_ft">
+                                    {$personals.sex}
+                                </span>
+                            </a>
+                        </div>
+                        <div class="weui_cells weui_cells_access shengri">
+                            <a class="weui_cell" href="__MODULE__/Personal/birth">
+                                <div class="weui_cell_hd">
+                                    <img src=""/>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>
+                                        生日
+                                    </p>
+                                </div>
+                                <span class="weui_cell_ft">
+                                    {$personals.birth}
+                                </span>
+                            </a>
+                        </div>
+                        <div class="weui_cells weui_cells_access">
+                            <a class="weui_cell" href="__MODULE__/Personal/CertificateAuthority">
+                                <div class="weui_cell_hd">
+                                    <img src=""/>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p style="color:#000000;">
+                                        认证
+                                    </p>
+                                </div>
+                                <eq name="personals.rz_status" value="1">
+                                    <span class="weui_cell_ft">
+                                        已认证
+                                    </span>
+                                <else/>
+                                    <eq name="personals.rz_status" value="2">
+                                        <span class="weui_cell_ft">
+                                            审核中
+                                        </span>
+                                    <else/>
+                                        <span class="weui_cell_ft">
+                                            进入认证
+                                        </span>
+                                    </eq>
+                                </eq>
+                            </a>
+                        </div>
+                        <div class="weui_cells weui_cells_access">
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_hd">
+                                    <img src=""/>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>
+                                        绑定的手机号
+                                    </p>
+                                </div>
+                                <eq name="personals.rz_status" value="1">
+                                    <span class="weui_cell_ft">
+                                        {$personals.phonenumber}
+                                    </span>
+                                    <else>
+                                    </else>
+                                    <span class="weui_cell_ft">
+                                        请先认证
+                                    </span>
+                                </eq>
+                            </a>
+                        </div>
+                        <div class="weui_cells weui_cells_access">
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_hd">
+                                    <img src=""/>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>
+                                        学院
+                                    </p>
+                                </div>
+                                <eq name="personals.rz_status" value="1">
+                                    <span class="weui_cell_ft">
+                                        {$personals.college}
+                                    </span>
+                                    <else>
+                                    </else>
+                                    <span class="weui_cell_ft">
+                                        请先认证
+                                    </span>
+                                </eq>
+                            </a>
+                        </div>
+                        <div class="weui_cells weui_cells_access">
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_hd">
+                                    <img src=""/>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>
+                                        年级
+                                    </p>
+                                </div>
+                                <eq name="personals.rz_status" value="1">
+                                    <span class="weui_cell_ft">
+                                        {$personals.grade}
+                                    </span>
+                                    <else>
+                                    </else>
+                                    <span class="weui_cell_ft">
+                                        请先认证
+                                    </span>
+                                </eq>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="__PUBLIC__/lib/jquery-2.1.4.js" type="text/javascript">
+</script>
+<script src="__PUBLIC__/js/jquery-weui.min.js" type="text/javascript">
+</script>
+<script charset="utf-8" src="__PUBLIC__/js/swiper.js" type="text/javascript">
+</script>

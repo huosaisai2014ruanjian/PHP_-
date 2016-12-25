@@ -69,19 +69,32 @@
   <div class="weui_tab_bd">
    <!--其中放我们的代码内容-->
    <div class="weui_navbar">
-    <a class="weui_navbar_item weui_bar_item_on">
-      在售宝贝
-    </a>
-    <a class="weui_navbar_item">
-      失效宝贝
-    </a>
+   <if condition=" $a eq 1" >
+        <a class="weui_navbar_item ">
+          在售宝贝
+        </a>
+        <a class="weui_navbar_item weui_bar_item_on">
+          失效宝贝
+        </a>    
+    <else/>
+        <a class="weui_navbar_item weui_bar_item_on">
+          在售宝贝
+        </a>
+        <a class="weui_navbar_item">
+          失效宝贝
+        </a>
+    </if>     
    </div>
 
   <br/>
 
   <!--第一个主题开始部分-->
       <form method="post" action="__MODULE__/Personal/deletesc">
-  <div class="content">
+  <if condition=" $a eq 1" >    
+  <div class="content" style="display: none;">  
+  <else/>
+  <div class="content" id="one">
+  </if>
       <ul class="banner">
 
           <li class="bjl"><a class="bj">编辑</a></li>
@@ -92,7 +105,7 @@
   <div class="weui_panel_bd">
 
     <volist name="up" id="up">
-    <a href="__MODULE__/Gooddetail/index?id={$up.id}" style="margin-top: 1px;" class="weui_media_box weui_media_appmsg">
+    <a href="__MODULE__/Gooddetail/index?id={$up.goods_id}" style="margin-top: 1px;" class="weui_media_box weui_media_appmsg">
       <input type="checkbox" name="sp[]" class="sp1" value="{$up.id}">
       <div class="weui_media_hd">
         <img class="weui_media_appmsg_thumb" src="__PUBLIC__/{$up.photo}" >
@@ -115,7 +128,11 @@
 
    <!--第二个主题开始部分-->
       <form method="post" action="__MODULE__/Personal/deletesc">
+  <if condition=" $a eq 1" >    
+  <div class="content" >
+  <else/>
   <div class="content" style="display: none;">
+  </if>
       <ul class="banner">
 
           <li class="bj2"><a class="b">编辑</a></li>
@@ -125,8 +142,9 @@
   <div class="weui_pan  el weui_panel_access">
   <div class="weui_panel_bd">
     <volist name="down" id="down">
-    <a href="__MODULE__/Gooddetail/index?id={$down.id}" class="weui_media_box weui_media_appmsg">
+    <a href="__MODULE__/Gooddetail/index?id={$down.goods_id}" class="weui_media_box weui_media_appmsg">
       <input type="checkbox" name="sp[]" class="sp2" value="{$down.id}">
+      <input type="hidden" name="status" value="1">
       <div class="weui_media_hd">
         <img class="weui_media_appmsg_thumb" src="__PUBLIC__/{$down.photo}">
       </div>

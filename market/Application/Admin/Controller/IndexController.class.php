@@ -8,7 +8,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 use Common\Controller\RestfulController;
-class IndexController extends Controller {
+class IndexController extends RestfulController {
 
     public function index(){
 		$menu  = array();
@@ -22,7 +22,7 @@ class IndexController extends Controller {
             $this->assign('menuTag',$_GET['tag']);
         }
 
-		$where['id']=array('in','10,17');
+		$where['id']=array('in','137,144');
 		$list = $node->where($where)->field('id,name,title')->order('sort asc')->select();
         foreach($list as $key=>$module) {
             $module['access'] =   1;
@@ -30,7 +30,7 @@ class IndexController extends Controller {
         }
 		$this->assign('menu_10',$menu_10);
 
-		$where['id']=array('in','11,13,14');
+		$where['id']=array('in','138,140,141');
 		$list = $node->where($where)->field('id,name,title')->order('sort asc')->select();
 		foreach($list as $key=>$module) {
 			$module['access'] =   1;
@@ -38,7 +38,7 @@ class IndexController extends Controller {
 		}
 		$this->assign('menu_11',$menu_11);
 
-		$where['id']=array('in','12,15,16');
+		$where['id']=array('in','139,142,143');
 		$list	=	$node->where($where)->field('id,name,title')->order('sort asc')->select();
 		foreach($list as $key=>$module) {
 			$module['access'] =   1;
@@ -46,7 +46,7 @@ class IndexController extends Controller {
 		}
 		$this->assign('menu_12',$menu_12);
 
-        $where['id']=array('in','18');
+        $where['id']=array('in','145');
         $list =   $node->where($where)->field('id,name,title')->order('sort asc')->select();
         $accessList = $_SESSION['_ACCESS_LIST'];
         foreach($list as $key=>$module) {

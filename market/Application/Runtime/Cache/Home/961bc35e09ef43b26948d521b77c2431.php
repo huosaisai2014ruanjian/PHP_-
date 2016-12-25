@@ -60,19 +60,19 @@
   <section class="job-module"> 
   <dl class="retrie"> 
     <dt>
-      <a id="type" href="javascript:;">一级分类</a>
+      <a id="type" href="javascript:;"><?php echo ($cat); ?></a>
       <a id="goods" href="javascript:;">二级分类</a>
       
     </dt> 
     <dd>
       <ul class="slide downlist">
        <!--  <li><a href="#">不限</a></li> -->
-        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=1">学习物品</a></li>
-        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=2">电子数码</a></li>
-        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=3">服装服饰</a></li>
-        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=4">出行工具</a></li>
-        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=5">运动器材</a></li>
-        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=6">虚拟物品</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=1&name=学习物品">学习物品</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=2&name=电子数码">电子数码</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=3&name=服装服饰">服装服饰</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=4&name=出行工具">出行工具</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=5&name=运动器材">运动器材</a></li>
+        <li><a href="/php_-/market/index.php/Home/goodslist/goodslist?catid=6&name=虚拟物品">虚拟物品</a></li>
       </ul>
     </dd>
 
