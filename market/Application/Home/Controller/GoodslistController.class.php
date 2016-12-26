@@ -21,8 +21,9 @@ class GoodslistController extends Controller
         $catid= I('get.catid');
         
         if($catid){
-      $goods = M('goods');
+       $goods = M('goods');
        $name=I('get.name');
+       $book = I('get.book');
     $result = $goods->join('market_category on market_goods.category_id = market_category.id')
    ->join('market_cat on market_category.cat_id = market_cat.id')
         ->join('market_users on market_goods.seller_id=market_users.id')
@@ -47,7 +48,7 @@ class GoodslistController extends Controller
        //获取商品的二级分类
         $catgory = M('category');
       $result1 = $catgory->where("cat_id=$catid")->select();   
-       
+     $this->assign('book',$book);
      $this->assign('cat',$name);
      $this->assign('category',$result1);
      $this->assign('name',$result[0]['name']);
@@ -58,7 +59,7 @@ class GoodslistController extends Controller
     else{
     $id=I('get.id');
     $name=I('get.name');
-
+    $book=I('get.book');
 $goods = M('goods');
     $result = $goods->join('market_category on market_goods.category_id = market_category.id')
    ->join('market_cat on market_category.cat_id = market_cat.id')
@@ -91,6 +92,7 @@ $goods = M('goods');
 
   	// $result1 = $cat->select();
        // dump($result);exit;
+      $this->assign('book',$book);
      $this->assign('cat',$name);
    	 $this->assign('name',$result[0]['name']);
    	 $this->assign('type',$result);
@@ -102,6 +104,8 @@ $goods = M('goods');
    */
     public function getCatgory(){
       $id= I('get.id');
+      $name = I('get.name');
+      $book = I('get.book');
       $goods = M('goods');
       $result = $goods->join('market_users on market_goods.seller_id=market_users.id')->where("category_id=$id")->field(array('market_goods.name'=>'name',
             'market_goods.degree'=>'degree',
@@ -115,6 +119,8 @@ $goods = M('goods');
            // 'market_goods.cat_id'=>'cat_id',
             )
         )->select();
+      $this->assign('name',$name);
+      $this->assign('book',$book);
       $this->assign('type',$result);
       $this->display();
       

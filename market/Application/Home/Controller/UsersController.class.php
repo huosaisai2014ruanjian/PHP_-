@@ -129,9 +129,17 @@ class UsersController extends Controller {
             if(curl_errno()==0){
                 $data=json_decode($result2);
                 $condition['openid']=$data->openid;      //openid数据
+                $condition['nickname']=$data->nickname;  //名字
+                $condition['sex']=$data->sex;            //性别
+                $condition['headimgurl']=$data->headimgurl;     //openid数据
                 $where['openid']=$condition['openid'];
-                $id = $user->where($where)->field('id');
-                $this->redirect('Personal/zhanghuguanli',array('id'=>$id));
+                $info = $user->where($where)->find();
+                if($info['id']) {
+                    $this->redirect('Personal/zhanghuguanli',array('id'=>$info['id']));
+                }else{
+                    $this->assign('user',$condition);
+                    $this->display('users/index');
+                }
             }else {
                 dump(curl_errno($curl));
             }

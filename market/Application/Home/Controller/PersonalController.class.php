@@ -22,27 +22,63 @@ class PersonalController extends Controller {
         }        
         // $content='【大学生跳蚤市场】您好，您的验证码是'.$vercode; 
         session('verify',$vercode); 
-        // $ch = curl_init();
-        // curl_setopt($ch, CURLOPT_URL, "http://sms-api.luosimao.com/v1/send.json");
 
-        // curl_setopt($ch, CURLOPT_HTTP_VERSION  , CURL_HTTP_VERSION_1_0 );
-        // curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 8);
-        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        // curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
-        // curl_setopt($ch, CURLOPT_HTTPAUTH , CURLAUTH_BASIC);
-        // curl_setopt($ch, CURLOPT_USERPWD  , 'api:key-ec01b7664e1d172a2c0cbc74abbbc67c');
+          // $url="http://service.winic.org:8009/sys_port/gateway/?";
+          // $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
+          // $id = iconv('UTF-8','GB2312','kdvnszrqu');
+          // $pwd = '384913ldh';
+          // $to = $cellphone; 
+          // $content = urlencode(iconv("UTF-8","GB2312",$content)); 
+          // $rdata = sprintf($data, $id, $pwd, $to, $content);
+          
+          // $ch = curl_init();
+          // curl_setopt($ch, CURLOPT_POST,1);
+          // curl_setopt($ch, CURLOPT_POSTFIELDS,$rdata);
+          // curl_setopt($ch, CURLOPT_URL,$url);
+          // curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
+          // //´òÓ¡Ò»ÏÂ²ÎÊý ¿ÉÒÔ¿´µ½ ÔÚGB2312±àÂëÄ£Ê½µÄä¯ÀÀÆ÷ÏÂ ÏÔÊ¾×Ö·ûÊÇÕý³£µÄ
+          // $result = curl_exec($ch);
+          // curl_close($ch);
+          // $result = substr($result,0,3);
+ //      dump($vercode);
+ //        dump($cellphone);
+ // dump($ch);
+ // $a= array('mobile' => "$cellphone",'message' => "验证码：$vercode"."【大学生跳蚤市场】");
+ //     dump($a);   exit;
+// $ch = curl_init();
+// curl_setopt($ch, CURLOPT_URL, "http://sms-api.luosimao.com/v1/send.json");
 
-        // curl_setopt($ch, CURLOPT_POST, TRUE);
-        // curl_setopt($ch, CURLOPT_POSTFIELDS, array('mobile' => "$cellphone",'message' => "验证码：$vercode"."【大学生跳蚤市场】"));
+// curl_setopt($ch, CURLOPT_HTTP_VERSION  , CURL_HTTP_VERSION_1_0 );
+// curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 8);
+// curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+// curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
-        // $res = curl_exec( $ch );
-        curl_close( $ch );
-        echo $vercode;
+// curl_setopt($ch, CURLOPT_HTTPAUTH , CURLAUTH_BASIC);
+// curl_setopt($ch, CURLOPT_USERPWD  , 'api:key-ec01b7664e1d172a2c0cbc74abbbc67c');
+
+// curl_setopt($ch, CURLOPT_POST, TRUE);
+// curl_setopt($ch, CURLOPT_POSTFIELDS, array('mobile' => "$cellphone",'message' => "验证码：$vercode"."【大学生跳蚤市场】"));
+
+// $res = curl_exec( $ch );
+// curl_close( $ch );
+
+
+          echo $vercode;
+
+          // if($result=="000")
+          // {
+          //     echo '发送成功';
+          //  }
+          // else
+          // {
+          //     return 'false';
+          //  }
     }
+
     //个人中心
     public function zhanghuguanli(){
-        $id=session('id');
+        $id=I('get.id');
         $center = M('users')->where("market_users.id = $id")->find();
         $this->assign('center', $center);
         $this->display();
@@ -76,7 +112,7 @@ class PersonalController extends Controller {
         $id=session('id');
         $transaction['status'] = 0;
         $a=array('status'=>0);
-    //        dump($a);exit;
+//        dump($a);exit;
         $b = M('transaction')->where("id = $id")->save($a);
         if($b){
             $this->redirect('mydingdan');
@@ -85,15 +121,12 @@ class PersonalController extends Controller {
     }
     //我的收藏
     public function mycollection(){
-       
         if(I('get.status')){
-            dump(I('get.status'));dump(1112111);
             $this->assign('a',1);//默认显示右边
         }else{
-             dump(2222222222);
             $this->assign('a',0);
-        }
-        $id=1;
+        }        
+        $id=session('id');
         $up = M('collection')->join('market_goods on market_collection.goods_id = market_goods.id')->where("market_collection.user_id = $id&&sp_status=1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_collection.id'=>'id','market_collection.goods_id'=>'goods_id'))->select();
         $down = M('collection')->join('market_goods on market_collection.goods_id = market_goods.id')->where("market_collection.user_id = $id&&sp_status<>1")->field(array('market_goods.name'=>'name','market_goods.description'=>'description','market_goods.photo'=>'photo','market_collection.id'=>'id','market_collection.goods_id'=>'goods_id'))->select();
 //dump($up);exit;
@@ -116,7 +149,7 @@ class PersonalController extends Controller {
     public function deletesc(){
         // $name = getActionName();   //作为公共的函数使用时添加
         $adminUsersModel = D("collection"); //获取当期模块的操作对象
-        $id = I('post.sp');  //判断id是数组还是一个数值
+        $id = $_POST['sp'];  //判断id是数组还是一个数值
         //dump($id);
         if(is_array($id)){
             $where = 'id in('.implode(',',$id).')';
@@ -124,16 +157,12 @@ class PersonalController extends Controller {
             $where = 'id='.$id;
         }
        //dump($where); EXIT;
-        //dump(I('post.'));exit;
         $b=$adminUsersModel->where($where)->delete();
-
         if($b){
             if(I('post.status')){
-                //dump('asldkh');exit;
                 $this->redirect('mycollection',array('status'=>I('post.status')));
             }
             else{
-                //dump('aaaaaa');exit;
                 $this->redirect('mycollection');
             }
         }
@@ -213,8 +242,7 @@ class PersonalController extends Controller {
     //个人中心
     public function percenter(){
         //$id = I('get.id');
-        $id=1;
-        // $id=session('id');
+        $id=session('id');
         //dump($id);
         $personals = M('users')->where("market_users.id = $id")->find(); 
         $this->assign('personals', $personals);
@@ -269,7 +297,6 @@ class PersonalController extends Controller {
         }
     }
     public function CertificateAuthority(){
-//id=session('id');
         $id=1;
         if (IS_POST) {
             // dump(session());
@@ -306,9 +333,7 @@ class PersonalController extends Controller {
                         exit(); 
                     }
             // 插入到数据表中
-                    
-            $data['rz_status']=2;
-            // dump($data);exit;
+                 //   dump($data);exit;
             $result =M('users')->where("id=$id")->save($data);
             // 善后处理
             if ($result) {

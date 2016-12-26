@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>校园跳蚤市场-列表</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<!--   <link href="__PUBLIC__/dwz/themes/css/core.css" rel="stylesheet" type="text/css" /> -->
-  <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.css">
-
-
+    <title>校园跳蚤市场-列表</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--   <link href="__PUBLIC__/dwz/themes/css/core.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.css">
+    <link href="__PUBLIC__/css/jquery-weui.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/define.css">
+    <link href="__PUBLIC__/css/base.css" rel="stylesheet" />
+    <!--  <link href="__PUBLIC__/lib/weui.min.css" type="text/css" rel="stylesheet"/>
   <link href="__PUBLIC__/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/define.css">
-  <link href="__PUBLIC__/css/base.css" rel="stylesheet" /> 
-
-<!-- 	<link href="__PUBLIC__/lib/weui.min.css" type="text/css" rel="stylesheet"/>
-	<link href="__PUBLIC__/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/define.css">
   <link href="__PUBLIC__/css/base.css" rel="stylesheet" />  -->
-	<style>
-      .html,body{
+    <style>
+    .html,
+    body {
         height: 100%;
-      }
-      .swiper-container {
+    }
+    
+    .swiper-container {
         width: 100%;
-        
-      } 
-
-      .swiper-container img {
+    }
+    
+    .swiper-container img {
         display: block;
         width: 100%;
-        
-       
-      } 
+    }
     </style>
-
 </head>
+
 <body>
-<!-- <div class="weui_search_bar" id="search_bar">
+    <!-- <div class="weui_search_bar" id="search_bar">
   <form class="weui_search_outer">
     <div class="weui_search_inner">
       <i class="weui_icon_search"></i>
@@ -50,40 +47,40 @@
   </form>
   <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
 </div> -->
-
-
-
-	<!-- 搜索筛选器 分类 -->
-
-<div class="weui_panel weui_panel_access" style=" height: 100%;">
-<!--第一个分类-->
-  <section class="job-module"> 
-  <dl class="retrie"> 
-    <dt>
-      <a id="type" href="javascript:;">{$cat}</a>
-      <a id="goods" href="javascript:;">二级分类</a>
-      
-    </dt> 
-    <dd>
-      <ul class="slide downlist">
-       <!--  <li><a href="#">不限</a></li> -->
-        <li><a href="__MODULE__/goodslist/goodslist?catid=1&name=学习物品">学习物品</a></li>
-        <li><a href="__MODULE__/goodslist/goodslist?catid=2&name=电子数码">电子数码</a></li>
-        <li><a href="__MODULE__/goodslist/goodslist?catid=3&name=服装服饰">服装服饰</a></li>
-        <li><a href="__MODULE__/goodslist/goodslist?catid=4&name=出行工具">出行工具</a></li>
-        <li><a href="__MODULE__/goodslist/goodslist?catid=5&name=运动器材">运动器材</a></li>
-        <li><a href="__MODULE__/goodslist/goodslist?catid=6&name=虚拟物品">虚拟物品</a></li>
-      </ul>
-    </dd>
-
-    <dd class="goods"> 
-     <ul class="slide downlist"> 
-      <volist name="category" id="vo">
-        <li><a href="__MODULE__/goodslist/getCatgory?id={$vo['id']}">{$vo['name']}</a></li> 
-       </volist>
-      </ul>  
-    </dd> 
-    <!-- <dd class="school"> 
+    <!-- 搜索筛选器 分类 -->
+    <div class="weui_tab">
+        <div class="weui_tab_bd" style="padding-bottom:48px">
+            <div class="weui_panel weui_panel_access">
+                <!--第一个分类-->
+                <section class="job-module">
+                    <dl class="retrie">
+                        <dt>
+                            <a id="type" href="javascript:;">{$cat}</a>
+                            <a id="goods" href="javascript:;">{$book}</a>
+                        </dt>
+                        <dd>
+                            <ul class="slide downlist">
+                                <!--  <li><a href="#">不限</a></li> -->
+                                <li><a href="__MODULE__/goodslist/goodslist?catid=1&name=学习物品&book=书籍">学习物品</a></li>
+                                <li><a href="__MODULE__/goodslist/goodslist?catid=2&name=电子数码&book=手机">电子数码</a></li>
+                                <li><a href="__MODULE__/goodslist/goodslist?catid=3&name=服装服饰&book=T恤">服装服饰</a></li>
+                                <li><a href="__MODULE__/goodslist/goodslist?catid=4&name=出行工具&book=自行车">出行工具</a></li>
+                                <li><a href="__MODULE__/goodslist/goodslist?catid=5&name=运动器材&book=哑铃">运动器材</a></li>
+                                <li><a href="__MODULE__/goodslist/goodslist?catid=6&name=虚拟物品&book=游戏账号">虚拟物品</a></li>
+                            </ul>
+                        </dd>
+                        <dd class="goods">
+                            <ul class="slide downlist">
+                                <volist name="category" id="vo">
+                                    <?php
+          $cat = M('cat');
+          $res = $cat->where('id'.'='.$vo['cat_id'])->getfield('name');
+        ?>
+                                        <li><a href="__MODULE__/goodslist/getCatgory?id={$vo['id']}&book={$vo['name']}&name=<?php echo $res; ?>">{$vo['name']}</a></li>
+                                </volist>
+                            </ul>
+                        </dd>
+                        <!-- <dd class="school"> 
       <ul class="slide downlist"> 
         <li><a href="#">不限</a></li> 
         <li><a href="#">河北师大</a></li> 
@@ -97,68 +94,106 @@
         <li><a href="#">100以上</a></li> 
       </ul> 
     </dd>   -->
-  </dl> 
-</section> 
-
-  <div class="weui_panel_bd">
-   
-
-  <volist name="type" id="vo">
-    <a href="__MODULE__/Gooddetail/index?id={$vo['id']}" class="weui_media_box weui_media_appmsg">
-      <div class="goodslist">
-        <img class="weui_media_appmsg_thumb" src="__PUBLIC__/{$vo.photo}" height="100" width="100" alt="">
-      </div>
-      <div class="weui_media_bd">
-      	<h4 class="weui_media_title">{$vo.name}</h4>
-        
-                <p class="weui_media_desc">{$vo.description}</p>
-        <h5 class="price">￥{$vo.price}</h5>
-        <p class="weui_media_desc">{$vo.degree}成新</p>
-
-      </div>
-      <div style="text-align:right">
-      		<img src="{$vo.head}" style="height:40px;width=40px;" >
-
-      		<p class="weui_media_desc">{$vo.nickname}</p>
-      		<p class="weui_media_desc">{$vo.college}</p>
-      </div>
-    </a> 
-    </volist>
-   
-</div>
-
-<script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/jquery-weui.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/swiper.js"></script>
-<script>
-      $(".swiper-container").swiper({
-        loop: true,
-        autoplay: 2000
-      });
-
-   
-    </script>
-<script type="text/javascript">
-$(function(){ 
-  $('.retrie dt a').click(function(){
-    var $t=$(this);
-    if($t.hasClass('up')){
-      $(".retrie dt a").removeClass('up');
-      $('.downlist').hide();
-      $('.mask').hide();
-    }else{
-      $(".retrie dt a").removeClass('up');
-      $('.downlist').hide();
-      $t.addClass('up');
-      $('.downlist').eq($(".retrie dt a").index($(this)[0])).show();
-      $('.mask').show();
+                    </dl>
+                </section>
+                <div class="weui_panel_bd">
+                    <volist name="type" id="vo">
+                        <a href="__MODULE__/Gooddetail/index?id={$vo['id']}" class="weui_media_box weui_media_appmsg">
+                            <div class="goodslist">
+                                <img class="weui_media_appmsg_thumb" src="__PUBLIC__/{$vo.photo}" height="100" width="100" alt="">
+                            </div>
+                            <div class="weui_media_bd">
+                                <h4 class="weui_media_title">{$vo.name}</h4>
+                                <br />
+                                <p class="weui_media_desc">&nbsp;&nbsp;{$vo.description}</p>
+                                <div style="margin-top:15px;margin-left:30px">
+                                    <h5 class="price">￥{$vo.price}</h5>
+                                    <p class="weui_media_desc">&nbsp;&nbsp;{$vo.degree}成新</p>
+                                </div>
+                            </div>
+                            <div style="text-align:right">
+                                <img src="{$vo.head}" style="height:40px;width=40px;">
+                                <p class="weui_media_desc">{$vo.nickname}</p>
+                                <p class="weui_media_desc">{$vo.college}</p>
+                            </div>
+                        </a>
+                    </volist>
+                </div>
+                <input type="hidden" value="{$Think.session.rz_status}" id="rz_tus">
+        <input type="hidden" value="{$Think.session.id}" id="id_num">
+            </div>
+            <div class="weui_tabbar">
+                <a href="__MODULE__/index/index" class="weui_tabbar_item">
+                    <div class="weui_tabbar_icon">
+                        <img src="__PUBLIC__/images/first.png" alt="">
+                    </div>
+                    <p class="weui_tabbar_label">首页</p>
+                </a>
+                <a href="__MODULE__/goods/index" class="weui_tabbar_item" id="rz_sta">
+                    <div class="weui_tabbar_icon">
+                        <img src="__PUBLIC__/images/jiahao.png" width="100%">
+                    </div>
+                    <p class="weui_tabbar_label">发布</p>
+                </a>
+                <a href="__MODULE__/Personal/zhanghuguanli/id/{$Think.session.id}" class="weui_tabbar_item">
+                    <div class="weui_tabbar_icon">
+                        <img src="__PUBLIC__/images/mine.png" alt="">
+                    </div>
+                    <p class="weui_tabbar_label">我的</p>
+                </a>
+            </div>
+            <input type="hidden" value="{$Think.session.rz_status}" id="rz_tus">
+        </div>
+        <script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/js/jquery-weui.min.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/js/swiper.js"></script>
+        <script>
+        $(".swiper-container").swiper({
+            loop: true,
+            autoplay: 2000
+        });
+        </script>
+        <script type="text/javascript">
+        $(function() {
+            $('.retrie dt a').click(function() {
+                var $t = $(this);
+                if ($t.hasClass('up')) {
+                    $(".retrie dt a").removeClass('up');
+                    $('.downlist').hide();
+                    $('.mask').hide();
+                } else {
+                    $(".retrie dt a").removeClass('up');
+                    $('.downlist').hide();
+                    $t.addClass('up');
+                    $('.downlist').eq($(".retrie dt a").index($(this)[0])).show();
+                    $('.mask').show();
+                }
+            });
+            $(".type ul li a:contains('" + $('#type').text() + "')").addClass('selected');
+            $(".goods ul li a:contains('" + $('#goods').text() + "')").addClass('selected');
+            $(".school ul li a:contains('" + $('#school').text() + "')").addClass('selected');
+            $(".price ul li a:contains('" + $('#price').text() + "')").addClass('selected');
+        });
+        $('#rz_sta').click(function() {
+    var status = $('#rz_tus').val();
+    if (status == '1') {
+        return true;
+    } else {
+        $.confirm({
+            title: '尚未认证',
+            text: '跳转至认证页面',
+            onOK: function () {
+               // window.location.href="home/Personal/percenter/id/"+num+"";
+              //$state.go('http://www.baidu.com');
+              top.location="../Personal/percenter"; 
+            },
+            onCancel: function () {
+            }
+          });
+          return false;
     }
-  });
-  $(".type ul li a:contains('"+$('#type').text()+"')").addClass('selected');
-  $(".goods ul li a:contains('"+$('#goods').text()+"')").addClass('selected');
-  $(".school ul li a:contains('"+$('#school').text()+"')").addClass('selected');
-  $(".price ul li a:contains('"+$('#price').text()+"')").addClass('selected');
 });
-</script>
+        </script>
 </body>
+
 </html>

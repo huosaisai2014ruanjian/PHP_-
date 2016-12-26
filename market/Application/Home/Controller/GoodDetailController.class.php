@@ -15,11 +15,13 @@ class GooddetailController extends Controller
 {
         public function index(){
             $where1 = I('get.');
+            // $id=I('get.id');
             // dump($where);exit;
+            $goodsModel = D('GoodsView');
             $usersModel = M('users');
             $MessageModel = M('message');
-            $goods = M('goods');->where($where1)->find();
-            $where = $goods['seller_id'];//卖家id
+            $goods = $goodsModel->where($where1)->find();
+            $where = $goods['seller_id'];
             $imgarray=explode(';',$goods['photo']);//将图片URL分割 存到数组
            
             $users = $usersModel->where("id = $where")->find();
@@ -70,6 +72,8 @@ class GooddetailController extends Controller
             $this->assign('result',$result);
             $viewadd = M('goods')->where($where1)->setInc('times',1);//页面每刷新一次，浏览次数加1 
             $this->display();
+             
+        }
         public function addmessage(){
             $data = array(
 

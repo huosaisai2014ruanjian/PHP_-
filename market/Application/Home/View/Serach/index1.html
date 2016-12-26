@@ -1,87 +1,117 @@
 <html>
+
 <head>
-	<title>思密达</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
-	<style type="text/css">
-	html,body{
-		height: 100%;
-	}
-	p{
-		color:#eca83c;
-	}
-	</style>
-	 <script language="JavaScript">
+    <title>思密达</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--IE8-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--屏幕自适应-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
+    <style type="text/css">
+    html,
+    body {
+        height: 100%;
+    }
+    
+    p {
+        color: #eca83c;
+    }
+    </style>
+    <script language="JavaScript">
     var caution = false
+
     function setCookie(name, value, expires, path, domain, secure) {
-    var curCookie = name + "=" + escape(value) +
-    ((expires) ? "; expires=" + expires.toGMTString() : "") +
-    ((path) ? "; path=" + path : "") +
-    ((domain) ? "; domain=" + domain : "") +
-    ((secure) ? "; secure" : "")
-    if (!caution || (name + "=" + escape(value)).length <= 4000)
-    document.cookie = curCookie
-    else
-    if (confirm("Cookie exceeds 4KB and will be cut!"))
-    document.cookie = curCookie
+        var curCookie = name + "=" + escape(value) +
+            ((expires) ? "; expires=" + expires.toGMTString() : "") +
+            ((path) ? "; path=" + path : "") +
+            ((domain) ? "; domain=" + domain : "") +
+            ((secure) ? "; secure" : "")
+        if (!caution || (name + "=" + escape(value)).length <= 4000)
+            document.cookie = curCookie
+        else
+        if (confirm("Cookie exceeds 4KB and will be cut!"))
+            document.cookie = curCookie
     }
+
     function getCookie(name) {
-    var prefix = name + "="
-    var cookieStartIndex = document.cookie.indexOf(prefix)
-    if (cookieStartIndex == -1)
-    return null
-    var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
-    if (cookieEndIndex == -1)
-    cookieEndIndex = document.cookie.length
-    return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+        var prefix = name + "="
+        var cookieStartIndex = document.cookie.indexOf(prefix)
+        if (cookieStartIndex == -1)
+            return null
+        var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+        if (cookieEndIndex == -1)
+            cookieEndIndex = document.cookie.length
+        return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
     }
+
     function deleteCookie(name, path, domain) {
-    if (getCookie(name)) {
-    document.cookie = name + "=" +
-    ((path) ? "; path=" + path : "") +
-    ((domain) ? "; domain=" + domain : "") +
-    "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+        if (getCookie(name)) {
+            document.cookie = name + "=" +
+                ((path) ? "; path=" + path : "") +
+                ((domain) ? "; domain=" + domain : "") +
+                "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+        }
     }
-    }
+
     function fixDate(date) {
-    var base = new Date(0)
-    var skew = base.getTime()
-    if (skew > 0)
-    date.setTime(date.getTime() - skew)
+        var base = new Date(0)
+        var skew = base.getTime()
+        if (skew > 0)
+            date.setTime(date.getTime() - skew)
     }
     var now = new Date()
     fixDate(now)
     now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
     var visits = getCookie("counter")
     if (!visits)
-    visits = 1
+        visits = 1
     else
-    visits = parseInt(visits) + 1
+        visits = parseInt(visits) + 1
     setCookie("counter", visits, now)
     document.write("<p id=time><font color=red>" + visits + "</font></p>")
     </script>
 </head>
+
 <body>
-<div class="weui_tab">
-  <div class="weui_tab_bd">
-<div class="he">
- <p> 您找的页面去整形了……………</p>
-<img src="__PUBLIC__/images/serach/change.jpeg">
- 
-</div>
-</div>
-</div>
+    <div class="weui_tab">
+        <div class="weui_tab_bd">
+            <div class="he">
+                <p> 您找的页面去整形了……………</p>
+                <img src="__PUBLIC__/images/serach/change.jpeg">
+            </div>
+        </div>
+    </div>
+    <div class="weui_tabbar">
+        <a href="__MODULE__/index/index" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="__PUBLIC__/images/first.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">首页</p>
+        </a>
+        <a href="__MODULE__/goods/index" class="weui_tabbar_item" id="rz_sta">
+            <div class="weui_tabbar_icon">
+                <img src="__PUBLIC__/images/jiahao.png" width="100%">
+            </div>
+            <p class="weui_tabbar_label">发布</p>
+        </a>
+        <a href="__MODULE__/Personal/zhanghuguanli/id/{$Think.session.id}" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="__PUBLIC__/images/mine.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">我的</p>
+        </a>
+    </div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
 <script type="text/javascript">
-    window.onload=function(){
-    	  var html = document.getElementById('time').innerHTML;
-    	  $.get(home/serach/getTimes?time=html'),function(da){
-              alert(da);
-    	  });
-    }
+window.onload = function() {
+    var html = document.getElementById('time').innerHTML;
+    $.get(home / serach / getTimes ? time = html '),function(da){
+        alert(da);
+    });
+}
 </script>
+
 </html>
