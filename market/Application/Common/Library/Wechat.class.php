@@ -57,6 +57,66 @@ file_put_contents('log.xml',$resultStr,FILE_APPEND);
     echo $resultStr;
 }
 /***
+   微信支付统一下单接口
+*/
+   public function weixincheck($appid,$mch_id,$nonce_str,$sign,$body,$out_trade_no,$total_fee,$spbill_create_ip,$notify_url,$trade_type,$openid){
+       $xmlStr="<xml>
+    <appid><![CDATA[$appid]]></appid>
+    <body><![CDATA[$body]]></body>
+    <mch_id><![CDATA[$mch_id]]></mch_id>
+    <nonce_str><![CDATA[$nonce_str]]></nonce_str>
+    <sign><![CDATA[$sign]]></sign>
+    <notify_url><![CDATA[$notify_url]]></notify_url>
+    <openid><![CDATA[$openid]]></openid>
+    <out_trade_no><![CDATA[$out_trade_no]]></out_trade_no>
+    <spbill_create_ip><![CDATA[$spbill_create_ip]]></spbill_create_ip>
+    <total_fee><![CDATA[$total_fee]]></total_fee>
+    <trade_type><![CDATA[$trade_type]]></trade_type>
+ </xml> ";
+ 
+// $xmlStr="<xml><appid>wx2421b1c4370ec43b</appid>
+//     <attach>支付测试</attach>
+//     <body>JSAPI支付测试</body>
+//     <mch_id>10000100</mch_id>
+//     <nonce_str>1add1a30ac87aa2db72f57a2375d8fec</nonce_str>
+//     <notify_url>http://wxpay.wxutil.com/pub_v2/pay/notify.v2.php</notify_url>
+//     <openid>oUpF8uMuAJO_M2pxb1Q9zNjWeS6o</openid>
+//     <out_trade_no>1415659990</out_trade_no>
+//     <spbill_create_ip>14.23.150.211</spbill_create_ip>
+//     <total_fee>1</total_fee>
+//     <trade_type>JSAPI</trade_type>
+//     <sign>0CB01533B8C1EF103065174F50BCA001</sign></xml>";   
+    $url = "https://api.mch.weixin.qq.com/pay/unifiedorder";
+      $res = $this->weixinxiadan($url,$xmlStr);
+      //dump($res);
+   }
+/***
+   执行微信统一下单
+*/
+   public function weixinxiadan($url,$xmlStr){
+        $curl = curl_init ($url);//初始化CURL会话
+    dump(1);
+    curl_setopt ( $curl, CURLOPT_POST, 1 );
+    curl_setopt ( $curl, CURLOPT_RETURNTRANSFER, 1 );
+   
+    curl_setopt ( $curl,  CURLOPT_SSL_VERIFYPEER, FALSE );
+    curl_setopt ( $curl, CURLOPT_SSL_VERIFYHOST, false );
+    curl_setopt ( $curl, CURLOPT_POSTFIELDS, $xmlStr);
+    $result = curl_exec ($curl);
+   
+      if(curl_errno()==0){
+        dump($result);
+        // $result=json_decode($result,true);
+        // return $result;
+        // dump($result);
+        dump(2);
+      }else {
+        dump(curl_error($curl));
+       // dump(3);
+      }
+    curl_close ( $curl );
+   }
+/***
    回复客服消息
 */
    public function responseServiceMsg($toUserName,$FromUserName){
@@ -113,7 +173,7 @@ public function responseImageTextMsg($toUserName,$fromUserName,$result,$num){
 foreach($result as $tmp){
     $title=$tmp['title'];
     $description=$tmp['description'];
-    $picurl = $tmp['thumb'];
+    $picurl = "__PUBLIC__/".$tmp['thumb'];
     $url = $tmp['url'];
     $tpl .="<item>
 <Title><![CDATA[$title]]></Title> 

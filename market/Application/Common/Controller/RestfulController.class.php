@@ -39,7 +39,7 @@ abstract class RestfulController extends Controller {
         if(isset($_POST['numPerPage'])){
                 $numPerPage=$_POST['numPerPage'];
         }else{
-            $numPerPage=5;
+            $numPerPage=10;
         }
         if(isset($_POST['pageNum'])){
             $currentPage=$_POST['pageNum'];
