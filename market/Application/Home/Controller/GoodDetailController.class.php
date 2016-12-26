@@ -1,7 +1,7 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: 周博学
+ * document：商品详情
+ * User: 周博学、刘迪浩
  * Date: 2016/12/7
  * Time: 11:00
  */

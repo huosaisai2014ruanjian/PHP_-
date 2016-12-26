@@ -1,6 +1,6 @@
 <?php
-//时间：2016.12.5-7 
-//编写者：兰天旭 
+//时间：2016.12.5-26 
+//编写者：刘迪浩
 namespace Home\Controller;
 
 use Think\Controller;

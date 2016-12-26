@@ -1,7 +1,7 @@
 <?php
 /*
  * document：个人中心
- * User: 马豪珍
+ * User: 马豪珍、刘迪浩、王振儒
  * Date: 2016-12-06
  * Time: 09:30
  */
@@ -22,8 +22,6 @@ class PersonalController extends Controller {
         }        
         // $content='【大学生跳蚤市场】您好，您的验证码是'.$vercode; 
         session('verify',$vercode); 
-
-
           // $url="http://service.winic.org:8009/sys_port/gateway/?";
           // $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
           // $id = iconv('UTF-8','GB2312','kdvnszrqu');
@@ -62,18 +60,7 @@ class PersonalController extends Controller {
 
 // $res = curl_exec( $ch );
 // curl_close( $ch );
-
-
           echo $vercode;
-
-          // if($result=="000")
-          // {
-          //     echo '发送成功';
-          //  }
-          // else
-          // {
-          //     return 'false';
-          //  }
     }
 
     //个人中心

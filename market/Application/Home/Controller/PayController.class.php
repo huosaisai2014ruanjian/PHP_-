@@ -1,11 +1,10 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: 周博学
+ * document：支付功能
+ * User: 霍赛赛、兰天旭
  * Date: 2016/12/7
  * Time: 11:00
  */
-
 namespace Home\Controller;
 
 use Think\Controller;
@@ -13,13 +12,9 @@ use Common\Controller\RestfulController;
 
 class PayController extends Controller
 {        
-     public function index(){
-           
+     public function index(){     
      }
-   
-
-        public function Pay(){
-       
+     public function Pay(){
        //统一支付下单接口为了获取prepay_id
   //1.组织数据t
      $appid = "wx70d0f4e9a9dba3ea";  //公众账号ID
@@ -37,26 +32,26 @@ class PayController extends Controller
      $wechat = new \Common\Library\Wechat();
      //$wechat->weixincheck($appid,$mch_id,$nonce_str,$sign,$body,$out_trade_no,$total_fee,$spbill_create_ip,$notify_url,$trade_type,$openid);
     //获取订单的信息
-            $where=I('get.');//从商品列表页获取商品ID
-            $good = M('Goods')->where($where)->find();//找到商品
-            $arr=explode(';',$good['photo']);//将图片URL分割 存到数组
-            $len=count($arr);
-            for ($j=0; $j < $len; $j++) {
-                $good ['image'][]=$arr[$j];
-            }
-            $sellid = $good['seller_id'][''];//卖家ID
-            $user = M('users')->where($sellid)->find();//dump($user);exit; //以卖家ID得到该卖家信息
-            $message= M('message')->where($sellid)->find();
-                    //dump($good['image']['1']);exit;
-            $good1= $good['image']['1'];
+    $where=I('get.');//从商品列表页获取商品ID
+    $good = M('Goods')->where($where)->find();//找到商品
+    $arr=explode(';',$good['photo']);//将图片URL分割 存到数组
+    $len=count($arr);
+    for ($j=0; $j < $len; $j++) {
+        $good ['image'][]=$arr[$j];
+    }
+    $sellid = $good['seller_id'][''];//卖家ID
+    $user = M('users')->where($sellid)->find();//dump($user);exit; //以卖家ID得到该卖家信息
+    $message= M('message')->where($sellid)->find();
+            //dump($good['image']['1']);exit;
+    $good1= $good['image']['1'];
 
-            //dump($message);exit;
-            $this->assign('nonce',$appid);
-            $this->assign('user',$user);
-            $this->assign('good',$good);//分好的数组 单个图片URL传到VIEW
-            $this->assign('message',$message);
-            $this->assign('good1',$good1);
-            $this->display();
+    //dump($message);exit;
+    $this->assign('nonce',$appid);
+    $this->assign('user',$user);
+    $this->assign('good',$good);//分好的数组 单个图片URL传到VIEW
+    $this->assign('message',$message);
+    $this->assign('good1',$good1);
+    $this->display();
 }
 //获取随机字符串
   public function random(){
