@@ -78,6 +78,51 @@ class UsersController extends RestfulController
             $this->error('数据添加失败');
         }
     }
+        public function qualify()
+    {
+        $userModel = M('Users');
+        $url = 'http://' . $_SERVER['SERVER_NAME'] . '/market/Public/';
+        $id = $_GET['id'];
+        $qualify = $userModel->where("id=$id")->find();
+        $card = $qualify['card'];
+        $grade = $qualify['grade'];
+        $num = $qualify['num'];
+        $name = $qualify['name'];
+        $this->assign('id', $id);
+        $this->assign('users', $qualify);
+        $this->assign('url', $url);
+        $this->assign('card', $card);
+        $this->assign('grade', $grade);
+        $this->assign('num', $num);
+        $this->assign('name', $name);
+        $this->display();
+    }
 
-
+    public function qualifyt()
+    {
+        $data = I('post.');
+        $this->_db->save($data);
+        $this->success("认证成功！");
+    }
+    public function index() {
+        if(isset($_POST['numPerPage'])){
+                $numPerPage=$_POST['numPerPage'];
+        }else{
+            $numPerPage=10;
+        }
+        if(isset($_POST['pageNum'])){
+            $currentPage=$_POST['pageNum'];
+        }else{
+            $currentPage=1;
+        }
+        $count= $this->_db->count();
+        $Page = new \Think\Page($count,$numPerPage);
+        $show = $Page->show();// 分页显示输出
+        $list = $this->_db->order('rz_status desc')->limit((($currentPage-1)*$numPerPage).','.$numPerPage)->select();
+        $this->assign('results',$list);// 赋值数据集
+        $this->assign('numPerPage',$numPerPage);
+        $this->assign('totalCount',$count);
+        $this->assign('currentPage',$currentPage);
+        $this->display();
+    }    
 }

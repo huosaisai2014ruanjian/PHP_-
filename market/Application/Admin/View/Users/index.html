@@ -1,43 +1,105 @@
 <include file="Public:pagerForm" />
-
 <div class="pageContent">
     <div class="panelBar">
         <ul class="toolBar">
             <li class=""><a class="add" href="__MODULE__/users/create" target="navTab"><span>添加</span></a></li>
             <li class=""><a class="delete" href="__MODULE__/users/destroy?id={sid_user}" target="ajaxTodo" title="确定要删除吗?"><span>删除</span></a></li>
             <li class=""><a class="edit" href="__MODULE__/users/edit?id={sid_user}" target="navTab"><span>修改</span></a></li>
+             <li class=""><a class="edit" href="__MODULE__/Users/qualify?id={sid_user}" target="dialog" rel="dlg_page8"><span>认证</span></a></li>
             <li class="line">line</li>
         </ul>
     </div>
-    <table class="list" width="98%" targetType="navTab" asc="asc" desc="desc" layoutH="70" >
+    <table class="list" width="98%" targetType="navTab" asc="asc" desc="desc" layoutH="70">
         <thead>
-        <tr>
-            <th><div>手机号</div></th>
-            <th><div>姓名</div></th>            
-            <th><div>昵称</div></th>
-            <th><div>学院</div></th>
-            <th><div>学号</div></th>
-            <th><div>性别</div></th>
-            <th><div>年级</div></th>
-            <th><div>头像</div></th>
-            <th><div>验证图片</div></th>
-        </tr>
+            <tr>
+                <th>
+                    <div>昵称</div>
+                </th>
+                <th>
+                    <div>头像</div>
+                </th>
+                <th>
+                    <div>性别</div>
+                </th>
+                <th>
+                    <div>年级</div>
+                </th>
+                <th>
+                    <div>姓名</div>
+                </th>
+                <th>
+                    <div>学院</div>
+                </th>
+                <th>
+                    <div>学号</div>
+                </th>
+                <th>
+                    <div>验证图片</div>
+                </th>
+                <th>
+                    <div>手机号</div>
+                </th>
+                <th>
+                    <div>是否认证</div>
+                </th>                
+            </tr>
         </thead>
         <tbody>
-
-        <volist name="results" id="vo">
-            <tr target="sid_user" rel="{$vo.id}">
-                <td><div>{$vo['username']}</div></td>
-                <td><div>{$vo['name']}</div></td>
-                <td><div>{$vo['nickname']}</div></td>
-                <td><div>{$vo['college']}</div></td>
-                <td><div>{$vo['num']}</div></td>
-                <td><div>{$vo['sex']}</div></td>
-                <td><div>{$vo['grade']}</div></td>
-                <td><div><img src="__ROOT__/Public/{$vo['head']}" width="40px" height="40px"/></div></td>
-                <td><div><img src="__ROOT__/Public/{$vo['card']}" width="40px" height="40px" /></div></td>
-            </tr>
-        </volist>
+            <volist name="results" id="vo">
+                <tr target="sid_user" rel="{$vo.id}">
+                    <td>
+                        <div>{$vo['nickname']}</div>
+                    </td>
+                    <td>
+                        <div><img src="{$vo['head']}" width="40px" height="40px" /></div>
+                    </td>
+                    <td>
+                        <div>{$vo['sex']}</div>
+                    </td>
+                    <td>
+                        <div>
+                        <if condition="$vo['grade'] neq NULL">
+                            {$vo['grade']}届
+                        <else />
+                        </if>    
+                        </div>
+                    </td>
+                    <td>
+                        <div>{$vo['name']}</div>
+                    </td>
+                    <td>
+                        <div>{$vo['college']}</div>
+                    </td>
+                    <td>
+                        <div>{$vo['num']}</div>
+                    </td>
+                    <if condition="$vo['card'] neq NULL">
+                        <td>
+                            <div><img src="__ROOT__/Public/{$vo['card']}" width="40px" height="40px" /></div>
+                        </td>
+                        <else />
+                        <td>
+                            <div></div>
+                        </td>
+                    </if>
+                    <td>
+                        <div>{$vo['phonenumber']}</div>
+                    </td>
+                    <td>
+                        <div>
+                            <eq name="vo['rz_status']" value="1">
+                                已认证
+                            <else/>
+                                <eq name="vo['rz_status']" value="2">
+                                    待审核
+                                <else/>
+                                    未认证
+                                </eq>
+                            </eq>
+                        </div>
+                    </td>                    
+                </tr>
+            </volist>
         </tbody>
     </table>
     <div class="panelBar">
@@ -55,5 +117,4 @@
     </div>
 </div>
 <script>
-
 </script>

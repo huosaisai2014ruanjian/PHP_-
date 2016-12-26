@@ -7,7 +7,7 @@ class GoodsController extends RestfulController {
         if(isset($_POST['numPerPage'])){
                 $numPerPage=$_POST['numPerPage'];
         }else{
-            $numPerPage=2;
+            $numPerPage=10;
         }
         if(isset($_POST['pageNum'])){
             $currentPage=$_POST['pageNum'];

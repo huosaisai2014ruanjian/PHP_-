@@ -1,64 +1,66 @@
 <style type="text/css">
-	#il{
-       height:400px;
-	}
-	#il .t{
-		width:200px;
-		text-align: center;
-	}
-	.right{
-        position: absolute;
-        right:150px;
-        top:430px;
-	}
+#il {
+    height: 400px;
+}
+
+#il .t {
+    width: 200px;
+    text-align: center;
+}
+
+.right {
+    position: absolute;
+    right: 150px;
+    top: 430px;
+}
 </style>
 <div class="pageContent j-resizeGrid">
-	<div class="panelBar">
-		<ul class="toolBar">
-			<li class=""><a class="add" href="{:U('admin/chat/index')}" target="navTab"><span>聊天管理</span></a></li>
-		</ul>
-	</div>
-	<form action="__MODULE__/Chat/update" width="100%" method="post"  class="pageForm required-validate" onsubmit="return validateCallback(this)">
- 	<input type="hidden" type="text" value="{$row['id']}" name="id">
-	
-	<table  id="il" class="list" width="98%" targetType="navTab" asc="asc" desc="desc" layoutH="42">
-		<tbody>
-
-		<tr>
-			<td class="t">发送用户ID</td>
-			<td>
-					<select name="fromuser_id">
-						<option selected >{$row['fromuser_id']}</option>
-						<volist name="users" id="vo">
-							<option value="{$vo['id']}" >{$vo['id']}</option>
-						</volist>
-					</select>
-				</td>
-		</tr>
-		<tr>
-			<td class="t">接收用户ID</td>
-			<td>
-					<select name="touser_id">
-						<option selected >{$row['touser_id']}</option>
-						<volist name="users" id="vo">
-							<option value="{$vo['id']}" >{$vo['id']}</option>
-						</volist>
-					</select>
-				</td>
-		</tr>
-		<tr>
-			<td class="t">聊天内容</td>
-			<td><textarea name="content" cols="80" rows="5" class="textInput">{$row['content']}</textarea></td>
-		</tr>
-	
-			
-		<tr>
-			<td class="t"></td>
-			<td></td>
-			<td class="t"></td>
-			<td><input type="submit" value="修改"></td>
-		</tr>
-		</tbody>
-	</table>
-</form>
-<!--表单提交开始-->
+    <div class="panelBar">
+        <ul class="toolBar">
+            <li class=""><a class="add" href="{:U('admin/chat/index')}" target="navTab"><span>聊天管理</span></a></li>
+        </ul>
+    </div>
+    <form action="__MODULE__/Chat/update" width="100%" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this)">
+        <input type="hidden" type="text" value="{$row['id']}" name="id">
+        <table id="il" class="list" width="98%" targetType="navTab" asc="asc" desc="desc" layoutH="42">
+            <tbody>
+                <tr>
+                    <td class="t">发送用户ID</td>
+                    <td>
+                        <select name="fromuser_id">
+                            <option selected>{$row['fromuser_id']}</option>
+                            <volist name="users" id="vo">
+                                <option value="{$vo['id']}">{$vo['id']}</option>
+                            </volist>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="t">接收用户ID</td>
+                    <td>
+                        <select name="touser_id">
+                            <option selected>{$row['touser_id']}</option>
+                            <volist name="users" id="vo">
+                                <option value="{$vo['id']}">{$vo['id']}</option>
+                            </volist>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="t">聊天内容</td>
+                    <td>
+                        <textarea name="content" cols="80" rows="5" class="textInput">{$row['content']}</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="t"></td>
+                    <td></td>
+                    <td class="t"></td>
+                    <td>
+                        <input type="submit" value="修改">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <!--表单提交开始-->

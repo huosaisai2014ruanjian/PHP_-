@@ -1,21 +1,23 @@
 <style>
-    .pageFormContent dd{
-        width:135px;
-    }
-    .upload{
-        display: none;
-    }
-    #upload1{
-        display: block;
-    }
-    #nownum{
-        float: none;
-        display: inline;
-    }
+.pageFormContent dd {
+    width: 135px;
+}
+
+.upload {
+    display: none;
+}
+
+#upload1 {
+    display: block;
+}
+
+#nownum {
+    float: none;
+    display: inline;
+}
 </style>
 <script type="text/javascript">
-function showImage()
-{
+function showImage() {
     // 获取文件路径
     var path = document.getElementById('upload').value;
     // 创建 img
@@ -30,7 +32,7 @@ function showImage()
         <dl>
             <dt>手机号：</dt>
             <dd>
-                <input type="text" name="username" class="required" maxlength="30" alt="用于登陆的账户"/>
+                <input type="text" name="username" class="required" maxlength="30" alt="用于登陆的账户" />
             </dd>
         </dl>
         <dl>
@@ -38,7 +40,7 @@ function showImage()
             <dd>
                 <input type="text" name="name" class="required" maxlength="8" />
             </dd>
-        </dl>        
+        </dl>
         <dl>
             <dt>昵称：</dt>
             <dd>
@@ -54,7 +56,7 @@ function showImage()
         <dl>
             <dt>性别：</dt>
             <dd>
-                <input type="radio" name="sex" value="男" class="required"/>男&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="sex" value="男" class="required" />男&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="radio" name="sex" value="女" class="required" />女
                 <!--                 <select name="typeid" id="typeid">
                                     <option value="0" selected="selected">请选择</option>
@@ -68,11 +70,11 @@ function showImage()
         <dd>
             <select name="grade" id="college_id">
                 <option value="0" selected="selected">请选择</option>
-                    <option value="2013届" selected="selected">2013届</option>
-                    <option value="2014届">2014届</option>
-                    <option value="2015届">2015届</option>
-                    <option value="2016届">2016届</option>
-                    <option value="2017届">2017届</option>
+                <option value="2013届" selected="selected">2013届</option>
+                <option value="2014届">2014届</option>
+                <option value="2015届">2015届</option>
+                <option value="2016届">2016届</option>
+                <option value="2017届">2017届</option>
             </select>
         </dd>
         <dl>
@@ -88,31 +90,32 @@ function showImage()
             </dd>
         </dl>
         <dl>
-        <dt>学院：</dt>
-        <dd>
-            <select name="college" id="college_id">
-                <option value="0" selected="selected">请选择</option>
-                <volist name="college" id="temp">
-                    <option value="{$temp.name}">{$temp.name}</option>
-                </volist>
-            </select>
-        </dd>
-        </dl>
-        <dl>
-            <dt>上传头像：<p id="nownum"></p></dt>
+            <dt>学院：</dt>
             <dd>
-                <input type="file" id="upload" name="head" onChange="showImage()"/>
+                <select name="college" id="college_id">
+                    <option value="0" selected="selected">请选择</option>
+                    <volist name="college" id="temp">
+                        <option value="{$temp.name}">{$temp.name}</option>
+                    </volist>
+                </select>
             </dd>
         </dl>
         <dl>
-            <dt>上传一卡通：<p id="nownum"></p></dt>
+            <dt>上传头像：
+                <p id="nownum"></p>
+            </dt>
             <dd>
-                <input type="file" id="upload" name="card" onChange="showImage()"/>
+                <input type="file" id="upload" name="head" onChange="showImage()" />
             </dd>
         </dl>
-
-
-
+        <dl>
+            <dt>上传一卡通：
+                <p id="nownum"></p>
+            </dt>
+            <dd>
+                <input type="file" id="upload" name="card" onChange="showImage()" />
+            </dd>
+        </dl>
     </div>
     <div class="formBar" style="position:absolute;bottom:0;right:0;width:100%;">
         <ul>
@@ -134,40 +137,40 @@ function showImage()
     </div>
 </form>
 <script type="text/javascript">
-    var upload=document.getElementsByClassName('upload');
-    var nownum=document.getElementById('nownum');
-    for (var i = upload.length - 1; i >= 0; i--) {
-        upload[i].i=i;
-        upload[i].onchange=function(){
-            //限制上传类型
-            photoExt=this.value.substr(this.value.lastIndexOf(".")).toLowerCase();//获得文件后缀名
-            if(photoExt!='.jpg'&&photoExt!='.gif'&&photoExt!='.jpeg'&&photoExt!='.png'){
-                alert("图片类型必须是.gif,jpeg,jpg,png中的一种");
-                return false;
-            }
-            var fileSize = 0;
-            var isIE = /msie/i.test(navigator.userAgent) && !window.opera;
-            if (isIE && !this.files) {
-                var filePath = this.value;
-                var fileSystem = new ActiveXObject("Scripting.FileSystemObject");
-                var file = fileSystem.GetFile (filePath);
-                fileSize = file.Size;
-            }else {
-                fileSize = this.files[0].size;
-            }
-            fileSize=Math.round(fileSize/1024*100)/100; //单位为KB
-            if(fileSize>=5120){
-                alert("照片最大尺寸为5MB，请重新上传!");
-                return false;
-            }
-            //图片显示效果
-
-            var num=this.i+1;
-            if (num<6) {
-                upload[num].style.display = "inline";
-            }
-            //计数
-            nownum.innerHTML = num+'/6';
+var upload = document.getElementsByClassName('upload');
+var nownum = document.getElementById('nownum');
+for (var i = upload.length - 1; i >= 0; i--) {
+    upload[i].i = i;
+    upload[i].onchange = function() {
+        //限制上传类型
+        photoExt = this.value.substr(this.value.lastIndexOf(".")).toLowerCase(); //获得文件后缀名
+        if (photoExt != '.jpg' && photoExt != '.gif' && photoExt != '.jpeg' && photoExt != '.png') {
+            alert("图片类型必须是.gif,jpeg,jpg,png中的一种");
+            return false;
         }
+        var fileSize = 0;
+        var isIE = /msie/i.test(navigator.userAgent) && !window.opera;
+        if (isIE && !this.files) {
+            var filePath = this.value;
+            var fileSystem = new ActiveXObject("Scripting.FileSystemObject");
+            var file = fileSystem.GetFile(filePath);
+            fileSize = file.Size;
+        } else {
+            fileSize = this.files[0].size;
+        }
+        fileSize = Math.round(fileSize / 1024 * 100) / 100; //单位为KB
+        if (fileSize >= 5120) {
+            alert("照片最大尺寸为5MB，请重新上传!");
+            return false;
+        }
+        //图片显示效果
+
+        var num = this.i + 1;
+        if (num < 6) {
+            upload[num].style.display = "inline";
+        }
+        //计数
+        nownum.innerHTML = num + '/6';
     }
+}
 </script>
