@@ -3,9 +3,9 @@
 //编写者：兰天旭 
 namespace Home\Controller;
 
-use Common\Controller\BaseController;
+use Think\Controller;
 
-class GoodslistController extends BaseController
+class GoodslistController extends Controller
 {
     public function goodslist() {
 // $games = M('goods')->join('market_users on market_goods.seller_id = market_users.id')
@@ -17,8 +17,47 @@ class GoodslistController extends BaseController
    /***
     获取商品
     */
+      
+        $catid= I('get.catid');
+        
+        if($catid){
+      $goods = M('goods');
+       $name=I('get.name');
+    $result = $goods->join('market_category on market_goods.category_id = market_category.id')
+   ->join('market_cat on market_category.cat_id = market_cat.id')
+        ->join('market_users on market_goods.seller_id=market_users.id')
+        ->where("market_cat.id=$catid")
+        ->field(array('market_goods.name'=>'name',
+            'market_goods.degree'=>'degree',
+            'market_goods.description'=>'description',
+            'market_goods.price'=>'price',
+            'market_users.nickname'=>'nickname',
+            'market_users.college'=>'college',
+            'market_goods.photo'=>'photo',
+            'market_users.head'=>'head',
+            'market_goods.id'=>'id',
+           // 'market_goods.cat_id'=>'cat_id',
+            )
+        )->select();
+        for ($i=0;$i<count($result);$i++)
+        {
+            $result[$i]['photo']=explode(';',$result[$i]['photo']);
+            $result[$i]['photo']=$result[$i]['photo'][0];
+        }
+       //获取商品的二级分类
+        $catgory = M('category');
+      $result1 = $catgory->where("cat_id=$catid")->select();   
+       
+     $this->assign('cat',$name);
+     $this->assign('category',$result1);
+     $this->assign('name',$result[0]['name']);
+     $this->assign('type',$result);
+     $this->display();
+     
+    }
+    else{
     $id=I('get.id');
-
+    $name=I('get.name');
 
 $goods = M('goods');
     $result = $goods->join('market_category on market_goods.category_id = market_category.id')
@@ -40,8 +79,11 @@ $goods = M('goods');
         ->select();
         for ($i=0;$i<count($result);$i++)
         {
-            $result[$i]['photo']=explode(';',$result[$i]['photo'])[0];
+            $result[$i]['photo']=explode(';',$result[$i]['photo']);
+            $result[$i]['photo']=$result[$i]['photo'][0];
         }
+        
+       
   //dump($result);exit;
    /***
    获取商品的一级分类
@@ -49,28 +91,42 @@ $goods = M('goods');
 
   	// $result1 = $cat->select();
        // dump($result);exit;
+     $this->assign('cat',$name);
    	 $this->assign('name',$result[0]['name']);
    	 $this->assign('type',$result);
-     $this->display();
+      $this->display();
      }
-   /***
+   }
+    /***
    获取商品的二级分类
    */
     public function getCatgory(){
-    	$id= I('get.id');
-    	$catgory = M('category');
-    	$result = $catgory->where("cat_id=$id")->select();
-
-    	echo json_encode( $result);
+      $id= I('get.id');
+      $goods = M('goods');
+      $result = $goods->join('market_users on market_goods.seller_id=market_users.id')->where("category_id=$id")->field(array('market_goods.name'=>'name',
+            'market_goods.degree'=>'degree',
+            'market_goods.description'=>'description',
+            'market_goods.price'=>'price',
+            'market_users.nickname'=>'nickname',
+            'market_users.college'=>'college',
+            'market_goods.photo'=>'photo',
+            'market_users.head'=>'head',
+            'market_goods.id'=>'id',
+           // 'market_goods.cat_id'=>'cat_id',
+            )
+        )->select();
+      $this->assign('type',$result);
+      $this->display();
+      
     }
     /***
     获取商品
     */
-    public function getGoods(){
-    	$id= I('get.id');
-    	$goods = M('goods');
-    	$result = $goods->join('market_users on market_goods.seller_id=market_users.id')->where("category_id=$id")->select();
+    // public function getGoods(){
+    // 	$id= I('get.id');
+    // 	$goods = M('goods');
+    // 	$result = $goods->join('market_users on market_goods.seller_id=market_users.id')->where("category_id=$id")->select();
     	
-    	echo json_encode( $result);
-    }
+    // 	echo json_encode( $result);
+    // }
 }

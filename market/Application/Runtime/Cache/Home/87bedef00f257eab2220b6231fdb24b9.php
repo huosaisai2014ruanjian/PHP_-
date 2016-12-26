@@ -46,23 +46,15 @@
           <div class="weui_cell_bd weui_cell_primary">
             <p>我的头像</p>
           </div>
-          <span class="weui_cell_ft"><div style="right:20px; border-radius:50%; overflow:hidden;">
-<img src="/php_-/market/Public/<?php echo ($personals["head"]); ?>" style="position: absolute;top:12px;right: 35px; height:50px; width:50px;border-radius:50%;"/>
-</div>
-</span>
+          <span class="weui_cell_ft">
+            <div style="right:20px; border-radius:50%; overflow:hidden;">
+              <img src="<?php echo ($personals["head"]); ?>" style="position: absolute;top:12px;right: 35px; height:50px; width:50px;border-radius:50%;"/>
+            </div>
+          </span>
         </a>
       </div>
       <div class="weui_cells weui_cells_access">
-        <a class="weui_cell" href="javascript:;">
-          <div class="weui_cell_hd"><img src=""></div>
-          <div class="weui_cell_bd weui_cell_primary">
-            <p>绑定的手机号</p>
-          </div>
-          <span><?php echo ($personals["username"]); ?></span>
-        </a>
-      </div>
-      <div class="weui_cells weui_cells_access">
-        <a class="weui_cell" href="editname.html">
+        <a class="weui_cell" href="/php_-/market/index.php/Home/Personal/editname">
           <div class="weui_cell_hd"><img src=""></div>
           <div class="weui_cell_bd weui_cell_primary">
             <p>昵称</p>
@@ -80,7 +72,7 @@
         </a>
       </div>
       <div class="weui_cells weui_cells_access shengri">
-        <a class="weui_cell" href="birth.html">
+        <a class="weui_cell" href="/php_-/market/index.php/Home/Personal/birth">
           <div class="weui_cell_hd"><img src=""></div>
           <div class="weui_cell_bd weui_cell_primary">
             <p>生日</p>
@@ -92,24 +84,26 @@
         <a class="weui_cell" href="/php_-/market/index.php/Home/Personal/CertificateAuthority">
           <div class="weui_cell_hd"><img src=""></div>
           <div class="weui_cell_bd weui_cell_primary">
-            <p>认证</p>
+            <p style="color:#000000;">认证</p>
           </div>
             <?php if(($personals["rz_status"]) == "1"): ?><span class="weui_cell_ft">已认证</span>
-                <?php else: ?>
-                <span class="weui_cell_ft">请先认证</span><?php endif; ?>
+                <?php else: ?>   
+                <?php if(($personals["rz_status"]) == "2"): ?><span class="weui_cell_ft">审核中</span>
+                    <?php else: ?>
+                    <span class="weui_cell_ft">进入认证</span><?php endif; endif; ?>
         </a>
       </div>
       <div class="weui_cells weui_cells_access">
         <a class="weui_cell" href="javascript:;">
           <div class="weui_cell_hd"><img src=""></div>
           <div class="weui_cell_bd weui_cell_primary">
-            <p>学校</p>
+            <p>绑定的手机号</p>
           </div>
-            <?php if(($personals["rz_status"]) == "1"): ?><span class="weui_cell_ft"><?php echo ($personals["university"]); ?></span>
-           <?php else: ?>
-                <span class="weui_cell_ft">请先认证</span><?php endif; ?>
+            <?php if(($personals["rz_status"]) == "1"): ?><span class="weui_cell_ft"><?php echo ($personals["phonenumber"]); ?></span>
+                <?php else: ?>
+                <span class="weui_cell_ft">请先认证</span><?php endif; ?>          
         </a>
-      </div>
+      </div>       
       <div class="weui_cells weui_cells_access">
         <a class="weui_cell" href="javascript:;">
           <div class="weui_cell_hd"><img src=""></div>
@@ -120,7 +114,7 @@
                 <?php else: ?>
                 <span class="weui_cell_ft">请先认证</span><?php endif; ?>
         </a>
-      </div>
+      </div>     
       <div class="weui_cells weui_cells_access">
         <a class="weui_cell" href="javascript:;">
           <div class="weui_cell_hd"><img src=""></div>

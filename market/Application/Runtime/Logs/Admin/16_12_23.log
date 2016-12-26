@@ -1,0 +1,33 @@
+[ 2016-12-23T19:45:29+08:00 ] ::1 /php_-/market/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `market_think_node` [ RunTime:0.0483s ]
+SQL: SELECT `id` FROM `market_think_node` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('10','17') ORDER BY sort asc  [ RunTime:0.0234s ]
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('11','13','14') ORDER BY sort asc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: menu_11 E:\phpStudy\WWW\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 39 行.
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('12','15','16') ORDER BY sort asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: menu_12 E:\phpStudy\WWW\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT `id`,`name`,`title` FROM `market_think_node` WHERE `level` = 3 AND `status` = 1 AND `id` IN ('18') ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: _ACCESS_LIST E:\phpStudy\WWW\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: menu_13 E:\phpStudy\WWW\PHP_-\market\Application\Admin\Controller\IndexController.class.php 第 56 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\phpStudy\WWW\PHP_-\market\Application\Admin\Controller\IndexController.class.php on line 63 and defined E:\phpStudy\WWW\PHP_-\market\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\phpStudy\WWW\PHP_-\market\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/menu.html): failed to open stream: No such file or directory E:\phpStudy\WWW\PHP_-\market\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001551s ]
+

@@ -16,10 +16,13 @@
   <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-weui.css">
   <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index1.css">
   <link rel="stylesheet" href="__PUBLIC__/css/swiper-3.3.1.min.css" />
+
+  <link rel="stylesheet" href="__PUBLIC__/css/list/style.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/list/Up.css">
+
   <style type="text/css">
   html,body{
     height: 100%;
-    width: 100%;
   }
   #messa{
     margin-right: -10px;
@@ -32,335 +35,210 @@
     height: 190px;
   }
   </style>
+</head>
 <body >
-    <div class="weui_tab">
-  <div class="weui_tab_bd">
-  <!--搜索-->
-  <div class="weui_search_bar" id="search_bar">
-  <form action="__MODULE__/Serach/index" method="post" class="weui_search_outer">
-    <div class="weui_search_inner">
-      <i class="weui_icon_search"></i>
-
-      <input name="search"type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
-      <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
-    </div>
-    <label for="search_input" class="weui_search_text" id="search_text">
-      <i class="weui_icon_search"></i>
-      <span>搜索</span>
-    </label>
-  </form>
-  <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
-  <!-- <div class="me">
-    <div><img id="messa" src="__PUBLIC__/images/message5.png" width="30px" height="30px"><span><img src="__PUBLIC__/images/bullet-red.png" class="dian"></span></div>
-  </div> -->
-</div>
-   <!--接束-->
-<!--幻灯片开始-->
-    <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"><a href="action.html"><img src="__PUBLIC__/images/hua.jpg" width="100%" height="100%" alt=""></a></div>
-    <div class="swiper-slide"><a href="action.html"><img src="__PUBLIC__/images/lunbo.jpg" width="100%" height="100%" alt=""></a></div>
-    <div class="swiper-slide"><a href="action.html"><img src="__PUBLIC__/images/paimail.jpg" width="100%" height="100%" alt=""></a></div>
-  </div>
-  <div class="swiper-pagination"></div>
-</div>
-<!--幻灯片结束-->
-<!--商品分类开始-->
-<div class="recommed" style="background-color: rgb(246,246,246);" >
-<div class="rec" style="margin:10px;font-family: KaiTi; font-size: 25px;" ><p>商品分类</p></div>
-<div class="weui-row weui-no-gutter" width="100%" id="fenlei">
-    <volist name="list" id="vo">
-    <div class="weui-col-33" style="font-family: KaiTi;"align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo.id}"><img src="__PUBLIC__/{$vo.imgurl}" width="65%" height="65%"></a>
-        <a href="__MODULE__/Goodslist/goodslist?id={$vo.id}"><p style="text-align:center">{$vo.name}</p></a></div>
-     </volist>
-</div>
-</div>
-<!--商品分类结束--> 
-
-<!--二手推荐开始-->
-<div class="recommed">
-<div class="rec" style="margin:5px; font-family: KaiTi; font-size: 20px;"><p>二手推荐</p></div>
-<div class="wrapper" id="tuijian">
-  <section class="main">
-    <div class="swiper-container" id="registerCont">
-      <div class="swiper-wrapper" height="80px">
-        <div class="swiper-slide">
-            <div class="baodaninfo" width="100%" height="80%">
-              <a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}"><img src="__PUBLIC__/images/shuijing.jpg" width="35%" height="25%"></a>
-              <a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}"><img src="__PUBLIC__/images/shouji.jpg" width="30%" height="25%"></a>
-              <a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}"><img src="__PUBLIC__/images/bangong.png" width="30%" height="35%"></a>
-            </div>
+  <div class="weui_tab">
+    <div class="weui_tab_bd">
+      <!--搜索开始-->
+      <div class="weui_search_bar" id="search_bar">
+        <form action="__MODULE__/Serach/index" method="post" class="weui_search_outer">
+          <div class="weui_search_inner">
+            <i class="weui_icon_search"></i>
+            <input type="search" name="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
+            <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+          </div>
+          <label for="search_input" class="weui_search_text" id="search_text">
+            <i class="weui_icon_search"></i>
+            <span>搜索</span>
+          </label>
+        </form>
+        <a href="javascript:;" class="weui_search_cancel" id="search_cancel">取消</a>
+      </div>
+      <!--搜索结束-->
+      <!--幻灯片开始-->
+      <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="javascript:;"><img src="__PUBLIC__/images/hua.jpg" width="100%" height="100%" alt=""></a></div>
+          <div class="swiper-slide"><a href="javascript:;"><img src="__PUBLIC__/images/lunbo.jpg" width="100%" height="100%" alt=""></a></div>
+          <div class="swiper-slide"><a href="javascript:;"><img src="__PUBLIC__/images/paimail.jpg" width="100%" height="100%" alt=""></a></div>
         </div>
-        <div class="swiper-slide" width="100%" height="80%">
-            <div class="baodaninfo">
-             <a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}"><img src="__PUBLIC__/images/shoes.png" width="30%" height="35%"></a>
-             <a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}"><img src="__PUBLIC__/images/shouji.jpg" width="30%" height="25%"></a>
-             <a href="__MODULE__/Goodslist/goodslist?id={$vo['id']}"><img src="__PUBLIC__/images/ball1.png" width="30%" heighheight="35%"></a>
-            </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!--幻灯片结束-->
+      <!--商品分类开始-->
+      <div class="recommed" style="background-color: rgb(246,246,246);" >
+        <!-- <div class="rec" style="margin:10px;font-family: KaiTi; font-size: 25px;" ><p>商品分类</p></div> -->
+        <div class="weui-row weui-no-gutter" width="100%" id="fenlei">
+          <volist name="list" id="vo">
+            <div class="weui-col-33" style="font-family: KaiTi;padding-left:20px;padding-right:20px" align="center"><a href="__MODULE__/Goodslist/goodslist?id={$vo.id}"><img src="__PUBLIC__/{$vo.imgurl}" width="50%" height="50%" ></a>
+          <a href="__MODULE__/Goodslist/goodslist?id={$vo.id}"><p style="text-align:center">{$vo.name}</p></a></div>
+          </volist>
         </div>
       </div>
-    </div>
-  </section>
-</div>
-</div>
-<!--二手推荐结束-->
-<!--商品列表开始-->
-<div>
-<!--标题栏开始-->
-<div>
-  </a>
-  <hr/>
-  <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Goodslist/goodslist?id=8">
-    <div class="weui_cell_bd weui_cell_primary">
-      <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
-      <p style="color:#000000;">学习用品</p>
-    </div>
-  </a>
-</div>
-<!--标题栏结束-->
-<!--内容栏开始-->
-<div class="weui-row weui-no-gutter" >
-    <volist name="study" id="vo">
-  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-   <img src="__PUBLIC__/{$vo.photo}" ></a>
-     <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-     </p>
-  </div>
-    </volist>
-  <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-    <volist name="study" id="vo">
-        <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-            <img src="__PUBLIC__/{$vo.photo}" ></a>
-            <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-            <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-            </p>
+      <!--商品分类结束-->
+
+      <!--商品列表开始-->
+      <a href="__MODULE__/Goodslist/goodslist?id=1">
+        <div class="weui-row">
+          <div class="weui-col-15" style="margin-top:5px"><img src="__PUBLIC__/images/taiyang.png" style="margin-left:20px"></div>
+          <div class="weui-col-80"><p style="margin-top:5px;color:#46a3ff;font-family:'楷体';font-size:25px">学习用品</p></div>
         </div>
-    </volist> -->
-</div>
-<!--内容栏结束-->
-</div>
-<!--商品列表结束-->
-
-      <!--商品列表开始-->
-      <div>
-          <!--标题栏开始-->
-          <div>
+      </a>
+      <div class="allsp">
+        <volist name="goods1" id="vo">
+            <figure>
+              <a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
+                <img src="__PUBLIC__/{$vo.photo}" alt="商品" class="xqtp">
               </a>
-              <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Gooddetail/index?id=10">
-                  <div class="weui_cell_bd weui_cell_primary">
-                      <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
-                      <p style="color:#000000;">电子数码</p>
-                  </div>
-              </a>
-          </div>
-          <!--标题栏结束-->
-          <!--内容栏开始-->
-          <div class="weui-row weui-no-gutter" >
-              <volist name="electronics" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-                      <img src="__PUBLIC__/{$vo.photo}" ></a>
-                      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-                      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-                      </p>
-                  </div>
-              </volist>
-              <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-              <volist name="electronics" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-                      <img src="__PUBLIC__/{$vo.photo}" ></a>
-                      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-                      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-                      </p>
-                  </div>
-              </volist> -->
-          </div>
-          <!--内容栏结束-->
+              <p>{$vo.name}</p>
+              <div class="info">
+                  <em class="sat">&yen;{$vo.price}<small>&yen;{$vo.price}</small></em>
+                  <a href="__MODULE__/Gooddetail/index?id={$vo['id']}"><img src="__PUBLIC__/images/u20.png" alt="购物车" style="width: 30px;height: 30px;margin-right:10px;margin-buttom:10px" align="right"></a>
+              </div>
+            </figure>
+          </volist>
+        <div class="clear"></div>
       </div>
       <!--商品列表结束-->
-
       <!--商品列表开始-->
-      <div>
-          <!--标题栏开始-->
-          <div>
+      <a href="__MODULE__/Goodslist/goodslist?id=2">
+        <div class="weui-row">
+          <div class="weui-col-15"><img src="__PUBLIC__/images/taiyang.png" style="margin-left:20px"></div>
+          <div class="weui-col-80"><p style="margin-top:5px;color:#46a3ff;font-family:'楷体';font-size:25px">电子数码</p></div>
+        </div>
+      </a>
+      <div class="allsp">
+        <volist name="goods2" id="vo">
+            <figure>
+              <a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
+                <img src="__PUBLIC__/{$vo.photo}" alt="商品" class="xqtp">
               </a>
-              <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Gooddetail/index?id=11">
-                  <div class="weui_cell_bd weui_cell_primary">
-                      <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
-                      <p style="color:#000000;">服装服饰</p>
-                  </div>
-              </a>
-          </div>
-          <!--标题栏结束-->
-          <!--内容栏开始-->
-          <div class="weui-row weui-no-gutter" >
-              <volist name="cloths" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-                      <img src="__PUBLIC__/{$vo.photo}" ></a>
-                      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-                      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-                      </p>
-                  </div>
-              </volist>
-             <!--  <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-              <volist name="cloths" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-                      <img src="__PUBLIC__/{$vo.photo}" ></a>
-                      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-                      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-                      </p>
-                  </div>
-              </volist> -->
-          </div>
-          <!--内容栏结束-->
+              <p>{$vo.name}</p>
+              <div class="info">
+                  <em class="sat">&yen;{$vo.price}<small>&yen;{$vo.price}</small></em>
+                  <a href="__MODULE__/Gooddetail/index?id={$vo['id']}"><img src="__PUBLIC__/images/u20.png" alt="购物车" style="width: 30px;height: 30px;margin-right:10px;margin-buttom:10px" align="right"></a>
+              </div>
+            </figure>
+          </volist>
+        <div class="clear"></div>
       </div>
       <!--商品列表结束-->
-
       <!--商品列表开始-->
-      <div>
-          <!--标题栏开始-->
-          <div>
+      <a href="__MODULE__/Goodslist/goodslist?id=3">
+        <div class="weui-row">
+          <div class="weui-col-15"><img src="__PUBLIC__/images/taiyang.png" style="margin-left:20px"></div>
+          <div class="weui-col-80"><p style="margin-top:5px;color:#46a3ff;font-family:'楷体';font-size:25px">服装服饰</p></div>
+        </div>
+      </a>
+      <div class="allsp">
+        <volist name="goods3" id="vo">
+            <figure>
+              <a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
+                <img src="__PUBLIC__/images/u67.png" alt="商品" class="xqtp">
               </a>
-              <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Gooddetail/index?id=12">
-                  <div class="weui_cell_bd weui_cell_primary">
-                      <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
-                      <p style="color:#000000;">出行工具</p>
-                  </div>
-              </a>
-          </div>
-          <!--标题栏结束-->
-          <!--内容栏开始-->
-          <div class="weui-row weui-no-gutter" >
-              <volist name="bike" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-                      <img src="__PUBLIC__/{$vo.photo}" ></a>
-                      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-                      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-                      </p>
-                  </div>
-              </volist>
-              <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-              <volist name="bike" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-                      <img src="__PUBLIC__/{$vo.photo}" ></a>
-                      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-                      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-                      </p>
-                  </div>
-              </volist> -->
-          </div>
-          <!--内容栏结束-->
+              <p>{$vo.name}</p>
+              <div class="info">
+                  <em class="sat">&yen;{$vo.price}<small>&yen;{$vo.price}</small></em>
+                  <a href="__MODULE__/Gooddetail/index?id={$vo['id']}"><img src="__PUBLIC__/images/u20.png" alt="购物车" style="width: 30px;height: 30px;margin-right:10px;margin-buttom:10px" align="right"></a>
+              </div>
+            </figure>
+          </volist>
+        <div class="clear"></div>
       </div>
       <!--商品列表结束-->
-
       <!--商品列表开始-->
-      <div>
-          <!--标题栏开始-->
-          <div>
+      <a href="__MODULE__/Goodslist/goodslist?id=4">
+        <div class="weui-row">
+          <div class="weui-col-15"><img src="__PUBLIC__/images/taiyang.png" style="margin-left:20px"></div>
+          <div class="weui-col-80"><p style="margin-top:5px;color:#46a3ff;font-family:'楷体';font-size:25px">出行工具</p></div>
+        </div>
+      </a>
+      <div class="allsp">
+        <volist name="goods4" id="vo">
+            <figure>
+              <a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
+                <img src="__PUBLIC__/{$vo.photo}" alt="商品" class="xqtp">
               </a>
-              <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Gooddetail/index?id=13">
-                  <div class="weui_cell_bd weui_cell_primary">
-                      <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
-                      <p style="color:#000000;">运动器材</p>
-                  </div>
-              </a>
-          </div>
-          <!--标题栏结束-->
-          <!--内容栏开始-->
-          <div class="weui-row weui-no-gutter" >
-              <volist name="sports" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-                      <img src="__PUBLIC__/{$vo.photo}" ></a>
-                      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-                      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-                      </p>
-                  </div>
-              </volist>
-              <!-- <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-              <volist name="sports" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-                      <img src="__PUBLIC__/{$vo.photo}" ></a>
-                      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-                      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-                      </p>
-                  </div>
-              </volist> -->
-          </div>
-          <!--内容栏结束-->
+              <p>{$vo.name}</p>
+              <div class="info">
+                  <em class="sat">&yen;{$vo.price}<small>&yen;{$vo.price}</small></em>
+                  <a href="__MODULE__/Gooddetail/index?id={$vo['id']}"><img src="__PUBLIC__/images/u20.png" alt="购物车" style="width: 30px;height: 30px;margin-right:10px;margin-buttom:10px" align="right"></a>
+              </div>
+            </figure>
+          </volist>
+        <div class="clear"></div>
       </div>
       <!--商品列表结束-->
-
       <!--商品列表开始-->
-      <div>
-          <!--标题栏开始-->
-          <div>
+      <a href="__MODULE__/Goodslist/goodslist?id=5">
+        <div class="weui-row">
+          <div class="weui-col-15"><img src="__PUBLIC__/images/taiyang.png" style="margin-left:20px"></div>
+          <div class="weui-col-80"><p style="margin-top:5px;color:#46a3ff;font-family:'楷体';font-size:25px">运动器材</p></div>
+        </div>
+      </a>
+      <div class="allsp">
+        <volist name="goods5" id="vo">
+            <figure>
+              <a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
+                <img src="__PUBLIC__/{$vo.photo}" alt="商品" class="xqtp">
               </a>
-              <hr/>
-              <a style="background-color:#FFFFFF" class="weui_cell" href="__MODULE__/Gooddetail/index?id=14">
-                  <div class="weui_cell_bd weui_cell_primary">
-                      <img src="__PUBLIC__/images/taiyang.png" width="10%" height="10%" class="taiyang">
-                      <p style="color:#000000;">虚拟物品</p>
-                  </div>
-              </a>
-          </div>
-          <!--标题栏结束-->
-          <!--内容栏开始-->
-          <div class="weui-row weui-no-gutter" >
-              <volist name="games" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-                      <img src="__PUBLIC__/{$vo.photo}" ></a>
-                      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-                      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-                      </p>
-                  </div>
-              </volist>
-             <!--  <HR style="align:center; color:#FCFCFC; width:100%;"  SIZE=1>
-              <volist name="games" id="vo">
-                  <div class="weui-col-50" align="center"><a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
-                      <img src="__PUBLIC__/{$vo.photo}" ></a>
-                      <p class="goodname" style="text-align:center;font-size:6px;">{$vo.name}
-                      <p class="price" style="text-align:center;color: #FF0000;">&yen;{$vo.price}</p>
-                      </p>
-                  </div>
-              </volist> -->
-          </div>
-          <!--内容栏结束-->
+              <p>{$vo.name}</p>
+              <div class="info">
+                  <em class="sat">&yen;{$vo.price}<small>&yen;{$vo.price}</small></em>
+                  <a href="__MODULE__/Gooddetail/index?id={$vo['id']}"><img src="__PUBLIC__/images/u20.png" alt="购物车" style="width: 30px;height: 30px;margin-right:10px;margin-buttom:10px" align="right"></a>
+              </div>
+            </figure>
+          </volist>
+        <div class="clear"></div>
       </div>
       <!--商品列表结束-->
-
-      <!--底部开始-->
-  <div class="footer">
-    <p>@2014-2016跳蚤市场-最方便可靠的校园二手市场</p>
-    <p>联系我们：1379173944@qq.com 地址：河北师范大学软件学院</p>
-    <p>Copyright www.lansongs.com. All Rights Reserved.
+      <!--商品列表开始-->
+      <a href="__MODULE__/Goodslist/goodslist?id=6">
+        <div class="weui-row">
+          <div class="weui-col-15"><img src="__PUBLIC__/images/taiyang.png" style="margin-left:20px"></div>
+          <div class="weui-col-80"><p style="margin-top:5px;color:#46a3ff;font-family:'楷体';font-size:25px">虚拟物品</p></div>
+        </div>
+      </a>
+      <div class="allsp">
+        <volist name="goods6" id="vo">
+            <figure>
+              <a href="__MODULE__/Gooddetail/index?id={$vo['id']}">
+                <img src="__PUBLIC__/{$vo.photo}" alt="商品" class="xqtp">
+              </a>
+              <p>{$vo.name}</p>
+              <div class="info">
+                  <em class="sat">&yen;{$vo.price}<small>&yen;{$vo.price}</small></em>
+                  <a href="__MODULE__/Gooddetail/index?id={$vo['id']}"><img src="__PUBLIC__/images/u20.png" alt="购物车" style="width: 30px;height: 30px;margin-right:10px;margin-buttom:10px" align="right"></a>
+              </div>
+            </figure>
+          </volist>
+        <div class="clear"></div>
+      </div>
+      <!--商品列表结束-->
+      <br />
+      <br />
+    </div>
+    <div class="weui_tabbar">
+      <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
+        <div class="weui_tabbar_icon">
+          <img src="__PUBLIC__/images/first.png" alt="">
+        </div>
+        <p class="weui_tabbar_label">首页</p>
+      </a>
+      <a href="__MODULE__/goods/index" class="weui_tabbar_item" id="rz_sta">
+        <div class="weui_tabbar_icon">
+          <img src="__PUBLIC__/images/jiahao.png" width="100%">
+        </div>
+        <p class="weui_tabbar_label">发布</p>
+      </a>
+      <a href="__MODULE__/Personal/zhanghuguanli/id/{$Think.session.id}" class="weui_tabbar_item">
+        <div class="weui_tabbar_icon">
+          <img src="__PUBLIC__/images/mine.png" alt="">
+        </div>
+        <p class="weui_tabbar_label">我的</p>
+      </a>
+    </div>
   </div>
-<!--底部接束-->
-  <div class="weui_tabbar">
-    <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
-      <div class="weui_tabbar_icon">
-        <img src="__PUBLIC__/images/shop.png" alt="">
-      </div>
-      <p class="weui_tabbar_label">首页</p>
-    </a>
-    <a href="/market/index.php/home/goods/index.html" class="weui_tabbar_item" >
-      <div class="weui_tabbar_icon">
-        <img src="__PUBLIC__/images/jiahao.jpg" width="100%">
-      </div>
-      <p class="weui_tabbar_label">发布</p>
-    </a>
-    <a href="javascript:;" class="weui_tabbar_item">
-      <div class="weui_tabbar_icon">
-        <img src="__PUBLIC__/images/my.png" alt="">
-      </div>
-      <p class="weui_tabbar_label">我的</p>
-    </a>
-  </div>
-</div>
-</div>
 </body>
 
 <script type="text/javascript" src="__PUBLIC__/lib/jquery-2.1.4.js"></script>
@@ -372,8 +250,14 @@
         loop: true,
         autoplay: 3000
       });
-       $("#messa").click(function(){
-         $(".me span").hide();
-     });
+      // $('#rz_sta').click(function() {
+      //   var status = $('#rz_tus').val();
+      //   if(status === '1') {
+      //     return true;
+      //   }else{
+      //     $.alert("您还没有认证，不能发布商品哦，亲！");
+      //     return false;
+      //   }
+      // });
 </script>
 </html>

@@ -11,8 +11,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
-	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/lib/weui.min.css">
-	<link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="/php_-//market/Public/lib/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="/php_-//market/Public/css/jquery-weui.css">
 	<style type="text/css">
 	html,body{
 		height: 100%;
@@ -69,19 +69,28 @@
   <div class="weui_tab_bd">
    <!--其中放我们的代码内容-->
    <div class="weui_navbar">
-    <a class="weui_navbar_item weui_bar_item_on">
-      在售宝贝
-    </a>
-    <a class="weui_navbar_item">
-      失效宝贝
-    </a>
+   <?php if( $a == 1): ?><a class="weui_navbar_item ">
+          在售宝贝
+        </a>
+        <a class="weui_navbar_item weui_bar_item_on">
+          失效宝贝
+        </a>    
+    <?php else: ?>
+        <a class="weui_navbar_item weui_bar_item_on">
+          在售宝贝
+        </a>
+        <a class="weui_navbar_item">
+          失效宝贝
+        </a><?php endif; ?>     
    </div>
 
   <br/>
 
   <!--第一个主题开始部分-->
-      <form method="post" action="/php_-/market/index.php/Home/Personal/deletesc">
-  <div class="content">
+      <form method="post" action="/php_-//market/index.php/Home/Personal/deletesc">
+  <?php if( $a == 1): ?><div class="content" style="display: none;">  
+  <?php else: ?>
+  <div class="content" id="one"><?php endif; ?>
       <ul class="banner">
 
           <li class="bjl"><a class="bj">编辑</a></li>
@@ -91,10 +100,10 @@
   <div class="weui_pan  el weui_panel_access">
   <div class="weui_panel_bd">
 
-    <?php if(is_array($up)): $i = 0; $__LIST__ = $up;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$up): $mod = ($i % 2 );++$i;?><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($up["id"]); ?>" style="margin-top: 1px;" class="weui_media_box weui_media_appmsg">
+    <?php if(is_array($up)): $i = 0; $__LIST__ = $up;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$up): $mod = ($i % 2 );++$i;?><a href="/php_-//market/index.php/Home/Gooddetail/index?id=<?php echo ($up["goods_id"]); ?>" style="margin-top: 1px;" class="weui_media_box weui_media_appmsg">
       <input type="checkbox" name="sp[]" class="sp1" value="<?php echo ($up["id"]); ?>">
       <div class="weui_media_hd">
-        <img class="weui_media_appmsg_thumb" src="/php_-/market/Public/<?php echo ($up["photo"]); ?>" >
+        <img class="weui_media_appmsg_thumb" src="/php_-//market/Public/<?php echo ($up["photo"]); ?>" >
       </div>
       <div class="weui_media_bd">
         <h4 class="weui_media_title"><?php echo ($up["name"]); ?></h4>
@@ -112,8 +121,10 @@
   <!--第一个主题结束部分-->
 
    <!--第二个主题开始部分-->
-      <form method="post" action="/php_-/market/index.php/Home/Personal/deletesc">
-  <div class="content" style="display: none;">
+      <form method="post" action="/php_-//market/index.php/Home/Personal/deletesc">
+  <?php if( $a == 1): ?><div class="content" >
+  <?php else: ?>
+  <div class="content" style="display: none;"><?php endif; ?>
       <ul class="banner">
 
           <li class="bj2"><a class="b">编辑</a></li>
@@ -122,10 +133,11 @@
   <!--图文标题开始部分-->
   <div class="weui_pan  el weui_panel_access">
   <div class="weui_panel_bd">
-    <?php if(is_array($down)): $i = 0; $__LIST__ = $down;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$down): $mod = ($i % 2 );++$i;?><a href="/php_-/market/index.php/Home/Gooddetail/index?id=<?php echo ($down["id"]); ?>" class="weui_media_box weui_media_appmsg">
+    <?php if(is_array($down)): $i = 0; $__LIST__ = $down;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$down): $mod = ($i % 2 );++$i;?><a href="/php_-//market/index.php/Home/Gooddetail/index?id=<?php echo ($down["goods_id"]); ?>" class="weui_media_box weui_media_appmsg">
       <input type="checkbox" name="sp[]" class="sp2" value="<?php echo ($down["id"]); ?>">
+      <input type="hidden" name="status" value="1">
       <div class="weui_media_hd">
-        <img class="weui_media_appmsg_thumb" src="/php_-/market/Public/<?php echo ($down["photo"]); ?>">
+        <img class="weui_media_appmsg_thumb" src="/php_-//market/Public/<?php echo ($down["photo"]); ?>">
       </div>
       <div class="weui_media_bd">
         <h4 class="weui_media_title"><?php echo ($down["name"]); ?></h4>
@@ -145,9 +157,9 @@
 </div>
 </body>
 
-<script type="text/javascript" src="/php_-/market/Public/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/php_-/market/Public/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='/php_-/market/Public/js/swiper.js' charset='utf-8'>
+<script type="text/javascript" src="/php_-//market/Public/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/php_-//market/Public/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/php_-//market/Public/js/swiper.js' charset='utf-8'>
 </script>
  <script>
       $(".swiper-container").swiper({

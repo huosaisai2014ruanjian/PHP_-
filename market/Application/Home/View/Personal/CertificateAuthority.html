@@ -97,7 +97,7 @@
                             <div class="weui_cell_bd weui_cell_primary">图片上传</div>
                 <!--             <div class="weui_cell_ft js_counter">0</div> -->
                         </div>
-                        <div class="weui_uploader_bd" style="margin:0 39%;">
+                        <div class="weui_uploader_bd">
                             <ul class="weui_uploader_files">
                                 <!-- 预览图插入到这 --> </ul>
                             <div class="weui_uploader_input_wrp">
@@ -164,7 +164,7 @@
             error: function (XMLHttpRequest, textStatus, errorThrown) {
             },
             success: function (data) {
-                //  alert(data);
+                  alert(data);
                $('#hidden').val(data);
             }
         });

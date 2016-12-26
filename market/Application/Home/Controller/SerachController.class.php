@@ -12,6 +12,7 @@ class SerachController extends Controller
 	public function index(){
 	//1、获取搜索数据
 		 $search = $_POST['search'];
+		
 	//2.通过匹配分类的名称显示列表
 		  $goods = M('goods');
 		  $map['name']=array('LIKE',"%$search%");
