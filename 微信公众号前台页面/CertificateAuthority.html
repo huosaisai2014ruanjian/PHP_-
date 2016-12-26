@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>校园跳蚤市场-学生认证</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE8-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><!--屏幕自适应-->
+	<link rel="stylesheet" type="text/css" href="lib/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<style type="text/css">
+	html,body{
+		height: 100%;
+	}
+     
+	</style>
+	<!--输入信息-->
+<body >
+
+  <div style="text-align:center;color:#FCFCFC;background-color:#FF8C00; width="100%"">
+<div></br></div>
+  学生认证中心
+<div></br></div>
+  </div>
+<div style="background-color:#F7F7F7">
+  <div  class="weui_cells weui_cells_form">
+  <div class="weui_cell">
+    <div class="weui_cell_hd"><label class="weui_label">学号</label></div>
+    <div class="weui_cell_bd weui_cell_primary">
+      <input class="weui_input" type="number" placeholder="请输入学号">
+    </div>
+  </div>
+
+  <div class="weui_cell">
+    <div class="weui_cell_hd"><label class="weui_label">姓名</label></div>
+    <div class="weui_cell_bd weui_cell_primary">
+      <input class="weui_input" type="name" placeholder="请输入姓名">
+    </div>
+  </div>
+  <!--选择学院-->
+  <div "class="weui_cell weui_cell_select">
+    <div class="weui_cell_bd weui_cell_primary">
+      <select class="weui_select" name="select1">
+        <option selected="" value="0">请选择学院</option>
+        <option value="1">软件学院</option>
+        <option value="2">文学院</option>
+        <option value="3">数信学院</option>
+        <option value="4">体育学院</option>
+        <option value="5">音乐学院</option>
+        <option value="6">美术学院</option>
+      </select>
+    </div>
+  </div>
+   <!--选择年级-->
+  <div class="weui_cell weui_cell_select">
+    <div class="weui_cell_bd weui_cell_primary">
+      <select class="weui_select" name="select1">
+        <option selected="" value="0">请选择年级</option>
+        <option value="1">2013</option>
+        <option value="2">2014</option>
+        <option value="3">2015</option>
+        <option value="4">2016</option>
+        <option value="5">2017</option>
+        <option value="6">2018</option>
+      </select>
+    </div>
+  </div>
+  <!--上传照片-->
+<div >
+<p style="font-size:100%;color:#FF8C00;text-align:center;"><strong>请上传一卡通照片</strong></p>
+</br>
+<p style="font-size:85%">&nbsp;&nbsp;&nbsp;(要求：图片要清晰，支持jpg,png格式，大小不超过2M)
+
+<div id="preview" style="text-align:center">
+    <img id="imghead" width=100 height=100 border=0 src='<%=request.getContextPath()%>/images/defaul.jpg'>
+</div>
+<div style="text-align:center">
+<input style="font-size:100%" type="file" onchange="previewImage(this)" /> 
+<button style="font-size:100%">&nbsp;&nbsp;拍照&nbsp;&nbsp;</button>
+</div>
+  
+  <div style="text-align:center">
+  </br>
+ <input style="font-size:93%" class="button orange" type="submit" value="提交"> 
+   </div>
+   </div>
+</body>
+
+<script type="text/javascript" src="lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='js/swiper.js' charset='utf-8'>
+</script>
+ <script>
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+
+ 
+                //图片上传预览    IE是用了滤镜。
+        function previewImage(file)
+        {
+          var MAXWIDTH  = 260; 
+          var MAXHEIGHT = 180;
+          var div = document.getElementById('preview');
+          if (file.files && file.files[0])
+          {
+              div.innerHTML ='<img id=imghead>';
+              var img = document.getElementById('imghead');
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight )
+            {
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                 
+                if( rateWidth > rateHeight )
+                {
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else
+                {
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+             
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+    </script>
+</html>
