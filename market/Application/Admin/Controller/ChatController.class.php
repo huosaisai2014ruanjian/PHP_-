@@ -1,3 +1,7 @@
+/***
+ * document：在线聊天聊天记录
+ * User: 兰天旭、霍赛赛
+ */
 <?php
 namespace Admin\Controller;
 use Think\Controller;
