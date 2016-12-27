@@ -1,3 +1,8 @@
+
+/***
+ * document：商品管理
+ * User: 刘迪浩、马豪珍
+ */
 <?php
 namespace Admin\Controller;
 use Think\Controller;
