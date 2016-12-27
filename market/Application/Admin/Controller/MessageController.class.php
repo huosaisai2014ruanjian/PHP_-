@@ -1,3 +1,7 @@
+/***
+ * document：消息管理
+ * User: 霍赛赛、兰天旭
+ */
 <?php
 namespace Admin\Controller;
 use Common\Controller\RestfulController;
