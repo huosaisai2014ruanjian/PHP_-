@@ -131,7 +131,12 @@ class UsersController extends Controller {
                 $condition['openid']=$data->openid;      //openid数据
                 $where['openid']=$condition['openid'];
                 $id = $user->where($where)->field('id');
-                $this->redirect('Personal/zhanghuguanli',array('id'=>$id));
+                // if($id) {
+                //     $this->redirect('Personal/zhanghuguanli',array('id'=>$id));
+                // }else{
+                //     $this->redirect('Personal/zhanghuguanli',array('id'=>$id));
+                // }
+                dump($where);
             }else {
                 dump(curl_errno($curl));
             }

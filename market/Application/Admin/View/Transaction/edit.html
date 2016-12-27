@@ -1,54 +1,53 @@
-<form action="__MODULE__/Transaction/update" method="post"  class="pageForm required-validate"  onsubmit="return validateCallback(this)">
-
-	<div class="pageFormContent nowrap" layoutH="37">
-    <input type="hidden" name="id" value="{$rows.id}">
-         <dl>
+<form action="__MODULE__/Transaction/update" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this)">
+    <div class="pageFormContent nowrap" layoutH="37">
+        <input type="hidden" name="id" value="{$rows.id}">
+        <dl>
             <dt>卖家名称{$rows.id}：</dt>
             <dd>
-            <input type="text" name="seller_id" maxlength="30" alt="修改卖家名称" value="{$rows.seller_id}" />
+                <input type="text" name="seller_id" maxlength="30" alt="修改卖家名称" value="{$rows.seller_id}" />
             </dd>
         </dl>
-         <dl>
+        <dl>
             <dt>买家名称：</dt>
             <dd>
-            <input type="text" name="buyer_id" maxlength="30" alt="修改买家名称" value="{$rows.buyer_id}" />
+                <input type="text" name="buyer_id" maxlength="30" alt="修改买家名称" value="{$rows.buyer_id}" />
             </dd>
         </dl>
         <dl>
             <dt>商品名称：</dt>
             <dd>
-            <input type="text" name="goods_id" maxlength="30" alt="修改商品名称" value="{$rows.goods_id}"/>
+                <input type="text" name="goods_id" maxlength="30" alt="修改商品名称" value="{$rows.goods_id}" />
             </dd>
         </dl>
         <dl>
             <dt>商品状态：</dt>
             <dd>
-            <select name="condition" id="condition">
-            	<option value="{$rows.condition}" selected="selected">{$rows.condition}</option>
-            	<option name='1'>出售中</option>
-                <option name='2'>已完成</option>
-            </select>
+                <select name="condition" id="condition">
+                    <option value="{$rows.condition}" selected="selected">{$rows.condition}</option>
+                    <option name='1'>出售中</option>
+                    <option name='2'>已完成</option>
+                </select>
             </dd>
         </dl>
     </div>
     <div>
-    	<div class="formBar" style="position:absolute;bottom:0;right:0;width:100%;">
-        <ul>
-            <li>
-                <div class="buttonActive">
-                    <div class="buttonContent">
-                        <button type="submit" name="submit">保存</button>
+        <div class="formBar" style="position:absolute;bottom:0;right:0;width:100%;">
+            <ul>
+                <li>
+                    <div class="buttonActive">
+                        <div class="buttonContent">
+                            <button type="submit" name="submit">保存</button>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <div class="button">
-                    <div class="buttonContent">
-                        <button type="button" class="close">取消</button>
+                </li>
+                <li>
+                    <div class="button">
+                        <div class="buttonContent">
+                            <button type="button" class="close">取消</button>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
-    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </form>

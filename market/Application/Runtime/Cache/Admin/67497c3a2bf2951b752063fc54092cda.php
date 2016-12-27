@@ -1,47 +1,101 @@
-<?php if (!defined('THINK_PATH')) exit();?><form id="pagerForm" action="/PHP_-/market/index.php/Admin/Users" method="post">
-	<input type="hidden" name="pageNum" value="1"/>
-	<input type="hidden" name="_order" value="<?php echo ($_REQUEST["_order"]); ?>"/>
-	<input type="hidden" name="_sort" value="<?php echo ($_REQUEST["_sort"]); ?>"/>
+<?php if (!defined('THINK_PATH')) exit();?><form id="pagerForm" action="/market/index.php/Admin/Users" method="post">
+    <input type="hidden" name="pageNum" value="1" />
+    <input type="hidden" name="_order" value="<?php echo ($_REQUEST["_order"]); ?>" />
+    <input type="hidden" name="_sort" value="<?php echo ($_REQUEST["_sort"]); ?>" />
     <input type="hidden" name="numPerPage" value="<?php echo ($numPerPage); ?>">
 </form>
-
 
 <div class="pageContent">
     <div class="panelBar">
         <ul class="toolBar">
-            <li class=""><a class="add" href="/PHP_-/market/index.php/Admin/users/create" target="navTab"><span>添加</span></a></li>
-            <li class=""><a class="delete" href="/PHP_-/market/index.php/Admin/users/destroy?id={sid_user}" target="ajaxTodo" title="确定要删除吗?"><span>删除</span></a></li>
-            <li class=""><a class="edit" href="/PHP_-/market/index.php/Admin/users/edit?id={sid_user}" target="navTab"><span>修改</span></a></li>
+            <li class=""><a class="add" href="/market/index.php/Admin/users/create" target="navTab"><span>添加</span></a></li>
+            <li class=""><a class="delete" href="/market/index.php/Admin/users/destroy?id={sid_user}" target="ajaxTodo" title="确定要删除吗?"><span>删除</span></a></li>
+            <li class=""><a class="edit" href="/market/index.php/Admin/users/edit?id={sid_user}" target="navTab"><span>修改</span></a></li>
+             <li class=""><a class="edit" href="/market/index.php/Admin/Users/qualify?id={sid_user}" target="dialog" rel="dlg_page8"><span>认证</span></a></li>
             <li class="line">line</li>
         </ul>
     </div>
-    <table class="list" width="98%" targetType="navTab" asc="asc" desc="desc" layoutH="70" >
+    <table class="list" width="98%" targetType="navTab" asc="asc" desc="desc" layoutH="70">
         <thead>
-        <tr>
-            <th><div>手机号</div></th>
-            <th><div>姓名</div></th>            
-            <th><div>昵称</div></th>
-            <th><div>学院</div></th>
-            <th><div>学号</div></th>
-            <th><div>性别</div></th>
-            <th><div>年级</div></th>
-            <th><div>头像</div></th>
-            <th><div>验证图片</div></th>
-        </tr>
+            <tr>
+                <th>
+                    <div>昵称</div>
+                </th>
+                <th>
+                    <div>头像</div>
+                </th>
+                <th>
+                    <div>性别</div>
+                </th>
+                <th>
+                    <div>年级</div>
+                </th>
+                <th>
+                    <div>姓名</div>
+                </th>
+                <th>
+                    <div>学院</div>
+                </th>
+                <th>
+                    <div>学号</div>
+                </th>
+                <th>
+                    <div>验证图片</div>
+                </th>
+                <th>
+                    <div>手机号</div>
+                </th>
+                <th>
+                    <div>是否认证</div>
+                </th>                
+            </tr>
         </thead>
         <tbody>
-
-        <?php if(is_array($results)): $i = 0; $__LIST__ = $results;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr target="sid_user" rel="<?php echo ($vo["id"]); ?>">
-                <td><div><?php echo ($vo['username']); ?></div></td>
-                <td><div><?php echo ($vo['name']); ?></div></td>
-                <td><div><?php echo ($vo['nickname']); ?></div></td>
-                <td><div><?php echo ($vo['college']); ?></div></td>
-                <td><div><?php echo ($vo['num']); ?></div></td>
-                <td><div><?php echo ($vo['sex']); ?></div></td>
-                <td><div><?php echo ($vo['grade']); ?></div></td>
-                <td><div><img src="/PHP_-/market/Public/<?php echo ($vo['head']); ?>" width="40px" height="40px"/></div></td>
-                <td><div><img src="/PHP_-/market/Public/<?php echo ($vo['card']); ?>" width="40px" height="40px" /></div></td>
-            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+            <?php if(is_array($results)): $i = 0; $__LIST__ = $results;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr target="sid_user" rel="<?php echo ($vo["id"]); ?>">
+                    <td>
+                        <div><?php echo ($vo['nickname']); ?></div>
+                    </td>
+                    <td>
+                        <div><img src="<?php echo ($vo['head']); ?>" width="40px" height="40px" /></div>
+                    </td>
+                    <td>
+                        <div><?php echo ($vo['sex']); ?></div>
+                    </td>
+                    <td>
+                        <div>
+                        <?php if($vo['grade'] != NULL): echo ($vo['grade']); ?>届
+                        <?php else: endif; ?>    
+                        </div>
+                    </td>
+                    <td>
+                        <div><?php echo ($vo['name']); ?></div>
+                    </td>
+                    <td>
+                        <div><?php echo ($vo['college']); ?></div>
+                    </td>
+                    <td>
+                        <div><?php echo ($vo['num']); ?></div>
+                    </td>
+                    <?php if($vo['card'] != NULL): ?><td>
+                            <div><img src="/market/Public/<?php echo ($vo['card']); ?>" width="40px" height="40px" /></div>
+                        </td>
+                        <?php else: ?>
+                        <td>
+                            <div></div>
+                        </td><?php endif; ?>
+                    <td>
+                        <div><?php echo ($vo['phonenumber']); ?></div>
+                    </td>
+                    <td>
+                        <div>
+                            <?php if(($vo['rz_status']) == "1"): ?>已认证
+                            <?php else: ?>
+                                <?php if(($vo['rz_status']) == "2"): ?>待审核
+                                <?php else: ?>
+                                    未认证<?php endif; endif; ?>
+                        </div>
+                    </td>                    
+                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
         </tbody>
     </table>
     <div class="panelBar">
@@ -59,5 +113,4 @@
     </div>
 </div>
 <script>
-
 </script>

@@ -1,4 +1,10 @@
 <?php
+/*
+ * document：微信接收信息
+ * User: 霍赛赛
+ * Date: 2016-12-06
+ * Time: 10:24
+ */
   namespace Home\Controller;
   use Think\Controller;
   class ReceieveController extends Controller{

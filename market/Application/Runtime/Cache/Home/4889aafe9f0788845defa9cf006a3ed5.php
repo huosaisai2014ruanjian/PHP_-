@@ -6,132 +6,142 @@
 <html>
 
 <head>
-    <title>校园跳蚤市场-支付</title>
+    <title>校园跳蚤市场-商品详情</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="format-detection" content="telephone=no">  
-    <link rel="stylesheet" type="text/css" href="/php_-/market/Public/css/define.css">
-    <link rel="stylesheet" href="/php_-/market/Public/lib/weui.min.css">
-    <link rel="stylesheet" href="/php_-/market/Public/css/jquery-weui.css">
-    <link rel="stylesheet" href="/php_-/market/Public/css/demo.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/jquery-weui.css">
-    <link rel="stylesheet" type="text/css" href="css/demo.css">
-    <link rel="stylesheet" type="text/css" href="css/define.css">-->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/market/Public/css/define.css">
+    <link rel="stylesheet" href="/market/Public/lib/weui.min.css">
+    <link rel="stylesheet" href="/market/Public/css/jquery-weui.css">
+    <link rel="stylesheet" href="/market/Public/css/demo.css">
     <style>
-        .swiper-container {
-            width: 100%;
-        }
-        .swiper-container img {
-            display: block;
-            width: 100%;
-        }
-        html,body{
-            height: 100%;
-            background-color: rgb(248,248,248);
-        }
-        .xinxi{
-            background-image: url("/php_-/market/Public/images/kuang.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            height: 80px;
-            background-color: #FFFFFF;
-        }
-        a{
-            text-decoration:none;
-            color: #242a2b;
-        }
-        .shou{
-            padding-top:15px;
-        }
-
+    .swiper-container {
+        width: 100%;
+    }
+    
+    .swiper-container img {
+        display: block;
+        width: 100%;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
     </style>
 </head>
+
 <body>
-<div  class="weui_tab" style="maigin:10px">
-    <!--买家信息 -->
-    <div class="xinxi">
-        <p class="shou" style="font-size: 12px; margin-top: 15px; margin-left: 30px;">收货人:PHP项目小组</p>
-        <p style="font-size: 12px; margin-top: -5px; margin-left: 30px;">电话:15231531523</p>
-        <p style="font-size: 12px; margin-top: -5px; margin-left: 30px;">收货地址：河北师范大学新校区软件学院</p>
-    </br>
-
-    </div>
-<!--信息模块开始-->
-      <!--卖家信息-->
-    <div class="user" style="background-color:#FFFFFF;margin-top:9px;">
-    <div  style="width: 100%">
-      <img src="/php_-/market/Public/<?php echo ($user["head"]); ?>"style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px; margin-top: 10px; margin-left: 8px;">
-          <p style="margin-top: -40px; margin-left: 60px;"><strong><?php echo ($user["nickname"]); ?></strong></p>
-        <p style="font-family:YouYuan;margin-top:-3px;margin-left: 60px;"><?php echo ($user["college"]); ?></p>
-      </p>
-    </div>
-        <!--卖家信息模块结束-->
-                <hr/>
-        <!--商品信息开始-->
-        <div style="height: 100%;">
-       <a class="weui_cell" href="javascript:;">
-        <div class="weui_cell_hd" >
-            <img src="/php_-/market/Public/<?php echo ($user["head"]); ?>" style="width:70px;height:80px;margin-top: 5px; margin-left: 8px;">
+    <div class="weui_tab" style="background-color:#EBEBEB;maigin:10px">
+        <!--买家信息 -->
+        <div style="background-color:#FFFFFF">
+            <p><span style="float:left">收货人</span> <span style="float:right">电话</span></p>
+            </br>
+            </br>
+            </br>
+            </br>
         </div>
-        <div class="weui_cell_bd weui_cell_primary" style="font-size: 9px">                
-        <p style="font-family:YouYuan;font-size: 20px;"> <?php echo ($good["description"]); ?></p>
-        <p style="margin-left: 30px;font-size: 15px;">￥<?php echo ($good["price"]); ?>
-        <span style="margin-left: 10px;font-size: 15px;">浏览次数：<?php echo ($good["times"]); ?></span></p>
-        </div>
-       </a>
-        </div>
-        <!--商品信息结束-->
-    </div>
-
- <!--信息模块结束-->
-        <div style="margin-top: 15px;margin-bottom: 15px;font-family: KaiTi;font-size: 20px;margin-left: 10px;"><span><strong>支付方式</strong></span></div>
-    <div style="background-color: #FFFFFF;height: 50px;">
-        <img src="/php_-/market/Public/images/pay.png" style="margin-top: 8px; margin-left: 2px;">
-    </div>
-        </div>
-
-        <div style="margin-top: -165px;">
+        <!--信息模块-->
+        <!--卖家信息-->
+        <div class="user" style="background-color:#FFFFFF;margin-top:9px;">
+            <div style="width: 100%">
+                <p><img src="<?php echo ($user["head"]); ?>" style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px;">
+                    <span <strong><?php echo ($user["nickname"]); ?></strong></span>
+                    <span style="font-family:YouYuan"><?php echo ($user["college"]); ?></span>
+                </p>
+            </div>
+            <!--卖家信息模块结束-->
             <hr/>
-            <p class="weui_tabbar_label" style="width: 120px;margin-top:25px;font-size: 15px">合计:<?php echo ($good["price"]); ?></p></div>
-            <a href="javascript:;" class="weui_btn weui_btn_warn" style="text-align: center;margin-top:-30px;margin-right:5px;width: 120px;float: right;font-family: KaiTi;font-size: 20px;">确认下单</a>
+            <!--留言-->
+            <div>
+                <a class="weui_cell" href="javascript:;">
+                    <div class="weui_cell_hd">
+                        <img src="<?php echo ($user["head"]); ?>" alt="icon" style="width:50px;height:50px;">
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary" style="font-size: 9px">
+                        <p style="font-family:YouYuan;margin:2px;font-size: 22px;center;margin:2px"> <?php echo ($good["description"]); ?></p>
+                        <p><?php echo ($good["price"]); ?> <span>浏览次数<?php echo ($good["times"]); ?></span></p>
+                    </div>
+                </a>
+            </div>
+            <!--留言模块结束-->
+            <hr/>
+            <!--信息模块结束-->
+            <div>支付方式:微信支付</div>
+            <hr/>
         </div>
-</div>
+        <div style="border-bottom:10px;margin:10px border-top:1px">
+            <div style="float:left;">合计:<?php echo ($good["price"]); ?></div>
+            <div style="float:right" class="xiadan">确认下单</div>
+            <input type="hidden" value="<?php echo ($nonce); ?>" class="hid">
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="/market/Public/lib/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="/market/Public/js/jquery-weui.min.js"></script>
+    <script type="text/javascript" src="/market/Public/js/swiper.js"></script>
+    <script type="text/javascript">
+    console.log($('.hid'));
+      $('.xiadan').click(function(
+            function onBridgeReady(){
+       WeixinJSBridge.invoke(
+        'getBrandWCPayRequest', {
+            "appId" ： "",     //公众号名称，由商户传入     
+            "timeStamp"：" 1395712654",         //时间戳，自1970年以来的秒数     
+            "nonceStr" ： "e61463f8efa94090b1f366cccfbbb444", //随机串     
+            "package" ： "prepay_id=u802345jgfjsdfgsdg888",     
+            "signType" ： "MD5",         //微信签名方式：     
+            "paySign" ： "" //微信签名 
+        },function(res){     
+            if(res.err_msg == "get_brand_wcpay_request：ok" ) {}     // 使用以上方式判断前端返回,微信团队郑重提示：res.err_msg将在用户支付成功后返回    ok，但并不保证它绝对可靠。 
+        }); 
+     }
+    if (typeof WeixinJSBridge == "undefined"){
+    if( document.addEventListener ){
+        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+    }else if (document.attachEvent){
+        document.attachEvent('WeixinJSBridgeReady', onBridgeReady); 
+        document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+    }
+ }else{
+    onBridgeReady();
+   } 
 
-<script type="text/javascript" src="/php_-/market/Public/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/php_-/market/Public/js/jquery-weui.min.js"></script>
-<script type="text/javascript" src="/php_-/market/Public/js/swiper.js"></script>
-<script>
+        ));
+    </script>
+    <script>
     $(".swiper-container").swiper({
         loop: true,
         autoplay: 2000
     });
-    $(".weui_navbar .weui_navbar_item").click(function(){
-        $(".weui_navbar .weui_navbar_item").removeClass("weui_bar_item_on");//谁都没有weui_bar_item_on
-        $(this).addClass("weui_bar_item_on");//点谁谁有weui_bar_item_on
-            //判断点击的是第几的选项卡
-             var which = $(this).index();
-            //让所有的内容区域隐藏
-             $(".weui_tab_bd .content").hide();
-            //按索引显示对应的内容
-            $(".weui_tab_bd .content:eq("+which+")").show();
-        });
-</script>           
-<script type="text/javascript">
-    $(document).on("click","#hide",function(){
-        $("#hide").css('display','none');
-        $("#hide1").css('display','block');
-    });
+    $(".weui_navbar .weui_navbar_item").click(function() {
+        $(".weui_navbar .weui_navbar_item").removeClass("weui_bar_item_on"); //谁都没有weui_bar_item_on
+        $(this).addClass("weui_bar_item_on"); //点谁谁有weui_bar_item_on
+        //判断点击的是第几的选项卡
+        var which = $(this).index();
 
-</script>
-<script type="text/javascript">
-    $(document).on("click","#hide1",function(){
-    $("#hide1").css('display','none');
-    $("#hide").css('display','block');
+        //让所有的内容区域隐藏
+        $(".weui_tab_bd .content").hide();
+
+        //按索引显示对应的内容
+        $(".weui_tab_bd .content:eq(" + which + ")").show();
     });
-</script>
+    </script>
+    <script type="text/javascript">
+    $(document).on("click", "#hide", function() {
+        $("#hide").css('display', 'none');
+        $("#hide1").css('display', 'block');
+
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).on("click", "#hide1", function() {
+        $("#hide1").css('display', 'none');
+        $("#hide").css('display', 'block');
+
+    });
+    </script>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * document：发布商品
  * User: 周博学
  * Date: 2016/12/6
  * Time: 15:22
